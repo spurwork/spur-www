@@ -16,6 +16,11 @@
       <a href="index.html" class="logo">
         <img src="spur-logo-white.svg" alt="Spur" class="logo-img">
       </a>
+      <button class="mobile-menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
       <div class="nav-links">
         <div class="nav-dropdown">
           <span class="nav-link nav-dropdown-toggle">
@@ -40,7 +45,7 @@
                 <h4>Staffing</h4>
                 <p>Subs that show up. 92%+ fill rates.</p>
               </a>
-              <a href="#services" class="mega-menu-card" data-tab="attendance">
+              <a href="attendance-recovery.html" class="mega-menu-card" data-tab="attendance">
                 <div class="mega-card-visual" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.2) 0%, rgba(16, 185, 129, 0.05) 100%);">
                   <div class="mega-card-icon">
                     <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="1.5">
@@ -91,9 +96,10 @@
   </nav>
 
   <!-- ESSER Banner -->
-  <div class="esser-banner">
+  <div class="esser-banner" id="esser-banner">
     <span>&#10024; ESSER funds ending. Our free 20-min assessment finds $$$ hiding in your budget</span>
     <a href="contact-sales.html">Get Your Report &rarr;</a>
+    <button class="banner-dismiss" aria-label="Dismiss banner">&times;</button>
   </div>
 
   <!-- Hero Section -->
@@ -223,7 +229,7 @@
               <div class="schedule-board">
                 <div class="schedule-header">
                   <span class="schedule-title">Today's Coverage</span>
-                  <span class="schedule-badge filled">92%+ Filled</span>
+                  <span class="schedule-badge filled">80% Filled</span>
                 </div>
                 <div class="schedule-grid">
                   <div class="schedule-slot filled">
@@ -258,17 +264,18 @@
                     </div>
                     <div class="slot-status">✓</div>
                   </div>
-                  <div class="schedule-slot filling">
+                  <div class="schedule-slot filling" id="filling-slot">
                     <div class="slot-time">Period 5</div>
                     <div class="slot-teacher">
-                      <div class="teacher-avatar pulsing">?</div>
-                      <span>Finding...</span>
+                      <div class="teacher-avatar pulsing" id="filling-avatar">?</div>
+                      <span id="filling-text">Finding...</span>
                     </div>
-                    <div class="slot-spinner"></div>
+                    <div class="slot-spinner" id="filling-spinner"></div>
+                    <div class="slot-status" id="filling-check" style="display: none;">✓</div>
                   </div>
                 </div>
                 <div class="schedule-footer">
-                  <span class="footer-stat"><strong>47</strong> subs deployed today</span>
+                  <span class="footer-stat"><strong id="subs-count">47</strong> subs deployed today</span>
                 </div>
               </div>
             </div>
@@ -704,7 +711,7 @@
         <div class="result-card">
           <div class="result-icon">💰</div>
           <h3 class="result-title">Save Money</h3>
-          <p class="result-description">Stop overpaying for emergency staffing and lost attendance funding. Our schools save an average of $180K per year that goes right back into classrooms.</p>
+          <p class="result-description">Stop overpaying for expensive software tools and staffing solutions. Our schools save an average of $180K per year that goes right back into classrooms.</p>
         </div>
         <div class="result-card">
           <div class="result-icon">⏱️</div>
@@ -980,13 +987,13 @@
       <h2>Ready to get <span class="serif">results?</span></h2>
       <p>Join 5K+ schools that stopped wrestling with software and started getting things done. Let's talk about what Spur can do for your district.</p>
       <div class="cta-buttons">
-        <a href="#" class="btn-primary">
+        <a href="contact-sales.html" class="btn-primary">
           Schedule a Call
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M5 12h14M12 5l7 7-7 7"/>
           </svg>
         </a>
-        <a href="#" class="btn-secondary">
+        <a href="contact-sales.html" class="btn-secondary">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
             <polyline points="22,6 12,13 2,6"/>
@@ -1029,7 +1036,7 @@
           <h4>Services</h4>
           <a href="staffing.html">Staffing</a>
           <a href="index.html#services">Recruiting</a>
-          <a href="index.html#services">Attendance Recovery</a>
+          <a href="attendance-recovery.html">Attendance Recovery</a>
           <a href="extended-learning.html">Extended Learning</a>
         </div>
 
@@ -1063,5 +1070,86 @@
 
 
   <script src="js/main.js"></script>
+
+  <style>
+    /* Animation for filling slot */
+    .schedule-slot.filled-animated {
+      background: rgba(16, 185, 129, 0.08) !important;
+      border-color: rgba(16, 185, 129, 0.3) !important;
+    }
+
+    .schedule-slot.filled-animated .teacher-avatar {
+      animation: none !important;
+      background: #06b6d4 !important;
+    }
+
+    .schedule-badge.updating {
+      animation: badge-pulse 0.3s ease;
+    }
+
+    @keyframes badge-pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+    }
+  </style>
+
+  <script>
+    // Animated slot filling demonstration - finds a sub and stays filled
+    function animateFilling() {
+      const slot = document.getElementById('filling-slot');
+      const avatar = document.getElementById('filling-avatar');
+      const text = document.getElementById('filling-text');
+      const spinner = document.getElementById('filling-spinner');
+      const check = document.getElementById('filling-check');
+      const badge = document.querySelector('.schedule-badge');
+
+      if (!slot) return; // Exit if elements not found
+
+      // After a short delay, find and fill with a sub
+      setTimeout(() => {
+        // Found a sub - Maria K.
+        avatar.textContent = 'MK';
+        avatar.style.background = '#06b6d4';
+        avatar.classList.remove('pulsing');
+        text.textContent = 'Maria K.';
+        spinner.style.display = 'none';
+        check.style.display = 'flex';
+        slot.classList.remove('filling');
+        slot.classList.add('filled', 'filled-animated');
+
+        // Update badge to 100%
+        if (badge) {
+          badge.textContent = '100% Filled';
+          badge.classList.add('updating');
+          setTimeout(() => badge.classList.remove('updating'), 300);
+        }
+
+        // Update subs count from 47 to 48
+        const subsCount = document.getElementById('subs-count');
+        if (subsCount) {
+          subsCount.textContent = '48';
+        }
+
+        // Stay filled - no reset/loop
+      }, 850);
+    }
+
+    // Trigger animation when schedule board is in viewport
+    document.addEventListener('DOMContentLoaded', () => {
+      const scheduleBoard = document.querySelector('.schedule-board');
+      if (!scheduleBoard) return;
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            animateFilling();
+            observer.unobserve(entry.target); // Only animate once
+          }
+        });
+      }, { threshold: 0.5 }); // Trigger when 50% visible
+
+      observer.observe(scheduleBoard);
+    });
+  </script>
 </body>
 </html>

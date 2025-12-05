@@ -16,6 +16,11 @@
       <a href="index.html" class="logo">
         <img src="spur-logo-white.svg" alt="Spur" class="logo-img">
       </a>
+      <button class="mobile-menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
       <div class="nav-links">
         <div class="nav-dropdown">
           <span class="nav-link nav-dropdown-toggle">
@@ -40,7 +45,7 @@
                 <h4>Staffing</h4>
                 <p>Subs that show up. 92%+ fill rates.</p>
               </a>
-              <a href="index.html#services" class="mega-menu-card" data-tab="attendance">
+              <a href="attendance-recovery.html" class="mega-menu-card" data-tab="attendance">
                 <div class="mega-card-visual" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.2) 0%, rgba(16, 185, 129, 0.05) 100%);">
                   <div class="mega-card-icon">
                     <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="1.5">
@@ -204,6 +209,19 @@
               </select>
             </div>
 
+            <div class="form-group">
+              <label for="referral">How did you hear about us?</label>
+              <select id="referral" name="referral">
+                <option value="">Please Select</option>
+                <option value="colleague">Colleague / Word of Mouth</option>
+                <option value="search">Google / Web Search</option>
+                <option value="conference">Conference / Event</option>
+                <option value="linkedin">LinkedIn</option>
+                <option value="association">Professional Association</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
             <button type="submit" class="btn-submit">
               Submit
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -248,7 +266,7 @@
           <h4>Services</h4>
           <a href="staffing.html">Staffing</a>
           <a href="index.html#services">Recruiting</a>
-          <a href="index.html#services">Attendance Recovery</a>
+          <a href="attendance-recovery.html">Attendance Recovery</a>
           <a href="extended-learning.html">Extended Learning</a>
         </div>
 

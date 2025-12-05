@@ -1,3 +1,50 @@
+// Banner Dismiss (session only - reappears on page reload)
+document.addEventListener('DOMContentLoaded', () => {
+  const bannerDismiss = document.querySelector('.banner-dismiss');
+  const esserBanner = document.getElementById('esser-banner');
+
+  if (bannerDismiss && esserBanner) {
+    bannerDismiss.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      esserBanner.classList.add('hidden');
+      document.body.classList.add('banner-hidden');
+    });
+  }
+});
+
+// Mobile Menu Toggle
+const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+if (mobileMenuToggle && navLinks) {
+  mobileMenuToggle.addEventListener('click', () => {
+    mobileMenuToggle.classList.toggle('active');
+    navLinks.classList.toggle('active');
+    document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
+  });
+
+  // Close menu when clicking a link
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenuToggle.classList.remove('active');
+      navLinks.classList.remove('active');
+      document.body.style.overflow = '';
+    });
+  });
+
+  // Toggle dropdown on mobile
+  const dropdownToggle = navLinks.querySelector('.nav-dropdown-toggle');
+  if (dropdownToggle) {
+    dropdownToggle.addEventListener('click', (e) => {
+      if (window.innerWidth <= 768) {
+        e.preventDefault();
+        dropdownToggle.parentElement.classList.toggle('active');
+      }
+    });
+  }
+}
+
 // Mega Menu Card Clicks - Switch to correct service tab
 document.querySelectorAll('.mega-menu-card').forEach(card => {
   card.addEventListener('click', (e) => {

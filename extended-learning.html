@@ -8,6 +8,81 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .stat-simple-value {
+      color: var(--text-primary);
+    }
+    .extended-cta h2 {
+      line-height: 1.2;
+    }
+
+    /* Everything We Handle Section */
+    .everything-section {
+      padding: 6rem 0;
+      background: var(--bg-secondary);
+    }
+    .everything-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+    .everything-content .section-tag {
+      margin-bottom: 1rem;
+    }
+    .everything-content .section-title {
+      text-align: left;
+      margin-bottom: 1.5rem;
+    }
+    .everything-content p {
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 2rem;
+    }
+    .everything-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+    .everything-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1.25rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+    }
+    .everything-item .emoji {
+      font-size: 1.5rem;
+      flex-shrink: 0;
+    }
+    .everything-item span {
+      font-weight: 500;
+      color: var(--text-primary);
+    }
+    @media (max-width: 900px) {
+      .everything-layout {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+      .everything-content .section-title {
+        text-align: center;
+      }
+      .everything-content {
+        text-align: center;
+      }
+      .everything-content .btn-primary {
+        display: inline-flex;
+      }
+    }
+    @media (max-width: 600px) {
+      .everything-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 <body>
   <!-- Navigation -->
@@ -16,6 +91,11 @@
       <a href="index.html" class="logo">
         <img src="spur-logo-white.svg" alt="Spur" class="logo-img">
       </a>
+      <button class="mobile-menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
       <div class="nav-links">
         <div class="nav-dropdown">
           <span class="nav-link nav-dropdown-toggle">
@@ -40,7 +120,7 @@
                 <h4>Staffing</h4>
                 <p>Subs that show up. 92%+ fill rates.</p>
               </a>
-              <a href="index.html#services" class="mega-menu-card" data-tab="attendance">
+              <a href="attendance-recovery.html" class="mega-menu-card" data-tab="attendance">
                 <div class="mega-card-visual" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.2) 0%, rgba(16, 185, 129, 0.05) 100%);">
                   <div class="mega-card-icon">
                     <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="1.5">
@@ -589,6 +669,59 @@
     </div>
   </section>
 
+  <!-- What We Handle Section -->
+  <section class="everything-section">
+    <div class="section-container">
+      <div class="everything-layout">
+        <div class="everything-content">
+          <span class="section-tag" style="background: rgba(245, 158, 11, 0.15); color: #f59e0b;">Full-Service Management</span>
+          <h2 class="section-title">You focus on students. <span class="serif" style="color: #f59e0b;">We handle the rest.</span></h2>
+          <p>From hiring to payroll to compliance, we manage every operational detail of your extended learning programs so your team can focus on what matters most.</p>
+          <a href="contact-sales.html" class="btn-primary extended-btn">
+            Get Started
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+        <div class="everything-grid">
+          <div class="everything-item">
+            <span class="emoji">👥</span>
+            <span>Personnel Management</span>
+          </div>
+          <div class="everything-item">
+            <span class="emoji">💳</span>
+            <span>Payroll & Benefits</span>
+          </div>
+          <div class="everything-item">
+            <span class="emoji">📚</span>
+            <span>Curriculum Development</span>
+          </div>
+          <div class="everything-item">
+            <span class="emoji">📊</span>
+            <span>Data & Reporting</span>
+          </div>
+          <div class="everything-item">
+            <span class="emoji">✅</span>
+            <span>Compliance & Licensing</span>
+          </div>
+          <div class="everything-item">
+            <span class="emoji">📋</span>
+            <span>Program Administration</span>
+          </div>
+          <div class="everything-item">
+            <span class="emoji">🕐</span>
+            <span>Scheduling & Logistics</span>
+          </div>
+          <div class="everything-item">
+            <span class="emoji">📦</span>
+            <span>Supply Procurement</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Funding Section -->
   <section class="funding-section">
     <div class="section-container">
@@ -634,25 +767,6 @@
           <div class="funding-stat-block">
             <span class="funding-stat-value">$180K</span>
             <span class="funding-stat-label">Average annual savings per district</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Testimonial -->
-  <section class="service-results">
-    <div class="section-container">
-      <div class="service-testimonial-block">
-        <div class="testimonial-card featured">
-          <div class="testimonial-stars">★★★★★</div>
-          <p class="testimonial-text">"Our summer program went from a staffing nightmare to fully covered in two weeks. Spur found 47 qualified instructors when we couldn't find 10. The academic results exceeded our expectations—real, measurable growth."</p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">LW</div>
-            <div class="testimonial-info">
-              <h4>Lisa Washington</h4>
-              <span>Director of Programs, Oak Park Schools</span>
-            </div>
           </div>
         </div>
       </div>
@@ -729,7 +843,7 @@
           <div class="footer-column">
             <h4>Services</h4>
             <a href="staffing.html">Staffing</a>
-            <a href="index.html#services">Attendance Recovery</a>
+            <a href="attendance-recovery.html">Attendance Recovery</a>
             <a href="extended-learning.html">Extended Learning</a>
             <a href="index.html#services">Recruiting</a>
           </div>
