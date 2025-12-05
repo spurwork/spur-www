@@ -24,8 +24,8 @@ if (mobileMenuToggle && navLinks) {
     document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
   });
 
-  // Close menu when clicking a link
-  navLinks.querySelectorAll('a').forEach(link => {
+  // Close menu when clicking a link (but not the dropdown toggle)
+  navLinks.querySelectorAll('a:not(.nav-dropdown-toggle)').forEach(link => {
     link.addEventListener('click', () => {
       mobileMenuToggle.classList.remove('active');
       navLinks.classList.remove('active');
@@ -37,12 +37,42 @@ if (mobileMenuToggle && navLinks) {
   const dropdownToggle = navLinks.querySelector('.nav-dropdown-toggle');
   if (dropdownToggle) {
     dropdownToggle.addEventListener('click', (e) => {
-      if (window.innerWidth <= 768) {
+      if (window.innerWidth <= 900) {
         e.preventDefault();
+        e.stopPropagation();
         dropdownToggle.parentElement.classList.toggle('active');
       }
     });
   }
+
+  // Close menu when clicking outside
+  document.addEventListener('click', (e) => {
+    if (navLinks.classList.contains('active') &&
+        !navLinks.contains(e.target) &&
+        !mobileMenuToggle.contains(e.target)) {
+      mobileMenuToggle.classList.remove('active');
+      navLinks.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  });
+
+  // Close menu on escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && navLinks.classList.contains('active')) {
+      mobileMenuToggle.classList.remove('active');
+      navLinks.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  });
+
+  // Handle window resize - close menu if resizing to desktop
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 900 && navLinks.classList.contains('active')) {
+      mobileMenuToggle.classList.remove('active');
+      navLinks.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  });
 }
 
 // Mega Menu Card Clicks - Switch to correct service tab
@@ -126,3 +156,48 @@ document.querySelectorAll('.service-card, .result-card, .testimonial-card, .case
   el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
   observer.observe(el);
 });
+
+// Counter Animation for Savings Amount
+function animateCounter(element, target, duration = 2000) {
+  const startTime = performance.now();
+  const startValue = 0;
+
+  function easeOutQuart(t) {
+    return 1 - Math.pow(1 - t, 4);
+  }
+
+  function formatNumber(num) {
+    return '$' + Math.floor(num).toLocaleString('en-US');
+  }
+
+  function update(currentTime) {
+    const elapsed = currentTime - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+    const easedProgress = easeOutQuart(progress);
+    const currentValue = startValue + (target - startValue) * easedProgress;
+
+    element.textContent = formatNumber(currentValue);
+
+    if (progress < 1) {
+      requestAnimationFrame(update);
+    }
+  }
+
+  requestAnimationFrame(update);
+}
+
+// Observe savings amount and trigger counter animation
+const savingsAmount = document.querySelector('.savings-amount[data-target]');
+if (savingsAmount) {
+  const savingsObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const target = parseInt(entry.target.dataset.target, 10);
+        animateCounter(entry.target, target, 2500);
+        savingsObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  savingsObserver.observe(savingsAmount);
+}
