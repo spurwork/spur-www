@@ -118,6 +118,12 @@
       justify-content: center;
     }
 
+    .logo-img {
+      height: 24px;
+      width: auto;
+      filter: brightness(0) invert(1);
+    }
+
     .nav-links {
       display: flex;
       align-items: center;
@@ -1539,6 +1545,28 @@
       color: var(--text-muted);
       text-align: center;
       margin: 0.5rem 0;
+    }
+
+    /* Chat Animation */
+    .chat-messages .chat-time,
+    .chat-messages .chat-message {
+      opacity: 0;
+      transform: translateY(10px);
+      animation: chatFadeIn 0.4s ease forwards;
+    }
+
+    .chat-messages > *:nth-child(1) { animation-delay: 0.5s; }
+    .chat-messages > *:nth-child(2) { animation-delay: 1.2s; }
+    .chat-messages > *:nth-child(3) { animation-delay: 2.5s; }
+    .chat-messages > *:nth-child(4) { animation-delay: 3.5s; }
+    .chat-messages > *:nth-child(5) { animation-delay: 4.2s; }
+    .chat-messages > *:nth-child(6) { animation-delay: 5.5s; }
+
+    @keyframes chatFadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
     /* Savings Section */
@@ -3616,58 +3644,52 @@
        EXTENDED LEARNING PAGE
        ============================================ */
 
-    /* Impact Stats Section */
-    .impact-stats {
+    /* Impact Stats Section - Simple */
+    .impact-stats-simple {
       padding: 6rem 2rem;
-      background: var(--bg-secondary);
+      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
     }
 
-    .impact-stats-grid {
+    .stats-grid-simple {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      gap: 1.5rem;
+      gap: 3rem;
       margin-top: 3rem;
-    }
-
-    .impact-stat-card {
-      background: var(--bg-card);
-      border: 1px solid var(--border-color);
-      border-radius: 20px;
-      padding: 2rem;
       text-align: center;
-      transition: all 0.2s;
     }
 
-    .impact-stat-card:hover {
-      border-color: var(--border-hover);
-      transform: translateY(-2px);
-    }
-
-    .impact-stat-card.featured {
-      background: linear-gradient(135deg, rgba(245, 158, 11, 0.1) 0%, rgba(245, 158, 11, 0.02) 100%);
-      border-color: rgba(245, 158, 11, 0.3);
-    }
-
-    .impact-stat-value {
-      display: block;
-      font-size: 3rem;
+    .stat-simple-value {
+      font-size: clamp(3rem, 6vw, 4rem);
       font-weight: 700;
       color: #f59e0b;
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+
+    .stat-simple-label {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--text-primary);
       margin-bottom: 0.25rem;
     }
 
-    .impact-stat-label {
-      display: block;
-      font-size: 1rem;
-      font-weight: 600;
-      color: var(--text-primary);
-      margin-bottom: 0.75rem;
+    .stat-simple-detail {
+      font-size: 0.9rem;
+      color: var(--text-muted);
     }
 
-    .impact-stat-detail {
-      font-size: 0.85rem;
-      color: var(--text-secondary);
-      line-height: 1.5;
+    @media (max-width: 900px) {
+      .stats-grid-simple {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .stats-grid-simple {
+        grid-template-columns: 1fr;
+      }
     }
 
     /* Programs Section */
@@ -4276,6 +4298,7 @@
       font-weight: 600;
       color: var(--text-primary);
       margin-bottom: 0.35rem;
+      white-space: nowrap;
     }
 
     .translation-feature-card p {
