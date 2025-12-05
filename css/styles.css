@@ -2734,14 +2734,17 @@
     }
 
     .team-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 1.5rem;
       max-width: 900px;
       margin: 0 auto;
     }
 
     .team-card {
+      flex: 0 1 calc(33.333% - 1rem);
+      min-width: 250px;
       background: var(--bg-card);
       border: 1px solid var(--border-color);
       border-radius: 20px;
