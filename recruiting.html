@@ -1,0 +1,1553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recruiting | Spur</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* Recruiting page pink accent overrides */
+    .recruiting-btn {
+      background: linear-gradient(135deg, #ec4899 0%, #db2777 100%);
+      box-shadow: 0 4px 20px rgba(236, 72, 153, 0.3);
+    }
+    .recruiting-btn:hover {
+      box-shadow: 0 8px 30px rgba(236, 72, 153, 0.4);
+    }
+
+    /* No Login Section */
+    .no-login-section {
+      padding: 6rem 0;
+      background: var(--bg-secondary);
+    }
+    .no-login-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+    .no-login-content .section-tag {
+      margin-bottom: 1rem;
+    }
+    .no-login-content .section-title {
+      text-align: left;
+      margin-bottom: 1.5rem;
+    }
+    .no-login-content p {
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 2rem;
+    }
+    .no-login-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+    .no-login-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1.25rem;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+    }
+    .no-login-item .emoji {
+      font-size: 1.5rem;
+      flex-shrink: 0;
+    }
+    .no-login-item span {
+      font-weight: 500;
+      color: var(--text-primary);
+    }
+
+    /* Compare Section */
+    .compare-section {
+      padding: 6rem 0;
+    }
+    .compare-table {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 0;
+      margin-top: 3rem;
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      overflow: hidden;
+    }
+    .compare-header {
+      background: var(--bg-card);
+      padding: 1.5rem;
+      font-weight: 600;
+      text-align: center;
+      border-bottom: 1px solid var(--border-color);
+    }
+    .compare-header:first-child {
+      text-align: left;
+    }
+    .compare-header.highlight {
+      background: rgba(236, 72, 153, 0.15);
+      color: #ec4899;
+    }
+    .compare-row {
+      display: contents;
+    }
+    .compare-cell {
+      padding: 1.25rem 1.5rem;
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+    }
+    .compare-cell:nth-child(3n+2),
+    .compare-cell:nth-child(3n+3) {
+      justify-content: center;
+      text-align: center;
+    }
+    .compare-cell.highlight {
+      background: rgba(236, 72, 153, 0.05);
+    }
+    .compare-check {
+      color: #10b981;
+      font-size: 1.25rem;
+    }
+    .compare-x {
+      color: var(--text-muted);
+      font-size: 1.25rem;
+    }
+    .compare-row:last-child .compare-cell {
+      border-bottom: none;
+    }
+
+    /* Delivery Methods */
+    .delivery-section {
+      padding: 6rem 0;
+      background: var(--bg-secondary);
+    }
+    .delivery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+    .delivery-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 2rem;
+      text-align: center;
+    }
+    .delivery-icon {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 1.5rem;
+      background: rgba(236, 72, 153, 0.15);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+    }
+    .delivery-card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.75rem;
+    }
+    .delivery-card p {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    /* Hero Visual - Email Inbox + Applicants Stack */
+    .hero-visual-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    /* Email Inbox Card (Top) */
+    .email-inbox-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    }
+    .email-inbox-header {
+      padding: 1rem 1.25rem;
+      border-bottom: 1px solid var(--border-color);
+      background: var(--bg-secondary);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .email-inbox-title {
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--text-primary);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .email-inbox-title .inbox-emoji {
+      font-size: 1rem;
+    }
+    .email-inbox-badge {
+      font-size: 0.75rem;
+      padding: 0.25rem 0.75rem;
+      border-radius: 100px;
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--text-secondary);
+      font-weight: 500;
+    }
+    .email-list {
+      padding: 0.5rem;
+    }
+    .email-row {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.85rem 1rem;
+      border-radius: 10px;
+      margin-bottom: 0.35rem;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--border-color);
+    }
+    .email-row:last-child {
+      margin-bottom: 0;
+    }
+    .email-row.unread {
+      background: rgba(255, 255, 255, 0.04);
+    }
+    .email-row.unread .email-subject {
+      font-weight: 600;
+    }
+    .email-avatar {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+      flex-shrink: 0;
+    }
+    .email-content {
+      flex: 1;
+      min-width: 0;
+    }
+    .email-subject {
+      font-size: 0.9rem;
+      color: var(--text-primary);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .email-preview {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .email-time {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      white-space: nowrap;
+    }
+
+    /* Candidates Card (Bottom) */
+    .candidates-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+    }
+    .candidates-header {
+      padding: 1rem 1.25rem;
+      border-bottom: 1px solid var(--border-color);
+      background: var(--bg-secondary);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .candidates-title {
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--text-primary);
+    }
+    .candidates-badge {
+      font-size: 0.75rem;
+      padding: 0.25rem 0.65rem;
+      border-radius: 100px;
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--text-secondary);
+    }
+    .candidate-list {
+      padding: 0.75rem 1rem;
+    }
+    .candidate-row {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      padding: 0.75rem 0;
+      border-bottom: 1px solid var(--border-color);
+    }
+    .candidate-row:last-child {
+      border-bottom: none;
+    }
+    .candidate-avatar {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+      flex-shrink: 0;
+    }
+    .candidate-info {
+      flex: 1;
+      min-width: 0;
+    }
+    .candidate-name {
+      font-weight: 500;
+      font-size: 0.95rem;
+      color: var(--text-primary);
+    }
+    .candidate-role {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+    .candidate-status {
+      font-size: 0.7rem;
+      padding: 0.25rem 0.6rem;
+      border-radius: 100px;
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--text-secondary);
+      white-space: nowrap;
+    }
+    .candidates-footer {
+      padding: 0.85rem 1.25rem;
+      border-top: 1px solid var(--border-color);
+      background: var(--bg-secondary);
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      text-align: center;
+    }
+
+    /* How It Works Layout with Visual */
+    .how-it-works-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: start;
+      margin-top: 3rem;
+    }
+    .how-it-works-visual {
+      position: sticky;
+      top: 6rem;
+    }
+    .text-conversation-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+    }
+    .text-conversation-header {
+      padding: 1rem 1.25rem;
+      border-bottom: 1px solid var(--border-color);
+      background: var(--bg-secondary);
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .text-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #ec4899 0%, #db2777 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      font-weight: 600;
+      color: white;
+    }
+    .text-contact {
+      display: flex;
+      flex-direction: column;
+    }
+    .text-name {
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--text-primary);
+    }
+    .text-status {
+      font-size: 0.75rem;
+      color: #10b981;
+    }
+    .text-messages {
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .text-message {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+    .text-message.outgoing {
+      align-items: flex-end;
+    }
+    .text-message.incoming {
+      align-items: flex-start;
+    }
+    .text-bubble {
+      max-width: 85%;
+      padding: 0.75rem 1rem;
+      border-radius: 16px;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+    .text-bubble.outgoing {
+      background: linear-gradient(135deg, #ec4899 0%, #db2777 100%);
+      color: white;
+      border-bottom-right-radius: 4px;
+    }
+    .text-bubble.incoming {
+      background: var(--bg-secondary);
+      color: var(--text-primary);
+      border: 1px solid var(--border-color);
+      border-bottom-left-radius: 4px;
+    }
+    .text-time {
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      padding: 0 0.25rem;
+    }
+    @media (max-width: 900px) {
+      .how-it-works-layout {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+      .how-it-works-visual {
+        position: static;
+        order: -1;
+      }
+    }
+
+    /* Pricing Section */
+    .pricing-section {
+      padding: 6rem 0;
+      background: var(--bg-secondary);
+    }
+    .pricing-cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      max-width: 800px;
+      margin: 3rem auto 0;
+    }
+    .pricing-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      padding: 2.5rem;
+      text-align: center;
+      position: relative;
+    }
+    .pricing-card.featured {
+      border-color: #ec4899;
+      box-shadow: 0 0 40px rgba(236, 72, 153, 0.15);
+    }
+    .pricing-card.featured::before {
+      content: 'Best Value';
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: linear-gradient(135deg, #ec4899 0%, #db2777 100%);
+      color: white;
+      font-size: 0.75rem;
+      font-weight: 600;
+      padding: 0.35rem 1rem;
+      border-radius: 100px;
+    }
+    .pricing-label {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 0.5rem;
+    }
+    .pricing-amount {
+      font-size: 3rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      line-height: 1.1;
+    }
+    .pricing-period {
+      font-size: 1rem;
+      color: var(--text-muted);
+      font-weight: 400;
+    }
+    .pricing-note {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      margin-top: 0.5rem;
+    }
+    .pricing-savings {
+      display: inline-block;
+      margin-top: 0.75rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #10b981;
+      background: rgba(16, 185, 129, 0.1);
+      padding: 0.35rem 0.85rem;
+      border-radius: 100px;
+    }
+    .pricing-divider {
+      height: 1px;
+      background: var(--border-color);
+      margin: 1.5rem 0;
+    }
+    .pricing-features {
+      text-align: left;
+    }
+    .pricing-feature {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.5rem 0;
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+    }
+    .pricing-feature::before {
+      content: '✓';
+      color: #10b981;
+      font-weight: 600;
+    }
+    @media (max-width: 700px) {
+      .pricing-cards {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .no-login-layout {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+      .no-login-content .section-title {
+        text-align: center;
+      }
+      .no-login-content {
+        text-align: center;
+      }
+      .no-login-content .btn-primary {
+        display: inline-flex;
+      }
+      .compare-table {
+        grid-template-columns: 1fr;
+      }
+      .compare-header:first-child {
+        text-align: center;
+      }
+      .compare-cell:first-child {
+        font-weight: 500;
+        background: var(--bg-secondary);
+      }
+      .delivery-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    @media (max-width: 600px) {
+      .no-login-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Instant Reports Section */
+    .instant-reports-section {
+      padding: 6rem 0;
+    }
+    .instant-reports-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+    .instant-reports-content .section-tag {
+      margin-bottom: 1rem;
+    }
+    .instant-reports-content .section-title {
+      text-align: left;
+      margin-bottom: 1.5rem;
+      line-height: 1.2;
+    }
+    .instant-reports-content > p {
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 2rem;
+    }
+    .report-benefits {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .report-benefit {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .report-benefit-check {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: rgba(16, 185, 129, 0.15);
+      color: #10b981;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.85rem;
+      flex-shrink: 0;
+    }
+    .report-benefit span {
+      font-size: 1.05rem;
+      font-weight: 500;
+      color: var(--text-primary);
+    }
+    .report-visual {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+    }
+    .report-visual-header {
+      padding: 1rem 1.25rem;
+      border-bottom: 1px solid var(--border-color);
+      background: var(--bg-secondary);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .report-visual-title {
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: var(--text-primary);
+    }
+    .report-visual-badge {
+      font-size: 0.7rem;
+      padding: 0.25rem 0.6rem;
+      border-radius: 100px;
+      background: rgba(236, 72, 153, 0.15);
+      color: #ec4899;
+    }
+    .report-message {
+      padding: 1.25rem;
+    }
+    .report-message-bubble {
+      background: var(--bg-secondary);
+      border-radius: 12px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1rem;
+    }
+    .report-message-from {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-bottom: 0.5rem;
+    }
+    .report-message-text {
+      font-size: 0.9rem;
+      color: var(--text-primary);
+      line-height: 1.6;
+    }
+    .report-message-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.75rem;
+    }
+    .report-stat {
+      text-align: center;
+      padding: 0.75rem;
+      background: var(--bg-secondary);
+      border-radius: 8px;
+    }
+    .report-stat-value {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+    .report-stat-label {
+      font-size: 0.7rem;
+      color: var(--text-muted);
+    }
+    .report-visual-footer {
+      padding: 1rem 1.25rem;
+      border-top: 1px solid var(--border-color);
+      background: var(--bg-secondary);
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      display: flex;
+      justify-content: space-between;
+    }
+    @media (max-width: 900px) {
+      .instant-reports-layout {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+      .instant-reports-content .section-title {
+        text-align: center;
+      }
+      .instant-reports-content {
+        text-align: center;
+      }
+      .report-benefit {
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <img src="spur-logo-white.svg" alt="Spur" class="logo-img">
+      </a>
+      <button class="mobile-menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links">
+        <div class="nav-dropdown">
+          <span class="nav-link nav-dropdown-toggle">
+            Services
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </span>
+          <div class="nav-mega-menu">
+            <div class="mega-menu-grid">
+              <a href="staffing.html" class="mega-menu-card" data-tab="staffing">
+                <div class="mega-card-visual" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.2) 0%, rgba(139, 92, 246, 0.05) 100%);">
+                  <div class="mega-card-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="1.5">
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                      <line x1="16" y1="2" x2="16" y2="6"/>
+                      <line x1="8" y1="2" x2="8" y2="6"/>
+                      <line x1="3" y1="10" x2="21" y2="10"/>
+                    </svg>
+                  </div>
+                </div>
+                <h4>Staffing</h4>
+                <p>Subs that show up. 92%+ fill rates.</p>
+              </a>
+              <a href="attendance-recovery.html" class="mega-menu-card" data-tab="attendance">
+                <div class="mega-card-visual" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.2) 0%, rgba(16, 185, 129, 0.05) 100%);">
+                  <div class="mega-card-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="1.5">
+                      <path d="M18 20V10"/>
+                      <path d="M12 20V4"/>
+                      <path d="M6 20v-6"/>
+                    </svg>
+                  </div>
+                </div>
+                <h4>Attendance Recovery</h4>
+                <p>Every seat filled is funding earned.</p>
+              </a>
+              <a href="extended-learning.html" class="mega-menu-card" data-tab="extended">
+                <div class="mega-card-visual" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.2) 0%, rgba(245, 158, 11, 0.05) 100%);">
+                  <div class="mega-card-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="1.5">
+                      <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                      <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                    </svg>
+                  </div>
+                </div>
+                <h4>Extended Learning</h4>
+                <p>Summer & after-school, fully staffed.</p>
+              </a>
+              <a href="recruiting.html" class="mega-menu-card" data-tab="recruiting">
+                <div class="mega-card-visual" style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.2) 0%, rgba(236, 72, 153, 0.05) 100%);">
+                  <div class="mega-card-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ec4899" stroke-width="1.5">
+                      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                      <circle cx="9" cy="7" r="4"/>
+                      <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                      <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                    </svg>
+                  </div>
+                </div>
+                <h4>Recruiting</h4>
+                <p>Great teachers, delivered to your inbox.</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="index.html#results" class="nav-link">Real World Results</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact Us</a>
+        <a href="contact-sales.html" class="nav-cta">Get Started</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Service Hero -->
+  <section class="service-hero">
+    <div class="service-hero-container">
+      <div class="service-hero-content">
+        <span class="service-hero-label" style="color: #ec4899;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+            <circle cx="9" cy="7" r="4"/>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+          </svg>
+          Recruiting
+        </span>
+        <h1>Your ATS isn't <span class="serif" style="color: #ec4899;">hiring anyone.</span></h1>
+        <p class="service-hero-subtitle">Dozens of open roles. HR working overtime. Your applicant tracking system just organizes the chaos. We actually fill positions—working hand-in-hand with your team to deliver qualified candidates.</p>
+        <div class="service-hero-ctas">
+          <a href="contact-sales.html" class="btn-primary recruiting-btn">
+            Get Started
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="#how-it-works" class="btn-secondary">
+            See How It Works
+          </a>
+        </div>
+      </div>
+      <div class="service-hero-visual">
+        <div class="hero-visual-stack">
+          <!-- Top: Email inbox showing candidate deliveries -->
+          <div class="email-inbox-card">
+            <div class="email-inbox-header">
+              <span class="email-inbox-title">
+                <span class="inbox-emoji">📥</span>
+                Inbox
+              </span>
+              <span class="email-inbox-badge">3 New</span>
+            </div>
+            <div class="email-list">
+              <div class="email-row unread">
+                <div class="email-avatar">S</div>
+                <div class="email-content">
+                  <div class="email-subject">New Candidate: SpEd Specialist — Maria Johnson</div>
+                  <div class="email-preview">8 yrs experience, Mild/Mod credential. Resume attached...</div>
+                </div>
+                <span class="email-time">2m ago</span>
+              </div>
+              <div class="email-row unread">
+                <div class="email-avatar">S</div>
+                <div class="email-content">
+                  <div class="email-subject">New Candidate: SpEd Specialist — David Kim</div>
+                  <div class="email-preview">5 yrs experience, Mod/Severe. Strong references...</div>
+                </div>
+                <span class="email-time">1hr ago</span>
+              </div>
+              <div class="email-row">
+                <div class="email-avatar">S</div>
+                <div class="email-content">
+                  <div class="email-subject">Position Filled: Bilingual Para</div>
+                  <div class="email-preview">Great news! Rosa Garcia accepted the offer...</div>
+                </div>
+                <span class="email-time">Yesterday</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom: Candidates ready for review -->
+          <div class="candidates-card">
+            <div class="candidates-header">
+              <span class="candidates-title">SpEd Specialist — Candidates</span>
+              <span class="candidates-badge">Ready to Interview</span>
+            </div>
+            <div class="candidate-list">
+              <div class="candidate-row">
+                <div class="candidate-avatar">MJ</div>
+                <div class="candidate-info">
+                  <div class="candidate-name">Maria Johnson</div>
+                  <div class="candidate-role">8 yrs experience · Mild/Mod credential</div>
+                </div>
+                <span class="candidate-status">Screened</span>
+              </div>
+              <div class="candidate-row">
+                <div class="candidate-avatar">DK</div>
+                <div class="candidate-info">
+                  <div class="candidate-name">David Kim</div>
+                  <div class="candidate-role">5 yrs experience · Mod/Severe</div>
+                </div>
+                <span class="candidate-status">Screened</span>
+              </div>
+              <div class="candidate-row">
+                <div class="candidate-avatar">SR</div>
+                <div class="candidate-info">
+                  <div class="candidate-name">Sarah Rodriguez</div>
+                  <div class="candidate-role">12 yrs experience · Bilingual</div>
+                </div>
+                <span class="candidate-status">Screened</span>
+              </div>
+            </div>
+            <div class="candidates-footer">
+              All candidates vetted with references checked
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Problem -->
+  <section class="service-problem">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag" style="background: rgba(236, 72, 153, 0.15); color: #ec4899;">The Problem</span>
+        <h2 class="section-title">Recruiting tools that <span class="serif" style="color: #ec4899;">don't work</span></h2>
+        <p class="section-subtitle">Sound familiar?</p>
+      </div>
+
+      <div class="problem-grid">
+        <div class="problem-card">
+          <div class="problem-icon">💸</div>
+          <h3>Expensive Platforms</h3>
+          <p>Paying thousands per year for Red Rover, TalentEd, or other recruiting software that still requires all your time.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon">🔐</div>
+          <h3>Password Purgatory</h3>
+          <p>"What's my login again?" Different systems, different passwords, reset emails that never arrive.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon">⏰</div>
+          <h3>DIY Recruiting</h3>
+          <p>You're still posting jobs, screening resumes, and chasing candidates. The software just organizes your workload.</p>
+        </div>
+        <div class="problem-card">
+          <div class="problem-icon">📊</div>
+          <h3>Reports You Never Read</h3>
+          <p>When you need data, you have to log in, navigate, filter, export. By then, you've forgotten why you needed it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="service-how" id="how-it-works">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag" style="background: rgba(236, 72, 153, 0.15); color: #ec4899;">The Solution</span>
+        <h2 class="section-title">How Spur <span class="serif" style="color: #ec4899;">recruiting</span> works</h2>
+        <p class="section-subtitle">We do the work. You get the candidates.</p>
+      </div>
+
+      <div class="how-it-works-layout">
+        <div class="how-steps">
+          <div class="how-step">
+            <div class="step-number" style="color: #ec4899;">01</div>
+            <div class="step-content">
+              <h3>Tell Us What You Need</h3>
+              <p>Math teacher? SpEd specialist? Bilingual para? Just tell us (text, email, or call) and we start sourcing immediately. No forms to fill out.</p>
+            </div>
+          </div>
+          <div class="how-step">
+            <div class="step-number" style="color: #ec4899;">02</div>
+            <div class="step-content">
+              <h3>We Find & Vet Candidates</h3>
+              <p>Our team actively recruits using social media, job boards, referral networks, and community outreach. Every candidate is screened before you see them.</p>
+            </div>
+          </div>
+          <div class="how-step">
+            <div class="step-number" style="color: #ec4899;">03</div>
+            <div class="step-content">
+              <h3>Candidates Delivered to You</h3>
+              <p>Qualified candidates land in your inbox with their resume, credentials, and our notes. No logging in anywhere. No dashboard hunting.</p>
+            </div>
+          </div>
+          <div class="how-step">
+            <div class="step-number" style="color: #ec4899;">04</div>
+            <div class="step-content">
+              <h3>Automated Reports on Demand</h3>
+              <p>Text us "pipeline report" and get an instant update. Email us "weekly summary" and we set it up automatically. Data when you need it, how you want it.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="how-it-works-visual">
+          <div class="text-conversation-card">
+            <div class="text-conversation-header">
+              <div class="text-avatar">S</div>
+              <div class="text-contact">
+                <span class="text-name">Spur Recruiting</span>
+                <span class="text-status">Active now</span>
+              </div>
+            </div>
+            <div class="text-messages">
+              <div class="text-message outgoing">
+                <div class="text-bubble outgoing">Hey, we need a SpEd specialist ASAP. Mild/Mod preferred.</div>
+                <span class="text-time">Mon 9:14 AM</span>
+              </div>
+              <div class="text-message incoming">
+                <div class="text-bubble incoming">On it! We'll start sourcing today. Any specific experience requirements?</div>
+                <span class="text-time">Mon 9:15 AM</span>
+              </div>
+              <div class="text-message outgoing">
+                <div class="text-bubble outgoing">3+ years, ideally bilingual but not required</div>
+                <span class="text-time">Mon 9:16 AM</span>
+              </div>
+              <div class="text-message incoming">
+                <div class="text-bubble incoming">Perfect. I'll have 2-3 screened candidates in your inbox by Thursday.</div>
+                <span class="text-time">Mon 9:17 AM</span>
+              </div>
+              <div class="text-message incoming">
+                <div class="text-bubble incoming">Update: 3 candidates ready! Maria Johnson (8 yrs, bilingual), David Kim (5 yrs), and Sarah Rodriguez (12 yrs). Resumes sent to your email. 📧</div>
+                <span class="text-time">Thu 2:30 PM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- No Login Section -->
+  <section class="no-login-section">
+    <div class="section-container">
+      <div class="no-login-layout">
+        <div class="no-login-content">
+          <span class="section-tag" style="background: rgba(236, 72, 153, 0.15); color: #ec4899;">Zero Friction</span>
+          <h2 class="section-title">No logins. <span class="serif" style="color: #ec4899;">Ever.</span></h2>
+          <p>We believe the best software is no software. You shouldn't need another platform, another password, another training session. Just tell us what you need and we handle it.</p>
+          <a href="contact-sales.html" class="btn-primary recruiting-btn">
+            Get Started
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+        <div class="no-login-grid">
+          <div class="no-login-item">
+            <span class="emoji">📧</span>
+            <span>Email Us Anytime</span>
+          </div>
+          <div class="no-login-item">
+            <span class="emoji">💬</span>
+            <span>Text for Updates</span>
+          </div>
+          <div class="no-login-item">
+            <span class="emoji">📞</span>
+            <span>Call When Urgent</span>
+          </div>
+          <div class="no-login-item">
+            <span class="emoji">📊</span>
+            <span>Reports on Demand</span>
+          </div>
+          <div class="no-login-item">
+            <span class="emoji">🔔</span>
+            <span>Automated Alerts</span>
+          </div>
+          <div class="no-login-item">
+            <span class="emoji">📋</span>
+            <span>Weekly Summaries</span>
+          </div>
+          <div class="no-login-item">
+            <span class="emoji">🚫</span>
+            <span>No Passwords</span>
+          </div>
+          <div class="no-login-item">
+            <span class="emoji">✨</span>
+            <span>No Training Needed</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Compare Section -->
+  <section class="compare-section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag" style="background: rgba(236, 72, 153, 0.15); color: #ec4899;">Why Spur</span>
+        <h2 class="section-title">The <span class="serif" style="color: #ec4899;">anti-platform</span></h2>
+        <p class="section-subtitle">Why pay for software that still makes you do all the work?</p>
+      </div>
+
+      <div class="compare-table">
+        <div class="compare-header"></div>
+        <div class="compare-header">Traditional Platforms</div>
+        <div class="compare-header highlight">Spur Recruiting</div>
+
+        <div class="compare-row">
+          <div class="compare-cell">Candidate sourcing</div>
+          <div class="compare-cell"><span class="compare-x">You do it</span></div>
+          <div class="compare-cell highlight"><span class="compare-check">We do it</span></div>
+        </div>
+        <div class="compare-row">
+          <div class="compare-cell">Resume screening</div>
+          <div class="compare-cell"><span class="compare-x">You do it</span></div>
+          <div class="compare-cell highlight"><span class="compare-check">We do it</span></div>
+        </div>
+        <div class="compare-row">
+          <div class="compare-cell">Reference checks</div>
+          <div class="compare-cell"><span class="compare-x">You do it</span></div>
+          <div class="compare-cell highlight"><span class="compare-check">We do it</span></div>
+        </div>
+        <div class="compare-row">
+          <div class="compare-cell">Credential verification</div>
+          <div class="compare-cell"><span class="compare-x">You do it</span></div>
+          <div class="compare-cell highlight"><span class="compare-check">We do it</span></div>
+        </div>
+        <div class="compare-row">
+          <div class="compare-cell">Reporting</div>
+          <div class="compare-cell"><span class="compare-x">Log in & export</span></div>
+          <div class="compare-cell highlight"><span class="compare-check">Text or email us</span></div>
+        </div>
+        <div class="compare-row">
+          <div class="compare-cell">Software training</div>
+          <div class="compare-cell"><span class="compare-x">Required</span></div>
+          <div class="compare-cell highlight"><span class="compare-check">None</span></div>
+        </div>
+        <div class="compare-row">
+          <div class="compare-cell">Pricing</div>
+          <div class="compare-cell"><span class="compare-x">$15K-$50K/year</span></div>
+          <div class="compare-cell highlight"><span class="compare-check">$1,500/month</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Instant Reports Section -->
+  <section class="instant-reports-section">
+    <div class="section-container">
+      <div class="instant-reports-layout">
+        <div class="instant-reports-content">
+          <span class="section-tag" style="background: rgba(236, 72, 153, 0.15); color: #ec4899;">Better Than Your ATS</span>
+          <h2 class="section-title">Always <span class="serif" style="color: #ec4899;">in the loop.</span></h2>
+          <p>You want visibility without the hassle. Our instant reports give you everything you need—sent directly to you via text or email, whenever you want. No logins. No dashboards.</p>
+          <div class="report-benefits">
+            <div class="report-benefit">
+              <span class="report-benefit-check">✓</span>
+              <span>Text "status" for instant pipeline updates</span>
+            </div>
+            <div class="report-benefit">
+              <span class="report-benefit-check">✓</span>
+              <span>Automated weekly email summaries</span>
+            </div>
+            <div class="report-benefit">
+              <span class="report-benefit-check">✓</span>
+              <span>Custom reports on demand for your board</span>
+            </div>
+          </div>
+        </div>
+        <div class="report-visual">
+          <div class="report-visual-header">
+            <span class="report-visual-title">Instant Report</span>
+            <span class="report-visual-badge">Via Text</span>
+          </div>
+          <div class="report-message">
+            <div class="report-message-bubble">
+              <div class="report-message-from">From: Spur Recruiting</div>
+              <div class="report-message-text">
+                Hi Sarah! Here's your pipeline update:<br><br>
+                <strong>Active positions:</strong> 8<br>
+                <strong>Candidates in review:</strong> 14<br>
+                <strong>Interviews scheduled:</strong> 3<br>
+                <strong>Offers pending:</strong> 2<br><br>
+                SpEd Specialist has 3 strong candidates ready for your review. Want details?
+              </div>
+            </div>
+            <div class="report-message-stats">
+              <div class="report-stat">
+                <div class="report-stat-value">📋 8</div>
+                <div class="report-stat-label">Open Roles</div>
+              </div>
+              <div class="report-stat">
+                <div class="report-stat-value">👥 14</div>
+                <div class="report-stat-label">Candidates</div>
+              </div>
+              <div class="report-stat">
+                <div class="report-stat-value">🗓️ 3</div>
+                <div class="report-stat-label">Interviews</div>
+              </div>
+            </div>
+          </div>
+          <div class="report-visual-footer">
+            <span>Sent 2 min ago</span>
+            <span>Reply "details" for more</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing-section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag" style="background: rgba(236, 72, 153, 0.15); color: #ec4899;">Simple Pricing</span>
+        <h2 class="section-title">One price. <span class="serif" style="color: #ec4899;">Everything included.</span></h2>
+        <p class="section-subtitle">No per-hire fees. No hidden costs. Just predictable recruiting support.</p>
+      </div>
+
+      <div class="pricing-cards">
+        <div class="pricing-card">
+          <div class="pricing-label">Monthly</div>
+          <div class="pricing-amount">$1,500<span class="pricing-period">/mo</span></div>
+          <div class="pricing-note">Introductory pricing</div>
+          <div class="pricing-divider"></div>
+          <div class="pricing-features">
+            <div class="pricing-feature">Unlimited position requests</div>
+            <div class="pricing-feature">Candidate sourcing & screening</div>
+            <div class="pricing-feature">Reference & credential checks</div>
+            <div class="pricing-feature">Weekly pipeline reports</div>
+            <div class="pricing-feature">Cancel anytime</div>
+          </div>
+        </div>
+        <div class="pricing-card featured">
+          <div class="pricing-label">Annual</div>
+          <div class="pricing-amount">$15,000<span class="pricing-period">/yr</span></div>
+          <div class="pricing-note">Billed annually</div>
+          <div class="pricing-savings">Save $3,000</div>
+          <div class="pricing-divider"></div>
+          <div class="pricing-features">
+            <div class="pricing-feature">Everything in Monthly</div>
+            <div class="pricing-feature">Priority candidate matching</div>
+            <div class="pricing-feature">Dedicated account manager</div>
+            <div class="pricing-feature">Custom reporting cadence</div>
+            <div class="pricing-feature">Two months free</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 3rem;">
+        <a href="contact-sales.html" class="btn-primary recruiting-btn">
+          Contact Us
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Delivery Methods -->
+  <section class="delivery-section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag" style="background: rgba(236, 72, 153, 0.15); color: #ec4899;">Communication</span>
+        <h2 class="section-title">Your way, <span class="serif" style="color: #ec4899;">always</span></h2>
+        <p class="section-subtitle">Get updates and reports however works best for you.</p>
+      </div>
+
+      <div class="delivery-grid">
+        <div class="delivery-card">
+          <div class="delivery-icon">📧</div>
+          <h3>Email</h3>
+          <p>Candidate profiles delivered to your inbox. Weekly summaries. Pipeline updates. All formatted and ready to forward to your team.</p>
+        </div>
+        <div class="delivery-card">
+          <div class="delivery-icon">💬</div>
+          <h3>Text / SMS</h3>
+          <p>Quick updates on the go. Text us "status" for an instant pipeline check. Text us a position and we start searching.</p>
+        </div>
+        <div class="delivery-card">
+          <div class="delivery-icon">📞</div>
+          <h3>Phone</h3>
+          <p>Need to talk through requirements? Have an urgent hard-to-fill position? Call us directly. Real humans, real answers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feature Showcase - Full Service -->
+  <section class="feature-showcase">
+    <div class="section-container">
+      <div class="feature-showcase-grid">
+        <div class="feature-showcase-content">
+          <span class="section-tag" style="background: rgba(236, 72, 153, 0.15); color: #ec4899;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+            Full-Service Recruiting
+          </span>
+          <h2 class="feature-showcase-title">We go where the <span class="serif" style="color: #ec4899;">talent is</span></h2>
+          <p class="feature-showcase-subtitle">Traditional job postings don't cut it anymore. We use consumer-grade marketing to find passionate educators where they actually spend their time.</p>
+
+          <div class="feature-points">
+            <div class="feature-point">
+              <div class="feature-point-icon" style="background: rgba(236, 72, 153, 0.15);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#ec4899" stroke-width="2">
+                  <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
+                </svg>
+              </div>
+              <div>
+                <h4>Social Media Outreach</h4>
+                <p>TikTok, Instagram, LinkedIn—we find people where they actually spend their time.</p>
+              </div>
+            </div>
+            <div class="feature-point">
+              <div class="feature-point-icon" style="background: rgba(139, 92, 246, 0.15);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#a78bfa" stroke-width="2">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                </svg>
+              </div>
+              <div>
+                <h4>Mission-Driven Targeting</h4>
+                <p>We attract people who want to make a difference—not just anyone looking for a job.</p>
+              </div>
+            </div>
+            <div class="feature-point">
+              <div class="feature-point-icon" style="background: rgba(16, 185, 129, 0.15);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2">
+                  <polyline points="9 11 12 14 22 4"/>
+                  <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+                </svg>
+              </div>
+              <div>
+                <h4>Pre-Screened Candidates</h4>
+                <p>Every candidate is vetted before they reach you. No more sifting through unqualified resumes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="feature-showcase-visual">
+          <div class="student-info-card">
+            <div class="info-card-header">
+              <span class="student-name">Recruiting Channels</span>
+              <span class="editable-badge" style="background: rgba(236, 72, 153, 0.15); color: #ec4899;">Live</span>
+            </div>
+            <div class="info-card-fields">
+              <div class="info-field">
+                <div class="field-icon">📱</div>
+                <div class="field-content">
+                  <span class="field-label">TikTok</span>
+                  <span class="field-value">847 applicants this month</span>
+                </div>
+                <span class="field-edit" style="color: #10b981;">↑ 34%</span>
+              </div>
+              <div class="info-field">
+                <div class="field-icon">📸</div>
+                <div class="field-content">
+                  <span class="field-label">Instagram</span>
+                  <span class="field-value">623 applicants this month</span>
+                </div>
+                <span class="field-edit" style="color: #10b981;">↑ 28%</span>
+              </div>
+              <div class="info-field">
+                <div class="field-icon">💼</div>
+                <div class="field-content">
+                  <span class="field-label">LinkedIn</span>
+                  <span class="field-value">412 applicants this month</span>
+                </div>
+                <span class="field-edit" style="color: #10b981;">↑ 19%</span>
+              </div>
+              <div class="info-field">
+                <div class="field-icon">🎯</div>
+                <div class="field-content">
+                  <span class="field-label">Referrals</span>
+                  <span class="field-value">298 applicants this month</span>
+                </div>
+                <span class="field-edit" style="color: #10b981;">↑ 45%</span>
+              </div>
+            </div>
+            <div class="info-card-footer">
+              <span class="sync-status">📈 2,180 total applicants</span>
+              <span class="sync-time">This month</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Results / Social Proof -->
+  <section class="service-results">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag" style="background: rgba(236, 72, 153, 0.15); color: #ec4899;">Real Results</span>
+        <h2 class="section-title">Numbers that <span class="serif" style="color: #ec4899;">matter</span></h2>
+      </div>
+
+      <div class="results-stats">
+        <div class="stat-block">
+          <span class="stat-value" style="background: linear-gradient(135deg, #ec4899 0%, #db2777 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">48hrs</span>
+          <span class="stat-label">Avg. Time to First Candidate</span>
+        </div>
+        <div class="stat-block">
+          <span class="stat-value" style="background: linear-gradient(135deg, #ec4899 0%, #db2777 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">87%</span>
+          <span class="stat-label">Interview-to-Hire Rate</span>
+        </div>
+        <div class="stat-block">
+          <span class="stat-value" style="background: linear-gradient(135deg, #ec4899 0%, #db2777 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">$0</span>
+          <span class="stat-label">Per-Hire Fees</span>
+        </div>
+        <div class="stat-block">
+          <span class="stat-value" style="background: linear-gradient(135deg, #ec4899 0%, #db2777 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">10+</span>
+          <span class="stat-label">Hours Saved Weekly</span>
+        </div>
+      </div>
+
+      <!-- Testimonial -->
+      <div class="service-testimonial-block">
+        <div class="testimonial-card featured">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"I used to spend half my week managing our recruiting platform. Now I just email Spur what we need and qualified candidates show up in my inbox. It's honestly a little surreal how easy it is."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" style="background: #ec4899;">MR</div>
+            <div class="testimonial-info">
+              <h4>Maria Rodriguez</h4>
+              <span>HR Director, Lakewood USD</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag" style="background: rgba(236, 72, 153, 0.15); color: #ec4899;">Questions?</span>
+        <h2 class="section-title">Frequently <span class="serif" style="color: #ec4899;">asked</span></h2>
+      </div>
+
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3 class="faq-question">How is this different from a recruiting platform?</h3>
+          <p class="faq-answer">Platforms give you tools to do recruiting yourself. We actually do the recruiting for you. No software to learn, no dashboards to navigate, no data entry. We find candidates, screen them, and deliver them to your inbox.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">What's the pricing model?</h3>
+          <p class="faq-answer">$2,000/month for unlimited recruiting support—no per-hire fees, no seat licenses. Pay annually for $20,000 ($4,000 savings). We work hand-in-hand with your HR team to fill positions. Cancel monthly anytime.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">How do I request a new position?</h3>
+          <p class="faq-answer">Text us, email us, or call us. Seriously, that's it. Say "I need a math teacher" and we start working. No forms, no portals, no tickets to submit.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">How do you vet candidates?</h3>
+          <p class="faq-answer">Every candidate goes through credential verification, reference checks, and an initial screening interview. We only send you candidates who meet your requirements and are genuinely interested in your district.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">What about hard-to-fill positions?</h3>
+          <p class="faq-answer">That's where we really shine. SpEd, bilingual, STEM—these are the positions where passive job postings fail. We actively hunt for these candidates using targeted outreach and referral networks.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">How do I get reports?</h3>
+          <p class="faq-answer">Just ask. Text "pipeline update" for an instant summary. Email us to set up automated weekly reports. Call if you need something custom. We deliver data how you want it, when you want it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="cta-container">
+      <div class="cta-content">
+        <h2>Ready to ditch the <span class="serif" style="color: #ec4899;">platform?</span></h2>
+        <p>Stop paying for software that makes you do all the work. Let Spur find your next great hire.</p>
+        <div class="cta-buttons">
+          <a href="contact-sales.html" class="btn-primary recruiting-btn">
+            Get Started
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="contact.html" class="btn-secondary">Questions? Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <img src="spur-logo-white.svg" alt="Spur" class="logo-img">
+          </a>
+          <p>Done-for-you operations that put dollars back in classrooms. Real people, real results.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/spurstaffing" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/company/spurwork/" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/spurstaffing/" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Services</h4>
+          <a href="staffing.html">Staffing</a>
+          <a href="recruiting.html">Recruiting</a>
+          <a href="attendance-recovery.html">Attendance Recovery</a>
+          <a href="extended-learning.html">Extended Learning</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Company</h4>
+          <a href="about.html">About Us</a>
+          <a href="index.html#results">Results</a>
+          <a href="#">Careers</a>
+          <a href="#">Blog</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Support</h4>
+          <a href="contact.html">Contact</a>
+          <a href="index.html#faq">FAQ</a>
+          <a href="#">Help Center</a>
+          <a href="#">Partner Portal</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Spur. All rights reserved.</p>
+        <a href="https://www.linkedin.com/in/julianbwm/" target="_blank" rel="noopener noreferrer" class="boogiebyte-credit">
+          <img src="boogie-byte.png" alt="BoogieByte" class="boogiebyte-img">
+          <span>Designed by BoogieByte</span>
+        </a>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
