@@ -13,9 +13,6 @@
     .stat-simple-value {
       color: var(--text-primary);
     }
-    .extended-cta h2 {
-      line-height: 1.2;
-    }
 
     /* Everything We Handle Section */
     .everything-section {
@@ -100,6 +97,41 @@
     }
     .feature-list-item svg {
       flex-shrink: 0;
+    }
+
+    /* Mobile refinements */
+    @media (max-width: 768px) {
+      .everything-section {
+        padding: 4rem 1.5rem;
+      }
+      .everything-item {
+        padding: 1rem;
+      }
+      .everything-item .emoji {
+        font-size: 1.25rem;
+      }
+      .everything-item span {
+        font-size: 0.9rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .everything-section {
+        padding: 3rem 1rem;
+      }
+      .everything-content .section-title {
+        font-size: 1.75rem;
+      }
+      .everything-content p {
+        font-size: 1rem;
+      }
+      .everything-item {
+        padding: 0.875rem;
+        gap: 0.75rem;
+      }
+      .feature-list-item {
+        font-size: 0.9rem;
+      }
     }
   </style>
 </head>
