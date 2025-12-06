@@ -736,6 +736,142 @@
     .service-testimonial-block .testimonial-info {
       text-align: left;
     }
+
+    /* Mobile Optimizations for Recruiting Page */
+    @media (max-width: 768px) {
+      .no-login-layout {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .no-login-content .section-title {
+        text-align: center;
+      }
+
+      .no-login-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .compare-section {
+        padding: 4rem 1.25rem;
+      }
+
+      .compare-table {
+        font-size: 0.85rem;
+      }
+
+      .compare-header,
+      .compare-cell {
+        padding: 0.875rem 0.75rem;
+      }
+
+      .compare-header:first-child,
+      .compare-cell:nth-child(3n+1) {
+        font-size: 0.8rem;
+      }
+
+      .delivery-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+
+      .delivery-card {
+        padding: 1.5rem;
+      }
+
+      .delivery-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 1.5rem;
+      }
+
+      .email-inbox-card,
+      .applicant-stack-card {
+        border-radius: 12px;
+      }
+
+      .pricing-cards {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
+      .pricing-card {
+        padding: 1.75rem;
+      }
+
+      .pricing-amount {
+        font-size: 2.5rem;
+      }
+    }
+
+    @media (max-width: 550px) {
+      /* Convert comparison table to card layout on small screens */
+      .compare-table {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        border: none;
+        border-radius: 0;
+      }
+
+      .compare-header {
+        display: none;
+      }
+
+      .compare-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background: var(--bg-card);
+        border: 1px solid var(--border-color);
+        border-radius: 12px;
+        overflow: hidden;
+      }
+
+      .compare-cell {
+        padding: 1rem;
+        border-bottom: none;
+      }
+
+      .compare-cell:nth-child(3n+1) {
+        grid-column: 1 / -1;
+        background: var(--bg-secondary);
+        font-weight: 600;
+        justify-content: flex-start;
+        border-bottom: 1px solid var(--border-color);
+      }
+
+      .compare-cell:nth-child(3n+2),
+      .compare-cell:nth-child(3n+3) {
+        flex-direction: column;
+        gap: 0.25rem;
+      }
+
+      .compare-cell:nth-child(3n+2)::before {
+        content: 'Other providers';
+        font-size: 0.7rem;
+        color: var(--text-muted);
+        font-weight: 500;
+      }
+
+      .compare-cell:nth-child(3n+3)::before {
+        content: 'Spur';
+        font-size: 0.7rem;
+        color: #ec4899;
+        font-weight: 600;
+      }
+
+      .compare-cell.highlight {
+        background: rgba(236, 72, 153, 0.08);
+      }
+
+      .no-login-item {
+        padding: 1rem;
+      }
+
+      .no-login-item .emoji {
+        font-size: 1.25rem;
+      }
+    }
   </style>
 </head>
 <body>

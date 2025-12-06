@@ -2979,8 +2979,16 @@
     }
 
     .belief-attribution {
-      font-size: 1rem;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+      margin-bottom: 0.5rem;
+    }
+
+    .belief-subtext {
+      font-size: 0.9rem;
       color: var(--text-muted);
+      font-style: italic;
     }
 
     /* Values Section */
@@ -3360,6 +3368,193 @@
       .team-grid {
         grid-template-columns: 1fr;
         max-width: 400px;
+      }
+    }
+
+    /* Nashville HQ Section */
+    .nashville-hq {
+      padding: 6rem 0;
+      background: var(--bg-secondary);
+    }
+
+    .nashville-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .nashville-title {
+      font-size: clamp(2rem, 4vw, 2.75rem);
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      line-height: 1.2;
+    }
+
+    .nashville-desc {
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+
+    .nashville-features {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .nashville-feature {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .nashville-feature .feature-emoji {
+      font-size: 1.5rem;
+    }
+
+    .nashville-feature span:last-child {
+      font-weight: 500;
+      color: var(--text-primary);
+    }
+
+    .nashville-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      padding: 2rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .nashville-card-bg {
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      font-size: 6rem;
+      opacity: 0.1;
+    }
+
+    .nashville-card-content {
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .nashville-card-icon {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+    }
+
+    .nashville-card-content h3 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .nashville-card-content p {
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+    }
+
+    .nashville-badge {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background: rgba(139, 92, 246, 0.15);
+      border-radius: 100px;
+    }
+
+    .nashville-badge span {
+      font-weight: 600;
+      color: var(--accent-primary);
+    }
+
+    .nashville-stats {
+      margin-top: 2rem;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+
+    .nashville-stat {
+      text-align: center;
+      padding: 1rem;
+      background: var(--bg-secondary);
+      border-radius: 12px;
+    }
+
+    .nashville-stat .stat-emoji {
+      font-size: 1.5rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .nashville-stat span {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    @media (max-width: 900px) {
+      .nashville-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+
+      .nashville-card {
+        max-width: 400px;
+        margin: 0 auto;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .nashville-hq {
+        padding: 4rem 1.25rem;
+      }
+
+      .nashville-title {
+        font-size: 1.75rem;
+      }
+
+      .nashville-desc {
+        font-size: 1rem;
+      }
+
+      .nashville-feature .feature-emoji {
+        font-size: 1.25rem;
+      }
+
+      .nashville-card {
+        padding: 1.5rem;
+        max-width: 100%;
+      }
+
+      .nashville-card-icon {
+        font-size: 3rem;
+      }
+
+      .nashville-card-content h3 {
+        font-size: 1.25rem;
+      }
+
+      .nashville-badge {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+      }
+
+      .nashville-stats {
+        gap: 0.75rem;
+      }
+
+      .nashville-stat {
+        padding: 0.75rem;
+      }
+
+      .nashville-stat .stat-emoji {
+        font-size: 1.25rem;
+      }
+
+      .nashville-stat span {
+        font-size: 0.75rem;
       }
     }
 
@@ -5026,4 +5221,523 @@
     /* Model cards yellow accent */
     .model-card .model-number {
       color: #f59e0b;
+    }
+
+    /* ============================================
+       COMPREHENSIVE MOBILE/TABLET OPTIMIZATIONS
+       ============================================ */
+
+    /* Tablet breakpoint (768px - 1024px) */
+    @media (max-width: 1024px) and (min-width: 769px) {
+      /* Hero ops dashboard tablet refinements */
+      .ops-dashboard {
+        max-width: 100%;
+      }
+
+      .ops-grid {
+        gap: 0.75rem;
+      }
+
+      /* Service tabs horizontal scroll on tablet */
+      .services-tabs {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+      }
+
+      .services-tabs::-webkit-scrollbar {
+        display: none;
+      }
+
+      /* About page team grid */
+      .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+      }
+
+      /* Contact hub grid */
+      .contact-hub-grid {
+        gap: 1.5rem;
+      }
+    }
+
+    /* Mobile breakpoint refinements */
+    @media (max-width: 768px) {
+      /* Global section padding */
+      section {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+      }
+
+      .section-container {
+        padding: 0;
+      }
+
+      /* Hero section mobile */
+      .hero {
+        padding: 7rem 1.25rem 3rem;
+        min-height: auto;
+      }
+
+      .hero h1 {
+        font-size: clamp(2rem, 8vw, 2.75rem);
+      }
+
+      .hero-subtitle {
+        font-size: 1rem;
+        padding: 0 0.5rem;
+      }
+
+      .hero-ctas {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 1rem;
+      }
+
+      .hero-ctas .btn-primary,
+      .hero-ctas .btn-secondary {
+        width: 100%;
+        justify-content: center;
+      }
+
+      /* Ops dashboard mobile */
+      .ops-dashboard {
+        max-width: 100%;
+        padding: 1rem;
+        border-radius: 16px;
+      }
+
+      .ops-card {
+        padding: 0.875rem;
+        gap: 0.75rem;
+      }
+
+      .ops-card-icon {
+        width: 36px;
+        height: 36px;
+      }
+
+      .ops-card-icon svg {
+        width: 16px;
+        height: 16px;
+      }
+
+      .ops-card-title {
+        font-size: 0.85rem;
+      }
+
+      .ops-card-detail {
+        font-size: 0.75rem;
+      }
+
+      .ops-card-status {
+        font-size: 0.7rem;
+        padding: 0.2rem 0.5rem;
+      }
+
+      .ops-footer {
+        flex-direction: column;
+        gap: 0.75rem;
+        text-align: center;
+      }
+
+      .ops-stat {
+        padding: 0.5rem 0;
+      }
+
+      /* Belief section mobile */
+      .belief-quote {
+        font-size: clamp(1.25rem, 5vw, 1.75rem);
+        padding: 0 0.5rem;
+      }
+
+      /* Service tabs mobile */
+      .services-tabs {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        gap: 0.5rem;
+        padding-bottom: 0.5rem;
+        scrollbar-width: none;
+      }
+
+      .services-tabs::-webkit-scrollbar {
+        display: none;
+      }
+
+      .service-tab {
+        flex-shrink: 0;
+        padding: 0.75rem 1rem;
+        font-size: 0.85rem;
+        white-space: nowrap;
+      }
+
+      /* Service panel visuals mobile */
+      .service-panel-visual {
+        padding: 1rem;
+      }
+
+      .schedule-board {
+        padding: 1rem;
+      }
+
+      .schedule-slot {
+        padding: 0.75rem;
+        gap: 0.5rem;
+      }
+
+      .slot-teacher {
+        font-size: 0.85rem;
+      }
+
+      .teacher-avatar {
+        width: 28px;
+        height: 28px;
+        font-size: 0.7rem;
+      }
+
+      /* About page hero mobile */
+      .about-hero {
+        padding: 7rem 1.25rem 3rem;
+      }
+
+      .about-hero h1 {
+        font-size: clamp(1.75rem, 7vw, 2.5rem);
+      }
+
+      /* About page story section mobile */
+      .story-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .story-content p {
+        font-size: 1rem;
+      }
+
+      .story-visual {
+        order: -1;
+      }
+
+      /* About page team grid mobile */
+      .team-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
+      .team-card {
+        padding: 1.5rem;
+      }
+
+      .team-photo {
+        width: 80px;
+        height: 80px;
+      }
+
+      .team-name {
+        font-size: 1.1rem;
+      }
+
+      /* Values grid mobile */
+      .values-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+
+      .value-card {
+        padding: 1.5rem;
+      }
+
+      /* Contact page mobile */
+      .contact-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 0;
+      }
+
+      .contact-headline h1 {
+        font-size: clamp(1.5rem, 6vw, 2rem);
+      }
+
+      .contact-testimonial {
+        padding: 1.25rem;
+      }
+
+      .testimonial-quote {
+        font-size: 0.95rem;
+      }
+
+      .contact-form-card {
+        padding: 1.5rem;
+        border-radius: 16px;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      /* Contact hub mobile */
+      .contact-hub-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+
+      .contact-hub-card {
+        padding: 1.5rem;
+      }
+
+      .contact-hub-icon {
+        width: 48px;
+        height: 48px;
+      }
+
+      /* Service hero mobile */
+      .service-hero {
+        padding: 7rem 1.25rem 3rem;
+      }
+
+      .service-hero-content h1 {
+        font-size: clamp(1.75rem, 7vw, 2.5rem);
+      }
+
+      .service-hero-subtitle {
+        font-size: 1rem;
+      }
+
+      /* ADA dashboard mobile */
+      .ada-dashboard {
+        padding: 1rem;
+        border-radius: 16px;
+      }
+
+      .ada-metric-value {
+        font-size: 2.5rem;
+      }
+
+      .ada-metric-grid {
+        gap: 0.75rem;
+      }
+
+      .ada-metric-card {
+        padding: 0.75rem;
+      }
+
+      .ada-metric-card-value {
+        font-size: 1.25rem;
+      }
+
+      /* Comparison section mobile */
+      .before-panel,
+      .after-panel {
+        padding: 1.5rem;
+        border-radius: 16px;
+      }
+
+      .chaos-bubble {
+        font-size: 0.75rem;
+        padding: 0.4rem 0.75rem;
+      }
+
+      .spur-logo-circle {
+        width: 80px;
+        height: 80px;
+      }
+
+      .spur-logo-circle img {
+        width: 50px;
+      }
+
+      /* Calculator section mobile */
+      .calculator-inputs,
+      .calculator-results {
+        padding: 1.5rem;
+        border-radius: 16px;
+      }
+
+      .result-main-value {
+        font-size: 2.25rem;
+      }
+
+      /* Feature showcase mobile */
+      .feature-showcase-grid {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+
+      .feature-showcase-grid.reverse {
+        direction: ltr;
+      }
+
+      .feature-showcase-visual {
+        order: -1;
+      }
+
+      .feature-showcase-title {
+        font-size: clamp(1.5rem, 6vw, 2rem);
+      }
+
+      /* FAQ mobile */
+      .faq-grid {
+        gap: 0.75rem;
+      }
+
+      .faq-question {
+        padding: 1rem;
+        font-size: 0.95rem;
+      }
+
+      .faq-answer {
+        padding: 0 1rem 1rem;
+      }
+
+      /* CTA section mobile */
+      .cta {
+        padding: 4rem 1.25rem;
+      }
+
+      .cta h2 {
+        font-size: clamp(1.5rem, 6vw, 2rem);
+      }
+
+      .cta-buttons {
+        flex-direction: column;
+        width: 100%;
+      }
+
+      .cta-buttons .btn-primary,
+      .cta-buttons .btn-secondary {
+        width: 100%;
+        justify-content: center;
+      }
+
+      /* Footer mobile */
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+      }
+
+      .footer-legal {
+        flex-wrap: wrap;
+      }
+    }
+
+    /* Small mobile breakpoint */
+    @media (max-width: 480px) {
+      /* Extra small adjustments */
+      .hero h1 {
+        font-size: 1.75rem;
+      }
+
+      .hero-badge {
+        font-size: 0.75rem;
+        padding: 0.35rem 0.75rem;
+      }
+
+      /* Ops cards stack content */
+      .ops-card {
+        flex-wrap: wrap;
+      }
+
+      .ops-card-content {
+        flex: 1 1 100%;
+        order: 2;
+        margin-top: 0.5rem;
+      }
+
+      .ops-card-status {
+        order: 1;
+      }
+
+      /* Logos section */
+      .logos-grid {
+        gap: 0.75rem 1.5rem;
+      }
+
+      .logo-item {
+        font-size: 0.85rem;
+      }
+
+      /* Results stats */
+      .stat-block {
+        padding: 1.25rem;
+      }
+
+      .stat-block .stat-value {
+        font-size: 2rem;
+      }
+
+      /* Testimonials */
+      .testimonial-card {
+        padding: 1.25rem;
+      }
+
+      /* Buttons */
+      .btn-primary,
+      .btn-secondary {
+        padding: 0.875rem 1.25rem;
+        font-size: 0.9rem;
+      }
+
+      /* Section titles */
+      .section-title {
+        font-size: clamp(1.5rem, 6vw, 2rem);
+      }
+
+      /* Problem cards */
+      .problem-card {
+        padding: 1.25rem;
+      }
+
+      .problem-icon {
+        font-size: 2rem;
+      }
+
+      /* Agent cards */
+      .agent-card {
+        padding: 1.25rem;
+      }
+
+      /* Tailwind cards */
+      .tailwind-card {
+        padding: 1.25rem;
+      }
+    }
+
+    /* Landscape mobile orientation */
+    @media (max-width: 768px) and (orientation: landscape) {
+      .hero {
+        min-height: auto;
+        padding-top: 5rem;
+        padding-bottom: 2rem;
+      }
+
+      .service-hero {
+        min-height: auto;
+        padding-top: 5rem;
+        padding-bottom: 2rem;
+      }
+
+      .hero-visual {
+        margin-top: 1rem;
+      }
+    }
+
+    /* Touch device hover states */
+    @media (hover: none) {
+      .mega-menu-card:hover,
+      .service-card:hover,
+      .feature-card:hover,
+      .agent-card:hover,
+      .problem-card:hover,
+      .value-card:hover,
+      .model-card:hover,
+      .program-block:hover {
+        transform: none;
+      }
     }
