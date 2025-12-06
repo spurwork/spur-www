@@ -83,6 +83,24 @@
         grid-template-columns: 1fr;
       }
     }
+
+    /* Feature list (replaces accordion) */
+    .feature-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+    .feature-list-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      color: var(--text-secondary);
+      font-size: 1rem;
+    }
+    .feature-list-item svg {
+      flex-shrink: 0;
+    }
   </style>
 </head>
 <body>
@@ -534,30 +552,30 @@
           <h2 class="feature-showcase-title">Curriculum that drives <span class="serif">results</span></h2>
           <p class="feature-showcase-subtitle">Proprietary programming aligned with your academic goals. Engaging, rigorous, and proven to work.</p>
 
-          <div class="feature-accordion">
-            <div class="accordion-item active">
-              <div class="accordion-header">
-                <span>Reading & literacy acceleration</span>
-                <span class="accordion-icon">×</span>
-              </div>
+          <div class="feature-list">
+            <div class="feature-list-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>Reading & literacy acceleration</span>
             </div>
-            <div class="accordion-item">
-              <div class="accordion-header">
-                <span>Math intervention & recovery</span>
-                <span class="accordion-icon">+</span>
-              </div>
+            <div class="feature-list-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>Math intervention & recovery</span>
             </div>
-            <div class="accordion-item">
-              <div class="accordion-header">
-                <span>STEM enrichment activities</span>
-                <span class="accordion-icon">+</span>
-              </div>
+            <div class="feature-list-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>STEM enrichment activities</span>
             </div>
-            <div class="accordion-item">
-              <div class="accordion-header">
-                <span>SEL integration</span>
-                <span class="accordion-icon">+</span>
-              </div>
+            <div class="feature-list-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+              <span>SEL integration</span>
             </div>
           </div>
 
@@ -752,7 +770,7 @@
           <span class="section-tag" style="background: rgba(245, 158, 11, 0.15); color: #f59e0b;">Full-Service Management</span>
           <h2 class="section-title">You focus on students. <span class="serif" style="color: #f59e0b;">We handle the rest.</span></h2>
           <p>From hiring to payroll to compliance, we manage every operational detail of your extended learning programs so your team can focus on what matters most.</p>
-          <a href="contact-sales.html" class="btn-primary extended-btn">
+          <a href="contact-sales.html" class="btn-primary ">
             Get Started
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M5 12h14M12 5l7 7-7 7"/>
@@ -797,57 +815,6 @@
     </div>
   </section>
 
-  <!-- Funding Section -->
-  <section class="funding-section">
-    <div class="section-container">
-      <div class="funding-card">
-        <div class="funding-content">
-          <span class="section-tag">Funding & Sustainability</span>
-          <h3>ESSER funds are ending. <span class="serif">Plan now.</span></h3>
-          <p>We help districts maximize remaining ESSER funds and build sustainable extended learning programs. Our team understands 21st CCLC requirements, blended funding strategies, and what it takes to maintain programs beyond federal support.</p>
-          <ul class="funding-list">
-            <li>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2">
-                <polyline points="20 6 9 17 4 12"/>
-              </svg>
-              ESSER-eligible programming
-            </li>
-            <li>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2">
-                <polyline points="20 6 9 17 4 12"/>
-              </svg>
-              21st CCLC compliance
-            </li>
-            <li>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2">
-                <polyline points="20 6 9 17 4 12"/>
-              </svg>
-              Sustainability planning support
-            </li>
-            <li>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2">
-                <polyline points="20 6 9 17 4 12"/>
-              </svg>
-              Blended funding strategies
-            </li>
-          </ul>
-          <a href="contact-sales.html" class="btn-primary">
-            Talk to Our Team
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M5 12h14M12 5l7 7-7 7"/>
-            </svg>
-          </a>
-        </div>
-        <div class="funding-visual">
-          <div class="funding-stat-block">
-            <span class="funding-stat-value">$180K</span>
-            <span class="funding-stat-label">Average annual savings per district</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- FAQ -->
   <section class="faq">
     <div class="section-container">
@@ -886,13 +853,13 @@
   </section>
 
   <!-- CTA -->
-  <section class="cta extended-cta">
+  <section class="cta">
     <div class="cta-container">
       <div class="cta-content">
-        <h2>Ready for results you can <span class="serif" style="color: #f59e0b;">measure?</span></h2>
+        <h2>Ready for results you can <span class="serif">measure?</span></h2>
         <p>Stop guessing if your extended learning programs work. Partner with Spur and see the data.</p>
         <div class="cta-buttons">
-          <a href="contact-sales.html" class="btn-primary extended-btn">
+          <a href="contact-sales.html" class="btn-primary ">
             Get Started
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M5 12h14M12 5l7 7-7 7"/>
