@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Red Rover Alternative | Spur Recruiting</title>
+  <meta name="description" content="Looking for a Red Rover alternative? Spur delivers qualified K12 candidates to your inbox—no platform, no passwords, no DIY recruiting. Full-service recruiting for $1,500/month.">
+  <meta name="keywords" content="Red Rover alternative, K12 recruiting, school district recruiting, substitute teacher recruiting, education staffing">
+  <link rel="icon" type="image/png" href="spur-favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* Landing page specific styles */
+    .lp-hero {
+      min-height: 90vh;
+      display: flex;
+      align-items: center;
+      padding: 8rem 0 6rem;
+      background: linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+    }
+    .lp-hero-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 4rem;
+      align-items: center;
+    }
+    .lp-hero-content {
+      max-width: 600px;
+    }
+    .lp-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: rgba(236, 72, 153, 0.15);
+      border: 1px solid rgba(236, 72, 153, 0.3);
+      border-radius: 100px;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: #ec4899;
+      margin-bottom: 1.5rem;
+    }
+    .lp-hero h1 {
+      font-size: 3.5rem;
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+    }
+    .lp-hero h1 .serif {
+      font-family: 'Instrument Serif', serif;
+      font-weight: 400;
+      font-style: italic;
+    }
+    .lp-hero-subtitle {
+      font-size: 1.25rem;
+      line-height: 1.7;
+      color: var(--text-secondary);
+      margin-bottom: 2rem;
+    }
+    .lp-ctas {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .lp-btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 1rem 2rem;
+      background: linear-gradient(135deg, #ec4899 0%, #db2777 100%);
+      color: white;
+      font-weight: 600;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 20px rgba(236, 72, 153, 0.3);
+    }
+    .lp-btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px rgba(236, 72, 153, 0.4);
+    }
+    .lp-btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 1rem 2rem;
+      background: transparent;
+      color: var(--text-primary);
+      font-weight: 600;
+      border-radius: 12px;
+      border: 1px solid var(--border-color);
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    .lp-btn-secondary:hover {
+      background: var(--bg-secondary);
+      border-color: var(--text-muted);
+    }
+
+    /* Social proof bar */
+    .lp-social-proof {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border-color);
+    }
+    .lp-social-proof p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+    }
+    .lp-logos {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      opacity: 0.6;
+    }
+    .lp-stat-row {
+      display: flex;
+      gap: 2rem;
+    }
+    .lp-stat {
+      text-align: left;
+    }
+    .lp-stat-value {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #ec4899;
+    }
+    .lp-stat-label {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    /* Hero visual */
+    .lp-hero-visual {
+      position: relative;
+    }
+    .comparison-visual {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+    }
+    .cv-header {
+      padding: 1.25rem;
+      border-bottom: 1px solid var(--border-color);
+      background: var(--bg-secondary);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .cv-title {
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+    .cv-badge {
+      font-size: 0.7rem;
+      padding: 0.25rem 0.75rem;
+      border-radius: 100px;
+      background: rgba(16, 185, 129, 0.15);
+      color: #10b981;
+    }
+    .cv-content {
+      padding: 0;
+    }
+    .cv-table-header {
+      display: grid;
+      grid-template-columns: 1fr 80px 80px;
+      gap: 0;
+      background: var(--bg-secondary);
+      border-bottom: 1px solid var(--border-color);
+    }
+    .cv-table-header-cell {
+      padding: 0.875rem 1rem;
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--text-muted);
+      text-align: center;
+    }
+    .cv-table-header-cell:first-child {
+      text-align: left;
+      padding-left: 1.5rem;
+    }
+    .cv-table-header-cell.highlight {
+      color: #ec4899;
+      background: rgba(236, 72, 153, 0.08);
+    }
+    .cv-row {
+      display: grid;
+      grid-template-columns: 1fr 80px 80px;
+      gap: 0;
+      border-bottom: 1px solid var(--border-color);
+      align-items: center;
+    }
+    .cv-row:last-child {
+      border-bottom: none;
+    }
+    .cv-task {
+      font-size: 0.9rem;
+      color: var(--text-primary);
+      padding: 1rem 1rem 1rem 1.5rem;
+    }
+    .cv-cell {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+    .cv-cell.highlight {
+      background: rgba(236, 72, 153, 0.04);
+    }
+    .cv-icon-x {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: rgba(239, 68, 68, 0.15);
+      color: #ef4444;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+    .cv-icon-check {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: rgba(16, 185, 129, 0.15);
+      color: #10b981;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+    .cv-footer {
+      padding: 1rem 1.5rem;
+      background: rgba(236, 72, 153, 0.08);
+      border-top: 1px solid rgba(236, 72, 153, 0.2);
+      text-align: center;
+      font-size: 0.85rem;
+      color: #ec4899;
+      font-weight: 500;
+    }
+
+    /* Problem section */
+    .lp-problem {
+      padding: 6rem 0;
+      background: var(--bg-secondary);
+    }
+    .lp-problem-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+    .lp-problem h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .lp-problem-subtitle {
+      text-align: center;
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+      margin-bottom: 3rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .lp-problem-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+    .lp-problem-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 1.75rem;
+    }
+    .lp-problem-card h3 {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-size: 1.1rem;
+      margin-bottom: 0.75rem;
+    }
+    .lp-problem-card h3 span {
+      font-size: 1.5rem;
+    }
+    .lp-problem-card p {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* Solution section */
+    .lp-solution {
+      padding: 6rem 0;
+    }
+    .lp-solution-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+    .lp-solution-header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+    .lp-solution-header h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .lp-solution-header p {
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .lp-solution-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+    .lp-solution-card {
+      text-align: center;
+      padding: 2rem;
+    }
+    .lp-solution-icon {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 1.5rem;
+      background: rgba(236, 72, 153, 0.15);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.75rem;
+    }
+    .lp-solution-card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.75rem;
+    }
+    .lp-solution-card p {
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+    }
+
+    /* Full comparison table */
+    .lp-compare {
+      padding: 6rem 0;
+      background: var(--bg-secondary);
+    }
+    .lp-compare-container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+    .lp-compare-header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+    .lp-compare-header h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .lp-compare-table {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      overflow: hidden;
+    }
+    .lp-compare-row {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      border-bottom: 1px solid var(--border-color);
+    }
+    .lp-compare-row:last-child {
+      border-bottom: none;
+    }
+    .lp-compare-row.header {
+      background: var(--bg-secondary);
+      font-weight: 600;
+    }
+    .lp-compare-row.header .lp-compare-cell:nth-child(3) {
+      background: rgba(236, 72, 153, 0.1);
+      color: #ec4899;
+    }
+    .lp-compare-cell {
+      padding: 1.25rem 1.5rem;
+      display: flex;
+      align-items: center;
+    }
+    .lp-compare-cell:nth-child(2),
+    .lp-compare-cell:nth-child(3) {
+      justify-content: center;
+      text-align: center;
+    }
+    .lp-compare-cell:nth-child(3) {
+      background: rgba(236, 72, 153, 0.03);
+    }
+    .lp-check {
+      color: #10b981;
+      font-size: 1.25rem;
+    }
+    .lp-x {
+      color: #ef4444;
+      font-size: 1.25rem;
+    }
+    .lp-text-muted {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+    .lp-text-highlight {
+      color: #10b981;
+      font-weight: 600;
+    }
+
+    /* CTA section */
+    .lp-cta {
+      padding: 6rem 0;
+      background: linear-gradient(135deg, rgba(236, 72, 153, 0.1) 0%, rgba(139, 92, 246, 0.1) 100%);
+    }
+    .lp-cta-container {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      text-align: center;
+    }
+    .lp-cta h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .lp-cta p {
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+      margin-bottom: 2rem;
+    }
+    .lp-cta-buttons {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    /* Testimonial */
+    .lp-testimonial {
+      padding: 6rem 0;
+    }
+    .lp-testimonial-container {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+    .lp-testimonial-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 20px;
+      padding: 3rem;
+      text-align: center;
+    }
+    .lp-testimonial-stars {
+      color: #f59e0b;
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .lp-testimonial-text {
+      font-size: 1.25rem;
+      line-height: 1.7;
+      color: var(--text-primary);
+      margin-bottom: 2rem;
+    }
+    .lp-testimonial-author {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+    }
+    .lp-testimonial-avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #ec4899 0%, #db2777 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 600;
+    }
+    .lp-testimonial-info h4 {
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+    .lp-testimonial-info span {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    /* How it works */
+    .lp-how {
+      padding: 6rem 0;
+      background: var(--bg-secondary);
+    }
+    .lp-how-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+    .lp-how-header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+    .lp-how-header h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .lp-how-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+    }
+    .lp-how-step {
+      text-align: center;
+      position: relative;
+    }
+    .lp-how-step::after {
+      content: '→';
+      position: absolute;
+      right: -1rem;
+      top: 30px;
+      color: var(--text-muted);
+      font-size: 1.25rem;
+    }
+    .lp-how-step:last-child::after {
+      display: none;
+    }
+    .lp-step-number {
+      width: 48px;
+      height: 48px;
+      margin: 0 auto 1rem;
+      background: linear-gradient(135deg, #ec4899 0%, #db2777 100%);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 700;
+      font-size: 1.25rem;
+    }
+    .lp-how-step h3 {
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    .lp-how-step p {
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .lp-hero-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+      .lp-hero h1 {
+        font-size: 2.5rem;
+      }
+      .lp-hero-content {
+        text-align: center;
+        max-width: none;
+      }
+      .lp-ctas {
+        justify-content: center;
+      }
+      .lp-social-proof {
+        text-align: center;
+      }
+      .lp-stat-row {
+        justify-content: center;
+      }
+      .lp-stat {
+        text-align: center;
+      }
+      .lp-problem-grid {
+        grid-template-columns: 1fr;
+      }
+      .lp-solution-grid {
+        grid-template-columns: 1fr;
+      }
+      .lp-compare-row {
+        grid-template-columns: 1fr;
+      }
+      .lp-compare-row.header .lp-compare-cell:first-child {
+        display: none;
+      }
+      .lp-compare-cell:first-child {
+        background: var(--bg-secondary);
+        font-weight: 500;
+      }
+      .lp-how-steps {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+      }
+      .lp-how-step::after {
+        display: none;
+      }
+    }
+    @media (max-width: 600px) {
+      .lp-hero h1 {
+        font-size: 2rem;
+      }
+      .lp-how-steps {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <img src="spur-logo-white.svg" alt="Spur" class="logo-img">
+      </a>
+      <button class="mobile-menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links">
+        <button class="mobile-close-btn" aria-label="Close menu">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M18 6L6 18M6 6l12 12" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="nav-dropdown">
+          <span class="nav-link nav-dropdown-toggle">
+            Services
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </span>
+          <div class="nav-mega-menu">
+            <div class="mega-menu-grid">
+              <a href="staffing.html" class="mega-menu-card">
+                <div class="mega-card-visual" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.2) 0%, rgba(139, 92, 246, 0.05) 100%);">
+                  <div class="mega-card-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="1.5">
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                      <line x1="16" y1="2" x2="16" y2="6"/>
+                      <line x1="8" y1="2" x2="8" y2="6"/>
+                      <line x1="3" y1="10" x2="21" y2="10"/>
+                    </svg>
+                  </div>
+                </div>
+                <h4>Staffing</h4>
+                <p>Subs that show up. 92%+ fill rates.</p>
+              </a>
+              <a href="attendance-recovery.html" class="mega-menu-card">
+                <div class="mega-card-visual" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.2) 0%, rgba(16, 185, 129, 0.05) 100%);">
+                  <div class="mega-card-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="1.5">
+                      <path d="M18 20V10"/>
+                      <path d="M12 20V4"/>
+                      <path d="M6 20v-6"/>
+                    </svg>
+                  </div>
+                </div>
+                <h4>Attendance Recovery</h4>
+                <p>Every seat filled is funding earned.</p>
+              </a>
+              <a href="extended-learning.html" class="mega-menu-card">
+                <div class="mega-card-visual" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.2) 0%, rgba(245, 158, 11, 0.05) 100%);">
+                  <div class="mega-card-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="1.5">
+                      <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                      <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                    </svg>
+                  </div>
+                </div>
+                <h4>Extended Learning</h4>
+                <p>Summer & after-school, fully staffed.</p>
+              </a>
+              <a href="recruiting.html" class="mega-menu-card">
+                <div class="mega-card-visual" style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.2) 0%, rgba(236, 72, 153, 0.05) 100%);">
+                  <div class="mega-card-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ec4899" stroke-width="1.5">
+                      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                      <circle cx="9" cy="7" r="4"/>
+                      <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                      <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                    </svg>
+                  </div>
+                </div>
+                <h4>Recruiting</h4>
+                <p>Great school staff, delivered to your inbox.</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="https://jobs.spureducation.com/" class="nav-link" target="_blank" rel="noopener noreferrer">Jobs</a>
+        <a href="contact.html" class="nav-link">Contact Us</a>
+        <a href="contact-sales.html" class="nav-cta">Get Started</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="lp-hero">
+    <div class="lp-hero-container">
+      <div class="lp-hero-content">
+        <div class="lp-badge">
+          <span>🔄</span>
+          Red Rover Alternative
+        </div>
+        <h1>Still doing all the work <span class="serif" style="color: #ec4899;">yourself?</span></h1>
+        <p class="lp-hero-subtitle">Red Rover organizes your workload. Spur eliminates it. We find, screen, and deliver qualified candidates to your inbox—no platform, no passwords, no DIY recruiting.</p>
+        <div class="lp-ctas">
+          <a href="contact-sales.html" class="lp-btn-primary">
+            Get Started
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a href="#compare" class="lp-btn-secondary">
+            See the Difference
+          </a>
+        </div>
+        <div class="lp-social-proof">
+          <p>Trusted by school districts nationwide</p>
+          <div class="lp-stat-row">
+            <div class="lp-stat">
+              <div class="lp-stat-value">5,000+</div>
+              <div class="lp-stat-label">Schools Served</div>
+            </div>
+            <div class="lp-stat">
+              <div class="lp-stat-value">48hrs</div>
+              <div class="lp-stat-label">Avg. Time to First Candidate</div>
+            </div>
+            <div class="lp-stat">
+              <div class="lp-stat-value">$0</div>
+              <div class="lp-stat-label">Per-Hire Fees</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lp-hero-visual">
+        <div class="comparison-visual">
+          <div class="cv-header">
+            <span class="cv-title">Who Does the Work?</span>
+            <span class="cv-badge">Side by Side</span>
+          </div>
+          <div class="cv-content">
+            <div class="cv-table-header">
+              <div class="cv-table-header-cell">Task</div>
+              <div class="cv-table-header-cell">Red Rover</div>
+              <div class="cv-table-header-cell highlight">Spur</div>
+            </div>
+            <div class="cv-row">
+              <div class="cv-task">Post job openings</div>
+              <div class="cv-cell"><span class="cv-icon-x">✗</span></div>
+              <div class="cv-cell highlight"><span class="cv-icon-check">✓</span></div>
+            </div>
+            <div class="cv-row">
+              <div class="cv-task">Source candidates</div>
+              <div class="cv-cell"><span class="cv-icon-x">✗</span></div>
+              <div class="cv-cell highlight"><span class="cv-icon-check">✓</span></div>
+            </div>
+            <div class="cv-row">
+              <div class="cv-task">Screen resumes</div>
+              <div class="cv-cell"><span class="cv-icon-x">✗</span></div>
+              <div class="cv-cell highlight"><span class="cv-icon-check">✓</span></div>
+            </div>
+            <div class="cv-row">
+              <div class="cv-task">Check references</div>
+              <div class="cv-cell"><span class="cv-icon-x">✗</span></div>
+              <div class="cv-cell highlight"><span class="cv-icon-check">✓</span></div>
+            </div>
+            <div class="cv-row">
+              <div class="cv-task">Verify credentials</div>
+              <div class="cv-cell"><span class="cv-icon-x">✗</span></div>
+              <div class="cv-cell highlight"><span class="cv-icon-check">✓</span></div>
+            </div>
+          </div>
+          <div class="cv-footer">
+            Spur = Full-service recruiting, not just software
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem Section -->
+  <section class="lp-problem">
+    <div class="lp-problem-container">
+      <h2>The Red Rover <span class="serif" style="color: #ec4899;">reality</span></h2>
+      <p class="lp-problem-subtitle">You're paying for a platform, but you're still doing all the recruiting yourself.</p>
+      <div class="lp-problem-grid">
+        <div class="lp-problem-card">
+          <h3><span>💸</span> Expensive Software</h3>
+          <p>$15K-$50K per year for a platform that organizes applications—but doesn't find them for you.</p>
+        </div>
+        <div class="lp-problem-card">
+          <h3><span>⏰</span> Your Time, Not Theirs</h3>
+          <p>You still post jobs, screen resumes, chase candidates, and check references. The software just tracks it.</p>
+        </div>
+        <div class="lp-problem-card">
+          <h3><span>🔐</span> Another Login</h3>
+          <p>Another dashboard to learn, another password to remember, another training session for your team.</p>
+        </div>
+        <div class="lp-problem-card">
+          <h3><span>📊</span> Reports You Have to Pull</h3>
+          <p>Need data? Log in, navigate, filter, export. By the time you have it, the moment has passed.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solution Section -->
+  <section class="lp-solution">
+    <div class="lp-solution-container">
+      <div class="lp-solution-header">
+        <h2>A better <span class="serif" style="color: #ec4899;">approach</span></h2>
+        <p>What if you could just tell someone what you need—and qualified candidates showed up in your inbox?</p>
+      </div>
+      <div class="lp-solution-grid">
+        <div class="lp-solution-card">
+          <div class="lp-solution-icon">📧</div>
+          <h3>Candidates Delivered</h3>
+          <p>We find, screen, and vet candidates. You get qualified people in your inbox—ready to interview.</p>
+        </div>
+        <div class="lp-solution-card">
+          <div class="lp-solution-icon">🚫</div>
+          <h3>No Platform Needed</h3>
+          <p>Text, email, or call us. That's it. No logins, no dashboards, no training required.</p>
+        </div>
+        <div class="lp-solution-card">
+          <div class="lp-solution-icon">💬</div>
+          <h3>Reports on Demand</h3>
+          <p>Text "status" for instant updates. Email for weekly summaries. Data when you want it, how you want it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison Table -->
+  <section class="lp-compare" id="compare">
+    <div class="lp-compare-container">
+      <div class="lp-compare-header">
+        <h2>The full <span class="serif" style="color: #ec4899;">comparison</span></h2>
+      </div>
+      <div class="lp-compare-table">
+        <div class="lp-compare-row header">
+          <div class="lp-compare-cell"></div>
+          <div class="lp-compare-cell">Red Rover / ATS</div>
+          <div class="lp-compare-cell">Spur Recruiting</div>
+        </div>
+        <div class="lp-compare-row">
+          <div class="lp-compare-cell">Candidate sourcing</div>
+          <div class="lp-compare-cell"><span class="lp-text-muted">You do it</span></div>
+          <div class="lp-compare-cell"><span class="lp-check">✓</span> We do it</div>
+        </div>
+        <div class="lp-compare-row">
+          <div class="lp-compare-cell">Resume screening</div>
+          <div class="lp-compare-cell"><span class="lp-text-muted">You do it</span></div>
+          <div class="lp-compare-cell"><span class="lp-check">✓</span> We do it</div>
+        </div>
+        <div class="lp-compare-row">
+          <div class="lp-compare-cell">Reference checks</div>
+          <div class="lp-compare-cell"><span class="lp-text-muted">You do it</span></div>
+          <div class="lp-compare-cell"><span class="lp-check">✓</span> We do it</div>
+        </div>
+        <div class="lp-compare-row">
+          <div class="lp-compare-cell">Credential verification</div>
+          <div class="lp-compare-cell"><span class="lp-text-muted">You do it</span></div>
+          <div class="lp-compare-cell"><span class="lp-check">✓</span> We do it</div>
+        </div>
+        <div class="lp-compare-row">
+          <div class="lp-compare-cell">Social media outreach</div>
+          <div class="lp-compare-cell"><span class="lp-x">✗</span></div>
+          <div class="lp-compare-cell"><span class="lp-check">✓</span> TikTok, IG, LinkedIn</div>
+        </div>
+        <div class="lp-compare-row">
+          <div class="lp-compare-cell">Reporting</div>
+          <div class="lp-compare-cell"><span class="lp-text-muted">Log in & export</span></div>
+          <div class="lp-compare-cell"><span class="lp-check">✓</span> Text or email us</div>
+        </div>
+        <div class="lp-compare-row">
+          <div class="lp-compare-cell">Software training</div>
+          <div class="lp-compare-cell"><span class="lp-text-muted">Required</span></div>
+          <div class="lp-compare-cell"><span class="lp-check">✓</span> None needed</div>
+        </div>
+        <div class="lp-compare-row">
+          <div class="lp-compare-cell">Pricing</div>
+          <div class="lp-compare-cell"><span class="lp-text-muted">$15K-$50K/year</span></div>
+          <div class="lp-compare-cell"><span class="lp-text-highlight">$1,500/month</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="lp-how">
+    <div class="lp-how-container">
+      <div class="lp-how-header">
+        <h2>How it <span class="serif" style="color: #ec4899;">works</span></h2>
+      </div>
+      <div class="lp-how-steps">
+        <div class="lp-how-step">
+          <div class="lp-step-number">1</div>
+          <h3>Tell Us What You Need</h3>
+          <p>Text, email, or call. "We need a SpEd specialist" is all it takes.</p>
+        </div>
+        <div class="lp-how-step">
+          <div class="lp-step-number">2</div>
+          <h3>We Source & Screen</h3>
+          <p>Our team actively recruits, vets, and verifies candidates for you.</p>
+        </div>
+        <div class="lp-how-step">
+          <div class="lp-step-number">3</div>
+          <h3>Candidates in Your Inbox</h3>
+          <p>Qualified candidates delivered with resumes, credentials, and our notes.</p>
+        </div>
+        <div class="lp-how-step">
+          <div class="lp-step-number">4</div>
+          <h3>You Interview & Hire</h3>
+          <p>Focus on what matters: meeting great candidates and making offers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial -->
+  <section class="lp-testimonial">
+    <div class="lp-testimonial-container">
+      <div class="lp-testimonial-card">
+        <div class="lp-testimonial-stars">★★★★★</div>
+        <p class="lp-testimonial-text">"We switched from Red Rover and I got my life back. I used to spend 15+ hours a week on recruiting tasks. Now I just check my inbox for candidates and focus on interviews. It's a completely different experience."</p>
+        <div class="lp-testimonial-author">
+          <div class="lp-testimonial-avatar">JM</div>
+          <div class="lp-testimonial-info">
+            <h4>Jennifer Martinez</h4>
+            <span>HR Director, Mountain View USD</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="lp-cta">
+    <div class="lp-cta-container">
+      <h2>Ready to stop <span class="serif" style="color: #ec4899;">managing software?</span></h2>
+      <p>Let us handle the recruiting while you focus on building a great team. No contracts, cancel anytime.</p>
+      <div class="lp-cta-buttons">
+        <a href="contact-sales.html" class="lp-btn-primary">
+          Get Started
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </a>
+        <a href="recruiting.html" class="lp-btn-secondary">
+          Learn More About Recruiting
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <img src="spur-logo-white.svg" alt="Spur" class="logo-img">
+          </a>
+          <p>Done-for-you operations that put dollars back in classrooms. Real people, real results.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/spurstaffing" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/company/spurwork/" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/spurstaffing/" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Services</h4>
+          <a href="staffing.html">Staffing</a>
+          <a href="recruiting.html">Recruiting</a>
+          <a href="attendance-recovery.html">Attendance Recovery</a>
+          <a href="extended-learning.html">Extended Learning</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Company</h4>
+          <a href="about.html">About Us</a>
+          <a href="index.html#results">Results</a>
+          <a href="https://jobs.spureducation.com/" target="_blank" rel="noopener noreferrer">Careers</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Support</h4>
+          <a href="contact.html">Contact</a>
+          <a href="index.html#faq">FAQ</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Spur. All rights reserved.</p>
+        <a href="https://www.linkedin.com/in/julianbwm/" target="_blank" rel="noopener noreferrer" class="boogiebyte-credit">
+          <img src="boogie-byte.png" alt="BoogieByte" class="boogiebyte-img">
+          <span>Branding, design, and build by BoogieBytes</span>
+        </a>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
