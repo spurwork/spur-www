@@ -288,8 +288,9 @@
       font-size: 0.75rem;
       padding: 0.25rem 0.65rem;
       border-radius: 100px;
-      background: rgba(255, 255, 255, 0.08);
-      color: var(--text-secondary);
+      background: rgba(16, 185, 129, 0.15);
+      color: #10b981;
+      font-weight: 500;
     }
     .candidate-list {
       padding: 0.75rem 1rem;
@@ -338,6 +339,38 @@
       background: rgba(255, 255, 255, 0.08);
       color: var(--text-secondary);
       white-space: nowrap;
+    }
+    .candidate-status.ready {
+      background: rgba(16, 185, 129, 0.15);
+      color: #10b981;
+    }
+    .candidate-status.screened {
+      background: rgba(139, 92, 246, 0.15);
+      color: #a78bfa;
+    }
+    .candidate-status.new {
+      background: rgba(236, 72, 153, 0.15);
+      color: #ec4899;
+    }
+    .candidate-avatar.purple {
+      background: rgba(139, 92, 246, 0.2);
+      border-color: rgba(139, 92, 246, 0.3);
+      color: #a78bfa;
+    }
+    .candidate-avatar.pink {
+      background: rgba(236, 72, 153, 0.2);
+      border-color: rgba(236, 72, 153, 0.3);
+      color: #ec4899;
+    }
+    .candidate-avatar.green {
+      background: rgba(16, 185, 129, 0.2);
+      border-color: rgba(16, 185, 129, 0.3);
+      color: #10b981;
+    }
+    .candidate-avatar.amber {
+      background: rgba(245, 158, 11, 0.2);
+      border-color: rgba(245, 158, 11, 0.3);
+      color: #f59e0b;
     }
     .candidates-footer {
       padding: 0.85rem 1.25rem;
@@ -739,6 +772,94 @@
 
     /* Mobile Optimizations for Recruiting Page */
     @media (max-width: 768px) {
+      /* Prevent horizontal overflow */
+      body {
+        overflow-x: hidden;
+      }
+
+      .hero-visual-stack {
+        max-width: 100%;
+        overflow: hidden;
+      }
+
+      .email-inbox-card,
+      .candidates-card {
+        max-width: 100%;
+        border-radius: 12px;
+      }
+
+      .email-row {
+        gap: 0.5rem;
+        padding: 0.65rem 0.75rem;
+      }
+
+      .email-avatar {
+        width: 32px;
+        height: 32px;
+        font-size: 0.7rem;
+      }
+
+      .email-subject {
+        font-size: 0.8rem;
+      }
+
+      .email-preview {
+        font-size: 0.7rem;
+      }
+
+      .email-time {
+        font-size: 0.65rem;
+      }
+
+      .candidate-row {
+        gap: 0.5rem;
+        padding: 0.6rem 0;
+      }
+
+      .candidate-avatar {
+        width: 36px;
+        height: 36px;
+        font-size: 0.75rem;
+      }
+
+      .candidate-name {
+        font-size: 0.85rem;
+      }
+
+      .candidate-role {
+        font-size: 0.7rem;
+      }
+
+      .candidate-status {
+        font-size: 0.6rem;
+        padding: 0.2rem 0.4rem;
+      }
+
+      .candidate-list {
+        padding: 0.5rem 0.75rem;
+      }
+
+      .candidates-header,
+      .email-inbox-header {
+        padding: 0.75rem 1rem;
+      }
+
+      .candidates-title,
+      .email-inbox-title {
+        font-size: 0.85rem;
+      }
+
+      .candidates-badge,
+      .email-inbox-badge {
+        font-size: 0.65rem;
+        padding: 0.2rem 0.5rem;
+      }
+
+      .candidates-footer {
+        padding: 0.65rem 1rem;
+        font-size: 0.7rem;
+      }
+
       .no-login-layout {
         grid-template-columns: 1fr;
         gap: 2rem;
@@ -758,6 +879,7 @@
 
       .compare-table {
         font-size: 0.85rem;
+        max-width: 100%;
       }
 
       .compare-header,
@@ -785,11 +907,6 @@
         font-size: 1.5rem;
       }
 
-      .email-inbox-card,
-      .applicant-stack-card {
-        border-radius: 12px;
-      }
-
       .pricing-cards {
         grid-template-columns: 1fr;
         gap: 1.5rem;
@@ -801,6 +918,100 @@
 
       .pricing-amount {
         font-size: 2.5rem;
+      }
+
+      /* Text conversation card fixes */
+      .text-conversation-card {
+        max-width: 100%;
+      }
+
+      .text-bubble {
+        max-width: 90%;
+        font-size: 0.85rem;
+        padding: 0.65rem 0.85rem;
+      }
+
+      .text-messages {
+        padding: 1rem;
+      }
+
+      /* Report visual fixes */
+      .report-visual {
+        max-width: 100%;
+      }
+
+      .report-message-stats {
+        gap: 0.5rem;
+      }
+
+      .report-stat {
+        padding: 0.5rem;
+      }
+
+      .report-stat-value {
+        font-size: 1rem;
+      }
+
+      .report-stat-label {
+        font-size: 0.6rem;
+      }
+
+      /* Feature showcase fixes */
+      .student-info-card {
+        max-width: 100%;
+      }
+
+      .info-field {
+        gap: 0.5rem;
+      }
+
+      .field-value {
+        font-size: 0.8rem;
+      }
+
+      /* Instant reports layout */
+      .instant-reports-layout {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .instant-reports-content .section-title {
+        text-align: center;
+      }
+
+      .instant-reports-content {
+        text-align: center;
+      }
+
+      .instant-reports-content > p {
+        font-size: 1rem;
+      }
+
+      .report-benefit {
+        justify-content: center;
+      }
+
+      /* Feature showcase fixes for smaller screens */
+      .feature-showcase-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .feature-showcase-content {
+        text-align: center;
+      }
+
+      .feature-showcase-title {
+        text-align: center;
+      }
+
+      .feature-point {
+        text-align: left;
+      }
+
+      .feature-showcase-visual {
+        max-width: 100%;
+        overflow: hidden;
       }
     }
 
@@ -1108,28 +1319,36 @@
             </div>
             <div class="candidate-list">
               <div class="candidate-row">
-                <div class="candidate-avatar">MJ</div>
+                <div class="candidate-avatar green">MJ</div>
                 <div class="candidate-info">
                   <div class="candidate-name">Maria Johnson</div>
                   <div class="candidate-role">8 yrs experience · Mild/Mod credential</div>
                 </div>
-                <span class="candidate-status">Screened</span>
+                <span class="candidate-status ready">Ready to Interview</span>
               </div>
               <div class="candidate-row">
-                <div class="candidate-avatar">DK</div>
+                <div class="candidate-avatar purple">DK</div>
                 <div class="candidate-info">
                   <div class="candidate-name">David Kim</div>
                   <div class="candidate-role">5 yrs experience · Mod/Severe</div>
                 </div>
-                <span class="candidate-status">Screened</span>
+                <span class="candidate-status screened">Screened</span>
               </div>
               <div class="candidate-row">
-                <div class="candidate-avatar">SR</div>
+                <div class="candidate-avatar pink">SR</div>
                 <div class="candidate-info">
                   <div class="candidate-name">Sarah Rodriguez</div>
                   <div class="candidate-role">12 yrs experience · Bilingual</div>
                 </div>
-                <span class="candidate-status">Screened</span>
+                <span class="candidate-status screened">Screened</span>
+              </div>
+              <div class="candidate-row">
+                <div class="candidate-avatar amber">JT</div>
+                <div class="candidate-info">
+                  <div class="candidate-name">James Thompson</div>
+                  <div class="candidate-role">3 yrs experience · ABA certified</div>
+                </div>
+                <span class="candidate-status new">New</span>
               </div>
             </div>
             <div class="candidates-footer">
