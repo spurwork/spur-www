@@ -1667,6 +1667,13 @@
       font-weight: 600;
     }
 
+    .chat-avatar-img {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
     .chat-info h4 {
       font-size: 1rem;
       font-weight: 600;
@@ -5673,6 +5680,13 @@
       }
 
       .faq-answer {
+        max-height: 0;
+        overflow: hidden;
+        padding: 0 1rem;
+      }
+
+      .faq-item.active .faq-answer {
+        max-height: 500px;
         padding: 0 1rem 1rem;
       }
 
