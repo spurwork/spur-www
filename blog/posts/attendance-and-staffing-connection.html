@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Hidden Connection Between Staffing and Student Attendance | Spur Education Blog</title>
+  <meta name="description" content="When classrooms are unstaffed, students disengage. When students are absent, staffing becomes harder. Here's how to break the cycle.">
+  <link rel="canonical" href="https://spureducation.com/blog/posts/attendance-and-staffing-connection.html">
+  <link rel="icon" type="image/png" href="/spur-favicon.png">
+  <link rel="alternate" type="application/rss+xml" title="Spur Education Blog" href="https://spureducation.com/blog/feed.xml">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/blog.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <img src="spur-logo-white.svg" alt="Spur" class="logo-img">
+      </a>
+      <button class="mobile-menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links">
+        <!-- Mobile Close Button -->
+        <button class="mobile-close-btn" aria-label="Close menu">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M18 6L6 18M6 6l12 12" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+        <!-- Desktop Dropdown (hidden on mobile) -->
+        <div class="nav-dropdown">
+          <span class="nav-link nav-dropdown-toggle">
+            Services
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </span>
+          <div class="nav-mega-menu">
+            <div class="mega-menu-grid">
+              <a href="staffing.html" class="mega-menu-card" data-tab="staffing">
+                <div class="mega-card-visual" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.2) 0%, rgba(139, 92, 246, 0.05) 100%);">
+                  <div class="mega-card-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="1.5">
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                      <line x1="16" y1="2" x2="16" y2="6"/>
+                      <line x1="8" y1="2" x2="8" y2="6"/>
+                      <line x1="3" y1="10" x2="21" y2="10"/>
+                    </svg>
+                  </div>
+                </div>
+                <h4>Staffing</h4>
+                <p>Subs that show up. 92%+ fill rates.</p>
+              </a>
+              <a href="attendance-recovery.html" class="mega-menu-card" data-tab="attendance">
+                <div class="mega-card-visual" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.2) 0%, rgba(16, 185, 129, 0.05) 100%);">
+                  <div class="mega-card-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="1.5">
+                      <path d="M18 20V10"/>
+                      <path d="M12 20V4"/>
+                      <path d="M6 20v-6"/>
+                    </svg>
+                  </div>
+                </div>
+                <h4>Attendance Recovery</h4>
+                <p>Every seat filled is funding earned.</p>
+              </a>
+              <a href="extended-learning.html" class="mega-menu-card" data-tab="extended">
+                <div class="mega-card-visual" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.2) 0%, rgba(245, 158, 11, 0.05) 100%);">
+                  <div class="mega-card-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="1.5">
+                      <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                      <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                    </svg>
+                  </div>
+                </div>
+                <h4>Extended Learning</h4>
+                <p>Summer & after-school, fully staffed.</p>
+              </a>
+              <a href="recruiting.html" class="mega-menu-card" data-tab="recruiting">
+                <div class="mega-card-visual" style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.2) 0%, rgba(236, 72, 153, 0.05) 100%);">
+                  <div class="mega-card-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ec4899" stroke-width="1.5">
+                      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                      <circle cx="9" cy="7" r="4"/>
+                      <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                      <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                    </svg>
+                  </div>
+                </div>
+                <h4>Recruiting</h4>
+                <p>Great school staff, delivered to your inbox.</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Services Section (hidden on desktop) -->
+        <div class="mobile-nav-section">
+          <div class="mobile-nav-section-header">
+            <h3>Services</h3>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </div>
+          <div class="mobile-nav-section-content">
+            <a href="staffing.html" class="mobile-service-link">
+              <div class="mobile-service-icon" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.2) 0%, rgba(139, 92, 246, 0.05) 100%);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="1.5">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                  <line x1="16" y1="2" x2="16" y2="6"/>
+                  <line x1="8" y1="2" x2="8" y2="6"/>
+                  <line x1="3" y1="10" x2="21" y2="10"/>
+                </svg>
+              </div>
+              <div class="mobile-service-text">
+                <h4>Staffing</h4>
+                <p>Subs that show up. 92%+ fill rates.</p>
+              </div>
+            </a>
+            <a href="attendance-recovery.html" class="mobile-service-link">
+              <div class="mobile-service-icon" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.2) 0%, rgba(16, 185, 129, 0.05) 100%);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="1.5">
+                  <path d="M18 20V10"/>
+                  <path d="M12 20V4"/>
+                  <path d="M6 20v-6"/>
+                </svg>
+              </div>
+              <div class="mobile-service-text">
+                <h4>Attendance Recovery</h4>
+                <p>Every seat filled is funding earned.</p>
+              </div>
+            </a>
+            <a href="extended-learning.html" class="mobile-service-link">
+              <div class="mobile-service-icon" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.2) 0%, rgba(245, 158, 11, 0.05) 100%);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="1.5">
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                </svg>
+              </div>
+              <div class="mobile-service-text">
+                <h4>Extended Learning</h4>
+                <p>Summer & after-school, fully staffed.</p>
+              </div>
+            </a>
+            <a href="recruiting.html" class="mobile-service-link">
+              <div class="mobile-service-icon" style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.2) 0%, rgba(236, 72, 153, 0.05) 100%);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#ec4899" stroke-width="1.5">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+              </div>
+              <div class="mobile-service-text">
+                <h4>Recruiting</h4>
+                <p>Great school staff, delivered to your inbox.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <a href="#results" class="nav-link" style="display: none;">Real World Results</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="/blog/" class="nav-link">Blog</a>
+        <a href="https://jobs.spureducation.com/" class="nav-link" target="_blank" rel="noopener noreferrer">Jobs</a>
+        <a href="contact.html" class="nav-link">Contact Us</a>
+        <a href="contact-sales.html" class="nav-cta">Get Started</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="blog-article-page">
+    <a href="/blog/" class="blog-back">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      Back to Blog
+    </a>
+
+    <header class="blog-article-header">
+      <span class="blog-card-tag" data-category="attendance-recovery">Attendance Recovery</span>
+      <h1>The Hidden Connection Between Staffing and Student Attendance</h1>
+      <div class="blog-article-meta">
+        <img class="blog-article-meta-avatar" src="/gary.jpg" alt="Gary Henderson">
+        <div class="blog-article-meta-author">
+          <a href="/blog/authors/gary-henderson.html" class="blog-article-meta-author-name">Gary Henderson</a>
+          <span class="blog-article-meta-author-title">President, ALABS</span>
+        </div>
+        <span class="blog-article-meta-sep"></span>
+        <span>January 11, 2026</span>
+        <span class="blog-article-meta-sep"></span>
+        <span>4 min read</span>
+      </div>
+    </header>
+
+    <article class="blog-content">
+      <p>There is a connection between staffing stability and student attendance that most districts do not recognize. When a teacher is absent and no qualified substitute is available, the classroom experience degrades. Classes are combined. Aides cover instruction. Students sit with worksheets. When this happens frequently, students learn that some school days are not worth attending. The staffing problem becomes an attendance problem.</p>
+<div class="direct-answer">
+
+<p>Research shows a measurable correlation between teacher absence rates (and substitute fill rates) and student attendance at the school level. Schools with higher teacher absence rates and lower fill rates experience 2-5 percentage points higher student absenteeism. The mechanism is straightforward: when classrooms frequently lack qualified instruction, the value proposition of attending school weakens, particularly for students who are already on the margin of disengagement. Districts that improve staffing stability, specifically fill rates and substitute quality, often see collateral improvements in student attendance.</p>
+</div>
+
+<h2>How staffing instability drives student absence</h2>
+<h3>The &quot;why bother&quot; effect</h3>
+<p>When a student arrives at school and discovers their teacher is absent and a substitute is showing a movie, they internalize a message: today does not matter. If this happens occasionally, the impact is minimal. If it happens weekly, the student begins to calculate which days are worth attending.</p>
+<p>This effect is strongest for older students who have more autonomy over their attendance decisions and for students who are already ambivalent about school.</p>
+<h3>The relationship disruption</h3>
+<p>Students attend school partly because of relationships with their teachers. When a teacher is frequently absent, that relationship weakens. When a substitute who does not know the students covers the class, the relational incentive to attend disappears for that period. For students whose primary connection to school is one specific teacher, that teacher&#39;s absence can trigger the student&#39;s absence.</p>
+<h3>The quality erosion</h3>
+<p>Chronic teacher absences, even when covered by substitutes, erode instructional quality. Students fall behind. Falling behind makes school frustrating. Frustration makes attendance feel pointless. The student who stops attending in November often started disengaging in September when their classroom lost instructional continuity.</p>
+<h3>The signal to families</h3>
+<p>When a school frequently sends students home due to lack of coverage, or when parents hear from their children that &quot;we just had a sub again,&quot; family confidence in the school erodes. Parents who lose confidence in the educational experience are less motivated to fight the morning battle of getting a reluctant child to school.</p>
+<h2>Breaking the cycle</h2>
+<h3>Improve fill rates first</h3>
+<p>The most direct intervention is ensuring that when a teacher is absent, a qualified substitute is in the classroom. A fill rate improvement of 10 percentage points reduces the number of degraded classroom experiences proportionally. This is the staffing-side fix.</p>
+<h3>Improve substitute quality second</h3>
+<p>A filled classroom with a poor substitute is better than an unfilled one but not by much. When students know that sub days mean productive instruction, the &quot;why bother&quot; effect diminishes. Invest in substitute quality alongside fill rate improvements.</p>
+<h3>Support teacher attendance third</h3>
+<p>Invest in teacher well-being through wellness programs, manageable workloads, mental health support, and a culture where taking a necessary day off does not mean returning to chaos. When teachers feel supported, continuity improves and student engagement strengthens.</p>
+<h3>Track the correlation in your data</h3>
+<p>Most districts track teacher absence, fill rate, and student attendance in separate systems with no cross-analysis. Link these datasets. Do schools with lower fill rates have lower student attendance? Do weeks with more teacher absences see more student absences? The correlation in your own data makes the case for investment in staffing as an attendance strategy.</p>
+<h3>Communicate with families</h3>
+<p>When staffing challenges affect the classroom experience, proactive communication with families maintains trust. &quot;We had a staffing challenge today. Here is how we addressed it. Here is what your child&#39;s class worked on.&quot; This transparency is far better than a child coming home saying &quot;we did nothing today.&quot;</p>
+<div class="metrics-box">
+
+<h2>What to measure</h2>
+<ul>
+<li><strong>Teacher absence rate by building</strong> (correlated with student attendance by building)</li>
+<li><strong>Fill rate by building</strong> (correlated with student attendance by building)</li>
+<li><strong>Student attendance on sub days vs. teacher-present days</strong> (is there a measurable difference?)</li>
+<li><strong>Classroom coverage quality</strong> (are sub days productive or just covered?)</li>
+<li><strong>Family satisfaction with classroom coverage</strong> (do parents trust the sub experience?)</li>
+</ul>
+</div>
+
+<div class="mistakes-box">
+
+<h2>Common mistakes</h2>
+<ul>
+<li><strong>Treating staffing and attendance as separate issues.</strong> They are connected. Cross-functional teams should address both.</li>
+<li><strong>Not analyzing the correlation in your own data.</strong> National research is persuasive. Your own data is compelling. Link your datasets.</li>
+<li><strong>Accepting low fill rates as normal.</strong> Every unfilled classroom is a small push toward student disengagement. Do not normalize it.</li>
+<li><strong>Ignoring the student perspective.</strong> Ask students: &quot;What is school like when your teacher is absent?&quot; Their answers will reveal the attendance connection clearly.</li>
+</ul>
+</div>
+
+<div class="sources-list">
+
+<h2>Sources</h2>
+<ol>
+<li>Clotfelter, C. T., et al. (2009). &quot;Are Teacher Absences Worth Worrying About?&quot; Education Finance and Policy.</li>
+<li>Miller, R. T., et al. (2008). &quot;Do Teacher Absences Impact Student Achievement?&quot; Educational Evaluation and Policy Analysis.</li>
+<li>Attendance Works, &quot;School-Level Factors in Chronic Absenteeism&quot; (2023).</li>
+</ol>
+</div>
+
+<p><strong>If you only do one thing this week:</strong> Pull your school-level data for teacher absence rate, substitute fill rate, and student chronic absenteeism rate. Plot all three on a single chart by building. If the buildings with the worst staffing metrics also have the worst student attendance, you have found a lever that most districts overlook.</p>
+
+    </article>
+
+    <!-- Email Capture -->
+    <div class="blog-email-capture">
+      <h3>Get practical K-12 staffing insights</h3>
+      <p class="blog-email-subtitle">One email per week. No fluff. Unsubscribe anytime.</p>
+      <form class="blog-email-form" action="#" method="POST">
+        <input type="email" placeholder="you@district.org" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </main>
+
+  <!-- Recommended -->
+  <section class="blog-recommended">
+    <h2>Recommended Reading</h2>
+    <div class="blog-recommended-grid">
+      
+      <a href="/blog/posts/why-attendance-matters-more-than-you-think.html" class="blog-card">
+        <div class="blog-card-body">
+          <span class="blog-card-tag" data-category="attendance-recovery">Attendance Recovery</span>
+          <h3 class="blog-card-title">Why Attendance Matters More Than You Think (And More Than Test Scores)</h3>
+          <p class="blog-card-summary">Attendance is the single strongest predictor of student outcomes, stronger than test scores and stronger than school quality. Here's the evidence.</p>
+          <div class="blog-card-footer">
+            <img class="blog-card-avatar" src="/gary.jpg" alt="Gary Henderson">
+            <span class="blog-card-author-name">Gary Henderson</span>
+            <span class="blog-card-footer-sep">&middot;</span>
+            <span>Nov 16, 2025</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/posts/attendance-recovery-programs-k12.html" class="blog-card">
+        <div class="blog-card-body">
+          <span class="blog-card-tag" data-category="attendance-recovery">Attendance Recovery</span>
+          <h3 class="blog-card-title">Attendance Recovery Programs: How to Bring Students Back After They've Missed Too Much</h3>
+          <p class="blog-card-summary">When a student has already missed 20+ days, traditional interventions are not enough. Attendance recovery programs offer a structured path back. Here's how to build one.</p>
+          <div class="blog-card-footer">
+            <img class="blog-card-avatar" src="/gary.jpg" alt="Gary Henderson">
+            <span class="blog-card-author-name">Gary Henderson</span>
+            <span class="blog-card-footer-sep">&middot;</span>
+            <span>Oct 1, 2025</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/posts/chronic-absenteeism-intervention-strategies.html" class="blog-card">
+        <div class="blog-card-body">
+          <span class="blog-card-tag" data-category="attendance-recovery">Attendance Recovery</span>
+          <h3 class="blog-card-title">Chronic Absenteeism Interventions That Actually Move the Needle</h3>
+          <p class="blog-card-summary">Chronic absenteeism affects 1 in 4 students nationally. Most interventions fail because they target the wrong students at the wrong time. Here's what works.</p>
+          <div class="blog-card-footer">
+            <img class="blog-card-avatar" src="/gary.jpg" alt="Gary Henderson">
+            <span class="blog-card-author-name">Gary Henderson</span>
+            <span class="blog-card-footer-sep">&middot;</span>
+            <span>Sep 17, 2025</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <img src="spur-logo-white.svg" alt="Spur" class="logo-img">
+          </a>
+          <p>Done-for-you operations that put dollars back in classrooms. Real people, real results.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/spurstaffing" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/company/spurwork/" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/spurstaffing/" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Services</h4>
+          <a href="staffing.html">Staffing</a>
+          <a href="recruiting.html">Recruiting</a>
+          <a href="attendance-recovery.html">Attendance Recovery</a>
+          <a href="extended-learning.html">Extended Learning</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Company</h4>
+          <a href="about.html">About Us</a>
+          <a href="https://jobs.spureducation.com/" target="_blank" rel="noopener noreferrer">Careers</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Support</h4>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Spur. All rights reserved.</p>
+        <a href="https://www.linkedin.com/in/julianbwm/" target="_blank" rel="noopener noreferrer" class="boogiebyte-credit">
+          <img src="boogie-byte.png" alt="BoogieByte" class="boogiebyte-img">
+          <span>Branding, design, and build by BoogieBytes</span>
+        </a>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

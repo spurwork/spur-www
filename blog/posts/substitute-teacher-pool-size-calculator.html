@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Calculate the Right Size for Your Substitute Teacher Pool | Spur Education Blog</title>
+  <meta name="description" content="Too small and you can't fill positions. Too large and you can't manage quality. Here's how to calculate the optimal substitute pool size for your district.">
+  <link rel="canonical" href="https://spureducation.com/blog/posts/substitute-teacher-pool-size-calculator.html">
+  <link rel="icon" type="image/png" href="/spur-favicon.png">
+  <link rel="alternate" type="application/rss+xml" title="Spur Education Blog" href="https://spureducation.com/blog/feed.xml">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/blog.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <img src="spur-logo-white.svg" alt="Spur" class="logo-img">
+      </a>
+      <button class="mobile-menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links">
+        <!-- Mobile Close Button -->
+        <button class="mobile-close-btn" aria-label="Close menu">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M18 6L6 18M6 6l12 12" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+        <!-- Desktop Dropdown (hidden on mobile) -->
+        <div class="nav-dropdown">
+          <span class="nav-link nav-dropdown-toggle">
+            Services
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </span>
+          <div class="nav-mega-menu">
+            <div class="mega-menu-grid">
+              <a href="staffing.html" class="mega-menu-card" data-tab="staffing">
+                <div class="mega-card-visual" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.2) 0%, rgba(139, 92, 246, 0.05) 100%);">
+                  <div class="mega-card-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="1.5">
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                      <line x1="16" y1="2" x2="16" y2="6"/>
+                      <line x1="8" y1="2" x2="8" y2="6"/>
+                      <line x1="3" y1="10" x2="21" y2="10"/>
+                    </svg>
+                  </div>
+                </div>
+                <h4>Staffing</h4>
+                <p>Subs that show up. 92%+ fill rates.</p>
+              </a>
+              <a href="attendance-recovery.html" class="mega-menu-card" data-tab="attendance">
+                <div class="mega-card-visual" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.2) 0%, rgba(16, 185, 129, 0.05) 100%);">
+                  <div class="mega-card-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="1.5">
+                      <path d="M18 20V10"/>
+                      <path d="M12 20V4"/>
+                      <path d="M6 20v-6"/>
+                    </svg>
+                  </div>
+                </div>
+                <h4>Attendance Recovery</h4>
+                <p>Every seat filled is funding earned.</p>
+              </a>
+              <a href="extended-learning.html" class="mega-menu-card" data-tab="extended">
+                <div class="mega-card-visual" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.2) 0%, rgba(245, 158, 11, 0.05) 100%);">
+                  <div class="mega-card-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="1.5">
+                      <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                      <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                    </svg>
+                  </div>
+                </div>
+                <h4>Extended Learning</h4>
+                <p>Summer & after-school, fully staffed.</p>
+              </a>
+              <a href="recruiting.html" class="mega-menu-card" data-tab="recruiting">
+                <div class="mega-card-visual" style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.2) 0%, rgba(236, 72, 153, 0.05) 100%);">
+                  <div class="mega-card-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ec4899" stroke-width="1.5">
+                      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                      <circle cx="9" cy="7" r="4"/>
+                      <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                      <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                    </svg>
+                  </div>
+                </div>
+                <h4>Recruiting</h4>
+                <p>Great school staff, delivered to your inbox.</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Services Section (hidden on desktop) -->
+        <div class="mobile-nav-section">
+          <div class="mobile-nav-section-header">
+            <h3>Services</h3>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </div>
+          <div class="mobile-nav-section-content">
+            <a href="staffing.html" class="mobile-service-link">
+              <div class="mobile-service-icon" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.2) 0%, rgba(139, 92, 246, 0.05) 100%);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="1.5">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                  <line x1="16" y1="2" x2="16" y2="6"/>
+                  <line x1="8" y1="2" x2="8" y2="6"/>
+                  <line x1="3" y1="10" x2="21" y2="10"/>
+                </svg>
+              </div>
+              <div class="mobile-service-text">
+                <h4>Staffing</h4>
+                <p>Subs that show up. 92%+ fill rates.</p>
+              </div>
+            </a>
+            <a href="attendance-recovery.html" class="mobile-service-link">
+              <div class="mobile-service-icon" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.2) 0%, rgba(16, 185, 129, 0.05) 100%);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="1.5">
+                  <path d="M18 20V10"/>
+                  <path d="M12 20V4"/>
+                  <path d="M6 20v-6"/>
+                </svg>
+              </div>
+              <div class="mobile-service-text">
+                <h4>Attendance Recovery</h4>
+                <p>Every seat filled is funding earned.</p>
+              </div>
+            </a>
+            <a href="extended-learning.html" class="mobile-service-link">
+              <div class="mobile-service-icon" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.2) 0%, rgba(245, 158, 11, 0.05) 100%);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="1.5">
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                </svg>
+              </div>
+              <div class="mobile-service-text">
+                <h4>Extended Learning</h4>
+                <p>Summer & after-school, fully staffed.</p>
+              </div>
+            </a>
+            <a href="recruiting.html" class="mobile-service-link">
+              <div class="mobile-service-icon" style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.2) 0%, rgba(236, 72, 153, 0.05) 100%);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#ec4899" stroke-width="1.5">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+              </div>
+              <div class="mobile-service-text">
+                <h4>Recruiting</h4>
+                <p>Great school staff, delivered to your inbox.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <a href="#results" class="nav-link" style="display: none;">Real World Results</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="/blog/" class="nav-link">Blog</a>
+        <a href="https://jobs.spureducation.com/" class="nav-link" target="_blank" rel="noopener noreferrer">Jobs</a>
+        <a href="contact.html" class="nav-link">Contact Us</a>
+        <a href="contact-sales.html" class="nav-cta">Get Started</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="blog-article-page">
+    <a href="/blog/" class="blog-back">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+      Back to Blog
+    </a>
+
+    <header class="blog-article-header">
+      <span class="blog-card-tag" data-category="staffing-operations">Staffing Operations</span>
+      <h1>How to Calculate the Right Size for Your Substitute Teacher Pool</h1>
+      <div class="blog-article-meta">
+        <img class="blog-article-meta-avatar" src="/boogie-byte.png" alt="Donnie Decker">
+        <div class="blog-article-meta-author">
+          <a href="/blog/authors/donnie-decker.html" class="blog-article-meta-author-name">Donnie Decker</a>
+          <span class="blog-article-meta-author-title">COO</span>
+        </div>
+        <span class="blog-article-meta-sep"></span>
+        <span>December 17, 2025</span>
+        <span class="blog-article-meta-sep"></span>
+        <span>4 min read</span>
+      </div>
+    </header>
+
+    <article class="blog-content">
+      <p>&quot;How many subs do we need?&quot; is a question I get constantly, and the answer is always &quot;it depends.&quot; But it depends on factors you can measure, which means you can calculate a specific number rather than guessing. Most districts either have too few subs (resulting in low fill rates) or too many on their roster (creating the illusion of capacity while most subs are inactive).</p>
+<div class="direct-answer">
+
+<p>The optimal substitute pool size is determined by four factors: your average daily teacher absences, your target fill rate, your pool activation rate (the percentage of rostered subs who actually accept assignments regularly), and your peak absence multiplier. The formula is: Target Pool Size = (Peak Daily Absences x Target Fill Rate) / Pool Activation Rate. For example, a district with 50 peak daily absences, a 90% fill rate target, and a 40% pool activation rate needs 113 active subs on the roster. Most districts underestimate the activation rate gap: having 200 subs on paper means nothing if only 80 accept assignments regularly.</p>
+</div>
+
+<h2>The four inputs you need</h2>
+<h3>1. Average daily absences</h3>
+<p>Pull absence data from the previous year. Calculate the average number of teacher absences per day. Then calculate the peak: the highest single day and the average of the top 10% of absence days. Your pool needs to handle the peak, not the average.</p>
+<p>Most districts find their peak absence days are 40-60% higher than their average. If your average is 30 absences per day, your peak days likely hit 42-48.</p>
+<h3>2. Target fill rate</h3>
+<p>What percentage of absences do you want covered by a substitute? Most districts target 85-95%. A 100% target is unrealistic due to same-day absences, hard-to-fill positions, and days when even large pools are fully utilized.</p>
+<p>Set your target based on what is acceptable for your schools. Below 80% creates chronic coverage problems. Above 95% requires a very large, active pool.</p>
+<h3>3. Pool activation rate</h3>
+<p>This is the most important and most misunderstood number. Of all the subs on your roster, what percentage accept at least one assignment per month? In most districts, this number is 30-50%. A roster of 200 subs with a 35% activation rate is functionally a pool of 70.</p>
+<p>Measure this by reviewing assignment data. Count the number of unique subs who accepted at least one assignment in the last 30 days. Divide by total rostered subs. That is your activation rate.</p>
+<h3>4. Peak absence multiplier</h3>
+<p>Your pool needs to handle not just average days but the worst days. Apply a multiplier based on your peak-to-average ratio. If your peak absence days are 50% higher than average, your multiplier is 1.5.</p>
+<h2>Running the calculation</h2>
+<h3>The formula</h3>
+<p><strong>Target Pool Size = (Peak Daily Absences x Target Fill Rate) / Pool Activation Rate</strong></p>
+<h3>Example: Medium-sized district</h3>
+<ul>
+<li>Average daily absences: 35</li>
+<li>Peak daily absences (top 10% average): 52</li>
+<li>Target fill rate: 90%</li>
+<li>Pool activation rate: 40%</li>
+</ul>
+<p>Target Pool Size = (52 x 0.90) / 0.40 = 117 subs</p>
+<p>This district needs 117 subs on the roster to cover 90% of absences on peak days, given that only 40% of rostered subs are regularly active.</p>
+<h3>Example: Small district</h3>
+<ul>
+<li>Average daily absences: 8</li>
+<li>Peak daily absences: 14</li>
+<li>Target fill rate: 85%</li>
+<li>Pool activation rate: 50%</li>
+</ul>
+<p>Target Pool Size = (14 x 0.85) / 0.50 = 24 subs</p>
+<p>Smaller districts need proportionally larger activation rates because the margin for error is smaller. One inactive sub in a 24-person pool has more impact than one in a 117-person pool.</p>
+<h2>What to do with the number</h2>
+<h3>If your pool is too small</h3>
+<p>Recruit aggressively. Focus on the channels that produce the most active subs, not just the most applications. A sub who signs up and never works does not help your numbers.</p>
+<h3>If your pool is the right size but your activation rate is low</h3>
+<p>The problem is not pool size. It is engagement. Survey inactive subs. Why did they stop accepting assignments? Bad experiences? Low pay? Scheduling conflicts? Address the root cause rather than recruiting replacements who will become inactive for the same reasons.</p>
+<h3>If your pool is too large (on paper) but fill rates are low</h3>
+<p>Your activation rate is the problem. A bloated roster of inactive subs creates a false sense of security. Focus on activating existing subs rather than adding more names to a list nobody checks.</p>
+<h3>Recalculate every semester</h3>
+<p>Absence patterns change. Sub pool composition changes. Activation rates fluctuate. Recalculate your target pool size at the start of each semester and adjust your recruitment and retention strategies accordingly.</p>
+<div class="metrics-box">
+
+<h2>What to measure</h2>
+<ul>
+<li><strong>Rostered pool size vs. active pool size</strong> (close the gap between paper and reality)</li>
+<li><strong>Pool activation rate</strong> (track monthly, target 50%+)</li>
+<li><strong>Peak day coverage</strong> (what is your fill rate on the 10 worst absence days?)</li>
+<li><strong>Recruitment yield</strong> (of new subs onboarded, what percentage become active within 30 days?)</li>
+<li><strong>Pool composition</strong> (full-time subs, part-time, retired teachers, college students, etc.)</li>
+</ul>
+</div>
+
+<div class="mistakes-box">
+
+<h2>Common mistakes</h2>
+<ul>
+<li><strong>Confusing rostered pool size with active pool size.</strong> The number that matters is how many subs actually work, not how many are on the list.</li>
+<li><strong>Sizing for average days instead of peak days.</strong> Average days are manageable. Peak days break your system. Size for the peak.</li>
+<li><strong>Not tracking activation rate.</strong> If you do not know what percentage of your pool is active, you cannot assess whether your pool is adequate.</li>
+<li><strong>Recruiting without retaining.</strong> Adding 50 new subs while losing 40 existing ones nets you 10. Fix retention before scaling recruitment.</li>
+</ul>
+</div>
+
+<div class="sources-list">
+
+<h2>Sources</h2>
+<ol>
+<li>Frontline Education, &quot;Substitute Pool Optimization&quot; (2024).</li>
+<li>AASPA, &quot;Workforce Planning for Substitute Programs&quot; (2023).</li>
+<li>Kelly Education, &quot;Pool Size and Fill Rate Analysis&quot; (2023).</li>
+</ol>
+</div>
+
+<p><strong>If you only do one thing this week:</strong> Calculate your pool activation rate. Pull the list of every rostered sub. Count how many accepted at least one assignment in the last 30 days. Divide. If the number is below 40%, your pool is smaller than you think, and your fill rate reflects the active pool, not the roster.</p>
+
+    </article>
+
+    <!-- Email Capture -->
+    <div class="blog-email-capture">
+      <h3>Get practical K-12 staffing insights</h3>
+      <p class="blog-email-subtitle">One email per week. No fluff. Unsubscribe anytime.</p>
+      <form class="blog-email-form" action="#" method="POST">
+        <input type="email" placeholder="you@district.org" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </main>
+
+  <!-- Recommended -->
+  <section class="blog-recommended">
+    <h2>Recommended Reading</h2>
+    <div class="blog-recommended-grid">
+      
+      <a href="/blog/posts/future-of-k12-staffing.html" class="blog-card">
+        <div class="blog-card-body">
+          <span class="blog-card-tag" data-category="staffing-operations">Staffing Operations</span>
+          <h3 class="blog-card-title">The Future of K-12 Staffing: Five Trends That Will Shape the Next Decade</h3>
+          <p class="blog-card-summary">The staffing challenges of today are not going away. But the solutions are evolving. Here are the five trends that will define how districts staff schools over the next ten years.</p>
+          <div class="blog-card-footer">
+            <img class="blog-card-avatar" src="/boogie-byte.png" alt="Donnie Decker">
+            <span class="blog-card-author-name">Donnie Decker</span>
+            <span class="blog-card-footer-sep">&middot;</span>
+            <span>Feb 5, 2026</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/posts/end-of-year-staffing-review-checklist.html" class="blog-card">
+        <div class="blog-card-body">
+          <span class="blog-card-tag" data-category="staffing-operations">Staffing Operations</span>
+          <h3 class="blog-card-title">The End-of-Year Staffing Review Checklist Every District Needs</h3>
+          <p class="blog-card-summary">The end of the school year is when most staffing intelligence is generated and most of it is lost. Here's how to capture it and use it to start next year stronger.</p>
+          <div class="blog-card-footer">
+            <img class="blog-card-avatar" src="/boogie-byte.png" alt="Donnie Decker">
+            <span class="blog-card-author-name">Donnie Decker</span>
+            <span class="blog-card-footer-sep">&middot;</span>
+            <span>Feb 1, 2026</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="/blog/posts/staffing-metrics-every-district-should-track.html" class="blog-card">
+        <div class="blog-card-body">
+          <span class="blog-card-tag" data-category="staffing-operations">Staffing Operations</span>
+          <h3 class="blog-card-title">The 10 Staffing Metrics Every School District Should Track</h3>
+          <p class="blog-card-summary">Most districts track vacancies. That is one metric out of ten that matter. Here is the complete staffing scorecard that gives you full visibility into your workforce health.</p>
+          <div class="blog-card-footer">
+            <img class="blog-card-avatar" src="/boogie-byte.png" alt="Donnie Decker">
+            <span class="blog-card-author-name">Donnie Decker</span>
+            <span class="blog-card-footer-sep">&middot;</span>
+            <span>Jan 18, 2026</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <img src="spur-logo-white.svg" alt="Spur" class="logo-img">
+          </a>
+          <p>Done-for-you operations that put dollars back in classrooms. Real people, real results.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/spurstaffing" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/company/spurwork/" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/spurstaffing/" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Services</h4>
+          <a href="staffing.html">Staffing</a>
+          <a href="recruiting.html">Recruiting</a>
+          <a href="attendance-recovery.html">Attendance Recovery</a>
+          <a href="extended-learning.html">Extended Learning</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Company</h4>
+          <a href="about.html">About Us</a>
+          <a href="https://jobs.spureducation.com/" target="_blank" rel="noopener noreferrer">Careers</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Support</h4>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Spur. All rights reserved.</p>
+        <a href="https://www.linkedin.com/in/julianbwm/" target="_blank" rel="noopener noreferrer" class="boogiebyte-credit">
+          <img src="boogie-byte.png" alt="BoogieByte" class="boogiebyte-img">
+          <span>Branding, design, and build by BoogieBytes</span>
+        </a>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

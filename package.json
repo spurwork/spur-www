@@ -1,0 +1,26 @@
+{
+  "name": "spur-www",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spurwork/spur-www.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/spurwork/spur-www/issues"
+  },
+  "homepage": "https://github.com/spurwork/spur-www#readme",
+  "dependencies": {
+    "feed": "^5.2.0",
+    "front-matter": "^4.0.2",
+    "marked": "^17.0.1"
+  }
+}

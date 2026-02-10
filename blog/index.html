@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | Spur Education Blog</title>
+  <meta name="description" content="Practical K-12 staffing insights from the field. Research-backed strategies for substitute management, teacher retention, and extended learning.">
+  <link rel="canonical" href="https://spureducation.com/blog/">
+  <link rel="icon" type="image/png" href="/spur-favicon.png">
+  <link rel="alternate" type="application/rss+xml" title="Spur Education Blog" href="https://spureducation.com/blog/feed.xml">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/blog.css">
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <img src="spur-logo-white.svg" alt="Spur" class="logo-img">
+      </a>
+      <button class="mobile-menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links">
+        <!-- Mobile Close Button -->
+        <button class="mobile-close-btn" aria-label="Close menu">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M18 6L6 18M6 6l12 12" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+        <!-- Desktop Dropdown (hidden on mobile) -->
+        <div class="nav-dropdown">
+          <span class="nav-link nav-dropdown-toggle">
+            Services
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </span>
+          <div class="nav-mega-menu">
+            <div class="mega-menu-grid">
+              <a href="staffing.html" class="mega-menu-card" data-tab="staffing">
+                <div class="mega-card-visual" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.2) 0%, rgba(139, 92, 246, 0.05) 100%);">
+                  <div class="mega-card-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="1.5">
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                      <line x1="16" y1="2" x2="16" y2="6"/>
+                      <line x1="8" y1="2" x2="8" y2="6"/>
+                      <line x1="3" y1="10" x2="21" y2="10"/>
+                    </svg>
+                  </div>
+                </div>
+                <h4>Staffing</h4>
+                <p>Subs that show up. 92%+ fill rates.</p>
+              </a>
+              <a href="attendance-recovery.html" class="mega-menu-card" data-tab="attendance">
+                <div class="mega-card-visual" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.2) 0%, rgba(16, 185, 129, 0.05) 100%);">
+                  <div class="mega-card-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="1.5">
+                      <path d="M18 20V10"/>
+                      <path d="M12 20V4"/>
+                      <path d="M6 20v-6"/>
+                    </svg>
+                  </div>
+                </div>
+                <h4>Attendance Recovery</h4>
+                <p>Every seat filled is funding earned.</p>
+              </a>
+              <a href="extended-learning.html" class="mega-menu-card" data-tab="extended">
+                <div class="mega-card-visual" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.2) 0%, rgba(245, 158, 11, 0.05) 100%);">
+                  <div class="mega-card-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="1.5">
+                      <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                      <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                    </svg>
+                  </div>
+                </div>
+                <h4>Extended Learning</h4>
+                <p>Summer & after-school, fully staffed.</p>
+              </a>
+              <a href="recruiting.html" class="mega-menu-card" data-tab="recruiting">
+                <div class="mega-card-visual" style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.2) 0%, rgba(236, 72, 153, 0.05) 100%);">
+                  <div class="mega-card-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ec4899" stroke-width="1.5">
+                      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                      <circle cx="9" cy="7" r="4"/>
+                      <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                      <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                    </svg>
+                  </div>
+                </div>
+                <h4>Recruiting</h4>
+                <p>Great school staff, delivered to your inbox.</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Services Section (hidden on desktop) -->
+        <div class="mobile-nav-section">
+          <div class="mobile-nav-section-header">
+            <h3>Services</h3>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </div>
+          <div class="mobile-nav-section-content">
+            <a href="staffing.html" class="mobile-service-link">
+              <div class="mobile-service-icon" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.2) 0%, rgba(139, 92, 246, 0.05) 100%);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="1.5">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                  <line x1="16" y1="2" x2="16" y2="6"/>
+                  <line x1="8" y1="2" x2="8" y2="6"/>
+                  <line x1="3" y1="10" x2="21" y2="10"/>
+                </svg>
+              </div>
+              <div class="mobile-service-text">
+                <h4>Staffing</h4>
+                <p>Subs that show up. 92%+ fill rates.</p>
+              </div>
+            </a>
+            <a href="attendance-recovery.html" class="mobile-service-link">
+              <div class="mobile-service-icon" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.2) 0%, rgba(16, 185, 129, 0.05) 100%);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="1.5">
+                  <path d="M18 20V10"/>
+                  <path d="M12 20V4"/>
+                  <path d="M6 20v-6"/>
+                </svg>
+              </div>
+              <div class="mobile-service-text">
+                <h4>Attendance Recovery</h4>
+                <p>Every seat filled is funding earned.</p>
+              </div>
+            </a>
+            <a href="extended-learning.html" class="mobile-service-link">
+              <div class="mobile-service-icon" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.2) 0%, rgba(245, 158, 11, 0.05) 100%);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="1.5">
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                </svg>
+              </div>
+              <div class="mobile-service-text">
+                <h4>Extended Learning</h4>
+                <p>Summer & after-school, fully staffed.</p>
+              </div>
+            </a>
+            <a href="recruiting.html" class="mobile-service-link">
+              <div class="mobile-service-icon" style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.2) 0%, rgba(236, 72, 153, 0.05) 100%);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#ec4899" stroke-width="1.5">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+              </div>
+              <div class="mobile-service-text">
+                <h4>Recruiting</h4>
+                <p>Great school staff, delivered to your inbox.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <a href="#results" class="nav-link" style="display: none;">Real World Results</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="/blog/" class="nav-link">Blog</a>
+        <a href="https://jobs.spureducation.com/" class="nav-link" target="_blank" rel="noopener noreferrer">Jobs</a>
+        <a href="contact.html" class="nav-link">Contact Us</a>
+        <a href="contact-sales.html" class="nav-cta">Get Started</a>
+      </div>
+    </div>
+  </nav>
+
+  <section class="blog-hero">
+    <h1>The Spur <span class="serif">Blog</span></h1>
+    <p class="blog-hero-subtitle">Practical insights for K-12 staffing leaders. No jargon. No fluff. Just what works.</p>
+  </section>
+
+  <div class="blog-filters">
+    <button class="active" data-filter="all">All</button>
+    <button data-filter="teacher-retention">Teacher Retention</button>
+    <button data-filter="teacher-recruitment">Teacher Recruitment</button>
+    <button data-filter="substitute-teaching">Substitute Teaching</button>
+    <button data-filter="extended-learning">Extended Learning</button>
+    <button data-filter="staffing-operations">Staffing Operations</button>
+    <button data-filter="leadership-culture">Leadership and Culture</button>
+    <button data-filter="attendance-recovery">Attendance Recovery</button>
+  </div>
+
+  <div class="blog-search">
+    <div class="blog-search-wrapper">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <input type="text" id="blog-search-input" placeholder="Search posts...">
+    </div>
+  </div>
+
+  <div class="blog-grid" id="blog-grid">
+    
+    <a href="/blog/posts/future-of-k12-staffing.html" class="blog-card" data-category="staffing-operations" data-tags="future-trends,workforce-strategy,innovation">
+      <div class="blog-card-body">
+        <span class="blog-card-tag" data-category="staffing-operations">Staffing Operations</span>
+        <h3 class="blog-card-title">The Future of K-12 Staffing: Five Trends That Will Shape the Next Decade</h3>
+        <p class="blog-card-summary">The staffing challenges of today are not going away. But the solutions are evolving. Here are the five trends that will define how districts staff schools over the next ten years.</p>
+        <div class="blog-card-footer">
+          <img class="blog-card-avatar" src="/boogie-byte.png" alt="Donnie Decker">
+          <span class="blog-card-author-name">Donnie Decker</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>Feb 5, 2026</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>5 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="/blog/posts/end-of-year-staffing-review-checklist.html" class="blog-card" data-category="staffing-operations" data-tags="year-end-review,workforce-planning,staffing-audit">
+      <div class="blog-card-body">
+        <span class="blog-card-tag" data-category="staffing-operations">Staffing Operations</span>
+        <h3 class="blog-card-title">The End-of-Year Staffing Review Checklist Every District Needs</h3>
+        <p class="blog-card-summary">The end of the school year is when most staffing intelligence is generated and most of it is lost. Here's how to capture it and use it to start next year stronger.</p>
+        <div class="blog-card-footer">
+          <img class="blog-card-avatar" src="/boogie-byte.png" alt="Donnie Decker">
+          <span class="blog-card-author-name">Donnie Decker</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>Feb 1, 2026</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>4 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="/blog/posts/teacher-working-conditions-survey.html" class="blog-card" data-category="leadership-and-culture" data-tags="working-conditions,teacher-voice,survey-design">
+      <div class="blog-card-body">
+        <span class="blog-card-tag" data-category="leadership-and-culture">Leadership and Culture</span>
+        <h3 class="blog-card-title">How to Run a Teacher Working Conditions Survey That Produces Real Change</h3>
+        <p class="blog-card-summary">A well-designed working conditions survey gives teachers a voice and gives leaders actionable data. Here is how to design, administer, and act on one that improves retention.</p>
+        <div class="blog-card-footer">
+          <img class="blog-card-avatar" src="/DiFrancesca_800_small-500x500.jpg" alt="Crystal DiFrancesca">
+          <span class="blog-card-author-name">Crystal DiFrancesca</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>Jan 28, 2026</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>4 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="/blog/posts/extended-learning-programs-and-equity.html" class="blog-card" data-category="extended-learning" data-tags="program-access,enrollment-strategies,student-participation">
+      <div class="blog-card-body">
+        <span class="blog-card-tag" data-category="extended-learning">Extended Learning</span>
+        <h3 class="blog-card-title">How to Reach More Students with Your Extended Learning Program</h3>
+        <p class="blog-card-summary">Your extended learning program helps the students who attend. The challenge is making sure the students who would benefit most are actually in the room.</p>
+        <div class="blog-card-footer">
+          <img class="blog-card-avatar" src="/gary.jpg" alt="Gary Henderson">
+          <span class="blog-card-author-name">Gary Henderson</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>Jan 25, 2026</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>4 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="/blog/posts/recruiting-teachers-from-other-careers.html" class="blog-card" data-category="teacher-recruitment" data-tags="career-changers,alternative-certification,recruitment-strategies">
+      <div class="blog-card-body">
+        <span class="blog-card-tag" data-category="teacher-recruitment">Teacher Recruitment</span>
+        <h3 class="blog-card-title">Recruiting Career Changers into Teaching: A Practical Guide</h3>
+        <p class="blog-card-summary">Career changers are the largest untapped talent pool for teaching. Here is how to design a recruitment and onboarding process that welcomes them.</p>
+        <div class="blog-card-footer">
+          <img class="blog-card-avatar" src="/T0G593RD0-U4L1TTREH-114fd4096aa8-192.jpg" alt="Rob Magliano">
+          <span class="blog-card-author-name">Rob Magliano</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>Jan 21, 2026</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>4 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="/blog/posts/staffing-metrics-every-district-should-track.html" class="blog-card" data-category="staffing-operations" data-tags="staffing-metrics,data-analytics,workforce-planning">
+      <div class="blog-card-body">
+        <span class="blog-card-tag" data-category="staffing-operations">Staffing Operations</span>
+        <h3 class="blog-card-title">The 10 Staffing Metrics Every School District Should Track</h3>
+        <p class="blog-card-summary">Most districts track vacancies. That is one metric out of ten that matter. Here is the complete staffing scorecard that gives you full visibility into your workforce health.</p>
+        <div class="blog-card-footer">
+          <img class="blog-card-avatar" src="/boogie-byte.png" alt="Donnie Decker">
+          <span class="blog-card-author-name">Donnie Decker</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>Jan 18, 2026</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>4 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="/blog/posts/building-substitute-teacher-community.html" class="blog-card" data-category="substitute-teaching" data-tags="substitute-community,engagement,retention-strategies">
+      <div class="blog-card-body">
+        <span class="blog-card-tag" data-category="substitute-teaching">Substitute Teaching</span>
+        <h3 class="blog-card-title">Building a Community Among Your Substitute Teachers</h3>
+        <p class="blog-card-summary">Substitutes are the most isolated workforce in education. Building community among them improves retention, quality, and job satisfaction with minimal investment.</p>
+        <div class="blog-card-footer">
+          <img class="blog-card-avatar" src="/T0G593RD0-U4L1TTREH-114fd4096aa8-192.jpg" alt="Rob Magliano">
+          <span class="blog-card-author-name">Rob Magliano</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>Jan 14, 2026</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>4 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="/blog/posts/attendance-and-staffing-connection.html" class="blog-card" data-category="attendance-recovery" data-tags="attendance,staffing-impact,student-engagement">
+      <div class="blog-card-body">
+        <span class="blog-card-tag" data-category="attendance-recovery">Attendance Recovery</span>
+        <h3 class="blog-card-title">The Hidden Connection Between Staffing and Student Attendance</h3>
+        <p class="blog-card-summary">When classrooms are unstaffed, students disengage. When students are absent, staffing becomes harder. Here's how to break the cycle.</p>
+        <div class="blog-card-footer">
+          <img class="blog-card-avatar" src="/gary.jpg" alt="Gary Henderson">
+          <span class="blog-card-author-name">Gary Henderson</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>Jan 11, 2026</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>4 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="/blog/posts/teacher-retention-during-budget-cuts.html" class="blog-card" data-category="teacher-retention" data-tags="budget-cuts,retention-strategies,workforce-planning">
+      <div class="blog-card-body">
+        <span class="blog-card-tag" data-category="teacher-retention">Teacher Retention</span>
+        <h3 class="blog-card-title">How to Retain Teachers During Budget Cuts</h3>
+        <p class="blog-card-summary">Budget cuts are coming. Teacher layoffs feel inevitable. But districts that manage cuts strategically can protect their best teachers and preserve institutional knowledge.</p>
+        <div class="blog-card-footer">
+          <img class="blog-card-avatar" src="/DiFrancesca_800_small-500x500.jpg" alt="Crystal DiFrancesca">
+          <span class="blog-card-author-name">Crystal DiFrancesca</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>Jan 7, 2026</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>3 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="/blog/posts/substitute-teacher-technology-tools.html" class="blog-card" data-category="substitute-teaching" data-tags="staffing-technology,absence-management,substitute-tools">
+      <div class="blog-card-body">
+        <span class="blog-card-tag" data-category="substitute-teaching">Substitute Teaching</span>
+        <h3 class="blog-card-title">The Technology Stack Every Substitute Program Needs in 2026</h3>
+        <p class="blog-card-summary">From absence management to performance tracking, here are the technology tools that transform substitute programs from chaotic to strategic.</p>
+        <div class="blog-card-footer">
+          <img class="blog-card-avatar" src="/boogie-byte.png" alt="Donnie Decker">
+          <span class="blog-card-author-name">Donnie Decker</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>Jan 4, 2026</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>4 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="/blog/posts/measuring-extended-learning-program-success.html" class="blog-card" data-category="extended-learning" data-tags="program-evaluation,outcome-measurement,data-driven-decisions">
+      <div class="blog-card-body">
+        <span class="blog-card-tag" data-category="extended-learning">Extended Learning</span>
+        <h3 class="blog-card-title">How to Measure Whether Your Extended Learning Program Is Actually Working</h3>
+        <p class="blog-card-summary">You are running an after-school or summer program. You think it is working. But how do you know? Here is a practical measurement framework for extended learning.</p>
+        <div class="blog-card-footer">
+          <img class="blog-card-avatar" src="/gary.jpg" alt="Gary Henderson">
+          <span class="blog-card-author-name">Gary Henderson</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>Dec 31, 2025</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>4 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="/blog/posts/paraprofessional-to-teacher-pipeline.html" class="blog-card" data-category="teacher-recruitment" data-tags="paraprofessional-pipeline,teacher-certification,workforce-development">
+      <div class="blog-card-body">
+        <span class="blog-card-tag" data-category="teacher-recruitment">Teacher Recruitment</span>
+        <h3 class="blog-card-title">Turning Paraprofessionals into Teachers: A Step-by-Step Pipeline Guide</h3>
+        <p class="blog-card-summary">Your paraprofessionals already know your students, your schools, and your culture. Here's how to create a structured pathway from paraprofessional to certified teacher.</p>
+        <div class="blog-card-footer">
+          <img class="blog-card-avatar" src="/DiFrancesca_800_small-500x500.jpg" alt="Crystal DiFrancesca">
+          <span class="blog-card-author-name">Crystal DiFrancesca</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>Dec 28, 2025</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>4 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="/blog/posts/district-leadership-and-staffing-outcomes.html" class="blog-card" data-category="leadership-and-culture" data-tags="district-leadership,staffing-strategy,organizational-culture">
+      <div class="blog-card-body">
+        <span class="blog-card-tag" data-category="leadership-and-culture">Leadership and Culture</span>
+        <h3 class="blog-card-title">How District Leadership Can Drive Better Staffing Outcomes</h3>
+        <p class="blog-card-summary">Superintendent priorities, board decisions, and central office culture shape every staffing metric in your district. Here is how strong leaders make the difference.</p>
+        <div class="blog-card-footer">
+          <img class="blog-card-avatar" src="/boogie-byte.png" alt="Donnie Decker">
+          <span class="blog-card-author-name">Donnie Decker</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>Dec 24, 2025</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>3 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="/blog/posts/building-community-partnerships-for-staffing.html" class="blog-card" data-category="staffing-operations" data-tags="community-partnerships,workforce-development,staffing-solutions">
+      <div class="blog-card-body">
+        <span class="blog-card-tag" data-category="staffing-operations">Staffing Operations</span>
+        <h3 class="blog-card-title">Building Community Partnerships That Solve Your Staffing Problems</h3>
+        <p class="blog-card-summary">Your community has untapped talent that can fill classrooms, support programs, and strengthen schools. Here's how to build the partnerships that unlock it.</p>
+        <div class="blog-card-footer">
+          <img class="blog-card-avatar" src="/gary.jpg" alt="Gary Henderson">
+          <span class="blog-card-author-name">Gary Henderson</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>Dec 21, 2025</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>4 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="/blog/posts/substitute-teacher-pool-size-calculator.html" class="blog-card" data-category="staffing-operations" data-tags="pool-sizing,substitute-management,workforce-planning">
+      <div class="blog-card-body">
+        <span class="blog-card-tag" data-category="staffing-operations">Staffing Operations</span>
+        <h3 class="blog-card-title">How to Calculate the Right Size for Your Substitute Teacher Pool</h3>
+        <p class="blog-card-summary">Too small and you can't fill positions. Too large and you can't manage quality. Here's how to calculate the optimal substitute pool size for your district.</p>
+        <div class="blog-card-footer">
+          <img class="blog-card-avatar" src="/boogie-byte.png" alt="Donnie Decker">
+          <span class="blog-card-author-name">Donnie Decker</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>Dec 17, 2025</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>4 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="/blog/posts/teacher-exit-interview-questions.html" class="blog-card" data-category="teacher-retention" data-tags="exit-interviews,teacher-turnover,retention-data">
+      <div class="blog-card-body">
+        <span class="blog-card-tag" data-category="teacher-retention">Teacher Retention</span>
+        <h3 class="blog-card-title">Teacher Exit Interview Questions That Actually Reveal Why They're Leaving</h3>
+        <p class="blog-card-summary">Most exit interviews produce polite non-answers. These questions get to the real reasons teachers leave, and give you data you can act on.</p>
+        <div class="blog-card-footer">
+          <img class="blog-card-avatar" src="/DiFrancesca_800_small-500x500.jpg" alt="Crystal DiFrancesca">
+          <span class="blog-card-author-name">Crystal DiFrancesca</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>Dec 14, 2025</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>4 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="/blog/posts/summer-school-attendance-strategies.html" class="blog-card" data-category="extended-learning" data-tags="summer-school,attendance-strategies,student-engagement">
+      <div class="blog-card-body">
+        <span class="blog-card-tag" data-category="extended-learning">Extended Learning</span>
+        <h3 class="blog-card-title">How to Get Students to Actually Attend Summer School</h3>
+        <p class="blog-card-summary">Summer school works when students show up. Most don't. Here are the enrollment and attendance strategies that separate effective programs from empty classrooms.</p>
+        <div class="blog-card-footer">
+          <img class="blog-card-avatar" src="/gary.jpg" alt="Gary Henderson">
+          <span class="blog-card-author-name">Gary Henderson</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>Dec 10, 2025</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>4 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="/blog/posts/grow-your-own-teacher-programs.html" class="blog-card" data-category="teacher-recruitment" data-tags="grow-your-own,teacher-pipeline,paraprofessional-development">
+      <div class="blog-card-body">
+        <span class="blog-card-tag" data-category="teacher-recruitment">Teacher Recruitment</span>
+        <h3 class="blog-card-title">Grow Your Own Teacher Programs: Building a Pipeline from Within</h3>
+        <p class="blog-card-summary">The most committed teachers are the ones who grew up in your community. Grow-your-own programs turn paraprofessionals, students, and community members into your next generation of teachers.</p>
+        <div class="blog-card-footer">
+          <img class="blog-card-avatar" src="/DiFrancesca_800_small-500x500.jpg" alt="Crystal DiFrancesca">
+          <span class="blog-card-author-name">Crystal DiFrancesca</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>Dec 7, 2025</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>4 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="/blog/posts/district-staffing-technology-evaluation.html" class="blog-card" data-category="staffing-operations" data-tags="staffing-technology,edtech-evaluation,vendor-selection">
+      <div class="blog-card-body">
+        <span class="blog-card-tag" data-category="staffing-operations">Staffing Operations</span>
+        <h3 class="blog-card-title">How to Evaluate Staffing Technology Without Getting Sold</h3>
+        <p class="blog-card-summary">EdTech vendors promise everything. Here is a practical framework for evaluating staffing technology that focuses on what actually matters for your district.</p>
+        <div class="blog-card-footer">
+          <img class="blog-card-avatar" src="/boogie-byte.png" alt="Donnie Decker">
+          <span class="blog-card-author-name">Donnie Decker</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>Dec 3, 2025</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>4 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="/blog/posts/new-teacher-first-year-survival-guide.html" class="blog-card" data-category="teacher-retention" data-tags="new-teachers,onboarding,first-year-support">
+      <div class="blog-card-body">
+        <span class="blog-card-tag" data-category="teacher-retention">Teacher Retention</span>
+        <h3 class="blog-card-title">What Every District Should Tell New Teachers Before Day One</h3>
+        <p class="blog-card-summary">First-year teachers are overwhelmed before they even start. A structured onboarding process before school begins can prevent the most common early-career crises.</p>
+        <div class="blog-card-footer">
+          <img class="blog-card-avatar" src="/DiFrancesca_800_small-500x500.jpg" alt="Crystal DiFrancesca">
+          <span class="blog-card-author-name">Crystal DiFrancesca</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>Nov 30, 2025</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>4 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="/blog/posts/after-school-program-funding-sources.html" class="blog-card" data-category="extended-learning" data-tags="after-school-funding,grants,program-sustainability">
+      <div class="blog-card-body">
+        <span class="blog-card-tag" data-category="extended-learning">Extended Learning</span>
+        <h3 class="blog-card-title">Funding Your After-School Program: A Practical Guide to Available Sources</h3>
+        <p class="blog-card-summary">Money is the biggest barrier to after-school programming. But more funding is available than most districts realize. Here is where to find it and how to access it.</p>
+        <div class="blog-card-footer">
+          <img class="blog-card-avatar" src="/gary.jpg" alt="Gary Henderson">
+          <span class="blog-card-author-name">Gary Henderson</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>Nov 26, 2025</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>4 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="/blog/posts/substitute-teacher-no-show-rates.html" class="blog-card" data-category="substitute-teaching" data-tags="no-show-rates,substitute-reliability,staffing-operations">
+      <div class="blog-card-body">
+        <span class="blog-card-tag" data-category="substitute-teaching">Substitute Teaching</span>
+        <h3 class="blog-card-title">Substitute Teacher No-Shows: Why They Happen and How to Cut Them in Half</h3>
+        <p class="blog-card-summary">A sub who accepts an assignment and does not show up is worse than an unfilled position. Here is why no-shows happen and what districts can do to reduce them.</p>
+        <div class="blog-card-footer">
+          <img class="blog-card-avatar" src="/T0G593RD0-U4L1TTREH-114fd4096aa8-192.jpg" alt="Rob Magliano">
+          <span class="blog-card-author-name">Rob Magliano</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>Nov 23, 2025</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>4 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="/blog/posts/teacher-recruitment-marketing-strategies.html" class="blog-card" data-category="teacher-recruitment" data-tags="recruitment-marketing,employer-branding,hiring-strategies">
+      <div class="blog-card-body">
+        <span class="blog-card-tag" data-category="teacher-recruitment">Teacher Recruitment</span>
+        <h3 class="blog-card-title">Marketing Your District to Teachers: Recruitment Is Branding</h3>
+        <p class="blog-card-summary">Teacher recruitment is a marketing problem. Districts that treat it like one attract more and better candidates. Here is how to build a recruitment brand.</p>
+        <div class="blog-card-footer">
+          <img class="blog-card-avatar" src="/T0G593RD0-U4L1TTREH-114fd4096aa8-192.jpg" alt="Rob Magliano">
+          <span class="blog-card-author-name">Rob Magliano</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>Nov 19, 2025</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>4 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="/blog/posts/why-attendance-matters-more-than-you-think.html" class="blog-card" data-category="attendance-recovery" data-tags="attendance-data,student-outcomes,predictive-analytics">
+      <div class="blog-card-body">
+        <span class="blog-card-tag" data-category="attendance-recovery">Attendance Recovery</span>
+        <h3 class="blog-card-title">Why Attendance Matters More Than You Think (And More Than Test Scores)</h3>
+        <p class="blog-card-summary">Attendance is the single strongest predictor of student outcomes, stronger than test scores and stronger than school quality. Here's the evidence.</p>
+        <div class="blog-card-footer">
+          <img class="blog-card-avatar" src="/gary.jpg" alt="Gary Henderson">
+          <span class="blog-card-author-name">Gary Henderson</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>Nov 16, 2025</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>4 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="/blog/posts/tracking-substitute-teacher-performance.html" class="blog-card" data-category="staffing-operations" data-tags="performance-tracking,substitute-management,data-systems">
+      <div class="blog-card-body">
+        <span class="blog-card-tag" data-category="staffing-operations">Staffing Operations</span>
+        <h3 class="blog-card-title">A Simple System for Tracking Substitute Teacher Performance</h3>
+        <p class="blog-card-summary">You cannot improve what you do not track. Here is a practical, low-burden system for measuring substitute teacher effectiveness in your district.</p>
+        <div class="blog-card-footer">
+          <img class="blog-card-avatar" src="/boogie-byte.png" alt="Donnie Decker">
+          <span class="blog-card-author-name">Donnie Decker</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>Nov 12, 2025</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>4 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="/blog/posts/alternative-certification-pathways-for-teachers.html" class="blog-card" data-category="teacher-recruitment" data-tags="alternative-certification,teacher-quality,pathways">
+      <div class="blog-card-body">
+        <span class="blog-card-tag" data-category="teacher-recruitment">Teacher Recruitment</span>
+        <h3 class="blog-card-title">Alternative Certification Pathways: Do They Actually Produce Good Teachers?</h3>
+        <p class="blog-card-summary">Alternative certification programs now produce nearly a third of new teachers nationally. Districts need to know which pathways deliver classroom-ready hires and which ones just fill seats.</p>
+        <div class="blog-card-footer">
+          <img class="blog-card-avatar" src="/DiFrancesca_800_small-500x500.jpg" alt="Crystal DiFrancesca">
+          <span class="blog-card-author-name">Crystal DiFrancesca</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>Nov 9, 2025</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>6 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="/blog/posts/school-district-staffing-for-winter.html" class="blog-card" data-category="staffing-operations" data-tags="seasonal-staffing,absence-management,winter-planning">
+      <div class="blog-card-body">
+        <span class="blog-card-tag" data-category="staffing-operations">Staffing Operations</span>
+        <h3 class="blog-card-title">How to Prepare Your District's Staffing for Winter Absence Season</h3>
+        <p class="blog-card-summary">Every year, flu season and holiday schedules create a predictable staffing crunch. Districts that prepare in October avoid the January crisis.</p>
+        <div class="blog-card-footer">
+          <img class="blog-card-avatar" src="/boogie-byte.png" alt="Donnie Decker">
+          <span class="blog-card-author-name">Donnie Decker</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>Nov 5, 2025</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>4 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="/blog/posts/managing-substitute-teacher-quality.html" class="blog-card" data-category="substitute-teaching" data-tags="substitute-quality,performance-management,staffing-operations">
+      <div class="blog-card-body">
+        <span class="blog-card-tag" data-category="substitute-teaching">Substitute Teaching</span>
+        <h3 class="blog-card-title">How to Manage Substitute Teacher Quality Without Micromanaging</h3>
+        <p class="blog-card-summary">Not all subs are created equal. Districts need systems to identify, develop, and reward their best subs while addressing performance issues in the rest.</p>
+        <div class="blog-card-footer">
+          <img class="blog-card-avatar" src="/boogie-byte.png" alt="Donnie Decker">
+          <span class="blog-card-author-name">Donnie Decker</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>Nov 2, 2025</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>3 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="/blog/posts/teacher-compensation-beyond-salary.html" class="blog-card" data-category="teacher-retention" data-tags="teacher-compensation,benefits,retention-strategies">
+      <div class="blog-card-body">
+        <span class="blog-card-tag" data-category="teacher-retention">Teacher Retention</span>
+        <h3 class="blog-card-title">Teacher Compensation Beyond Salary: What Actually Moves the Needle</h3>
+        <p class="blog-card-summary">Salary matters, but it's not the only lever. Districts that get creative with total compensation attract and retain teachers their competitors cannot.</p>
+        <div class="blog-card-footer">
+          <img class="blog-card-avatar" src="/T0G593RD0-U4L1TTREH-114fd4096aa8-192.jpg" alt="Rob Magliano">
+          <span class="blog-card-author-name">Rob Magliano</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>Oct 29, 2025</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>4 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="/blog/posts/tutoring-programs-that-close-learning-gaps.html" class="blog-card" data-category="extended-learning" data-tags="tutoring,learning-gaps,student-outcomes">
+      <div class="blog-card-body">
+        <span class="blog-card-tag" data-category="extended-learning">Extended Learning</span>
+        <h3 class="blog-card-title">High-Dosage Tutoring: What Works for Closing Learning Gaps</h3>
+        <p class="blog-card-summary">Tutoring is the most effective academic intervention we have. But not all tutoring is equal. Here's what the research says about the programs that actually move student outcomes.</p>
+        <div class="blog-card-footer">
+          <img class="blog-card-avatar" src="/gary.jpg" alt="Gary Henderson">
+          <span class="blog-card-author-name">Gary Henderson</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>Oct 26, 2025</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>4 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="/blog/posts/automating-substitute-placement.html" class="blog-card" data-category="staffing-operations" data-tags="substitute-placement,staffing-operations,process-improvement">
+      <div class="blog-card-body">
+        <span class="blog-card-tag" data-category="staffing-operations">Staffing Operations</span>
+        <h3 class="blog-card-title">How to Streamline Your Substitute Placement Process</h3>
+        <p class="blog-card-summary">A faster, more efficient substitute placement process fills more classrooms and keeps your best subs engaged. Here are the process improvements that make the biggest difference.</p>
+        <div class="blog-card-footer">
+          <img class="blog-card-avatar" src="/boogie-byte.png" alt="Donnie Decker">
+          <span class="blog-card-author-name">Donnie Decker</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>Oct 22, 2025</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>4 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="/blog/posts/principal-role-in-teacher-retention.html" class="blog-card" data-category="leadership-and-culture" data-tags="principal-leadership,teacher-retention,school-leadership">
+      <div class="blog-card-body">
+        <span class="blog-card-tag" data-category="leadership-and-culture">Leadership and Culture</span>
+        <h3 class="blog-card-title">How Great Principals Keep Great Teachers</h3>
+        <p class="blog-card-summary">The building principal is the single most influential factor in teacher retention at the school level. Here is what effective principals do to build teams that stay.</p>
+        <div class="blog-card-footer">
+          <img class="blog-card-avatar" src="/DiFrancesca_800_small-500x500.jpg" alt="Crystal DiFrancesca">
+          <span class="blog-card-author-name">Crystal DiFrancesca</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>Oct 19, 2025</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>4 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="/blog/posts/teacher-shortage-state-by-state.html" class="blog-card" data-category="teacher-recruitment" data-tags="teacher-shortage,workforce-data,state-policy">
+      <div class="blog-card-body">
+        <span class="blog-card-tag" data-category="teacher-recruitment">Teacher Recruitment</span>
+        <h3 class="blog-card-title">The Teacher Shortage Is Not the Same Everywhere: A State-by-State Reality Check</h3>
+        <p class="blog-card-summary">National headlines about teacher shortages mask enormous variation. Some states are in crisis. Others are not. Here's what the data actually shows and why it matters for your district.</p>
+        <div class="blog-card-footer">
+          <img class="blog-card-avatar" src="/DiFrancesca_800_small-500x500.jpg" alt="Crystal DiFrancesca">
+          <span class="blog-card-author-name">Crystal DiFrancesca</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>Oct 15, 2025</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>4 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="/blog/posts/extended-learning-time-and-student-outcomes.html" class="blog-card" data-category="extended-learning" data-tags="extended-learning,student-outcomes,program-effectiveness">
+      <div class="blog-card-body">
+        <span class="blog-card-tag" data-category="extended-learning">Extended Learning</span>
+        <h3 class="blog-card-title">Does Extended Learning Time Actually Improve Student Outcomes?</h3>
+        <p class="blog-card-summary">More time in school sounds like an obvious solution. But the research is more nuanced than the headlines suggest. Here's what works, what doesn't, and why quality matters more than quantity.</p>
+        <div class="blog-card-footer">
+          <img class="blog-card-avatar" src="/gary.jpg" alt="Gary Henderson">
+          <span class="blog-card-author-name">Gary Henderson</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>Oct 12, 2025</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>3 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="/blog/posts/data-driven-staffing-decisions.html" class="blog-card" data-category="staffing-operations" data-tags="data-analytics,staffing-operations,decision-making">
+      <div class="blog-card-body">
+        <span class="blog-card-tag" data-category="staffing-operations">Staffing Operations</span>
+        <h3 class="blog-card-title">How to Use Data to Make Better Staffing Decisions in Your District</h3>
+        <p class="blog-card-summary">Most districts have staffing data. Few use it to make decisions. Here's how to build a data practice that actually improves how you staff your schools.</p>
+        <div class="blog-card-footer">
+          <img class="blog-card-avatar" src="/boogie-byte.png" alt="Donnie Decker">
+          <span class="blog-card-author-name">Donnie Decker</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>Oct 8, 2025</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>3 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="/blog/posts/substitute-teacher-retention-strategies.html" class="blog-card" data-category="substitute-teaching" data-tags="substitute-retention,substitute-experience,staffing-operations">
+      <div class="blog-card-body">
+        <span class="blog-card-tag" data-category="substitute-teaching">Substitute Teaching</span>
+        <h3 class="blog-card-title">Why Your Best Substitute Teachers Keep Quitting (And How to Stop It)</h3>
+        <p class="blog-card-summary">Recruiting subs is hard. Keeping them is harder. Here's why your most reliable substitutes stop accepting assignments and what to do about it.</p>
+        <div class="blog-card-footer">
+          <img class="blog-card-avatar" src="/T0G593RD0-U4L1TTREH-114fd4096aa8-192.jpg" alt="Rob Magliano">
+          <span class="blog-card-author-name">Rob Magliano</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>Oct 5, 2025</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>4 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="/blog/posts/attendance-recovery-programs-k12.html" class="blog-card" data-category="attendance-recovery" data-tags="attendance-recovery,chronic-absenteeism,credit-recovery">
+      <div class="blog-card-body">
+        <span class="blog-card-tag" data-category="attendance-recovery">Attendance Recovery</span>
+        <h3 class="blog-card-title">Attendance Recovery Programs: How to Bring Students Back After They've Missed Too Much</h3>
+        <p class="blog-card-summary">When a student has already missed 20+ days, traditional interventions are not enough. Attendance recovery programs offer a structured path back. Here's how to build one.</p>
+        <div class="blog-card-footer">
+          <img class="blog-card-avatar" src="/gary.jpg" alt="Gary Henderson">
+          <span class="blog-card-author-name">Gary Henderson</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>Oct 1, 2025</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>4 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="/blog/posts/how-to-recruit-substitute-teachers.html" class="blog-card" data-category="substitute-teaching" data-tags="substitute-recruitment,hiring-strategies,substitute-pool">
+      <div class="blog-card-body">
+        <span class="blog-card-tag" data-category="substitute-teaching">Substitute Teaching</span>
+        <h3 class="blog-card-title">How to Recruit Substitute Teachers When Nobody Wants the Job</h3>
+        <p class="blog-card-summary">Your sub pool is shrinking. Your fill rate is dropping. Here are the unconventional recruitment channels that are actually working for districts right now.</p>
+        <div class="blog-card-footer">
+          <img class="blog-card-avatar" src="/T0G593RD0-U4L1TTREH-114fd4096aa8-192.jpg" alt="Rob Magliano">
+          <span class="blog-card-author-name">Rob Magliano</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>Sep 28, 2025</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>4 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="/blog/posts/teacher-mentorship-programs-that-work.html" class="blog-card" data-category="teacher-retention" data-tags="mentorship,new-teachers,teacher-retention">
+      <div class="blog-card-body">
+        <span class="blog-card-tag" data-category="teacher-retention">Teacher Retention</span>
+        <h3 class="blog-card-title">Teacher Mentorship Programs That Actually Improve Retention</h3>
+        <p class="blog-card-summary">Most mentorship programs pair a new teacher with a veteran and hope for the best. That is not mentorship. Here's what effective programs look like.</p>
+        <div class="blog-card-footer">
+          <img class="blog-card-avatar" src="/DiFrancesca_800_small-500x500.jpg" alt="Crystal DiFrancesca">
+          <span class="blog-card-author-name">Crystal DiFrancesca</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>Sep 24, 2025</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>3 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="/blog/posts/building-school-culture-that-retains-teachers.html" class="blog-card" data-category="leadership-and-culture" data-tags="school-culture,teacher-retention,leadership">
+      <div class="blog-card-body">
+        <span class="blog-card-tag" data-category="leadership-and-culture">Leadership and Culture</span>
+        <h3 class="blog-card-title">Building a School Culture That Keeps Teachers from Leaving</h3>
+        <p class="blog-card-summary">Teachers leave schools, not districts. Building-level culture is the single biggest factor in retention. Here's how to build one that makes teachers stay.</p>
+        <div class="blog-card-footer">
+          <img class="blog-card-avatar" src="/DiFrancesca_800_small-500x500.jpg" alt="Crystal DiFrancesca">
+          <span class="blog-card-author-name">Crystal DiFrancesca</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>Sep 21, 2025</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>4 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="/blog/posts/chronic-absenteeism-intervention-strategies.html" class="blog-card" data-category="attendance-recovery" data-tags="chronic-absenteeism,attendance,intervention-strategies">
+      <div class="blog-card-body">
+        <span class="blog-card-tag" data-category="attendance-recovery">Attendance Recovery</span>
+        <h3 class="blog-card-title">Chronic Absenteeism Interventions That Actually Move the Needle</h3>
+        <p class="blog-card-summary">Chronic absenteeism affects 1 in 4 students nationally. Most interventions fail because they target the wrong students at the wrong time. Here's what works.</p>
+        <div class="blog-card-footer">
+          <img class="blog-card-avatar" src="/gary.jpg" alt="Gary Henderson">
+          <span class="blog-card-author-name">Gary Henderson</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>Sep 17, 2025</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>4 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="/blog/posts/recruiting-teachers-in-rural-districts.html" class="blog-card" data-category="teacher-recruitment" data-tags="rural-education,teacher-recruitment,hiring-strategies">
+      <div class="blog-card-body">
+        <span class="blog-card-tag" data-category="teacher-recruitment">Teacher Recruitment</span>
+        <h3 class="blog-card-title">How Rural Districts Can Compete for Teaching Talent</h3>
+        <p class="blog-card-summary">Rural districts cannot outspend suburban competitors. But they can out-recruit them by leveraging what makes small communities unique.</p>
+        <div class="blog-card-footer">
+          <img class="blog-card-avatar" src="/T0G593RD0-U4L1TTREH-114fd4096aa8-192.jpg" alt="Rob Magliano">
+          <span class="blog-card-author-name">Rob Magliano</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>Sep 14, 2025</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>3 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="/blog/posts/centralized-vs-decentralized-substitute-management.html" class="blog-card" data-category="staffing-operations" data-tags="substitute-management,staffing-operations,district-administration">
+      <div class="blog-card-body">
+        <span class="blog-card-tag" data-category="staffing-operations">Staffing Operations</span>
+        <h3 class="blog-card-title">Centralized vs. Decentralized Substitute Management: Which Works Better?</h3>
+        <p class="blog-card-summary">Some districts let each school manage their own subs. Others centralize the process. Here's what the data says about which approach actually fills more classrooms.</p>
+        <div class="blog-card-footer">
+          <img class="blog-card-avatar" src="/boogie-byte.png" alt="Donnie Decker">
+          <span class="blog-card-author-name">Donnie Decker</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>Sep 10, 2025</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>3 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="/blog/posts/summer-learning-program-attendance.html" class="blog-card" data-category="extended-learning" data-tags="summer-learning,attendance,student-engagement">
+      <div class="blog-card-body">
+        <span class="blog-card-tag" data-category="extended-learning">Extended Learning</span>
+        <h3 class="blog-card-title">How to Keep Students Coming Back to Your Summer Learning Program</h3>
+        <p class="blog-card-summary">Summer program enrollment is easy. Attendance is hard. Here's what the research says about keeping students engaged through the full program.</p>
+        <div class="blog-card-footer">
+          <img class="blog-card-avatar" src="/gary.jpg" alt="Gary Henderson">
+          <span class="blog-card-author-name">Gary Henderson</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>Sep 7, 2025</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>2 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="/blog/posts/how-much-to-pay-substitute-teachers.html" class="blog-card" data-category="substitute-teaching" data-tags="substitute-pay,compensation,market-rates">
+      <div class="blog-card-body">
+        <span class="blog-card-tag" data-category="substitute-teaching">Substitute Teaching</span>
+        <h3 class="blog-card-title">How Much Should You Pay Substitute Teachers in 2025?</h3>
+        <p class="blog-card-summary">Substitute pay varies wildly across districts. Here's how to figure out the right rate for your market, and why pay alone won't solve your staffing problem.</p>
+        <div class="blog-card-footer">
+          <img class="blog-card-avatar" src="/T0G593RD0-U4L1TTREH-114fd4096aa8-192.jpg" alt="Rob Magliano">
+          <span class="blog-card-author-name">Rob Magliano</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>Sep 3, 2025</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>3 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="/blog/posts/substitute-teacher-onboarding-checklist.html" class="blog-card" data-category="substitute-teaching" data-tags="onboarding,substitute-experience,school-readiness">
+      <div class="blog-card-body">
+        <span class="blog-card-tag" data-category="substitute-teaching">Substitute Teaching</span>
+        <h3 class="blog-card-title">The Substitute Teacher Onboarding Checklist Every School Needs</h3>
+        <p class="blog-card-summary">A sub's first day at your school determines whether they ever come back. Here's a practical onboarding checklist that takes 15 minutes and changes everything.</p>
+        <div class="blog-card-footer">
+          <img class="blog-card-avatar" src="/DiFrancesca_800_small-500x500.jpg" alt="Crystal DiFrancesca">
+          <span class="blog-card-author-name">Crystal DiFrancesca</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>Aug 31, 2025</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>3 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="/blog/posts/reducing-teacher-absenteeism.html" class="blog-card" data-category="teacher-retention" data-tags="absenteeism,teacher-attendance,prevention">
+      <div class="blog-card-body">
+        <span class="blog-card-tag" data-category="teacher-retention">Teacher Retention</span>
+        <h3 class="blog-card-title">5 Ways to Support Teacher Attendance This Semester</h3>
+        <p class="blog-card-summary">When teachers can be in their classrooms consistently, students thrive. Here are five systemic changes that help teachers show up at their best.</p>
+        <div class="blog-card-footer">
+          <img class="blog-card-avatar" src="/boogie-byte.png" alt="Donnie Decker">
+          <span class="blog-card-author-name">Donnie Decker</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>Aug 27, 2025</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>3 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="/blog/posts/after-school-program-staffing-guide.html" class="blog-card" data-category="extended-learning" data-tags="after-school,program-staffing,extended-learning">
+      <div class="blog-card-body">
+        <span class="blog-card-tag" data-category="extended-learning">Extended Learning</span>
+        <h3 class="blog-card-title">How to Staff an After-School Program Without Burning Out Your Team</h3>
+        <p class="blog-card-summary">After-school programs have a staffing problem that mirrors the teacher shortage. Here's how to recruit, retain, and schedule a team that actually sticks around.</p>
+        <div class="blog-card-footer">
+          <img class="blog-card-avatar" src="/gary.jpg" alt="Gary Henderson">
+          <span class="blog-card-author-name">Gary Henderson</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>Aug 24, 2025</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>3 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="/blog/posts/what-substitute-teachers-actually-want.html" class="blog-card" data-category="substitute-teaching" data-tags="substitute-experience,worker-dignity,retention">
+      <div class="blog-card-body">
+        <span class="blog-card-tag" data-category="substitute-teaching">Substitute Teaching</span>
+        <h3 class="blog-card-title">What Substitute Teachers Actually Want from Your District</h3>
+        <p class="blog-card-summary">Districts spend thousands recruiting subs but rarely ask them what would make them stay. Here's what substitutes actually care about, based on survey data and real conversations.</p>
+        <div class="blog-card-footer">
+          <img class="blog-card-avatar" src="/DiFrancesca_800_small-500x500.jpg" alt="Crystal DiFrancesca">
+          <span class="blog-card-author-name">Crystal DiFrancesca</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>Aug 20, 2025</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>3 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="/blog/posts/building-substitute-teacher-pipeline.html" class="blog-card" data-category="substitute-teaching" data-tags="substitute-recruitment,pipeline,staffing-systems">
+      <div class="blog-card-body">
+        <span class="blog-card-tag" data-category="substitute-teaching">Substitute Teaching</span>
+        <h3 class="blog-card-title">How to Build a Substitute Teacher Pipeline That Lasts</h3>
+        <p class="blog-card-summary">Most districts recruit subs in September and wonder why the pool is empty by January. Here's how to build a pipeline that refills itself year-round.</p>
+        <div class="blog-card-footer">
+          <img class="blog-card-avatar" src="/boogie-byte.png" alt="Donnie Decker">
+          <span class="blog-card-author-name">Donnie Decker</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>Aug 17, 2025</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>3 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="/blog/posts/why-teachers-leave-and-what-districts-can-do.html" class="blog-card" data-category="teacher-retention" data-tags="teacher-turnover,retention-strategies,exit-interviews">
+      <div class="blog-card-body">
+        <span class="blog-card-tag" data-category="teacher-retention">Teacher Retention</span>
+        <h3 class="blog-card-title">Why Teachers Leave and What Districts Can Actually Do About It</h3>
+        <p class="blog-card-summary">Teacher turnover costs districts billions annually. The reasons teachers leave are well-documented. The question is whether your district is willing to address them.</p>
+        <div class="blog-card-footer">
+          <img class="blog-card-avatar" src="/DiFrancesca_800_small-500x500.jpg" alt="Crystal DiFrancesca">
+          <span class="blog-card-author-name">Crystal DiFrancesca</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>Aug 13, 2025</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>3 min read</span>
+        </div>
+      </div>
+    </a>
+
+    <a href="/blog/posts/how-to-improve-substitute-teacher-fill-rates.html" class="blog-card" data-category="substitute-teaching" data-tags="fill-rates,substitute-management,staffing">
+      <div class="blog-card-body">
+        <span class="blog-card-tag" data-category="substitute-teaching">Substitute Teaching</span>
+        <h3 class="blog-card-title">How to Improve Your Substitute Teacher Fill Rates</h3>
+        <p class="blog-card-summary">Most districts accept abysmal substitute fill rates as normal. They're not. Here's a field-tested playbook for getting your fill rate above 90% without throwing money at the problem.</p>
+        <div class="blog-card-footer">
+          <img class="blog-card-avatar" src="/T0G593RD0-U4L1TTREH-114fd4096aa8-192.jpg" alt="Rob Magliano">
+          <span class="blog-card-author-name">Rob Magliano</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>Aug 10, 2025</span>
+          <span class="blog-card-footer-sep">&middot;</span>
+          <span>4 min read</span>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <!-- Email Capture -->
+  <div class="blog-email-capture" style="margin: 0 auto 4rem;">
+    <h3>Get practical K-12 staffing insights</h3>
+    <p class="blog-email-subtitle">One email per week. No fluff. Unsubscribe anytime.</p>
+    <form class="blog-email-form" action="#" method="POST">
+      <input type="email" placeholder="you@district.org" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <img src="spur-logo-white.svg" alt="Spur" class="logo-img">
+          </a>
+          <p>Done-for-you operations that put dollars back in classrooms. Real people, real results.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/spurstaffing" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/company/spurwork/" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/spurstaffing/" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Services</h4>
+          <a href="staffing.html">Staffing</a>
+          <a href="recruiting.html">Recruiting</a>
+          <a href="attendance-recovery.html">Attendance Recovery</a>
+          <a href="extended-learning.html">Extended Learning</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Company</h4>
+          <a href="about.html">About Us</a>
+          <a href="https://jobs.spureducation.com/" target="_blank" rel="noopener noreferrer">Careers</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Support</h4>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Spur. All rights reserved.</p>
+        <a href="https://www.linkedin.com/in/julianbwm/" target="_blank" rel="noopener noreferrer" class="boogiebyte-credit">
+          <img src="boogie-byte.png" alt="BoogieByte" class="boogiebyte-img">
+          <span>Branding, design, and build by BoogieBytes</span>
+        </a>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+  <script>
+    // Category filter
+    document.querySelectorAll('.blog-filters button').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.blog-filters button').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        document.querySelectorAll('.blog-card').forEach(card => {
+          if (filter === 'all' || card.dataset.category === filter) {
+            card.style.display = '';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Search
+    const searchInput = document.getElementById('blog-search-input');
+    if (searchInput) {
+      searchInput.addEventListener('input', () => {
+        const q = searchInput.value.toLowerCase();
+        document.querySelectorAll('.blog-card').forEach(card => {
+          const title = card.querySelector('.blog-card-title').textContent.toLowerCase();
+          const summary = card.querySelector('.blog-card-summary').textContent.toLowerCase();
+          card.style.display = (title.includes(q) || summary.includes(q)) ? '' : 'none';
+        });
+      });
+    }
+  </script>
+</body>
+</html>
