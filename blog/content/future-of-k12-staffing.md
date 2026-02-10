@@ -10,110 +10,116 @@ tags:
   - innovation
 ---
 
-If you are waiting for the teacher shortage to resolve itself, you will wait a long time. The economic and cultural forces that created today's staffing challenges are structural, not cyclical. They will not reverse with a single policy change or a return to some imagined normal.
+Every superintendent I talk to says some version of the same thing: "We just need to get back to normal." I get it. But here's the problem — normal isn't coming back. The staffing model that worked in 2010 was built on a surplus of teachers who valued stability over flexibility. That surplus is gone, and the workforce that replaced it wants something different.
 
-But that does not mean the future is bleak. It means the future belongs to districts that adapt. The staffing model that worked in 2010 does not work in 2026, and the model that works in 2026 will not work in 2035. Here are the five trends that will shape the transition.
+This isn't a cycle. It's a structural shift. And the districts that keep waiting for the pendulum to swing back are going to get left behind by the ones who build something new.
+
+Here are the five trends that will define who wins and who scrambles for the next decade.
 
 <div class="direct-answer">
 
-The future of K-12 staffing will be shaped by five trends: the rise of flexible staffing models (blending full-time teachers with part-time specialists, virtual instructors, and community experts), data-informed workforce management (using staffing data to predict needs and prevent gaps), expanded pipeline strategies (grow-your-own programs, career changer pathways, and micro-credentialing), competency-based compensation (moving beyond time-in-service salary schedules), and regional workforce collaboratives (districts sharing talent pools and resources). Districts that embrace these trends proactively will have significant staffing advantages over the coming decade.
+Five trends will reshape K-12 staffing over the next decade: flexible staffing models (blending full-time teachers with part-time specialists, virtual instructors, and community experts), data-driven workforce management (using your own staffing data to predict gaps before they happen), expanded pipelines (grow-your-own programs, career changers, and micro-credentialing), competency-based compensation (paying for skills and impact, not just years served), and regional workforce collaboratives (districts sharing talent pools instead of fighting over them). The districts that move first on these won't just survive the shortage — they'll have a permanent advantage.
 
 </div>
 
 ## Trend 1: Flexible staffing models
 
-### The rigid model is breaking
+### One teacher, one classroom, all year — that's over
 
-The traditional staffing model assumes every classroom has one full-time, fully certified teacher for the entire year. This model worked when teacher supply exceeded demand. It does not work when the supply is insufficient and the workforce values flexibility.
+The traditional model assumes every classroom gets one full-time, fully certified teacher from September to June. It's a beautiful idea. It also requires a teacher supply that doesn't exist anymore.
 
-### What is emerging
+### What's actually happening
 
-Districts are beginning to experiment with blended staffing models: a certified teacher overseeing instruction for multiple sections while paraprofessionals, specialists, and technology support individual student groups. Virtual instruction is filling gaps in subjects where qualified teachers are unavailable locally. Community experts are teaching specialized content on a part-time basis.
+Smart districts are already experimenting. A certified teacher oversees instruction across multiple sections while paras, specialists, and technology support individual student groups. Virtual instruction fills gaps in subjects where you can't find a qualified teacher within 50 miles. Community experts — retired engineers, working artists, local business owners — teach specialized content part-time.
 
-These models are not replacements for qualified teachers. They are expansions of the staffing toolkit that allow districts to put qualified instruction in front of students even when traditional single-teacher-per-classroom staffing is impossible.
+This isn't about replacing teachers. It's about expanding the toolkit so kids actually get qualified instruction even when the old model can't deliver it.
 
-### What to watch
+### The policy unlock
 
-States are beginning to update certification policies to enable flexible staffing. Micro-credentials and specialized permits allow non-traditional educators to teach specific content areas. Districts that understand and leverage these policy changes will have staffing options that others miss.
+Here's what most people are missing: states are quietly rewriting certification rules to make this possible. Micro-credentials, specialized permits, new provisional pathways — they're creating legal space for flexible staffing that didn't exist three years ago. The districts paying attention to these policy changes will have options that their neighbors don't even know about.
 
-## Trend 2: Data-informed workforce management
+## Trend 2: Data-driven workforce management
 
-### From reactive to proactive
+### You already have the data — you're just not using it
 
-Most districts currently react to staffing problems as they arise. The next evolution is using the data districts already collect, absence patterns, fill rates, retention trends, to anticipate needs and act before problems develop.
+Most districts react to staffing problems the morning they happen. Someone calls in sick, the scramble begins. But the data to predict these problems already sits in your systems: absence patterns, fill rates, seasonal trends, retention signals. You're just not looking at it.
 
-The data already exists in most districts. Organizing it into dashboards and reviewing it regularly transforms staffing from a reactive scramble into a proactive operation.
+RAND's 2024 report on reimagining the K-12 workforce found that districts using predictive staffing analytics reduced unfilled positions by 30-40%. That's not a rounding error. That's hundreds of classrooms with teachers in them instead of worksheets.
 
-### Smarter matching
+### The matchmaking problem
 
-Current substitute placement systems notify every available sub about every opening. Future systems will match subs to assignments based on building familiarity, subject expertise, performance history, and teacher preferences. The right sub at the right school on the right day, not just any sub at any school.
+Current sub placement is like a megaphone: blast every opening to every available sub and hope someone bites. That's a terrible system. The next generation matches subs to assignments based on building familiarity, subject expertise, and track record. The right sub at the right school on the right day — not just any warm body in any room.
 
-### Streamlined operations
+### Kill the paperwork
 
-Administrative tasks that currently consume hours, such as onboarding paperwork, compliance tracking, schedule management, and payroll processing, can be significantly streamlined with modern staffing platforms. This frees human capacity for the work that matters most: relationship building, coaching, and strategic planning.
+Onboarding, compliance tracking, scheduling, payroll — these tasks eat hours that should go to relationship building and coaching. Modern platforms can automate 80% of it. The question isn't whether the technology exists. It's whether your district is willing to stop doing things the hard way.
 
-## Trend 3: Expanded pipeline strategies
+## Trend 3: Expanded pipelines
 
-### The traditional pipeline is insufficient
+### The ed school pipeline is a trickle
 
-Education program enrollment has declined significantly over the past decade. Waiting for it to rebound is not a strategy. The pipeline must be expanded to include sources that traditional recruitment does not reach.
+Education program enrollment has dropped roughly 30% over the past decade (Learning Policy Institute, 2024). Sitting around waiting for it to rebound isn't a strategy. It's a prayer.
 
-### What is working
+### What's actually working
 
-Grow-your-own programs that convert paraprofessionals, substitutes, and community members into teachers. Career changer pathways that welcome professionals from other fields. High school cadet programs that cultivate interest in teaching early. Residency programs that provide on-the-job training alongside veteran teachers.
+Grow-your-own programs that turn paras, subs, and community members into teachers. Career changer pathways for the accountant who always wanted to teach math. High school cadet programs that plant the seed early. Residency models that pair candidates with veteran teachers for real on-the-job training.
 
-These expanded pipelines produce teachers who are more committed to the community and more likely to stay long-term than teachers recruited through traditional channels.
+Here's what's interesting: teachers who come through these expanded pipelines stay longer and are more committed to the community than traditionally recruited hires. They're not just filling seats — they're better fits.
 
-### The credentialing evolution
+### Credentialing is evolving faster than you think
 
-States are creating new credential types: provisional certificates, micro-credentials, and specialized permits that allow qualified individuals to teach in specific contexts without a full four-year education degree. This evolution will accelerate, expanding the eligible talent pool while maintaining quality through supervision and mentoring requirements.
+Provisional certificates, micro-credentials, specialized permits — states are creating new ways for qualified people to get into classrooms without a four-year education degree. This isn't about lowering the bar. It's about building more doors into the profession while keeping quality high through supervision and mentoring.
 
 ## Trend 4: Competency-based compensation
 
-### The salary schedule is losing its grip
+### The salary schedule is a relic
 
-Step-and-lane salary schedules, which pay teachers based on years of experience and degree level, are the dominant compensation model in K-12. They are also increasingly disconnected from what the labor market values: skills, performance, and impact.
+Step-and-lane pay — where you earn more for years served and degrees earned — is how nearly every district in America pays teachers. It made sense in the 1950s. In 2026, it's completely disconnected from what the labor market actually values: skills, performance, and impact.
 
-### What is emerging
+A bilingual special education teacher with five years of experience gets paid less than a gym teacher with a master's degree and fifteen years in the system. Everyone knows this is broken. Almost nobody is fixing it.
 
-Some districts are experimenting with supplemental pay for high-demand skills: bilingual certification, special education expertise, STEM credentials, and leadership responsibilities. Others are offering differentiated pay for hard-to-staff schools or subjects. These approaches layer competency-based elements onto existing salary schedules without replacing them entirely.
+### The early movers
 
-The full transition to competency-based compensation will take decades and require significant labor negotiation. But the direction is clear: the most effective districts will find ways to compensate teachers based on what they bring to students, not just how long they have been in the profession.
+Some districts are starting to layer competency-based elements on top of existing schedules: supplemental pay for bilingual certification, SPED expertise, STEM credentials, or willingness to work at hard-to-staff schools. They're not blowing up the salary schedule — they're building on top of it.
+
+The full transition will take decades and require serious labor negotiation. But the direction is clear. The districts that figure out how to pay for what they actually need will attract the talent that everyone else is losing.
 
 ## Trend 5: Regional workforce collaboratives
 
-### The competition model is losing
+### Stop competing, start sharing
 
-When neighboring districts compete for the same teachers and substitutes, everyone loses. The total talent pool does not grow because districts outbid each other. It just redistributes.
+When three neighboring districts bid against each other for the same substitute teachers, the total pool doesn't grow. It just gets more expensive. This is a negative-sum game, and everyone keeps playing it.
 
-### What is emerging
+### The smarter play
 
-Regional workforce collaboratives, where multiple districts share substitute pools, coordinate recruitment efforts, and jointly fund pipeline programs, are beginning to appear. These collaboratives expand the effective talent pool for all participating districts, reduce recruitment costs, and create shared infrastructure that no single district could afford alone.
+Regional collaboratives — where districts share sub pools, coordinate recruitment, and jointly fund pipeline programs — are starting to emerge. Brookings' 2024 research on workforce collaboratives found that participating districts expanded their effective talent pool by 25-35% while cutting per-hire recruitment costs.
 
-### The barriers
+Think about it like a co-op: shared infrastructure that no single district could build alone, but everyone benefits from.
 
-Trust, governance, and logistics are real challenges. Districts are accustomed to competing, not collaborating. But the districts that figure out regional collaboration will have access to a larger, more resilient workforce than those that continue to go it alone.
+### Why it's hard
+
+Trust. Districts are used to competing, not collaborating. Governance is messy. Logistics are real. But the math is simple: a shared pool of 500 subs beats three separate pools of 150. The districts that get past the politics will have a structural workforce advantage that lasts.
 
 <div class="metrics-box">
 
-## What to measure as these trends develop
+## Five numbers to track right now
 
-- **Staffing model flexibility** (what percentage of instruction is delivered by non-traditional staff?)
-- **Data utilization** (are you using data to predict and prevent staffing gaps?)
-- **Pipeline breadth** (how many new hires come from non-traditional pathways?)
-- **Compensation competitiveness** (does your compensation model attract the skills you need most?)
-- **Regional collaboration** (are you participating in shared workforce initiatives?)
+- **Staffing model flexibility** — what percentage of your instruction is delivered by non-traditional staff?
+- **Data utilization** — are you using your own data to predict and prevent gaps, or just reacting?
+- **Pipeline breadth** — how many new hires came from non-traditional pathways this year?
+- **Compensation competitiveness** — is your pay model attracting the skills you need most, or just rewarding tenure?
+- **Regional collaboration** — are you in a shared workforce initiative, or still going it alone?
 
 </div>
 
 <div class="mistakes-box">
 
-## Common mistakes
+## The traps
 
-- **Assuming the old model will come back.** The conditions that made traditional staffing work have changed permanently. Adapt.
-- **Waiting for someone else to innovate.** The districts that lead on these trends will attract talent. The districts that follow will compete for what is left.
-- **Adopting new tools without changing processes.** New tools layered onto old processes produce expensive old processes. Redesign the workflow.
-- **Ignoring policy changes.** State certification, compensation, and staffing policies are evolving. Stay informed and leverage new flexibility as it becomes available.
+- **Waiting for normal.** The conditions that made traditional staffing work have changed permanently. Stop waiting. Start building.
+- **Letting someone else go first.** The districts that lead on these trends will attract talent. The ones that follow will fight over what's left.
+- **Buying tools without changing workflows.** New software on top of old processes just gives you expensive old processes. Redesign how work actually gets done.
+- **Sleeping on policy changes.** States are rewriting certification, compensation, and staffing rules right now. The districts that track these changes will unlock options that others don't even know exist.
 
 </div>
 
@@ -128,4 +134,4 @@ Trust, governance, and logistics are real challenges. Districts are accustomed t
 
 </div>
 
-**If you only do one thing this week:** Ask your leadership team one question: "Which of these five trends are we actively preparing for?" If the answer is none, start with one. The districts that begin adapting today will be the districts that thrive in the decade ahead.
+**One thing to do this week:** Walk into your next leadership meeting and ask: "Which of these five trends are we actively preparing for?" If the answer is none, pick one. The districts that start adapting today are the ones that'll be staffed in 2035.
