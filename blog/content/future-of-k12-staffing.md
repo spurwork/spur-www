@@ -2,7 +2,7 @@
 title: "The Future of K-12 Staffing: Five Trends That Will Shape the Next Decade"
 description: "The staffing challenges of today are not going away. But the solutions are evolving. Here are the five trends that will define how districts staff schools over the next ten years."
 date: "2026-02-06"
-author: donnie-decker
+author: julian-mante
 category: Staffing Operations
 tags:
   - future trends
