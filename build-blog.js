@@ -25,7 +25,7 @@ const AUTHORS = {
     slug: 'rob-magliano',
     bio: 'Rob works directly with school districts across the country, helping them solve their most pressing staffing challenges. He brings a field-level perspective on what is actually working in K-12 staffing.',
     focus: ['Teacher Recruitment', 'Substitute Teaching', 'Staffing Operations'],
-    avatar: '/T0G593RD0-U4L1TTREH-114fd4096aa8-192.jpg',
+    avatar: '/rob.png',
   },
   'donnie-decker': {
     name: 'Donnie Decker',
@@ -33,7 +33,7 @@ const AUTHORS = {
     slug: 'donnie-decker',
     bio: 'Donnie oversees operations at Spur and brings a systems-thinking approach to education staffing. He focuses on building frameworks that make complex problems manageable.',
     focus: ['Staffing Operations', 'Leadership and Culture', 'Teacher Retention'],
-    avatar: '/boogie-byte.png',
+    avatar: '/donnie.jpg',
   },
   'crystal-difrancesca': {
     name: 'Crystal DiFrancesca',
@@ -300,7 +300,7 @@ function buildBlogIndex(posts) {
 
   <section class="blog-hero">
     <h1>The Spur <span class="serif">Blog</span></h1>
-    <p class="blog-hero-subtitle">Practical insights for K-12 staffing leaders. No jargon. No fluff. Just what works.</p>
+    <p class="blog-hero-subtitle">Practical insights for K-12 staffing leaders.</p>
   </section>
 
   <div class="blog-filters">
