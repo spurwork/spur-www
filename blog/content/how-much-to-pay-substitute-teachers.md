@@ -14,7 +14,7 @@ I hear the same question in every district I visit: "How much should we pay subs
 
 <div class="direct-answer">
 
-The national average daily rate for substitute teachers is approximately $130-$150 per day, but rates vary dramatically by region. Urban districts typically pay $140-$200. Rural districts often pay $90-$120. The right rate for your district is the one that keeps your active pool large enough to maintain an 85%+ fill rate. Pay is necessary but not sufficient. Districts that raise pay without fixing systems see temporary bumps that fade within a semester.
+Substitute teacher daily rates vary dramatically by region, with urban districts generally paying significantly more than rural ones. The right rate for your district is the one that keeps your active pool large enough to maintain a healthy fill rate. Pay is necessary but not sufficient. Districts that raise pay without fixing systems see temporary bumps that fade within a semester.
 
 </div>
 
@@ -72,16 +72,6 @@ A $10/day increase across 500 sub-days per month costs $5,000/month or $45,000/y
 - **Setting rates once and never adjusting.** The labor market changes. Review your rate at least annually.
 - **Ignoring total compensation.** A district paying $140/day with fast onboarding, good schools, and timely pay is more attractive than a district paying $160/day with slow onboarding and poor building experiences.
 - **Not communicating pay increases.** If you raise rates, tell your subs. Send a direct message. Post it on your website. Make sure the market knows.
-
-</div>
-
-<div class="sources-list">
-
-## Sources
-
-1. Bureau of Labor Statistics, "Occupational Employment and Wages: Substitute Teachers" (2024).
-2. National Council on Teacher Quality, "Substitute Teaching Compensation" (2022).
-3. Education Week, "Substitute Teacher Pay" (2024).
 
 </div>
 

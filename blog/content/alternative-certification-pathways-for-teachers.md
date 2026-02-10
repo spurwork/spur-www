@@ -106,18 +106,4 @@ The second pitfall is screening out alternatively certified candidates by defaul
 
 </div>
 
-<div class="sources-list">
-
-## Sources
-
-1. Podolsky, A., Kini, T., & Darling-Hammond, L. (2022). "Does Teaching Experience Increase Teacher Effectiveness? A Review of US Research." Learning Policy Institute.
-2. National Center for Education Statistics. (2023). "Teacher Attrition and Mobility: Results from the 2021-22 Teacher Follow-Up Survey." NCES 2023-047.
-3. Goldhaber, D., Krieg, J., & Theobald, R. (2021). "Exploring the Impact of Student Teaching Apprenticeships on Student Achievement and Mentor Teachers." RAND Corporation.
-4. Clark, M. A., Isenberg, E., & Qi, Y. (2023). "Impacts of Selective Teacher Preparation Programs on Student Achievement." American Educational Research Journal, 60(2), 301-334.
-5. Institute of Education Sciences. (2020). "The Effects of Comprehensive Teacher Induction: Final Results from a Randomized Controlled Study." IES 2020-001.
-6. Sass, T. R. (2015). "Licensure and Worker Quality: A Comparison of Alternative Routes to Teaching." Journal of Law and Economics, 58(1), 1-35.
-7. Garcia, E. & Weiss, E. (2023). "The Teacher Shortage Is Real, Large and Growing." Economic Policy Institute.
-
-</div>
-
 **If you only do one thing this week:** Pull a list of every alternative certification program your district hired from in the past three years. For each one, check the first-year retention rate of those hires. If any program's retention falls below 70%, schedule a conversation with that program's leadership or stop recruiting from them entirely.

@@ -94,14 +94,4 @@ Each metric should have a target. Fill rate: 90%. Retention rate: 90%. Time to f
 
 </div>
 
-<div class="sources-list">
-
-## Sources
-
-1. Education Resource Strategies, "Strategic Staffing Analytics" (2023).
-2. AASPA, "HR Metrics for School Districts" (2024).
-3. Frontline Education, "The State of K-12 Staffing Data" (2024).
-
-</div>
-
 **If you only do one thing this week:** Calculate three numbers: your current fill rate, your current teacher retention rate, and your pool activation rate. Write them on a sticky note and put it on your monitor. Those three numbers are the foundation of your staffing scorecard. Next week, add two more.

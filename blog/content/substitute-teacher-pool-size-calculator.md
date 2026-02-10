@@ -14,7 +14,7 @@ tags:
 
 <div class="direct-answer">
 
-The optimal substitute pool size is determined by four factors: your average daily teacher absences, your target fill rate, your pool activation rate (the percentage of rostered subs who actually accept assignments regularly), and your peak absence multiplier. The formula is: Target Pool Size = (Peak Daily Absences x Target Fill Rate) / Pool Activation Rate. For example, a district with 50 peak daily absences, a 90% fill rate target, and a 40% pool activation rate needs 113 active subs on the roster. Most districts underestimate the activation rate gap: having 200 subs on paper means nothing if only 80 accept assignments regularly.
+The optimal substitute pool size is determined by four factors: your average daily teacher absences, your target fill rate, your pool activation rate (the percentage of rostered subs who actually accept assignments regularly), and your peak absence multiplier. The formula is: Target Pool Size = (Peak Daily Absences x Target Fill Rate) / Pool Activation Rate. Plug in your own district's numbers to get a realistic target. Most districts underestimate the activation rate gap: having a large roster on paper means nothing if only a fraction of those subs accept assignments regularly.
 
 </div>
 
@@ -108,16 +108,6 @@ Absence patterns change. Sub pool composition changes. Activation rates fluctuat
 - **Sizing for average days instead of peak days.** Average days are manageable. Peak days break your system. Size for the peak.
 - **Not tracking activation rate.** If you do not know what percentage of your pool is active, you cannot assess whether your pool is adequate.
 - **Recruiting without retaining.** Adding 50 new subs while losing 40 existing ones nets you 10. Fix retention before scaling recruitment.
-
-</div>
-
-<div class="sources-list">
-
-## Sources
-
-1. Frontline Education, "Substitute Pool Optimization" (2024).
-2. AASPA, "Workforce Planning for Substitute Programs" (2023).
-3. Kelly Education, "Pool Size and Fill Rate Analysis" (2023).
 
 </div>
 

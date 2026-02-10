@@ -14,7 +14,7 @@ You enrolled 300 students in your summer program. By week three, 180 are showing
 
 <div class="direct-answer">
 
-Summer program attendance drops an average of 30-40% between enrollment and the final week. RAND's research on summer learning programs found that students who attend at least 75% of sessions show measurable academic gains, while those below 50% attendance show almost none. The key drivers of sustained attendance are program quality (activities students actually enjoy), transportation access, family communication, and a sense of belonging from day one.
+Summer program attendance drops substantially between enrollment and the final week, and this pattern is one of the most consistent challenges in summer programming. Research on summer learning programs consistently finds that students who attend the majority of sessions show measurable academic gains, while those with low attendance show almost none. The key drivers of sustained attendance are program quality (activities students actually enjoy), transportation access, family communication, and a sense of belonging from day one.
 
 </div>
 
@@ -60,16 +60,6 @@ Do not wait until a student has missed three days. Call the family after the fir
 - **Not solving transportation.** If you build it, they will come, only if they can get there.
 - **Waiting until week three to address attendance drops.** By then, the habit of not attending is set.
 - **Making the program feel like regular school.** Summer programs that replicate the school-year experience fail to attract the students who need them most.
-
-</div>
-
-<div class="sources-list">
-
-## Sources
-
-1. Augustine, C. H., et al. (2016). "Learning from Summer." RAND Corporation.
-2. McCombs, J. S., et al. (2020). "Making Summer Count." RAND Corporation.
-3. National Summer Learning Association, "Summer by the Numbers" (2023).
 
 </div>
 

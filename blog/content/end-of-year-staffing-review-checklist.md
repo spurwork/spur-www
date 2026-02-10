@@ -129,14 +129,4 @@ Review progress on staffing goals quarterly. Do not wait until next June to disc
 
 </div>
 
-<div class="sources-list">
-
-## Sources
-
-1. Education Resource Strategies, "Annual Strategic Staffing Review" (2023).
-2. AASA, "District Workforce Planning" (2024).
-3. AASPA, "Year-End HR Review Best Practices" (2023).
-
-</div>
-
 **If you only do one thing this week:** Block four hours in June for a staffing review meeting. Invite your HR director, your substitute program coordinator, and one principal. Pull the data for each of the five sections above. Four hours of analysis in June prevents twelve months of repeating last year's mistakes.

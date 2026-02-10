@@ -14,7 +14,7 @@ Every after-school program director I know has the same conversation once a year
 
 <div class="direct-answer">
 
-After-school program funding comes from five primary sources: federal grants (21st Century Community Learning Centers is the largest at $1.3 billion annually), state-level grants and appropriations, local funding (district budgets and municipal allocations), private foundations, and fee-based revenue. The most sustainable programs braid multiple funding streams rather than relying on a single source. Districts that employ a dedicated grant writer or train existing staff in grant writing access 2-3 times more external funding than those that do not.
+After-school program funding comes from five primary sources: federal grants (21st Century Community Learning Centers is the largest at $1.3 billion annually), state-level grants and appropriations, local funding (district budgets and municipal allocations), private foundations, and fee-based revenue. The most sustainable programs braid multiple funding streams rather than relying on a single source. Districts that employ a dedicated grant writer or train existing staff in grant writing access significantly more external funding than those that do not.
 
 </div>
 
@@ -100,16 +100,6 @@ Every funder wants evidence that their money made a difference. Collect attendan
 - **Not tracking outcomes for grant reporting.** If you cannot demonstrate impact, you cannot renew funding. Build data collection into the program from the start.
 - **Missing deadlines.** Federal and state grants have firm deadlines. Create a grant calendar and start applications months in advance.
 - **Not building relationships with funders.** Grant writing is relationship work. Contact program officers. Attend informational webinars. Visit funders at conferences. Relationships improve your odds.
-
-</div>
-
-<div class="sources-list">
-
-## Sources
-
-1. Afterschool Alliance, "Funding and Sustainability" (2024).
-2. U.S. Department of Education, "21st Century Community Learning Centers" (2024).
-3. Wallace Foundation, "Sustaining After-School Programs" (2022).
 
 </div>
 

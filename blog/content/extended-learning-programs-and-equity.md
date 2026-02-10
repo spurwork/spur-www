@@ -89,14 +89,4 @@ Monitor your program enrollment to understand which student populations are well
 
 </div>
 
-<div class="sources-list">
-
-## Sources
-
-1. Afterschool Alliance, "America After 3PM" (2023).
-2. RAND Corporation, "Extended Learning Program Participation" (2022).
-3. National Summer Learning Association, "Increasing Program Access" (2023).
-
-</div>
-
 **If you only do one thing this week:** Compare your program enrollment to your school's overall student population. Are there groups of students who are underrepresented? If so, call five families from that group and ask: "What would make it easier for your child to participate?" Their answers will tell you exactly what barriers to address.

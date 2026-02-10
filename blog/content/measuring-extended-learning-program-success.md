@@ -107,14 +107,4 @@ The point of evaluation is improvement, not just accountability. Monthly attenda
 
 </div>
 
-<div class="sources-list">
-
-## Sources
-
-1. RAND Corporation, "Evaluating Extended Learning Programs" (2022).
-2. Harvard Family Research Project, "Evaluating Out-of-School Time Programs" (2019).
-3. American Institutes for Research, "After-School Program Quality Assessment" (2023).
-
-</div>
-
 **If you only do one thing this week:** Identify the two assessments your district already administers to all students (likely a reading and math benchmark). Pull last year's results for your program participants and a matched group of non-participants. Compare the growth. That analysis, which takes about an hour, is the beginning of your impact story.

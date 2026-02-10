@@ -14,7 +14,7 @@ Every district has data. Absence reports, fill rate logs, payroll records, teach
 
 <div class="direct-answer">
 
-Data-driven staffing means using real-time and historical data to predict staffing needs, allocate resources, and evaluate the effectiveness of staffing strategies. Districts that implement data-driven staffing practices see measurable improvements: 10-20% higher fill rates through predictive absence modeling, reduced overtime and emergency staffing costs, and faster identification of staffing problems before they become crises. The starting point is not sophisticated analytics. It is simply looking at the data you already have on a weekly basis and asking "what is this telling us?"
+Data-driven staffing means using real-time and historical data to predict staffing needs, allocate resources, and evaluate the effectiveness of staffing strategies. Districts that implement data-driven staffing practices see measurable improvements: higher fill rates through predictive absence modeling, reduced overtime and emergency staffing costs, and faster identification of staffing problems before they become crises. The starting point is not sophisticated analytics. It is simply looking at the data you already have on a weekly basis and asking "what is this telling us?"
 
 </div>
 
@@ -84,16 +84,6 @@ At the end of each school year, evaluate your staffing strategies against the da
 - **Reviewing data annually instead of weekly.** Staffing problems develop over weeks, not years. Your data review cadence should match.
 - **Focusing on averages instead of distributions.** A 85% district fill rate hides the building at 60%. Look at the range, not just the mean.
 - **Investing in analytics tools before building the habit.** A $50,000 dashboard that nobody checks is worse than a free spreadsheet that someone updates every Friday.
-
-</div>
-
-<div class="sources-list">
-
-## Sources
-
-1. AASA, "Data-Driven Decision Making in School Districts" (2023).
-2. Education Resource Strategies, "Strategic Staffing" (2022).
-3. Frontline Education, "The Future of K-12 Staffing Analytics" (2024).
 
 </div>
 

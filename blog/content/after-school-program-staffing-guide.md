@@ -14,7 +14,7 @@ You launched an after-school program. Enrollment is strong. Families are gratefu
 
 <div class="direct-answer">
 
-After-school program staffing works when you treat it as a workforce system, not a gig. That means competitive hourly rates benchmarked against local alternatives, predictable scheduling at least two weeks in advance, real onboarding (not just a handbook), and a clear path to more hours or full-time roles. Programs that retain 80%+ of their staff year-over-year share these four characteristics.
+After-school program staffing works when you treat it as a workforce system, not a gig. That means competitive hourly rates benchmarked against local alternatives, predictable scheduling at least two weeks in advance, real onboarding (not just a handbook), and a clear path to more hours or full-time roles. Programs with strong staff retention share these four characteristics.
 
 </div>
 
@@ -66,16 +66,6 @@ Parents, retired teachers, college students, and community members with relevant
 - **Treating after-school staff as lesser employees.** If your after-school team does not get the same respect, communication, and support as your day staff, they will notice.
 - **Relying on a single site coordinator to do everything.** If one person leaving can collapse your program, your structure is too fragile.
 - **Not training for behavior management.** After-school hours are when behavioral challenges peak. Untrained staff cannot handle it.
-
-</div>
-
-<div class="sources-list">
-
-## Sources
-
-1. Afterschool Alliance, "America After 3PM" (2022).
-2. RAND Corporation, "Hours of Opportunity: Lessons from Five Cities on Building Systems to Improve After-School Programs" (2020).
-3. Wallace Foundation, "The Cost of Quality in After-School Programs" (2019).
 
 </div>
 

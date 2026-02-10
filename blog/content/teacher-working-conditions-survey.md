@@ -103,14 +103,4 @@ This follow-through is the single most important step. It proves that the survey
 
 </div>
 
-<div class="sources-list">
-
-## Sources
-
-1. New Teacher Center, "Teaching, Empowering, Leading, and Learning (TELL) Survey" (2022).
-2. RAND Corporation, "State of the American Teacher" (2024).
-3. Kraft, M. A. & Papay, J. P. (2014). "Can Professional Environments in Schools Promote Teacher Development?" Educational Evaluation and Policy Analysis.
-
-</div>
-
 **If you only do one thing this week:** Ask every teacher in one building to answer one question on a notecard: "What is the one change that would most improve your daily experience here?" Collect the cards anonymously. Read them. If the same answer appears three or more times, you have found your highest-leverage improvement opportunity.

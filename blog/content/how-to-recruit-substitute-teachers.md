@@ -14,7 +14,7 @@ The substitute teacher shortage is not new. But it is worse than it has ever bee
 
 <div class="direct-answer">
 
-Districts with the strongest substitute pools recruit from non-traditional sources: retired professionals, college students, stay-at-home parents returning to work, career changers, and gig economy workers. The most effective recruitment strategies treat sub recruitment like a year-round marketing campaign rather than a one-time job posting. Districts that maintain active recruitment efforts throughout the school year see 15-25% larger active pools than those that recruit only in August. Speed matters too: the time between application and first classroom assignment should be under two weeks.
+Districts with the strongest substitute pools recruit from non-traditional sources: retired professionals, college students, stay-at-home parents returning to work, career changers, and gig economy workers. The most effective recruitment strategies treat sub recruitment like a year-round marketing campaign rather than a one-time job posting. Districts that maintain active recruitment efforts throughout the school year build meaningfully larger active pools than those that recruit only in August. Speed matters too: the shorter the time between application and first classroom assignment, the fewer candidates you lose to other employers.
 
 </div>
 
@@ -84,16 +84,6 @@ Make every step digital, fast, and flexible.
 - **Requiring unnecessary credentials.** Many states allow non-certified substitutes. If your district adds requirements beyond state minimums, you are shrinking your own pool.
 - **Making onboarding slow and painful.** Every extra week between application and first assignment loses candidates.
 - **Not following up with inactive subs.** A sub who has not worked in 60 days needs a phone call, not a deactivation notice. "We have not seen you in a while. Is there anything we can do to get you back?"
-
-</div>
-
-<div class="sources-list">
-
-## Sources
-
-1. Frontline Education, "Substitute Teacher Trends" (2024).
-2. Kelly Education, "State of Substitute Teaching" (2023).
-3. AASPA, "Substitute Teacher Recruitment Best Practices" (2023).
 
 </div>
 

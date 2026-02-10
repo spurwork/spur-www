@@ -16,7 +16,7 @@ But salary is only one piece of compensation. And in many cases, it is not even 
 
 <div class="direct-answer">
 
-Total compensation includes salary, benefits, working conditions, professional development opportunities, schedule flexibility, and non-monetary perks. Research shows that while salary is necessary to attract candidates, non-salary factors are often more influential in retention decisions. A RAND survey found that teachers ranked supportive leadership, manageable workload, and professional autonomy above salary when asked about factors that would keep them in their current school. Districts that cannot compete on salary can often compete on total compensation by strategically investing in benefits, working conditions, and professional growth opportunities.
+Total compensation includes salary, benefits, working conditions, professional development opportunities, schedule flexibility, and non-monetary perks. Research shows that while salary is necessary to attract candidates, non-salary factors are often more influential in retention decisions. Teachers consistently rank supportive leadership, manageable workload, and professional autonomy among the top factors that would keep them in their current school. Districts that cannot compete on salary can often compete on total compensation by strategically investing in benefits, working conditions, and professional growth opportunities.
 
 </div>
 
@@ -85,16 +85,6 @@ Identify two or three benefits or working conditions where you clearly outperfor
 - **Offering benefits teachers do not know about.** A great benefits package that nobody understands is a wasted investment. Communicate clearly and often.
 - **Adding perks instead of fixing conditions.** A free gym membership does not compensate for 35-student class sizes. Fix the fundamentals first.
 - **Not calculating total compensation.** If you do not know what your total compensation is worth, neither do your teachers or candidates.
-
-</div>
-
-<div class="sources-list">
-
-## Sources
-
-1. RAND Corporation, "State of the American Teacher" (2024).
-2. National Council on Teacher Quality, "Teacher Contract Database" (2023).
-3. Economic Policy Institute, "Teacher Compensation" (2023).
 
 </div>
 

@@ -104,14 +104,4 @@ Teachers will only complete the survey if they believe it matters. Two strategie
 
 </div>
 
-<div class="sources-list">
-
-## Sources
-
-1. Frontline Education, "Substitute Teacher Feedback Systems" (2024).
-2. AASPA, "Best Practices in Substitute Performance Management" (2023).
-3. Kelly Education, "Quality Metrics for Substitute Programs" (2023).
-
-</div>
-
 **If you only do one thing this week:** Create a three-question Google Form. Send it to every teacher who had a sub this week. Read the responses. You will learn more about your substitute program in one week than most districts learn in a year.

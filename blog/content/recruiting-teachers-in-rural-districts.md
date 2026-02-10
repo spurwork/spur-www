@@ -14,7 +14,7 @@ Every rural superintendent I talk to says the same thing: "We cannot compete on 
 
 <div class="direct-answer">
 
-Rural districts face acute teacher shortages, with vacancy rates 2-3 times higher than suburban districts in many states. The most effective rural recruitment strategies focus on three areas: growing local talent through partnerships with regional universities, marketing the genuine lifestyle advantages of small communities, and removing logistical barriers like housing. Districts that combine grow-your-own programs with competitive total compensation (including housing assistance and loan forgiveness) see the strongest results. Salary alone will not close the gap, but ignoring salary entirely will not work either.
+Rural districts face acute teacher shortages, with vacancy rates far exceeding those in suburban districts in many states. The most effective rural recruitment strategies focus on three areas: growing local talent through partnerships with regional universities, marketing the genuine lifestyle advantages of small communities, and removing logistical barriers like housing. Districts that combine grow-your-own programs with competitive total compensation (including housing assistance and loan forgiveness) see the strongest results. Salary alone will not close the gap, but ignoring salary entirely will not work either.
 
 </div>
 
@@ -82,16 +82,6 @@ Your best recruitment tool is a happy teacher who loves living in your community
 - **Waiting until June to post positions.** The best candidates are gone by May. Start in February.
 - **Not addressing housing proactively.** If a candidate asks "where will I live?" and you do not have an answer, you have lost them.
 - **Underselling the community.** Your recruitment materials should make candidates want to live in your town, not just work in your school.
-
-</div>
-
-<div class="sources-list">
-
-## Sources
-
-1. National Center for Education Statistics, "Teacher Shortages in Rural Areas" (2023).
-2. Rural School and Community Trust, "Why Rural Matters" (2023).
-3. Education Commission of the States, "Teacher Recruitment in Rural Districts" (2022).
 
 </div>
 

@@ -71,14 +71,4 @@ When you see patterns, fix them. If subs consistently cite poor experiences at c
 
 </div>
 
-<div class="sources-list">
-
-## Sources
-
-1. Frontline Research and Learning Institute, "Employee Absence in U.S. School Districts" (2023).
-2. National Council on Teacher Quality, "Substitute Teaching in the United States" (2022).
-3. RAND Corporation, "Substitute Teacher Policies and Practices" (2020).
-
-</div>
-
 **If you only do one thing this week:** Pull your substitute pool data and calculate your active rate: how many subs on your roster have worked at least one day in the last 30 days? Divide that by your total roster. If the number is below 50%, your pipeline has a retention problem, not a recruitment problem.

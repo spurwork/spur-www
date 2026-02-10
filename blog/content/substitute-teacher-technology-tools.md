@@ -14,7 +14,7 @@ I visit districts where the sub coordinator manages 150 substitutes with a sprea
 
 <div class="direct-answer">
 
-An effective substitute program technology stack includes four components: an absence management system (notifications, assignment matching, and scheduling), a communication platform (mass messaging to the sub pool), a performance tracking system (feedback collection and scoring), and a data dashboard (real-time visibility into fill rates, pool health, and trends). Most districts have the first component but lack the other three. The investment in a complete stack typically costs $3-8 per student annually and generates returns through higher fill rates, lower administrative costs, and better data-driven decision making.
+An effective substitute program technology stack includes four components: an absence management system (notifications, assignment matching, and scheduling), a communication platform (mass messaging to the sub pool), a performance tracking system (feedback collection and scoring), and a data dashboard (real-time visibility into fill rates, pool health, and trends). Most districts have the first component but lack the other three. The investment in a complete stack is modest relative to the returns it generates through higher fill rates, lower administrative costs, and better data-driven decision making.
 
 </div>
 
@@ -114,16 +114,6 @@ Communication tools are valuable but less urgent. You can send emails and make p
 - **Implementing without training.** A powerful platform that nobody knows how to use delivers zero value. Invest in training for all user groups.
 - **Not cleaning data before migration.** Moving dirty data into a new system creates dirty results faster. Clean your sub pool data first.
 - **Expecting technology to fix process problems.** If your substitute program has structural issues (bad building experiences, low pay, no quality management), technology will run a broken process more efficiently. Fix the process too.
-
-</div>
-
-<div class="sources-list">
-
-## Sources
-
-1. CoSN, "Technology for K-12 Staffing" (2024).
-2. Frontline Education, "Absence Management Technology Guide" (2024).
-3. EdSurge, "The State of EdTech in K-12 Operations" (2024).
 
 </div>
 

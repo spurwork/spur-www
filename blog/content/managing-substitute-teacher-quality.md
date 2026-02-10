@@ -14,7 +14,7 @@ Here is an uncomfortable truth: some of your substitute teachers are excellent, 
 
 <div class="direct-answer">
 
-Substitute teacher quality varies significantly, and districts that implement quality management systems see measurable improvements in both classroom outcomes and sub retention. Effective quality management includes three components: feedback collection (post-assignment surveys from teachers and administrators), performance tiers (differentiating assignments and pay based on quality), and professional development (targeted training to improve common skill gaps). Districts that rate and tier their subs report 15-20% higher teacher satisfaction with sub performance and stronger retention of high-performing substitutes.
+Substitute teacher quality varies significantly, and districts that implement quality management systems see measurable improvements in both classroom outcomes and sub retention. Effective quality management includes three components: feedback collection (post-assignment surveys from teachers and administrators), performance tiers (differentiating assignments and pay based on quality), and professional development (targeted training to improve common skill gaps). Districts that rate and tier their subs report notably higher teacher satisfaction with sub performance and stronger retention of high-performing substitutes.
 
 </div>
 
@@ -90,16 +90,6 @@ Highlight your top subs in district communications. Feature them at school board
 - **Collecting feedback and not acting on it.** Data without action is worse than no data. It signals that quality does not matter.
 - **Applying consequences without coaching first.** Most low-performing subs can improve with targeted support. Give them the chance.
 - **Treating all subs identically regardless of performance.** This drives away your best subs and rewards your worst ones.
-
-</div>
-
-<div class="sources-list">
-
-## Sources
-
-1. AASPA, "Managing Substitute Teacher Performance" (2023).
-2. Frontline Education, "Substitute Quality Indicators" (2024).
-3. NCTQ, "Substitute Teaching Quality Framework" (2022).
 
 </div>
 

@@ -18,7 +18,7 @@ This scenario plays out thousands of times per year across the country. The tale
 
 <div class="direct-answer">
 
-Career changers represent a significant potential talent pool for teaching, particularly in shortage subject areas like math, science, and career and technical education. Research shows that career changers who receive adequate support perform comparably to traditionally certified teachers by their second year and bring real-world experience that enhances instruction. The barriers to recruiting career changers are primarily structural: certification requirements, salary schedule inflexibility, and onboarding processes designed for 22-year-olds fresh from education programs. Districts that actively recruit career changers with streamlined pathways, credit for prior experience, and mentoring support see 15-25% of new hires come from non-traditional backgrounds.
+Career changers represent a significant potential talent pool for teaching, particularly in shortage subject areas like math, science, and career and technical education. Research shows that career changers who receive adequate support perform comparably to traditionally certified teachers by their second year and bring real-world experience that enhances instruction. The barriers to recruiting career changers are primarily structural: certification requirements, salary schedule inflexibility, and onboarding processes designed for 22-year-olds fresh from education programs. Districts that actively recruit career changers with streamlined pathways, credit for prior experience, and mentoring support can meaningfully increase the share of new hires coming from non-traditional backgrounds.
 
 </div>
 
@@ -82,16 +82,6 @@ The districts that retain career changers invest heavily in their first year. Th
 - **Starting career changers at Step 1.** A $40,000 starting salary for someone earning $80,000 is a non-starter. Credit prior experience.
 - **Expecting career changers to navigate certification alone.** Partner with alternative certification programs and guide candidates through the process.
 - **Providing no additional first-year support.** Career changers need more mentoring, not less, because their gaps are in pedagogy, not professionalism.
-
-</div>
-
-<div class="sources-list">
-
-## Sources
-
-1. TNTP, "Greenhouse Schools: How Schools Can Build Cultures Where Teachers and Students Thrive" (2014).
-2. National Center for Alternative Certification, "Alternative Teacher Certification" (2024).
-3. U.S. Department of Education, "Non-Traditional Routes to Teaching" (2023).
 
 </div>
 

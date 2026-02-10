@@ -14,7 +14,7 @@ Your fill rate is 72%. Maybe 68%. You check it every Monday morning, and every M
 
 <div class="direct-answer">
 
-A healthy substitute fill rate sits above 90%. Most districts hover between 60% and 80%, according to data from the Frontline Research and Learning Institute. The gap between where you are and where you need to be comes down to three things: how fast you post jobs, how easy you make it for subs to say yes, and whether the experience is good enough that they come back.
+A healthy substitute fill rate is one where the vast majority of absences are covered. Many districts fall well short of that benchmark. The gap between where you are and where you need to be comes down to three things: how fast you post jobs, how easy you make it for subs to say yes, and whether the experience is good enough that they come back.
 
 </div>
 
@@ -77,16 +77,6 @@ Consider differential pay for hard-to-fill days. A $15 bump for Friday assignmen
 - **Ignoring the sub experience at the building level.** You can recruit 200 new subs, but if your schools treat them poorly, those subs will work for a neighboring district instead.
 - **Raising pay without fixing systems.** Pay matters, but a district paying $120/day with great systems will outperform a district paying $150/day where jobs post at 6:30 AM.
 - **Not tracking the data at all.** If you are not measuring fill rate weekly by building, you are guessing. Stop guessing.
-
-</div>
-
-<div class="sources-list">
-
-## Sources
-
-1. Frontline Research and Learning Institute, "Absence Management and Substitute Teaching" (2023).
-2. National Council on Teacher Quality, "Substitute Teaching in the United States" (2022).
-3. RAND Corporation, "Substitute Teacher Policies and Practices" (2020).
 
 </div>
 

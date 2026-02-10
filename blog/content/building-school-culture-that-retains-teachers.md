@@ -14,7 +14,7 @@ I have interviewed hundreds of teachers who left their schools. Almost none of t
 
 <div class="direct-answer">
 
-School culture is the strongest predictor of teacher retention at the building level, outweighing salary and class size. Research from the University of Pennsylvania found that teachers in schools with strong collaborative cultures were 62% less likely to leave than teachers in schools with weak cultures. The key elements of a retentive culture are: meaningful collaboration (not just shared planning time), administrative support that is visible and consistent, teacher voice in decisions that affect their work, and recognition that goes beyond a "Teacher Appreciation Week" mug.
+School culture is the strongest predictor of teacher retention at the building level, outweighing salary and class size. Research consistently shows that teachers in schools with strong collaborative cultures are far less likely to leave than teachers in schools with weak cultures. The key elements of a retentive culture are: meaningful collaboration (not just shared planning time), administrative support that is visible and consistent, teacher voice in decisions that affect their work, and recognition that goes beyond a "Teacher Appreciation Week" mug.
 
 </div>
 
@@ -82,16 +82,6 @@ The most retentive schools I have seen are not the ones that pile on supports to
 - **Not investigating building-level patterns.** When multiple teachers leave the same building, understanding the root causes helps identify where additional support is needed.
 - **Surveying teachers without acting on results.** Asking for feedback and then ignoring it is worse than not asking at all.
 - **Assuming culture is one person's job alone.** Culture is shaped by every adult in the building. Everyone plays a role in making it strong.
-
-</div>
-
-<div class="sources-list">
-
-## Sources
-
-1. Kraft, M. A., et al. (2016). "School Organizational Contexts, Teacher Turnover, and Student Achievement." American Educational Research Journal.
-2. Simon, N. & Johnson, S. M. (2015). "Teacher Turnover in High-Poverty Schools." Harvard Graduate School of Education.
-3. Ingersoll, R. M. (2001). "Teacher Turnover and Teacher Shortages." American Educational Research Journal.
 
 </div>
 

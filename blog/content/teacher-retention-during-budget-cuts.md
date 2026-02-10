@@ -16,7 +16,7 @@ Budget cuts are real constraints. But they are not an excuse to abandon retentio
 
 <div class="direct-answer">
 
-Districts facing budget cuts can protect retention through strategic workforce planning: analyzing which positions, not just which people, to reduce; leveraging natural attrition rather than forced layoffs; redeploying staff rather than eliminating them; and investing in the low-cost retention strategies that matter most during uncertainty (communication, recognition, and administrative support). Districts that communicate early and honestly with staff during budget uncertainty experience 30-40% less voluntary turnover than districts that remain silent until decisions are finalized.
+Districts facing budget cuts can protect retention through strategic workforce planning: analyzing which positions, not just which people, to reduce; leveraging natural attrition rather than forced layoffs; redeploying staff rather than eliminating them; and investing in the low-cost retention strategies that matter most during uncertainty (communication, recognition, and administrative support). Districts that communicate early and honestly with staff during budget uncertainty experience substantially less voluntary turnover than districts that remain silent until decisions are finalized.
 
 </div>
 
@@ -76,16 +76,6 @@ Teachers do not leave during budget cuts because of the budget cuts. They leave 
 - **Defaulting to last-in-first-out without analysis.** Seniority-based cuts are legally easy and strategically costly. Explore alternatives.
 - **Cutting professional development and mentorship first.** These are the cheapest retention tools you have. Cutting them during instability accelerates voluntary departures.
 - **Treating budget cuts as a one-time event.** Budget pressures are cyclical. Build a workforce planning function that anticipates cuts and adjusts proactively rather than reactively.
-
-</div>
-
-<div class="sources-list">
-
-## Sources
-
-1. Education Resource Strategies, "Strategic Staffing During Budget Constraints" (2023).
-2. RAND Corporation, "Teacher Retention During Fiscal Stress" (2022).
-3. National Council on Teacher Quality, "Layoff Policies" (2023).
 
 </div>
 

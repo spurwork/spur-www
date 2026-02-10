@@ -81,14 +81,4 @@ Effective principals consult teachers before making decisions that affect their 
 
 </div>
 
-<div class="sources-list">
-
-## Sources
-
-1. Grissom, J. A. & Bartanen, B. (2019). "Strategic Retention: Principal Effectiveness and Teacher Turnover in Multiple-Measure Teacher Evaluation Systems." American Educational Research Journal.
-2. Ladd, H. F. (2011). "Teachers' Perceptions of Their Working Conditions." Educational Evaluation and Policy Analysis.
-3. TNTP, "The Irreplaceables" (2012).
-
-</div>
-
 **If you only do one thing this week:** Compare your teacher retention rate across buildings for the last three years. Identify the buildings with the strongest retention. What are those principals doing that could be shared as best practices across the district? That is where your leadership development investment will have the most leverage.

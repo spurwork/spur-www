@@ -14,7 +14,7 @@ I have watched districts with identical sub pool sizes achieve wildly different 
 
 <div class="direct-answer">
 
-Districts that streamline their substitute placement process see fill rate improvements of 10-20 percentage points and significant reductions in administrative time. The key improvements are: faster notification to substitutes when positions open, multi-channel communication (text, app, email, and phone), clear building preferences built into the workflow, and a defined escalation path for hard-to-fill positions. The goal is to reduce the time between an absence being reported and a substitute being confirmed to under 30 minutes for pre-planned absences and under 90 minutes for same-day absences.
+Districts that streamline their substitute placement process see meaningful fill rate improvements and significant reductions in administrative time. The key improvements are: faster notification to substitutes when positions open, multi-channel communication (text, app, email, and phone), clear building preferences built into the workflow, and a defined escalation path for hard-to-fill positions. The goal is to reduce the time between an absence being reported and a substitute being confirmed to under 30 minutes for pre-planned absences and under 90 minutes for same-day absences.
 
 </div>
 
@@ -92,16 +92,6 @@ Review your placement data weekly. Which buildings fill fastest? Which fill slow
 - **Relying on a single communication channel.** Different subs prefer different channels. Use multiple.
 - **Having no escalation path.** When the standard process fails, someone needs to own the backup plan.
 - **Making the acceptance process cumbersome.** Every click between notification and acceptance is a potential dropout point.
-
-</div>
-
-<div class="sources-list">
-
-## Sources
-
-1. Frontline Education, "Absence Management Best Practices" (2023).
-2. AASPA, "Substitute Placement Process Optimization" (2023).
-3. EdTech Magazine, "Streamlining K-12 Staffing Operations" (2024).
 
 </div>
 

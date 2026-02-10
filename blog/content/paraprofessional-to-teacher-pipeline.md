@@ -16,7 +16,7 @@ The paraprofessional-to-teacher pipeline is the most underused recruitment strat
 
 <div class="direct-answer">
 
-Paraprofessional-to-teacher pipeline programs convert existing school employees into certified teachers by providing financial support, flexible coursework, and mentoring through the certification process. Research shows that teachers who enter through paraprofessional pipelines stay in their districts 2-3 times longer than externally recruited teachers and bring deep knowledge of the community and student population they serve. Effective programs take three to five years from enrollment to certification and require sustained district investment of $10,000-$20,000 per participant.
+Paraprofessional-to-teacher pipeline programs convert existing school employees into certified teachers by providing financial support, flexible coursework, and mentoring through the certification process. Research shows that teachers who enter through paraprofessional pipelines stay in their districts significantly longer than externally recruited teachers and bring deep knowledge of the community and student population they serve. Effective programs take three to five years from enrollment to certification and require sustained district investment throughout the process.
 
 </div>
 
@@ -89,16 +89,6 @@ As participants near certification, plan their transition from paraprofessional 
 - **Choosing a rigid university partner.** Programs that require daytime attendance or full-time enrollment will not work for employed paraprofessionals.
 - **Not providing academic support.** Participants who struggle academically and receive no support leave the program feeling like failures. Tutoring and mentoring prevent this.
 - **Forgetting the transition.** A paraprofessional who earns certification and is dropped into a classroom with no additional support faces the same first-year challenges as any new teacher. Provide a smooth transition.
-
-</div>
-
-<div class="sources-list">
-
-## Sources
-
-1. New America, "From Paraprofessional to Teacher" (2023).
-2. Learning Policy Institute, "Diversifying the Teaching Profession" (2022).
-3. Center for American Progress, "Paraprofessional-to-Teacher Pipelines" (2023).
 
 </div>
 

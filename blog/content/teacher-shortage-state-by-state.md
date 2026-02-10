@@ -14,7 +14,7 @@ tags:
 
 <div class="direct-answer">
 
-Teacher shortages vary dramatically by state, subject area, and school type. States with the most severe shortages include Nevada, Arizona, Oklahoma, and Mississippi, where vacancy rates exceed 5% and emergency certifications have surged. States like Massachusetts, Connecticut, and New York have tighter labor markets but face shortages concentrated in specific subjects (special education, math, science, bilingual education) and specific schools (high-poverty, rural). Nationally, special education has the most critical shortage, with unfilled positions in nearly every state. Understanding your specific shortage, not the national narrative, is essential for designing effective recruitment strategies.
+Teacher shortages vary dramatically by state, subject area, and school type. States with the most severe shortages include Nevada, Arizona, Oklahoma, and Mississippi, where vacancy rates are among the highest in the nation and emergency certifications have surged. States like Massachusetts, Connecticut, and New York have tighter labor markets but face shortages concentrated in specific subjects (special education, math, science, bilingual education) and specific schools (high-poverty, rural). Nationally, special education has the most critical shortage, with unfilled positions in nearly every state. Understanding your specific shortage, not the national narrative, is essential for designing effective recruitment strategies.
 
 </div>
 
@@ -86,16 +86,6 @@ If your area faces persistent shortages in specific subject areas, the long-term
 - **Treating all vacancies the same.** A vacancy in elementary education and a vacancy in special education require completely different recruitment strategies.
 - **Ignoring the pipeline.** Today's teacher prep enrollment is tomorrow's applicant pool. If the pipeline is shrinking, your shortages will worsen regardless of what you do today.
 - **Competing only on salary.** Salary matters, but working conditions, administrative support, and professional respect matter just as much in states with moderate shortages.
-
-</div>
-
-<div class="sources-list">
-
-## Sources
-
-1. U.S. Department of Education, "Teacher Shortage Areas" (2024).
-2. Learning Policy Institute, "A Coming Crisis in Teaching?" (2023).
-3. Economic Policy Institute, "Teacher Pay Penalty" (2023).
 
 </div>
 

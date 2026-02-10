@@ -72,13 +72,4 @@ At the end of the day, a quick "Thank you for being here today" from a staff mem
 
 </div>
 
-<div class="sources-list">
-
-## Sources
-
-1. National Council on Teacher Quality, "Substitute Teaching Policies" (2022).
-2. Frontline Research and Learning Institute, "Building-Level Factors in Substitute Satisfaction" (2023).
-
-</div>
-
 **If you only do one thing this week:** Print a one-page building orientation packet for subs and put 20 copies at your front desk. Include a map, the daily schedule, and the name of a buddy teacher. That single sheet of paper will improve more sub experiences than any policy change.

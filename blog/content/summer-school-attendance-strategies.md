@@ -14,7 +14,7 @@ Summer school is mandatory for some students. Required by the district. Schedule
 
 <div class="direct-answer">
 
-Summer school attendance rates average 60-70% nationally, meaning 30-40% of enrolled students do not attend consistently. The strongest predictors of summer attendance are: whether the student had input into their enrollment, how the first day is structured, transportation availability, and whether the program feels meaningfully different from the regular school year. Districts that achieve 80%+ summer attendance rates combine proactive family engagement before the program starts, transportation solutions, engaging programming that mixes academics with enrichment, and daily attendance tracking with immediate follow-up on absences.
+Summer school attendance is a persistent challenge, with a large share of enrolled students not attending consistently. The strongest predictors of summer attendance are: whether the student had input into their enrollment, how the first day is structured, transportation availability, and whether the program feels meaningfully different from the regular school year. Districts that achieve strong summer attendance combine proactive family engagement before the program starts, transportation solutions, engaging programming that mixes academics with enrichment, and daily attendance tracking with immediate follow-up on absences.
 
 </div>
 
@@ -84,16 +84,6 @@ Students are more likely to attend when they have friends in the program and fee
 - **Not providing transportation.** This is the number one logistical barrier and must be solved before the program starts.
 - **Waiting to address non-attendance.** By the time you notice a student has missed three days, they have mentally withdrawn. Call after day one.
 - **Treating enrollment as attendance.** An enrolled student who does not show up received zero benefit from the program. Track actual attendance, not enrollment numbers.
-
-</div>
-
-<div class="sources-list">
-
-## Sources
-
-1. RAND Corporation, "Making Summer Count" (2020).
-2. National Summer Learning Association, "Summer Learning Program Quality Assessment" (2023).
-3. Wallace Foundation, "Partnerships for Social and Emotional Learning" (2022).
 
 </div>
 

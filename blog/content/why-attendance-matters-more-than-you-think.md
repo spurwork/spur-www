@@ -16,7 +16,7 @@ Attendance is the most underrated metric in education. And the data supporting t
 
 <div class="direct-answer">
 
-Students who miss more than 10% of school days (approximately 18 days per year) are significantly less likely to read proficiently by third grade, pass algebra by ninth grade, or graduate on time. The relationship holds after controlling for income and school quality. A longitudinal study in Utah found that chronic absenteeism in any single year between kindergarten and fifth grade reduced the probability of on-time high school graduation by 25%. Attendance is both a leading indicator (predicting future academic struggles) and a proximate cause (students who are not in school cannot learn what is being taught).
+Students who miss more than 10% of school days (approximately 18 days per year) are significantly less likely to read proficiently by third grade, pass algebra by ninth grade, or graduate on time. The relationship holds after controlling for income and school quality. Research consistently shows that chronic absenteeism in the elementary years is strongly associated with lower rates of on-time high school graduation. Attendance is both a leading indicator (predicting future academic struggles) and a proximate cause (students who are not in school cannot learn what is being taught).
 
 </div>
 
@@ -90,16 +90,6 @@ When evaluating any school program, extracurricular, tutoring, mentoring, or enr
 - **Focusing on truancy rather than chronic absenteeism.** Truancy is unexcused absence. Chronic absenteeism includes excused absences. A student who misses 25 days for legitimate medical reasons has the same learning gap as a student who skips 25 days.
 - **Not communicating the data to families.** Families cannot respond to information they do not have.
 - **Analyzing attendance data annually instead of weekly.** By the time you review annual data, the year is over. Weekly tracking enables real-time intervention.
-
-</div>
-
-<div class="sources-list">
-
-## Sources
-
-1. Attendance Works, "The Attendance Imperative" (2024).
-2. Balfanz, R. & Byrnes, V. (2012). "The Importance of Being in School." Johns Hopkins University.
-3. Utah Education Policy Center, "Chronic Absenteeism and Student Outcomes" (2022).
 
 </div>
 

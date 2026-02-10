@@ -89,14 +89,4 @@ Track what partnerships deliver: volunteer hours, tutoring sessions, substitute 
 
 </div>
 
-<div class="sources-list">
-
-## Sources
-
-1. Coalition for Community Schools, "Community Partnerships Framework" (2023).
-2. National Center for Community Schools, "Staffing Through Partnerships" (2022).
-3. AASA, "Community Engagement for Superintendent Success" (2023).
-
-</div>
-
 **If you only do one thing this week:** List every community organization within five miles of your schools. Circle the three that employ or engage people who could support your staffing needs. Call one of them this week and ask: "How can we work together?"

@@ -14,7 +14,7 @@ I have worked with districts on both sides of this debate. Schools that manage t
 
 <div class="direct-answer">
 
-Centralized substitute management systems consistently outperform decentralized approaches on fill rate, cost efficiency, and data visibility. Districts that centralize sub placement typically achieve 8-15 percentage points higher fill rates than those that leave it to individual buildings. The key advantage is pooling: a centralized system can redirect subs from low-need schools to high-need schools on any given day. Decentralized systems cannot. However, centralization works only when paired with building-level relationships and school-specific onboarding.
+Centralized substitute management systems consistently outperform decentralized approaches on fill rate, cost efficiency, and data visibility. Districts that centralize sub placement typically achieve significantly higher fill rates than those that leave it to individual buildings. The key advantage is pooling: a centralized system can redirect subs from low-need schools to high-need schools on any given day. Decentralized systems cannot. However, centralization works only when paired with building-level relationships and school-specific onboarding.
 
 </div>
 
@@ -92,16 +92,6 @@ Principals resist centralization when they feel they have lost control. Give the
 - **Ignoring school preferences entirely.** Principals who feel overridden will work around the system. Build preferences into the algorithm.
 - **Centralizing without technology.** A central office managing 200 subs with spreadsheets and phone calls will fail. Invest in the platform first.
 - **Not communicating the change.** Teachers and principals need to understand why the model is changing and how it benefits their building.
-
-</div>
-
-<div class="sources-list">
-
-## Sources
-
-1. Frontline Education, "The State of Absence Management in K-12" (2023).
-2. AASA, "District-Level Substitute Management Practices" (2022).
-3. Education Resource Strategies, "Staffing Models That Work" (2023).
 
 </div>
 

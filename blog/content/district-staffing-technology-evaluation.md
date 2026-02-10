@@ -91,14 +91,4 @@ Avoid multi-year contracts without exit clauses. The first year is a test. If th
 
 </div>
 
-<div class="sources-list">
-
-## Sources
-
-1. EdTech Evidence Exchange, "Evaluating Education Technology" (2023).
-2. CoSN, "Technology Purchasing Frameworks" (2024).
-3. AASA, "Smart Procurement for School Districts" (2023).
-
-</div>
-
 **If you only do one thing this week:** Write a one-paragraph problem statement describing your district's biggest staffing challenge. Be specific about the symptoms, the scale, and the impact. This paragraph is the starting point for any technology evaluation and will save you from buying a solution to the wrong problem.

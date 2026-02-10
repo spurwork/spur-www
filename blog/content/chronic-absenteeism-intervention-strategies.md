@@ -87,14 +87,4 @@ These strategies are for students who have already missed 15+ days. They require
 
 </div>
 
-<div class="sources-list">
-
-## Sources
-
-1. Attendance Works, "Chronic Absence Data" (2024).
-2. Balfanz, R. & Byrnes, V., "The Importance of Being in School" (2012). Johns Hopkins University.
-3. U.S. Department of Education, "Chronic Absenteeism in the Nation's Schools" (2024).
-
-</div>
-
 **If you only do one thing this week:** Pull your attendance data from the first month of school. Identify every student who has already missed two or more days. That list is your early warning system. Call those families this week before two absences become ten.

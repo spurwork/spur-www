@@ -77,15 +77,4 @@ Avoid individual attendance tracking that feels like surveillance. Focus on team
 
 </div>
 
-<div class="sources-list">
-
-## Sources
-
-1. Frontline Research and Learning Institute, "Employee Absence in U.S. School Districts" (2023).
-2. Miller, R., Murnane, R., & Willett, J. (2008). "Do Teacher Absences Impact Student Achievement?" Educational Evaluation and Policy Analysis.
-3. U.S. Department of Education, "School Climate Survey" (2022).
-4. Clotfelter, C., Ladd, H., & Vigdor, J. (2009). "Are Teacher Absences Worth Worrying About?" Education Finance and Policy.
-
-</div>
-
 **If you only do one thing this week:** Pull your absence data by building for the last semester. Identify the buildings with the strongest attendance. Ask those principals what they think is working. Their answers will reveal best practices that can be shared across the district.

@@ -14,7 +14,7 @@ There is a point where attendance interventions stop being about prevention and 
 
 <div class="direct-answer">
 
-Attendance recovery programs are structured interventions designed for students who have accumulated significant absences and are at risk of retention or dropout. Effective programs combine academic credit recovery, flexible scheduling, mentoring, and family engagement. Research shows that students in well-designed attendance recovery programs recoup an average of 40-60% of their missed instructional time and are significantly more likely to be promoted to the next grade. The most important design element is flexibility: if the original school schedule did not work for the student, offering more of the same will not bring them back.
+Attendance recovery programs are structured interventions designed for students who have accumulated significant absences and are at risk of retention or dropout. Effective programs combine academic credit recovery, flexible scheduling, mentoring, and family engagement. Students in well-designed attendance recovery programs can recoup a meaningful portion of their missed instructional time and are significantly more likely to be promoted to the next grade. The most important design element is flexibility: if the original school schedule did not work for the student, offering more of the same will not bring them back.
 
 </div>
 
@@ -80,16 +80,6 @@ The goal of attendance recovery is not a permanent parallel program. It is a bri
 - **Making the program feel punitive.** Students who have missed significant time are often already demoralized. The program should feel like an opportunity, not a punishment.
 - **Not addressing the underlying barrier.** Academic recovery without addressing the reason for absence is a temporary fix at best.
 - **Setting unrealistic expectations.** A student who missed 40 days cannot recover 40 days of instruction. Focus on the most critical content and skills.
-
-</div>
-
-<div class="sources-list">
-
-## Sources
-
-1. Attendance Works, "Attendance Recovery Strategies" (2023).
-2. National Center for School Engagement, "Re-Engaging Students" (2022).
-3. What Works Clearinghouse, "Reducing Chronic Absenteeism" (2023).
 
 </div>
 

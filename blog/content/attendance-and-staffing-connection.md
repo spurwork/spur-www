@@ -14,7 +14,7 @@ There is a connection between staffing stability and student attendance that mos
 
 <div class="direct-answer">
 
-Research shows a measurable correlation between teacher absence rates (and substitute fill rates) and student attendance at the school level. Schools with higher teacher absence rates and lower fill rates experience 2-5 percentage points higher student absenteeism. The mechanism is straightforward: when classrooms frequently lack qualified instruction, the value proposition of attending school weakens, particularly for students who are already on the margin of disengagement. Districts that improve staffing stability, specifically fill rates and substitute quality, often see collateral improvements in student attendance.
+Research shows a measurable correlation between teacher absence rates (and substitute fill rates) and student attendance at the school level. Schools with higher teacher absence rates and lower fill rates experience noticeably higher student absenteeism. The mechanism is straightforward: when classrooms frequently lack qualified instruction, the value proposition of attending school weakens, particularly for students who are already on the margin of disengagement. Districts that improve staffing stability, specifically fill rates and substitute quality, often see collateral improvements in student attendance.
 
 </div>
 
@@ -80,16 +80,6 @@ When staffing challenges affect the classroom experience, proactive communicatio
 - **Not analyzing the correlation in your own data.** National research is persuasive. Your own data is compelling. Link your datasets.
 - **Accepting low fill rates as normal.** Every unfilled classroom is a small push toward student disengagement. Do not normalize it.
 - **Ignoring the student perspective.** Ask students: "What is school like when your teacher is absent?" Their answers will reveal the attendance connection clearly.
-
-</div>
-
-<div class="sources-list">
-
-## Sources
-
-1. Clotfelter, C. T., et al. (2009). "Are Teacher Absences Worth Worrying About?" Education Finance and Policy.
-2. Miller, R. T., et al. (2008). "Do Teacher Absences Impact Student Achievement?" Educational Evaluation and Policy Analysis.
-3. Attendance Works, "School-Level Factors in Chronic Absenteeism" (2023).
 
 </div>
 

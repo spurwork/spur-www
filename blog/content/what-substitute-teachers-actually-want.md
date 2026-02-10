@@ -79,14 +79,4 @@ Send a two-question survey after every assignment: "How was your experience?" an
 
 </div>
 
-<div class="sources-list">
-
-## Sources
-
-1. Frontline Research and Learning Institute, "Substitute Teacher Survey" (2023).
-2. National Council on Teacher Quality, "Substitute Teaching Policies" (2022).
-3. Education Week, "What Substitute Teachers Really Want" (2023).
-
-</div>
-
 **If you only do one thing this week:** Send a one-question anonymous survey to every sub who worked in your district this month: "What is the one thing we could do to make your experience better?" Read every response. The patterns will tell you exactly where to start.

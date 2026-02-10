@@ -14,7 +14,7 @@ A teacher in your district is drafting a resignation letter right now. Not becau
 
 <div class="direct-answer">
 
-Teachers leave primarily because of poor administrative support, lack of autonomy, and unsustainable workloads. Salary matters, but it ranks third or fourth in most surveys. The Learning Policy Institute estimates that teacher turnover costs districts over $20,000 per departing teacher when you factor in recruiting, hiring, and onboarding. Districts that reduce turnover by even 5 percentage points save hundreds of thousands of dollars annually.
+Teachers leave primarily because of poor administrative support, lack of autonomy, and unsustainable workloads. Salary matters, but it ranks third or fourth in most surveys. The Learning Policy Institute estimates that teacher turnover costs districts over $20,000 per departing teacher when you factor in recruiting, hiring, and onboarding. Districts that meaningfully reduce turnover can save hundreds of thousands of dollars annually.
 
 </div>
 
@@ -73,17 +73,6 @@ Nearly half of teachers who leave do so within their first five years. First-yea
 - **Treating turnover as inevitable.** "Teachers leave, that is just how it is" is a choice, not a fact. Districts with strong cultures retain 90%+ of their teachers annually.
 - **Ignoring the principal factor.** Teachers do not leave districts. They leave buildings. If one school has 25% turnover and the neighboring school has 5%, the variable is leadership.
 - **Surveying teachers and then doing nothing.** This is worse than not surveying. It teaches teachers that their voice does not matter.
-
-</div>
-
-<div class="sources-list">
-
-## Sources
-
-1. Steiner, E. D., & Woo, A. (2021). "Job-Related Stress Threatens the Teacher Supply." RAND Corporation.
-2. Podolsky, A., et al. (2016). "Solving the Teacher Shortage." Learning Policy Institute.
-3. NCES. (2023). "Teacher Attrition and Mobility." National Center for Education Statistics.
-4. Carver-Thomas, D., & Darling-Hammond, L. (2019). "The Trouble with Teacher Turnover." Learning Policy Institute.
 
 </div>
 

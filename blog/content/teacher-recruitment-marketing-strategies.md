@@ -16,7 +16,7 @@ Meanwhile, the charter school down the street posts a video of their science dep
 
 <div class="direct-answer">
 
-Districts that apply basic marketing principles to teacher recruitment see 2-3 times more applicants per position and higher acceptance rates on offers. Effective recruitment marketing includes a compelling employer brand (what is it like to work here?), a careers page with video testimonials and clear information, active social media presence showcasing school culture, and a candidate experience that is fast, personal, and respectful. The goal is not to trick candidates into applying. It is to make the genuine strengths of your district visible to the right people.
+Districts that apply basic marketing principles to teacher recruitment see significantly more applicants per position and higher acceptance rates on offers. Effective recruitment marketing includes a compelling employer brand (what is it like to work here?), a careers page with video testimonials and clear information, active social media presence showcasing school culture, and a candidate experience that is fast, personal, and respectful. The goal is not to trick candidates into applying. It is to make the genuine strengths of your district visible to the right people.
 
 </div>
 
@@ -90,16 +90,6 @@ Map your hiring timeline. Identify every delay. Eliminate it. The districts that
 - **Ignoring your online reputation.** Glassdoor reviews and social media presence shape candidate perceptions whether you manage them or not.
 - **Moving too slowly.** Speed is a competitive advantage. The best candidates are gone in two weeks.
 - **Focusing only on salary in recruitment materials.** Salary is one factor. Culture, support, growth, and community matter too. Show all of it.
-
-</div>
-
-<div class="sources-list">
-
-## Sources
-
-1. Education Week, "Teacher Recruitment in the Digital Age" (2024).
-2. AASPA, "Employer Branding for School Districts" (2023).
-3. LinkedIn, "Global Talent Trends in Education" (2024).
 
 </div>
 

@@ -14,7 +14,7 @@ When staffing challenges arise, the conversation usually focuses on market condi
 
 <div class="direct-answer">
 
-District-level leadership decisions, including strategic priorities, budget allocation, organizational culture, and superintendent focus, directly influence teacher recruitment, retention, substitute fill rates, and overall staffing health. Research shows that districts where the superintendent publicly prioritizes staffing and allocates dedicated resources to workforce strategy outperform similar districts by 10-20% on key staffing metrics. The mechanism is straightforward: when leadership prioritizes staffing, it gets the resources, attention, and follow-through needed to produce results.
+District-level leadership decisions, including strategic priorities, budget allocation, organizational culture, and superintendent focus, directly influence teacher recruitment, retention, substitute fill rates, and overall staffing health. Research shows that districts where the superintendent publicly prioritizes staffing and allocates dedicated resources to workforce strategy consistently outperform similar districts on key staffing metrics. The mechanism is straightforward: when leadership prioritizes staffing, it gets the resources, attention, and follow-through needed to produce results.
 
 </div>
 
@@ -80,16 +80,6 @@ Effective leaders stay connected to the labor market, to what other districts ar
 - **Reviewing staffing data only during crises.** Regular data review enables proactive management and prevents emergencies.
 - **Not sharing staffing data with the board.** Boards respond to data. Connecting staffing stability to student outcomes builds support for investment.
 - **Focusing only on market conditions.** Market conditions matter, but leadership strategy determines how well a district performs within its market.
-
-</div>
-
-<div class="sources-list">
-
-## Sources
-
-1. AASA, "The Superintendent's Role in Workforce Strategy" (2023).
-2. Wallace Foundation, "The School Principal as Leader" (2013).
-3. RAND Corporation, "District-Level Factors in Staffing" (2023).
 
 </div>
 

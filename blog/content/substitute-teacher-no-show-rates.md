@@ -14,7 +14,7 @@ An unfilled position is a problem you can plan for. A no-show is a crisis you ca
 
 <div class="direct-answer">
 
-Substitute teacher no-show rates average 5-10% nationally, with some districts experiencing rates as high as 15%. The primary drivers are: competing job opportunities accepted after the sub assignment was confirmed, lack of consequences for no-shows, poor building experiences that make subs reluctant to follow through, and life circumstances (illness, childcare, transportation) with no easy way to cancel. Districts that reduce no-show rates to below 3% combine clear accountability policies, easy cancellation processes, positive building experiences, and incentives for reliability.
+Substitute teacher no-shows are a widespread problem, and many districts struggle with rates high enough to cause daily disruptions. The primary drivers are: competing job opportunities accepted after the sub assignment was confirmed, lack of consequences for no-shows, poor building experiences that make subs reluctant to follow through, and life circumstances (illness, childcare, transportation) with no easy way to cancel. Districts that significantly reduce no-show rates combine clear accountability policies, easy cancellation processes, positive building experiences, and incentives for reliability.
 
 </div>
 
@@ -82,16 +82,6 @@ Track on-time arrival and assignment completion. Subs who complete 95%+ of accep
 - **Making cancellation harder than no-showing.** If the only way to cancel is a phone call that no one answers, subs will no-show instead of cancel.
 - **Not investigating building-specific patterns.** When no-shows concentrate at certain schools, the problem is the school, not the sub pool.
 - **Punishing first-time no-shows severely.** Life happens. A first no-show deserves a conversation, not a suspension.
-
-</div>
-
-<div class="sources-list">
-
-## Sources
-
-1. Frontline Education, "Substitute Assignment Completion Rates" (2024).
-2. AASPA, "Substitute Reliability Metrics" (2023).
-3. Kelly Education, "No-Show Reduction Strategies" (2023).
 
 </div>
 

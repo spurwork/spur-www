@@ -14,7 +14,7 @@ If January catches your staffing operation by surprise, the problem started in O
 
 <div class="direct-answer">
 
-Teacher absence rates increase 30-50% during the winter months (November through February) compared to early fall. The peak typically occurs in January, when post-holiday illness, weather events, and accumulated fatigue combine. Districts can prepare by building substitute pool capacity in October, pre-scheduling long-term subs for predictable leaves, cross-training building staff for emergency coverage, and establishing clear escalation protocols for high-absence days. The districts that handle winter best are the ones that treat it as a planned event rather than an emergency.
+Teacher absence rates increase significantly during the winter months (November through February) compared to early fall. The peak typically occurs in January, when post-holiday illness, weather events, and accumulated fatigue combine. Districts can prepare by building substitute pool capacity in October, pre-scheduling long-term subs for predictable leaves, cross-training building staff for emergency coverage, and establishing clear escalation protocols for high-absence days. The districts that handle winter best are the ones that treat it as a planned event rather than an emergency.
 
 </div>
 
@@ -84,16 +84,6 @@ This is a prevention strategy, not just a staffing strategy. Provide flu vaccine
 - **Not recruiting in October.** By January, your sub pool is already committed. Build capacity early.
 - **Having no emergency protocol.** When three subs call in sick and four teachers are absent, what happens? If you do not have a written answer, chaos happens.
 - **Burning out your best subs.** Your most reliable subs will accept every assignment during winter crunch. Check in with them. A burned-out sub who quits in February costs more than an unfilled day in January.
-
-</div>
-
-<div class="sources-list">
-
-## Sources
-
-1. Frontline Education, "Seasonal Absence Trends in K-12" (2024).
-2. CDC, "Flu Season and School Absenteeism" (2023).
-3. AASPA, "Winter Staffing Preparedness" (2023).
 
 </div>
 

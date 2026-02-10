@@ -14,7 +14,7 @@ The logic seems straightforward: students who spend more time learning should le
 
 <div class="direct-answer">
 
-Extended learning time (ELT) can significantly improve student outcomes, but only when the additional time is used for high-quality instruction and enrichment. Simply adding hours to the school day does not produce gains if those hours replicate the same instruction that was not working during the regular day. Meta-analyses show that well-designed ELT programs produce effect sizes of 0.10-0.25 standard deviations in reading and math. Programs that combine academic support with enrichment activities show the strongest results. The quality of the additional time matters far more than the quantity.
+Extended learning time (ELT) can significantly improve student outcomes, but only when the additional time is used for high-quality instruction and enrichment. Simply adding hours to the school day does not produce gains if those hours replicate the same instruction that was not working during the regular day. Meta-analyses show that well-designed ELT programs produce meaningful gains in reading and math. Programs that combine academic support with enrichment activities show the strongest results. The quality of the additional time matters far more than the quantity.
 
 </div>
 
@@ -76,16 +76,6 @@ Extended learning is most effective when it is coordinated with what happens dur
 - **Staffing extended time with the least experienced teachers.** If the extra time is the lowest quality instruction of the day, it will not produce results.
 - **Eliminating all enrichment to maximize academic time.** Enrichment drives attendance. Without it, students stop showing up and the academic time disappears too.
 - **Not coordinating extended learning with the regular school day.** Isolated programs produce isolated results.
-
-</div>
-
-<div class="sources-list">
-
-## Sources
-
-1. National Center on Time and Learning, "Time Well Spent" (2022).
-2. Kidron, Y. & Lindsay, J. (2014). "The Effects of Increased Learning Time on Student Academic and Nonacademic Outcomes." U.S. Department of Education.
-3. RAND Corporation, "Expanded Learning Time and Student Outcomes" (2020).
 
 </div>
 

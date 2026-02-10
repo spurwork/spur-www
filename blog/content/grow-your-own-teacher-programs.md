@@ -14,7 +14,7 @@ The most retention-proof teachers are the ones with roots in the community. They
 
 <div class="direct-answer">
 
-Grow-your-own (GYO) teacher programs recruit and support community members, including paraprofessionals, substitute teachers, high school students, and career changers, through a pathway to teaching certification. Research shows that GYO teachers are 2-3 times more likely to remain in their district after five years compared to externally recruited teachers. They are also deeply connected to the communities they serve. Effective GYO programs provide financial support (tuition reimbursement or scholarships), flexible coursework (evening and weekend classes), mentoring, and a service commitment to the sponsoring district.
+Grow-your-own (GYO) teacher programs recruit and support community members, including paraprofessionals, substitute teachers, high school students, and career changers, through a pathway to teaching certification. Research shows that GYO teachers are significantly more likely to remain in their district long-term compared to externally recruited teachers. They are also deeply connected to the communities they serve. Effective GYO programs provide financial support (tuition reimbursement or scholarships), flexible coursework (evening and weekend classes), mentoring, and a service commitment to the sponsoring district.
 
 </div>
 
@@ -80,16 +80,6 @@ You do not need to launch a 50-person program. Start with five paraprofessionals
 - **Not partnering with a university.** GYO programs need an accredited partner to provide coursework and certification. Build the university relationship before recruiting candidates.
 - **Recruiting without support.** Enrolling community members in a certification program without mentoring, coaching, and logistical support leads to high dropout rates.
 - **Expecting immediate results.** GYO programs take three to five years to produce their first teachers. They are a long-term strategy, not a quick fix for this year's vacancies.
-
-</div>
-
-<div class="sources-list">
-
-## Sources
-
-1. Learning Policy Institute, "Grow Your Own Teacher Programs" (2023).
-2. New America, "Grow Your Own Teachers: A 50-State Scan" (2022).
-3. Education Commission of the States, "Grow Your Own Educator Policies" (2024).
 
 </div>
 

@@ -87,14 +87,4 @@ As the new teacher gains confidence, shift from support to professional growth. 
 
 </div>
 
-<div class="sources-list">
-
-## Sources
-
-1. Ingersoll, R. M. (2012). "Beginning Teacher Induction: What the Data Tell Us." Phi Delta Kappan.
-2. New Teacher Center, "New Teacher Support Framework" (2023).
-3. National Center for Education Statistics, "Teacher Attrition and Mobility" (2024).
-
-</div>
-
 **If you only do one thing this week:** Ask each of your first-year teachers to list the three things they wish someone had told them before day one. Compile the answers. Add them to next year's orientation. Each year, this exercise makes your onboarding stronger.

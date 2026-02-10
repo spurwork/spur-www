@@ -16,7 +16,7 @@ This is not mentorship. It is a checkbox.
 
 <div class="direct-answer">
 
-Structured teacher mentorship programs reduce first-year teacher attrition by 25-50% compared to unstructured or absent programs. The critical elements are: careful mentor selection (not just seniority, but skill and disposition), protected time for regular meetings (weekly in the first semester, biweekly in the second), a focus on instructional practice rather than logistics, and administrative support that treats mentorship as a priority rather than an add-on. The most effective programs also compensate mentors, provide mentor training, and include classroom observation cycles.
+Structured teacher mentorship programs significantly reduce first-year teacher attrition compared to unstructured or absent programs. The critical elements are: careful mentor selection (not just seniority, but skill and disposition), protected time for regular meetings (weekly in the first semester, biweekly in the second), a focus on instructional practice rather than logistics, and administrative support that treats mentorship as a priority rather than an add-on. The most effective programs also compensate mentors, provide mentor training, and include classroom observation cycles.
 
 </div>
 
@@ -76,16 +76,6 @@ Every meeting should include at least one conversation about teaching and learni
 - **Not protecting meeting time.** If mentorship meetings are the first thing canceled when something comes up, the message is clear: mentorship is not a priority.
 - **Using mentors as evaluators.** The moment a mentor's feedback affects a new teacher's evaluation, trust is destroyed. Keep mentorship and evaluation completely separate.
 - **Ending the program after year one.** Second-year teachers still need support. Taper the program rather than cutting it off abruptly.
-
-</div>
-
-<div class="sources-list">
-
-## Sources
-
-1. Ingersoll, R. M. & Strong, M. (2011). "The Impact of Induction and Mentoring Programs for Beginning Teachers." Review of Educational Research.
-2. New Teacher Center, "Mentoring and Induction Program Standards" (2023).
-3. TNTP, "The Irreplaceables" (2012).
 
 </div>
 

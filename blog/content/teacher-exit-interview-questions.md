@@ -101,14 +101,4 @@ Are the same themes appearing year after year? That indicates systemic issues th
 
 </div>
 
-<div class="sources-list">
-
-## Sources
-
-1. SHRM, "Conducting Effective Exit Interviews" (2023).
-2. Learning Policy Institute, "Teacher Turnover: Why It Matters and What We Can Do About It" (2017).
-3. Ingersoll, R. M. (2001). "Teacher Turnover and Teacher Shortages." American Educational Research Journal.
-
-</div>
-
 **If you only do one thing this week:** Review the exit interview data from your last five departing teachers. If you do not have exit interview data, that is your first problem. If you do, identify the one theme that appears most often. That theme is where your retention strategy should start.

@@ -16,7 +16,7 @@ Nobody quits a community. People quit jobs. If you want your subs to stay, give 
 
 <div class="direct-answer">
 
-Substitute teachers who feel connected to a professional community are significantly more likely to remain active in a district's pool. Community-building strategies include: regular gatherings (quarterly in-person events), digital communication channels (group text, app, or social media group), peer mentoring programs, professional development opportunities, and recognition systems. Districts that invest in substitute community report 20-30% lower sub attrition rates and higher assignment acceptance rates. The investment required is modest: most community-building activities cost less than $2,000 per year.
+Substitute teachers who feel connected to a professional community are significantly more likely to remain active in a district's pool. Community-building strategies include: regular gatherings (quarterly in-person events), digital communication channels (group text, app, or social media group), peer mentoring programs, professional development opportunities, and recognition systems. Districts that invest in substitute community report lower sub attrition rates and higher assignment acceptance rates. The investment required is modest and well within reach of most district budgets.
 
 </div>
 
@@ -84,16 +84,6 @@ Give subs a title that conveys professionalism. "Guest Teacher" carries more dig
 - **Making gatherings purely administrative.** If the quarterly event is just announcements and policy reviews, subs will stop attending. Mix professional development with social time.
 - **Not moderating the digital channel.** A group chat that becomes a complaint forum erodes morale. Set norms and moderate actively.
 - **Treating community-building as optional.** In a labor market where subs have choices, community is a competitive advantage, not a nice-to-have.
-
-</div>
-
-<div class="sources-list">
-
-## Sources
-
-1. Kelly Education, "Substitute Teacher Engagement" (2024).
-2. Frontline Education, "Building Substitute Community" (2023).
-3. AASPA, "Substitute Workforce Engagement Strategies" (2023).
 
 </div>
 

@@ -14,7 +14,7 @@ You onboarded 50 new subs in August. By December, 20 are active. By February, 12
 
 <div class="direct-answer">
 
-Substitute teacher attrition rates range from 40-60% annually in most districts. The top reasons substitutes leave are: negative building experiences (poor treatment by staff, chaotic classrooms, no support), inconsistent work availability, late or inaccurate pay, and feeling like disposable labor rather than valued professionals. Districts that reduce sub attrition focus on three areas: improving the daily building experience, ensuring reliable pay and scheduling, and creating a sense of belonging and professional identity for their substitute pool.
+Substitute teacher attrition is consistently high across most districts, with many losing the majority of newly onboarded subs within a single school year. The top reasons substitutes leave are: negative building experiences (poor treatment by staff, chaotic classrooms, no support), inconsistent work availability, late or inaccurate pay, and feeling like disposable labor rather than valued professionals. Districts that reduce sub attrition focus on three areas: improving the daily building experience, ensuring reliable pay and scheduling, and creating a sense of belonging and professional identity for their substitute pool.
 
 </div>
 
@@ -82,16 +82,6 @@ Audit your payroll process for subs. How often are there errors? How long do cor
 - **Not surveying subs about their experience.** You cannot fix what you do not measure. Ask subs how their day went.
 - **Tolerating bad building experiences.** One school that mistreats subs poisons your entire district pool.
 - **Treating all subs the same regardless of performance.** Your best subs should get the best assignments and the most recognition.
-
-</div>
-
-<div class="sources-list">
-
-## Sources
-
-1. Frontline Education, "Substitute Teacher Satisfaction Survey" (2023).
-2. Kelly Education, "What Substitutes Want" (2024).
-3. AASPA, "Substitute Retention Strategies" (2023).
 
 </div>
 

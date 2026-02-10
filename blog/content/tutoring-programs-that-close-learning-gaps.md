@@ -14,7 +14,7 @@ If there is one intervention that the research community agrees on, it is tutori
 
 <div class="direct-answer">
 
-High-dosage tutoring, defined as three or more sessions per week of 30+ minutes each, produces average effect sizes of 0.37 standard deviations in math and 0.23 in reading. This translates to roughly one additional year of learning growth over a school year. The critical design elements are frequency (at least three sessions per week), integration into the school day (not after school), small group size (one-to-three students per tutor), and consistent tutor-student relationships. Programs that meet these criteria consistently produce large gains. Programs that compromise on frequency or group size see dramatically reduced effects.
+High-dosage tutoring, defined as three or more sessions per week of 30+ minutes each, produces large and consistent academic gains in both math and reading. The critical design elements are frequency (at least three sessions per week), integration into the school day (not after school), small group size (one-to-three students per tutor), and consistent tutor-student relationships. Programs that meet these criteria consistently produce large gains. Programs that compromise on frequency or group size see dramatically reduced effects.
 
 </div>
 
@@ -86,16 +86,6 @@ Use multiple data points: diagnostic assessments, classroom teacher recommendati
 - **Using group sizes of 6-8 and calling it tutoring.** That is small group instruction, which is valuable but produces smaller effects than true tutoring.
 - **Operating once-a-week programs.** Below three sessions per week, the research shows minimal impact. Do not spend resources on insufficient dosage.
 - **Rotating tutors frequently.** Consistency of the tutor-student relationship drives results. Minimize tutor rotation.
-
-</div>
-
-<div class="sources-list">
-
-## Sources
-
-1. Nickow, A., et al. (2024). "The Impressive Effects of Tutoring on PreK-12 Learning: A Systematic Review and Meta-Analysis." American Educational Research Journal.
-2. National Student Support Accelerator, "High-Dosage Tutoring Design Principles" (2023).
-3. Education Recovery Scorecard, "Tutoring and Pandemic Recovery" (2024).
 
 </div>
 
