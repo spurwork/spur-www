@@ -51,6 +51,14 @@ const AUTHORS = {
     focus: ['Extended Learning', 'Attendance Recovery', 'Leadership and Culture'],
     avatar: '/gary.jpg',
   },
+  'julian-mante': {
+    name: 'Julian Mante',
+    title: 'CEO',
+    slug: 'julian-mante',
+    bio: 'Julian leads Spur as CEO and brings a strategic vision to transforming K-12 staffing. He focuses on the future of education workforce solutions and building systems that scale.',
+    focus: ['Staffing Operations', 'Leadership and Culture', 'Substitute Teaching'],
+    avatar: '/julian.jpg',
+  },
 };
 
 // Category metadata
