@@ -1,7 +1,7 @@
 ---
 title: "The Staffing Conversation Is Shifting. Here's What I Heard at AASA."
 description: "Vacancies are still real, leadership development is getting more intentional, and substitutes are starting to be seen as part of the instructional and talent pipeline. Here's what stood out at AASA 2025."
-date: "2025-02-14"
+date: "2026-02-16"
 author: julian-mante
 category: Leadership and Culture
 tags:
