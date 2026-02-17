@@ -14,7 +14,7 @@ tags:
   - teacher retention
 ---
 
-I just got back from AASA, and every year it's a reminder how valuable it is to hear directly from district leaders about what's actually top of mind. This year, the conversations felt more practical. Less about big new initiatives. More about building systems that actually hold up over time.
+I just got back from AASA, and every year it's a reminder how valuable it is to hear directly from district leaders about what's top of mind. This year, the conversations felt more practical. Less about big new initiatives. More about building systems that hold up over time.
 
 If I had to summarize the K-12 staffing conversation in one sentence, it's this: vacancies are still real, leadership development is getting more intentional, and substitutes are starting to be seen as part of the instructional and talent pipeline, not just coverage.
 
@@ -34,7 +34,7 @@ We see this at Spur all the time. We've placed more than a million substitutes o
 
 I heard examples of teacher associate roles that give substitutes a clearer runway into teaching. It lowers the barrier to entry without lowering expectations, and it gives districts a chance to see someone in action before making a longer-term investment. It's a more intentional way to build a [substitute teacher pipeline](/blog/posts/building-substitute-teacher-pipeline.html) than anything most districts had five years ago.
 
-Here's the part that doesn't get talked about enough. Most staffing vendors actually penalize districts for hiring their substitutes. The whole model is set up to keep people on the vendor's payroll, not to help districts build their own workforce.
+Here's the part that doesn't get talked about enough. Most staffing vendors penalize districts for hiring their substitutes. The whole model is set up to keep people on the vendor's payroll, not to help districts build their own workforce.
 
 We're leaning in the opposite direction. When a district "poaches" one of our people, we celebrate it. It means we did our job. We placed someone great, they proved themselves in the classroom, and the district wants to keep them. That's a win. We want to be part of a district's pipeline for great teaching talent, not actively working against it.
 
@@ -44,13 +44,13 @@ Instructional quality remains front and center. That hasn't changed. What has sh
 
 If instruction matters every day, substitutes can't be an afterthought. There's a growing expectation that staffing partners help raise the level of preparation and context so classrooms don't stall every time a teacher is out.
 
-It's not about replicating a full lesson perfectly. It's about continuity. Helping learning move forward, even a little, so teachers can actually take well-deserved time off without worrying about what they're coming back to.
+It's not about replicating a full lesson perfectly. It's about continuity. Helping learning move forward, even a little, so teachers can take well-deserved time off without worrying about what they're coming back to.
 
 ## Leadership development is becoming more intentional
 
 Leadership came up everywhere, especially in larger districts.
 
-One of the best sessions I sat in on featured Jasmine Kullar, Chief School Leadership Officer at Cobb County, and Dr. Corey D. Grubbs, Chief of Transformation and Innovation at Columbus City Schools. They were talking about what it actually takes to attract and keep your best people, and their framing stuck with me: talent isn't something you acquire, it's something you design for. How you attract people sends a signal. How you grow them builds trust. How you retain them reflects your culture. And how you reward them reveals what you truly value.
+One of the best sessions I sat in on featured Jasmine Kullar, Chief School Leadership Officer at Cobb County, and Dr. Corey D. Grubbs, Chief of Transformation and Innovation at Columbus City Schools. They were talking about what it takes to attract and keep your best people, and their framing stuck with me: talent isn't something you acquire, it's something you design for. How you attract people sends a signal. How you grow them builds trust. How you retain them reflects your culture. And how you reward them reveals what you truly value.
 
 A few things stood out from that conversation.
 
