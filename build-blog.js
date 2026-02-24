@@ -68,7 +68,7 @@ const CATEGORIES = {
   'substitute-teaching': { name: 'Substitute Teaching', color: '#10b981' },
   'extended-learning': { name: 'Extended Learning', color: '#f59e0b' },
   'staffing-operations': { name: 'Staffing Operations', color: '#6366f1' },
-  'leadership-culture': { name: 'Leadership and Culture', color: '#06b6d4' },
+  'leadership-and-culture': { name: 'Leadership and Culture', color: '#06b6d4' },
   'attendance-recovery': { name: 'Attendance Recovery', color: '#10b981' },
 };
 
