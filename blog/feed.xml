@@ -4,7 +4,7 @@
         <title>Spur Education Blog</title>
         <link>https://spureducation.com/blog</link>
         <description>Practical K-12 staffing insights from the field.</description>
-        <lastBuildDate>Tue, 17 Feb 2026 17:24:01 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 26 Feb 2026 00:26:44 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -14,6 +14,291 @@
             <link>https://spureducation.com/blog</link>
         </image>
         <copyright>All rights reserved 2026, Spur Education</copyright>
+        <item>
+            <title><![CDATA[The Teacher Pipeline: Here's What the Research Says Actually Works]]></title>
+            <link>https://spureducation.com/blog/posts/teacher-pipeline-research.html</link>
+            <guid isPermaLink="false">https://spureducation.com/blog/posts/teacher-pipeline-research.html</guid>
+            <pubDate>Wed, 25 Feb 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[A research-backed breakdown of the six stages of the teacher pipeline, where schools lose talent, and what proven strategies actually reduce turnover and improve staffing in K-12.]]></description>
+            <content:encoded><![CDATA[<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "The Teacher Pipeline: Here's What the Research Says Actually Works",
+  "description": "A research-backed breakdown of the six stages of the teacher pipeline, where schools lose talent, and what proven strategies actually reduce turnover and improve staffing in K-12.",
+  "author": {
+    "@type": "Person",
+    "name": "Julian Mante"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Spur Education",
+    "url": "https://www.spureducation.com"
+  },
+  "datePublished": "2026-02-25",
+  "mainEntityOfPage": "https://www.spureducation.com/blog/posts/teacher-pipeline-research.html"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the teacher pipeline?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The teacher pipeline is the sequence of stages a person moves through to become and remain a classroom teacher: recruitment, preparation, certification/licensure, hiring/placement, induction and early-career support, and retention. Schools lose potential and current teachers at every stage, a problem researchers call 'pipeline leakage.'"
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What reduces teacher attrition the most?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "According to a large-scale meta-analysis of over 100 U.S. studies, the factors most strongly associated with lower teacher attrition are: school-based mentoring programs (45% lower odds of leaving), professional collaboration and networks (37% lower odds), competitive salary for mid-to-late career teachers (34% lower odds), and strong administrative support (21% lower odds)."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do financial incentives help retain teachers in hard-to-staff schools?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, but it depends on design. A North Carolina policy offering an $1,800 annual bonus to certified math, science, and special education teachers in high-poverty secondary schools reduced turnover by approximately 17%. Targeted, well-designed incentives work better than across-the-board raises for retention in hard-to-staff settings."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is there a teacher shortage?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The teacher shortage isn't caused by a single factor. It's the cumulative result of losses at every stage of the pipeline. Fewer people are entering preparation programs, licensure requirements can screen out diverse candidates, hiring processes don't always match the best teachers to the schools that need them most, and poor working conditions drive early-career teachers out within their first five years."
+      }
+    }
+  ]
+}
+</script>
+
+<p>Everyone in K-12 knows there&#39;s a staffing problem. But &quot;teacher shortage&quot; is actually a sloppy term. It makes it sound like there&#39;s one faucet and it stopped running.</p>
+<p>The reality is more like a garden hose with holes punched in it every two feet. People leak out at every stage, from the moment someone considers becoming a teacher, all the way through their fifth year in a classroom. Researchers call this the <strong>teacher pipeline</strong>, and it has six distinct stages where potential and current teachers are lost.</p>
+<p>We dug into the peer-reviewed empirical research (meta-analyses, randomized experiments, quasi-experimental policy evaluations) to understand what&#39;s actually proven to work at each stage. Not opinions. Not vendor pitches. Evidence.</p>
+<p>Here&#39;s what we found.</p>
+<div class="blog-toc">
+  <div class="blog-toc-title">In This Post</div>
+  <ol>
+    <li><a href="#pipeline">The six stages of the teacher pipeline</a></li>
+    <li><a href="#retention">Retention: where the strongest evidence lives</a></li>
+    <li><a href="#recruitment">Recruitment: two different problems</a></li>
+    <li><a href="#preparation">Preparation: who mentors you matters</a></li>
+    <li><a href="#licensure">Licensure: screens have side effects</a></li>
+    <li><a href="#hiring">Hiring: the process itself creates inequity</a></li>
+    <li><a href="#induction">Induction: helpful, but not a cure-all</a></li>
+    <li><a href="#action">What districts should do right now</a></li>
+  </ol>
+</div>
+
+<div class="pipeline-visual" id="pipeline">
+  <div class="pipeline-caption">The Teacher Pipeline: Leakage at Every Stage</div>
+  <div class="pipeline-track">
+    <div class="pipeline-node">
+      <div class="pipeline-node-label">Recruitment</div>
+      <div class="pipeline-node-emoji">📢</div>
+      <div class="pipeline-node-leak">&#9660; leak</div>
+    </div>
+    <div class="pipeline-connector"></div>
+    <div class="pipeline-node">
+      <div class="pipeline-node-label">Preparation</div>
+      <div class="pipeline-node-emoji">📚</div>
+      <div class="pipeline-node-leak">&#9660; leak</div>
+    </div>
+    <div class="pipeline-connector"></div>
+    <div class="pipeline-node">
+      <div class="pipeline-node-label">Licensure</div>
+      <div class="pipeline-node-emoji">📝</div>
+      <div class="pipeline-node-leak">&#9660; leak</div>
+    </div>
+    <div class="pipeline-connector"></div>
+    <div class="pipeline-node">
+      <div class="pipeline-node-label">Hiring</div>
+      <div class="pipeline-node-emoji">🤝</div>
+      <div class="pipeline-node-leak">&#9660; leak</div>
+    </div>
+    <div class="pipeline-connector"></div>
+    <div class="pipeline-node">
+      <div class="pipeline-node-label">Induction</div>
+      <div class="pipeline-node-emoji">🌱</div>
+      <div class="pipeline-node-leak">&#9660; leak</div>
+    </div>
+    <div class="pipeline-connector"></div>
+    <div class="pipeline-node">
+      <div class="pipeline-node-label">Retention</div>
+      <div class="pipeline-node-emoji">💪</div>
+      <div class="pipeline-node-leak">&#9660; leak</div>
+    </div>
+  </div>
+</div>
+
+<p>Most districts focus almost all their energy on one or two of these stages, usually recruitment (&quot;we need more applicants!&quot;) or retention (&quot;we keep losing people!&quot;). But the research is clear: <strong>you have to think in systems.</strong> A great recruitment campaign means nothing if your hiring process screens out diverse candidates, your induction program is a formality, and your working conditions push people out within three years.</p>
+<div class="stat-row">
+  <div class="stat-card">
+    <span class="stat-number">45%</span>
+    <span class="stat-label">Lower odds of leaving when a mentoring program exists</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-number">17%</span>
+    <span class="stat-label">Turnover reduction from targeted $1,800/yr bonus</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-number">~75%</span>
+    <span class="stat-label">5-year retention for residency-trained teachers</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-number">21%</span>
+    <span class="stat-label">Lower attrition odds with strong admin support</span>
+  </div>
+</div>
+
+<h2 id="retention">Retention Is Where the Evidence Is Strongest, and Most Actionable</h2>
+
+<p>Let&#39;s start at the end of the pipeline, because that&#39;s where the research is deepest and the implications are most immediate.</p>
+<p>A large-scale meta-analysis synthesizing over 100 U.S. studies on teacher attrition<sup><a href="#ref-1">1</a></sup> found that the strongest factors associated with teachers staying or leaving aren&#39;t salary, prestige, or passion. They&#39;re <strong>organizational</strong>: the day-to-day conditions of the job.</p>
+<div class="blog-callout">
+  <p><strong>The four biggest retention levers, ranked by effect size:</strong></p>
+  <p><strong>Mentoring programs:</strong> 45% lower odds of leaving.</p>
+  <p><strong>Collaboration and professional networks:</strong> 37% lower odds of leaving.</p>
+  <p><strong>Competitive salary (mid-to-late career):</strong> 34% lower odds of attrition for teachers with roughly 6-30 years of experience.</p>
+  <p><strong>Administrative support:</strong> 21% lower odds of leaving.</p>
+</div>
+
+<p>These aren&#39;t small differences. A mentoring program cutting attrition odds nearly in half is a massive effect by any standard in social science research.</p>
+<p>And the research on <em>targeted</em> compensation is equally clear, even if more nuanced. North Carolina implemented an $1,800 annual bonus for certified math, science, and special education teachers in high-poverty or low-performing secondary schools. A quasi-experimental evaluation<sup><a href="#ref-2">2</a></sup> found it reduced turnover for those targeted teachers by about 17%, with experienced teachers responding most strongly.</p>
+<p>A separate regression-discontinuity study in Tennessee<sup><a href="#ref-3">3</a></sup> found that retention bonuses tied to teacher effectiveness ratings in priority schools improved retention for tested-subject teachers, though results were imprecise and didn&#39;t generalize evenly across all teacher groups.</p>
+<p>The takeaway: <strong>money matters, but it matters most when it&#39;s targeted.</strong> Aimed at specific shortage fields, in specific high-need schools, for specific teacher profiles. Across-the-board raises are expensive and diffuse. Surgical incentives produce results.</p>
+<h2 id="recruitment">Recruitment: It's Two Different Problems</h2>
+
+<p>The research reveals that &quot;recruitment&quot; is really two distinct challenges that require different solutions.</p>
+<h3>Problem 1: Interest and Identity</h3>
+<p>Qualitative studies, like a case study of a dual-enrollment pathway for prospective teachers of color,<sup><a href="#ref-4">4</a></sup> show that early exposure, identity-affirming experiences, and perceptions of teaching as a viable career path shape whether people even consider becoming teachers. These studies provide credible design insights for &quot;grow your own&quot; programs, but they haven&#39;t tracked participants all the way through licensure and employment. We know these programs can spark interest; we don&#39;t yet have hard numbers on conversion rates through the full pipeline.</p>
+<h3>Problem 2: Financial Friction</h3>
+<p>This one has causal evidence behind it, and the findings are striking. A randomized field experiment with over 6,000 prospective teachers admitted to a large placement program<sup><a href="#ref-5">5</a></sup> found that small amounts of upfront financial support (essentially liquidity, not scholarships) meaningfully increased entry into teaching among financially constrained candidates.</p>
+<div class="blog-callout">
+  <p><strong>Key finding:</strong> Among the highest-need candidates, the researchers estimated that every additional $100 in upfront support increased the probability of starting teaching by roughly 1.8 percentage points and increased the probability of completing a two-year commitment by about 1.5 percentage points.</p>
+</div>
+
+<p>This matters because it reframes recruitment. Many potential teachers aren&#39;t disinterested. They&#39;re broke. They can&#39;t float the gap between accepting a position and getting paid, or they can&#39;t cover relocation costs. Solving that friction with bridging funds, relocation stipends, or redesigned financial aid timing is a concrete, evidence-backed lever that districts can actually pull.</p>
+<h2 id="preparation">Preparation: Who Mentors You Shapes Who You Become</h2>
+
+<p>Research on teacher preparation highlights one finding that has direct implications for how districts think about cooperating teachers and student teaching placements.</p>
+<p>A study of roughly 2,900 preservice teachers and 3,200 cooperating teachers<sup><a href="#ref-6">6</a></sup> found that the cooperating teacher&#39;s <strong>observation-based instructional ratings</strong> predicted the preservice teacher&#39;s later observation ratings once they became teachers of record. The effect was on the order of a 0.07-0.10 increase for each 1-point increase in the mentor&#39;s rating.</p>
+<p>Here&#39;s the twist: the cooperating teacher&#39;s <strong>value-added scores</strong> (student test score gains) did <em>not</em> consistently predict the preservice teacher&#39;s later value-added. So the metric you use to identify good mentors matters, and the intuitive choice (student test gains) isn&#39;t necessarily the right one.</p>
+<p>On the residency model, an evaluation of the Boston Teacher Residency<sup><a href="#ref-7">7</a></sup> found that residency graduates were retained at significantly higher rates through year five (roughly 75% versus 51% for other novice hires) and eventually outperformed comparison teachers in math by about 0.07 standard deviations by years four and five, though early-career math performance was actually lower, suggesting a ramp-up period.</p>
+<h2 id="licensure">Licensure: A Gate That May Not Filter What You Think</h2>
+
+<p>Licensure testing is one of the most politically contested parts of the pipeline, and the evidence reflects that complexity.</p>
+<p>A study of edTPA (a performance-based licensure assessment) in Washington State<sup><a href="#ref-8">8</a></sup> found that passing was associated with a 15.2 percentage point higher probability of entering public school teaching the following year. So the test clearly functions as a <em>gateway</em>. It shapes who enters the profession.</p>
+<p>But whether it shapes who enters for the <em>better</em> is less clear. Links between licensure test performance and classroom effectiveness were imprecise, partly because of selection effects (you can only measure effectiveness for people who actually get hired into tested subjects).</p>
+<p>At the policy level, cross-state evidence<sup><a href="#ref-9">9</a></sup> suggests that basic-skills testing requirements are associated with about 3.4% higher teacher wages in some analyses, consistent with supply restriction raising the price of labor. But the same research found limited evidence that testing improved teacher quality using available measures, and flagged a troubling pattern: testing requirements were associated with roughly a 2-percentage-point reduction in the share of new Hispanic teachers entering the profession.</p>
+<p>The implication: <strong>licensure screens need to be paired with support.</strong> Test prep, coaching, funded clinical experiences. And districts and states need to track demographic impacts, not just pass rates.</p>
+<h2 id="hiring">Hiring: The Process Itself Creates Inequity</h2>
+
+<p>Two rigorous studies reveal that hiring and placement decisions often have less to do with teaching ability than we&#39;d like to believe.</p>
+<p>A randomized resume audit experiment<sup><a href="#ref-10">10</a></sup> (6,000 fictitious applications sent to real schools) found that <strong>public schools responded more favorably to applicants from more selective colleges</strong>, while private and charter schools showed different patterns. In other words, the name on the diploma was doing meaningful screening work, independent of whether it predicts teaching effectiveness.</p>
+<p>A structural analysis of teacher-school matching using administrative data<sup><a href="#ref-11">11</a></sup> found that employers tend to prefer candidates with stronger academic credentials and geographic proximity, while teachers prefer schools closer to home, in suburban settings, with lower-poverty student bodies. Critically, these preference patterns differ by teacher race, meaning that the &quot;natural&quot; equilibrium of the labor market tends to reproduce inequitable distribution of teachers across schools.</p>
+<p>For districts, this is a call to audit your hiring signals. Are you screening on things that predict performance, or on things that feel credible? Are your processes systematically advantaging candidates who are already proximate to less-needy schools?</p>
+<h2 id="induction">Induction and Mentoring: Positive, but Don't Overpromise</h2>
+
+<p>Induction and mentoring programs for new teachers are widely recommended and intuitively appealing. The evidence supports them, but with important caveats.</p>
+<p>A meta-analysis covering studies from 2010-2019<sup><a href="#ref-12">12</a></sup> found small but statistically significant positive effects of formalized induction and mentoring programs on teacher outcomes like retention and efficacy. But &quot;program comprehensiveness&quot; (whether the program included multiple components like mentoring, reduced load, and collaboration time) didn&#39;t reliably predict larger effects. More isn&#39;t automatically better.</p>
+<p>Even more sobering: a large randomized trial,<sup><a href="#ref-13">13</a></sup> one of the strongest study designs in the evidence base, found that a comprehensive induction program improved student achievement but <em>did not</em> improve teacher retention. Teachers got better at their jobs but left at the same rate.</p>
+<div class="blog-callout">
+  <p><strong>Translation for district leaders:</strong> Induction programs are worth investing in. But if your goal is specifically retention, induction alone isn't enough. You need to pair it with the organizational conditions (admin support, collaboration, competitive pay) that the retention research points to.</p>
+</div>
+
+<h2 id="action">What Districts Should Do Right Now</h2>
+
+<p>Based on the cumulative evidence, here are the highest-confidence actions for K-12 leaders who want to stop the leaking:</p>
+<div class="insight-block">
+  <div class="insight-number">1</div>
+  <div class="insight-content">
+    <strong>Fix working conditions first.</strong>
+    <p>Mentoring programs, time for collaboration, and responsive administration aren't "soft" perks. They're the strongest empirical predictors of whether teachers stay.<sup><a href="#ref-1">1</a></sup> Assign every new teacher a trained mentor. Build recurring collaboration time into the weekly schedule. Survey teachers on admin responsiveness and act on the results.</p>
+  </div>
+</div>
+
+<div class="insight-block">
+  <div class="insight-number">2</div>
+  <div class="insight-content">
+    <strong>Target compensation surgically.</strong>
+    <p>Don't spread bonus dollars thin. Direct incentives to specific shortage fields (math, science, special education) in specific high-need schools. North Carolina's $1,800/year bonus for the right teachers in the right schools reduced turnover 17%.<sup><a href="#ref-2">2</a></sup> Identify your hardest-to-fill positions and design retention bonuses for those roles specifically.</p>
+  </div>
+</div>
+
+<div class="insight-block">
+  <div class="insight-number">3</div>
+  <div class="insight-content">
+    <strong>Remove financial friction from recruitment.</strong>
+    <p>If candidates can't afford the gap between accepting a position and getting paid, they won't show up. A randomized experiment showed that even modest upfront financial support ($100 increments) meaningfully increased whether candidates started and stayed in teaching.<sup><a href="#ref-5">5</a></sup> Offer bridging funds, relocation stipends, or accelerated first paychecks for new hires in shortage areas.</p>
+  </div>
+</div>
+
+<div class="insight-block">
+  <div class="insight-number">4</div>
+  <div class="insight-content">
+    <strong>Audit your hiring for false signals.</strong>
+    <p>A resume audit experiment found that public schools favored applicants from selective colleges, independent of teaching ability.<sup><a href="#ref-10">10</a></sup> Check whether your screening criteria (college name, GPA cutoffs, geographic proximity) actually predict classroom performance. Replace credential-based filters with structured interviews and teaching demonstrations.</p>
+  </div>
+</div>
+
+<div class="insight-block">
+  <div class="insight-number">5</div>
+  <div class="insight-content">
+    <strong>Track the whole pipeline, not just one stage.</strong>
+    <p>Most districts measure vacancies (hiring) or turnover (retention) but don't connect the dots from recruitment through five-year retention. Build a dashboard that tracks candidate-to-hire conversion, first-year attrition, and five-year retention by subject area and school. You can't fix a system you're measuring in fragments.</p>
+  </div>
+</div>
+
+<div class="insight-block">
+  <div class="insight-number">6</div>
+  <div class="insight-content">
+    <strong>Monitor equity impacts at every gate.</strong>
+    <p>Licensure testing requirements were associated with a 2-percentage-point reduction in new Hispanic teachers entering the profession.<sup><a href="#ref-9">9</a></sup> Hiring preferences and placement patterns also differ by teacher race.<sup><a href="#ref-11">11</a></sup> Disaggregate your pipeline data by race and ethnicity at every stage: application, licensure, hiring, placement, and retention.</p>
+  </div>
+</div>
+
+<h2>The Bottom Line</h2>
+<p>The teacher pipeline isn&#39;t mysterious. It&#39;s a system with measurable inputs, identifiable leakage points, and evidence-backed interventions. The research tells us that the biggest, most actionable levers are working conditions, early-career supports, and targeted compensation. Not just &quot;recruit harder.&quot;</p>
+<p>Districts that treat staffing as a systems problem, measuring each stage, targeting interventions where the evidence is strongest, and tracking equity impacts across the pipeline, will fill classrooms more reliably than those chasing one-off fixes.</p>
+<p>That&#39;s the kind of problem we work on every day at Spur.</p>
+<div class="blog-references" id="references">
+  <h3>References</h3>
+  <ol>
+    <li id="ref-1">Nguyen, T. D., Pham, L. D., Crouch, M., &amp; Springer, M. G. (2020). The correlates of teacher turnover: An updated and expanded meta-analysis of the literature. <em>Educational Research Review</em>, 31, 100355.</li>
+    <li id="ref-2">Clotfelter, C. T., Glennie, E. J., Ladd, H. F., &amp; Vigdor, J. L. (2008). Would higher salaries keep teachers in high-poverty schools? Evidence from a policy intervention in North Carolina. <em>Journal of Public Economics</em>, 92(5-6), 1352-1370.</li>
+    <li id="ref-3">Springer, M. G., Swain, W. A., &amp; Rodriguez, L. A. (2016). Effective teacher retention bonuses: Evidence from Tennessee. <em>Educational Evaluation and Policy Analysis</em>, 38(2), 199-221.</li>
+    <li id="ref-4">Curci, J. D., Johnson, J. M., Terrero Gabbadon, A., &amp; Wetzel-Ulrich, E. (2022). Expanding the pipeline to teach: Recruiting future urban teachers of color through a dual enrollment program. <em>The Urban Review</em>, 55(2), 224-243.</li>
+    <li id="ref-5">Coffman, L. C., Conlon, J. J., Featherstone, C. R., &amp; Kessler, J. B. (2019). Liquidity affects job choice: Evidence from Teach For America. <em>The Quarterly Journal of Economics</em>, 134(4), 2203-2236.</li>
+    <li id="ref-6">Ronfeldt, M., Brockman, S. L., &amp; Campbell, S. L. (2018). Does cooperating teachers' instructional effectiveness improve preservice teachers' future performance? <em>Educational Researcher</em>, 47(7), 405-418.</li>
+    <li id="ref-7">Papay, J. P., West, M. R., Fullerton, J. B., &amp; Kane, T. J. (2012). Does an urban teacher residency increase student achievement? Early evidence from Boston. <em>Educational Evaluation and Policy Analysis</em>, 34(4), 413-434.</li>
+    <li id="ref-8">Goldhaber, D., Cowan, J., &amp; Theobald, R. (2017). Evaluating prospective teachers: Testing the predictive validity of the edTPA. <em>Journal of Teacher Education</em>, 68(4), 377-393.</li>
+    <li id="ref-9">Angrist, J. D., &amp; Guryan, J. (2008). Does teacher testing raise teacher quality? Evidence from state certification requirements. <em>Economics of Education Review</em>, 27(5), 483-503.</li>
+    <li id="ref-10">Hinrichs, P. (2021). What kind of teachers are schools looking for? Evidence from a randomized field experiment. <em>Journal of Economic Behavior &amp; Organization</em>, 186, 395-411.</li>
+    <li id="ref-11">Boyd, D., Lankford, H., Loeb, S., &amp; Wyckoff, J. (2013). Analyzing the determinants of the matching of public school teachers to jobs: Disentangling the preferences of teachers and employers. <em>Journal of Labor Economics</em>, 31(1), 83-117.</li>
+    <li id="ref-12">Keese, J., Thompson, C. G., Waxman, H. C., McIntush, K., &amp; Svajda-Hardy, M. (2023). A worthwhile endeavor? A meta-analysis of research on formalized novice teacher induction programs. <em>Educational Research Review</em>, 38, 100508.</li>
+    <li id="ref-13">Glazerman, S., Isenberg, E., Dolfin, S., Bleeker, M., Johnson, A., Grider, M., &amp; Jacobus, M. (2010). <em>Impacts of comprehensive teacher induction: Final results from a randomized controlled study</em> (NCEE 2010-4027). Washington, DC: Institute of Education Sciences, U.S. Department of Education.</li>
+  </ol>
+</div>
+
+<div class="blog-cta-section">
+  <h2>Struggling with Staffing Gaps?</h2>
+  <p>Spur Education partners with 5,000+ schools to fill classrooms with qualified educators, with a 92%+ fill rate. Let's talk about your pipeline.</p>
+  <a href="/contact-sales.html" class="blog-cta-button">Get in Touch &rarr;</a>
+</div>
+]]></content:encoded>
+            <author>Julian Mante</author>
+            <category>Teacher Recruitment</category>
+        </item>
         <item>
             <title><![CDATA[The Staffing Conversation Is Shifting. Here's What I Heard at AASA.]]></title>
             <link>https://spureducation.com/blog/posts/aasa-2025-k12-staffing-conversation.html</link>
@@ -1451,71 +1736,6 @@
 ]]></content:encoded>
             <author>Crystal DiFrancesca</author>
             <category>Teacher Recruitment</category>
-        </item>
-        <item>
-            <title><![CDATA[How to Evaluate Staffing Technology Without Getting Sold]]></title>
-            <link>https://spureducation.com/blog/posts/district-staffing-technology-evaluation.html</link>
-            <guid isPermaLink="false">https://spureducation.com/blog/posts/district-staffing-technology-evaluation.html</guid>
-            <pubDate>Thu, 04 Dec 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[EdTech vendors promise everything. Here is a practical framework for evaluating staffing technology that focuses on what actually matters for your district.]]></description>
-            <content:encoded><![CDATA[<p>Every week I talk to a district that just spent $100,000 on a staffing platform they do not use. The demo was impressive. The sales team was convincing. The contract was signed. Six months later, the system sits half-implemented while the office staff quietly returns to their spreadsheets and phone trees.</p>
-<p>This is not a technology failure. It is an evaluation failure. The district bought a solution to a problem they had not fully defined, from a vendor they had not thoroughly vetted, with an implementation plan that did not account for their actual workflow.</p>
-<div class="direct-answer">
-
-<p>Effective staffing technology evaluation requires defining your specific problems before looking at solutions, involving end users in the evaluation process, testing with your actual data and workflows, and assessing the vendor&#39;s implementation support and track record with similar districts. The most common evaluation mistakes are: letting the vendor define the problem, evaluating features instead of outcomes, and failing to account for implementation complexity. A structured evaluation process takes four to six weeks and saves districts from six-figure mistakes.</p>
-</div>
-
-<h2>Before you look at a single product</h2>
-<h3>Define the problem precisely</h3>
-<p>&quot;We need better staffing software&quot; is not a problem statement. &quot;Our fill rate is 72%, and we believe the primary causes are slow notification speed, limited sub pool visibility, and inability to track preferences&quot; is a problem statement. The more precisely you define the problem, the more effectively you can evaluate whether a given solution addresses it.</p>
-<h3>Identify your must-haves vs. nice-to-haves</h3>
-<p>Create two lists. Must-haves are the features without which the system is a non-starter: integration with your HRIS, absence notification, mobile-friendly sub interface. Nice-to-haves are desirable but not required: advanced analytics, smart matching, custom reporting.</p>
-<p>Most districts do the opposite: they create a wish list of every possible feature and evaluate vendors against a 50-item checklist. This leads to selecting the platform with the most features rather than the one that solves your specific problem.</p>
-<h3>Map your current workflow</h3>
-<p>Before evaluating new technology, document your current workflow in detail. How are absences reported? Who notifies subs? How are assignments confirmed? What happens when a position goes unfilled? Where are the bottlenecks?</p>
-<p>This map serves two purposes: it helps you evaluate whether a new system actually improves your workflow, and it helps the vendor configure the system to match how your district operates.</p>
-<h2>The evaluation process</h2>
-<h3>1. Start with references, not demos</h3>
-<p>Before watching a demo, ask the vendor for references from three districts similar to yours in size and context. Call those districts. Ask: What problem did this solve? What did implementation look like? What surprised you? Would you buy it again?</p>
-<p>References provide ground truth that no demo can match. If a vendor cannot provide relevant references, that is a signal.</p>
-<h3>2. Test with your own data</h3>
-<p>A demo with perfect sample data always looks great. Request a pilot or proof of concept using your actual sub pool data, your actual absence patterns, and your actual building preferences. Seeing the system operate with your real-world complexity reveals issues that demo data hides.</p>
-<h3>3. Involve the end users</h3>
-<p>The people who will use the system daily, office staff, building secretaries, HR coordinators, should be in the evaluation from the start. Their feedback on usability, workflow fit, and practical limitations is more valuable than administrative assessment.</p>
-<p>Ask end users: &quot;Would this make your job easier?&quot; If the answer is not an enthusiastic yes, the implementation will struggle.</p>
-<h3>4. Evaluate the vendor, not just the product</h3>
-<p>Technology is only as good as the support behind it. Assess the vendor on: implementation timeline and support, training resources, customer service responsiveness, product roadmap and update frequency, and financial stability.</p>
-<p>A great product with poor implementation support will fail. A good product with excellent support will succeed.</p>
-<h3>5. Negotiate the contract carefully</h3>
-<p>Ensure the contract includes: a defined implementation timeline with milestones, training for all user groups, a trial period with the option to exit, clear pricing for the full term including any per-user or per-building fees, and data portability (you own your data).</p>
-<p>Avoid multi-year contracts without exit clauses. The first year is a test. If the system does not deliver the expected outcomes, you should be able to leave.</p>
-<div class="metrics-box">
-
-<h2>What to measure</h2>
-<ul>
-<li><strong>Baseline metrics before implementation</strong> (fill rate, time to fill, admin hours spent, sub satisfaction)</li>
-<li><strong>Same metrics at 90, 180, and 365 days post-implementation</strong> (is the system delivering improvement?)</li>
-<li><strong>User adoption rate</strong> (what percentage of intended users are actually using the system?)</li>
-<li><strong>Support ticket volume and resolution time</strong> (is the vendor responsive?)</li>
-<li><strong>ROI calculation</strong> (cost of the system vs. measurable improvements in efficiency and outcomes)</li>
-</ul>
-</div>
-
-<div class="mistakes-box">
-
-<h2>Common mistakes</h2>
-<ul>
-<li><strong>Letting the vendor run the evaluation.</strong> They will show you what they want you to see. Control the process.</li>
-<li><strong>Evaluating features instead of outcomes.</strong> A 50-feature checklist does not help. &quot;Will this improve our fill rate by 10 points?&quot; does.</li>
-<li><strong>Not involving end users.</strong> Systems that administrators love but office staff hate get abandoned within months.</li>
-<li><strong>Signing multi-year contracts before proving the system works.</strong> Negotiate a trial period. Protect your exit options.</li>
-</ul>
-</div>
-
-<p><strong>If you only do one thing this week:</strong> Write a one-paragraph problem statement describing your district&#39;s biggest staffing challenge. Be specific about the symptoms, the scale, and the impact. This paragraph is the starting point for any technology evaluation and will save you from buying a solution to the wrong problem.</p>
-]]></content:encoded>
-            <author>Donnie Decker</author>
-            <category>Staffing Operations</category>
         </item>
     </channel>
 </rss>

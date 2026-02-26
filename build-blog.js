@@ -104,13 +104,18 @@ function estimateReadTime(text) {
   return Math.max(1, Math.round(words / 250));
 }
 
+function absolutifyLinks(html) {
+  // Convert relative .html hrefs to absolute so links work from any page
+  return html.replace(/href="([a-zA-Z0-9_-]+\.html)"/g, 'href="/$1"');
+}
+
 function getNavHTML() {
   // Read nav from index.html
   const indexPath = path.join(__dirname, 'index.html');
   if (!fs.existsSync(indexPath)) return '';
   const html = fs.readFileSync(indexPath, 'utf-8');
   const navMatch = html.match(/<nav[\s\S]*?<\/nav>/);
-  return navMatch ? navMatch[0] : '';
+  return navMatch ? absolutifyLinks(navMatch[0]) : '';
 }
 
 function getFooterHTML() {
@@ -118,10 +123,13 @@ function getFooterHTML() {
   if (!fs.existsSync(indexPath)) return '';
   const html = fs.readFileSync(indexPath, 'utf-8');
   const footerMatch = html.match(/<footer[\s\S]*?<\/footer>/);
-  return footerMatch ? footerMatch[0] : '';
+  return footerMatch ? absolutifyLinks(footerMatch[0]) : '';
 }
 
-function getHeadHTML(title, description, canonicalPath) {
+function getHeadHTML(title, description, canonicalPath, options = {}) {
+  const ogImageTags = options.image
+    ? `\n  <meta property="og:image" content="${SITE_URL}${options.image}">\n  <meta name="twitter:card" content="summary_large_image">\n  <meta name="twitter:image" content="${SITE_URL}${options.image}">`
+    : '';
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -129,7 +137,7 @@ function getHeadHTML(title, description, canonicalPath) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>${title} | Spur Education Blog</title>
   <meta name="description" content="${description}">
-  <link rel="canonical" href="${SITE_URL}${canonicalPath}">
+  <link rel="canonical" href="${SITE_URL}${canonicalPath}">${ogImageTags}
   <link rel="icon" type="image/png" href="/spur-favicon.png">
   <link rel="alternate" type="application/rss+xml" title="Spur Education Blog" href="${BLOG_URL}/feed.xml">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
@@ -173,6 +181,7 @@ function loadPosts() {
       html,
       readTime,
       body,
+      image: attributes.image || null,
     });
   }
 
@@ -215,7 +224,7 @@ function buildPostPages(posts) {
         </div>
       </a>`).join('\n');
 
-    const page = `${getHeadHTML(post.title, post.description, `/blog/posts/${post.slug}.html`)}
+    const page = `${getHeadHTML(post.title, post.description, `/blog/posts/${post.slug}.html`, { image: post.image })}
 <body>
   ${nav}
 
