@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spur Teacher Scholarship | $5,000 for Aspiring Educators</title>
+  <meta name="description" content="Apply for the Spur Teacher Scholarship — a $5,000 award for high school juniors and seniors who aspire to become teachers. Deadline: May 1, 2026.">
+  <meta name="keywords" content="teacher scholarship, education scholarship, high school scholarship, aspiring teacher, Spur scholarship">
+  <link rel="canonical" href="https://spureducation.com/scholarship.html">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://spureducation.com/scholarship.html">
+  <meta property="og:title" content="Spur Teacher Scholarship | $5,000 for Aspiring Educators">
+  <meta property="og:description" content="Apply for the Spur Teacher Scholarship — a $5,000 award for high school juniors and seniors who aspire to become teachers.">
+  <meta property="og:image" content="https://spureducation.com/spur-og-image.png">
+  <meta property="og:site_name" content="Spur">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://spureducation.com/scholarship.html">
+  <meta name="twitter:title" content="Spur Teacher Scholarship | $5,000 for Aspiring Educators">
+  <meta name="twitter:description" content="Apply for the Spur Teacher Scholarship — a $5,000 award for high school juniors and seniors who aspire to become teachers.">
+  <meta name="twitter:image" content="https://spureducation.com/spur-og-image.png">
+
+  <link rel="icon" type="image/png" href="spur-favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* Scholarship page styles */
+    .scholarship-hero {
+      padding: 10rem 2rem 4rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .scholarship-hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 800px;
+      height: 800px;
+      background: radial-gradient(circle, rgba(139, 92, 246, 0.15) 0%, rgba(139, 92, 246, 0) 70%);
+      pointer-events: none;
+    }
+
+    .scholarship-hero-content {
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .scholarship-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(139, 92, 246, 0.15);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+      border-radius: 100px;
+      padding: 0.5rem 1.25rem;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--accent-secondary);
+      margin-bottom: 2rem;
+    }
+
+    .scholarship-badge .dot {
+      width: 8px;
+      height: 8px;
+      background: var(--accent-primary);
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+
+    .scholarship-hero h1 {
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      font-weight: 700;
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+    }
+
+    .scholarship-amount {
+      display: block;
+      font-size: clamp(3.5rem, 8vw, 5.5rem);
+      background: var(--gradient-purple);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      font-weight: 700;
+      line-height: 1.2;
+    }
+
+    .scholarship-hero p {
+      font-size: 1.15rem;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+    }
+
+    .scholarship-hero .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--gradient-purple);
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 100px;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+
+    .scholarship-hero .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 30px var(--accent-glow);
+    }
+
+    .scholarship-deadline {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    /* About Section */
+    .scholarship-about {
+      padding: 5rem 2rem;
+    }
+
+    .scholarship-about-container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .scholarship-about .section-tag {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent-secondary);
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+
+    .scholarship-about h2 {
+      font-size: clamp(2rem, 4vw, 2.75rem);
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+    }
+
+    .scholarship-about p {
+      font-size: 1.05rem;
+      color: var(--text-secondary);
+      line-height: 1.8;
+      margin-bottom: 1.25rem;
+    }
+
+    /* Eligibility Section */
+    .scholarship-eligibility {
+      padding: 5rem 2rem;
+      background: var(--bg-secondary);
+    }
+
+    .scholarship-eligibility-container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .scholarship-eligibility h2 {
+      font-size: clamp(2rem, 4vw, 2.75rem);
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .eligibility-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+
+    .eligibility-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 1.75rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .eligibility-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: rgba(139, 92, 246, 0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .eligibility-icon svg {
+      color: var(--accent-primary);
+    }
+
+    .eligibility-card h4 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.35rem;
+    }
+
+    .eligibility-card p {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    /* Application Form Section */
+    .scholarship-apply {
+      padding: 5rem 2rem;
+    }
+
+    .scholarship-apply-container {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .scholarship-apply h2 {
+      font-size: clamp(2rem, 4vw, 2.75rem);
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 0.75rem;
+    }
+
+    .scholarship-apply .apply-subtitle {
+      text-align: center;
+      color: var(--text-secondary);
+      font-size: 1.05rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .scholarship-form-card {
+      background: var(--text-primary);
+      border-radius: 24px;
+      padding: 2.5rem;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
+    }
+
+    .scholarship-form .form-group {
+      margin-bottom: 1.25rem;
+    }
+
+    .scholarship-form label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+      color: var(--bg-secondary);
+    }
+
+    .scholarship-form input,
+    .scholarship-form select,
+    .scholarship-form textarea {
+      width: 100%;
+      padding: 0.875rem 1rem;
+      background: white;
+      border: 1px solid #e0e0e0;
+      border-radius: 10px;
+      color: var(--bg-primary);
+      font-size: 0.95rem;
+      font-family: inherit;
+      transition: all 0.2s;
+    }
+
+    .scholarship-form input:focus,
+    .scholarship-form select:focus,
+    .scholarship-form textarea:focus {
+      outline: none;
+      border-color: var(--accent-primary);
+      box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.15);
+    }
+
+    .scholarship-form input::placeholder,
+    .scholarship-form textarea::placeholder {
+      color: #a0a0a0;
+    }
+
+    .scholarship-form select {
+      cursor: pointer;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236b6b7b' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 1rem center;
+      padding-right: 2.5rem;
+    }
+
+    .scholarship-form textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    .scholarship-form textarea#essay {
+      min-height: 200px;
+    }
+
+    .scholarship-form .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .scholarship-form .form-hint {
+      font-size: 0.8rem;
+      color: #888;
+      margin-top: 0.35rem;
+    }
+
+    .scholarship-form .btn-submit {
+      margin-top: 0.5rem;
+    }
+
+    /* FAQ Section */
+    .scholarship-faq {
+      padding: 5rem 2rem;
+      background: var(--bg-secondary);
+    }
+
+    .scholarship-faq-container {
+      max-width: 750px;
+      margin: 0 auto;
+    }
+
+    .scholarship-faq h2 {
+      font-size: clamp(2rem, 4vw, 2.75rem);
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+
+    .scholarship-faq .faq-item.active .faq-answer {
+      max-height: 2000px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .eligibility-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .scholarship-form .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .scholarship-hero {
+        padding: 8rem 1.5rem 3rem;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .scholarship-hero {
+        padding: 7rem 1rem 2.5rem;
+      }
+
+      .scholarship-about,
+      .scholarship-eligibility,
+      .scholarship-apply,
+      .scholarship-faq {
+        padding: 3rem 1rem;
+      }
+
+      .scholarship-form-card {
+        padding: 1.5rem;
+        border-radius: 16px;
+      }
+
+      .eligibility-card {
+        padding: 1.25rem;
+      }
+
+      .success-overlay {
+        padding: 1rem;
+      }
+
+      .success-modal {
+        padding: 2rem 1.5rem;
+        border-radius: 16px;
+      }
+
+      .success-modal h3 {
+        font-size: 1.4rem;
+      }
+    }
+
+    /* Success modal */
+    .success-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(4px);
+      z-index: 10000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      animation: overlayIn 0.3s ease-out both;
+    }
+    .success-modal {
+      background: white;
+      border-radius: 24px;
+      padding: 3rem 2.5rem;
+      max-width: 480px;
+      width: 100%;
+      text-align: center;
+      position: relative;
+      animation: modalIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.1s both;
+    }
+    .success-icon {
+      width: 72px;
+      height: 72px;
+      background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.5rem;
+      font-size: 2rem;
+      color: white;
+      animation: successPop 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.3s both;
+    }
+    .success-modal h3 {
+      font-size: 1.75rem;
+      margin-bottom: 0.5rem;
+      color: var(--bg-primary);
+      animation: fadeInUp 0.4s ease-out 0.4s both;
+    }
+    .success-modal .success-subtitle {
+      color: var(--bg-secondary);
+      font-weight: 500;
+      font-size: 1.05rem;
+      margin-bottom: 0.5rem;
+      animation: fadeInUp 0.4s ease-out 0.5s both;
+    }
+    .success-modal p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      line-height: 1.6;
+      animation: fadeInUp 0.4s ease-out 0.55s both;
+    }
+    .success-modal .btn-close-modal {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.75rem 2rem;
+      background: var(--bg-primary);
+      color: white;
+      border: none;
+      border-radius: 100px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+      animation: fadeInUp 0.4s ease-out 0.65s both;
+    }
+    .success-modal .btn-close-modal:hover {
+      background: var(--bg-secondary);
+      transform: translateY(-2px);
+    }
+
+    @keyframes overlayIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    @keyframes modalIn {
+      0% { transform: scale(0.9) translateY(20px); opacity: 0; }
+      100% { transform: scale(1) translateY(0); opacity: 1; }
+    }
+    @keyframes successPop {
+      0% { transform: scale(0); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    @keyframes fadeInUp {
+      0% { transform: translateY(12px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    /* Confetti */
+    .confetti-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 9999;
+      overflow: hidden;
+    }
+    .confetti-piece {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      top: -10px;
+      opacity: 0;
+      animation: confettiFall linear forwards;
+    }
+    @keyframes confettiFall {
+      0% { opacity: 1; transform: translateY(0) rotate(0deg) scale(1); }
+      75% { opacity: 1; }
+      100% { opacity: 0; transform: translateY(100vh) rotate(720deg) scale(0.5); }
+    }
+
+    .spinner {
+      width: 18px;
+      height: 18px;
+      border: 2px solid rgba(255,255,255,0.3);
+      border-top-color: white;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+      display: inline-block;
+      margin-right: 8px;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <img src="spur-logo-white.svg" alt="Spur" class="logo-img">
+      </a>
+      <button class="mobile-menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links">
+        <!-- Mobile Close Button -->
+        <button class="mobile-close-btn" aria-label="Close menu">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M18 6L6 18M6 6l12 12" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+        <!-- Desktop Dropdown (hidden on mobile) -->
+        <div class="nav-dropdown">
+          <span class="nav-link nav-dropdown-toggle">
+            Services
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </span>
+          <div class="nav-mega-menu">
+            <div class="mega-menu-grid">
+              <a href="staffing.html" class="mega-menu-card" data-tab="staffing">
+                <div class="mega-card-visual" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.2) 0%, rgba(139, 92, 246, 0.05) 100%);">
+                  <div class="mega-card-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="1.5">
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                      <line x1="16" y1="2" x2="16" y2="6"/>
+                      <line x1="8" y1="2" x2="8" y2="6"/>
+                      <line x1="3" y1="10" x2="21" y2="10"/>
+                    </svg>
+                  </div>
+                </div>
+                <h4>Staffing</h4>
+                <p>Improve instruction, reduce costs. 92%+ fill rates.</p>
+              </a>
+              <a href="attendance-recovery.html" class="mega-menu-card" data-tab="attendance">
+                <div class="mega-card-visual" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.2) 0%, rgba(16, 185, 129, 0.05) 100%);">
+                  <div class="mega-card-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="1.5">
+                      <path d="M18 20V10"/>
+                      <path d="M12 20V4"/>
+                      <path d="M6 20v-6"/>
+                    </svg>
+                  </div>
+                </div>
+                <h4>Attendance Recovery</h4>
+                <p>Every seat filled is funding earned.</p>
+              </a>
+              <a href="extended-learning.html" class="mega-menu-card" data-tab="extended">
+                <div class="mega-card-visual" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.2) 0%, rgba(245, 158, 11, 0.05) 100%);">
+                  <div class="mega-card-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="1.5">
+                      <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                      <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                    </svg>
+                  </div>
+                </div>
+                <h4>Extended Learning</h4>
+                <p>Summer & after-school, fully staffed.</p>
+              </a>
+              <a href="recruiting.html" class="mega-menu-card" data-tab="recruiting">
+                <div class="mega-card-visual" style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.2) 0%, rgba(236, 72, 153, 0.05) 100%);">
+                  <div class="mega-card-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ec4899" stroke-width="1.5">
+                      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                      <circle cx="9" cy="7" r="4"/>
+                      <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                      <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                    </svg>
+                  </div>
+                </div>
+                <h4>Recruiting</h4>
+                <p>Great school staff, delivered to your inbox.</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Services Section (hidden on desktop) -->
+        <div class="mobile-nav-section">
+          <div class="mobile-nav-section-header">
+            <h3>Services</h3>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </div>
+          <div class="mobile-nav-section-content">
+            <a href="staffing.html" class="mobile-service-link">
+              <div class="mobile-service-icon" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.2) 0%, rgba(139, 92, 246, 0.05) 100%);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="1.5">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                  <line x1="16" y1="2" x2="16" y2="6"/>
+                  <line x1="8" y1="2" x2="8" y2="6"/>
+                  <line x1="3" y1="10" x2="21" y2="10"/>
+                </svg>
+              </div>
+              <div class="mobile-service-text">
+                <h4>Staffing</h4>
+                <p>Improve instruction, reduce costs. 92%+ fill rates.</p>
+              </div>
+            </a>
+            <a href="attendance-recovery.html" class="mobile-service-link">
+              <div class="mobile-service-icon" style="background: linear-gradient(135deg, rgba(16, 185, 129, 0.2) 0%, rgba(16, 185, 129, 0.05) 100%);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="1.5">
+                  <path d="M18 20V10"/>
+                  <path d="M12 20V4"/>
+                  <path d="M6 20v-6"/>
+                </svg>
+              </div>
+              <div class="mobile-service-text">
+                <h4>Attendance Recovery</h4>
+                <p>Every seat filled is funding earned.</p>
+              </div>
+            </a>
+            <a href="extended-learning.html" class="mobile-service-link">
+              <div class="mobile-service-icon" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.2) 0%, rgba(245, 158, 11, 0.05) 100%);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="1.5">
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                </svg>
+              </div>
+              <div class="mobile-service-text">
+                <h4>Extended Learning</h4>
+                <p>Summer & after-school, fully staffed.</p>
+              </div>
+            </a>
+            <a href="recruiting.html" class="mobile-service-link">
+              <div class="mobile-service-icon" style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.2) 0%, rgba(236, 72, 153, 0.05) 100%);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#ec4899" stroke-width="1.5">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+              </div>
+              <div class="mobile-service-text">
+                <h4>Recruiting</h4>
+                <p>Great school staff, delivered to your inbox.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <a href="index.html#results" class="nav-link" style="display: none;">Real World Results</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="/blog/" class="nav-link">Blog</a>
+        <a href="https://jobs.spureducation.com/" class="nav-link" target="_blank" rel="noopener noreferrer">Jobs</a>
+        <a href="contact.html" class="nav-link">Contact Us</a>
+        <a href="contact-sales.html" class="nav-cta">Get Started</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="scholarship-hero">
+    <div class="scholarship-hero-content">
+      <div class="scholarship-badge">
+        <span class="dot"></span>
+        Applications Open
+      </div>
+      <h1>
+        Spur Teacher<br>
+        <span class="serif">Scholarship</span><br>
+        <span class="scholarship-amount">$5,000</span>
+      </h1>
+      <p>Investing in the next generation of educators. One $5,000 scholarship awarded to a high school student committed to pursuing a career in teaching.</p>
+      <a href="#apply" class="btn-primary">
+        Apply Now
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </a>
+      <p class="scholarship-deadline">Application deadline: May 1, 2026</p>
+    </div>
+  </section>
+
+  <!-- About the Scholarship -->
+  <section class="scholarship-about">
+    <div class="scholarship-about-container">
+      <p class="section-tag">Why This Scholarship</p>
+      <h2>Great teachers are at the center of <span class="serif">great schools</span></h2>
+      <p>At Spur, we work alongside schools every day and see firsthand the impact that passionate, dedicated teachers have on students and communities. We also see the growing teacher shortage across the country.</p>
+      <p>The Spur Teacher Scholarship was created to support high school students who are ready to answer the call to teach. Whether you want to lead a kindergarten classroom, coach a high school team, or inspire students in STEM — we want to help you get there.</p>
+      <p>This $5,000 scholarship will be awarded to one outstanding student to put toward their college education in a teaching or education-related field.</p>
+    </div>
+  </section>
+
+  <!-- Eligibility -->
+  <section class="scholarship-eligibility">
+    <div class="scholarship-eligibility-container">
+      <h2>Eligibility & <span class="serif">Requirements</span></h2>
+      <div class="eligibility-grid">
+        <div class="eligibility-card">
+          <div class="eligibility-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+              <path d="M6 12v5c0 1.66 2.69 3 6 3s6-1.34 6-3v-5"/>
+            </svg>
+          </div>
+          <div>
+            <h4>High School Junior or Senior</h4>
+            <p>Must be a current 11th or 12th grade student (Class of 2026 or 2027)</p>
+          </div>
+        </div>
+        <div class="eligibility-card">
+          <div class="eligibility-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 20V10"/>
+              <path d="M18 20V4"/>
+              <path d="M6 20v-4"/>
+            </svg>
+          </div>
+          <div>
+            <h4>Minimum 2.5 GPA</h4>
+            <p>Cumulative unweighted GPA of 2.5 or higher on a 4.0 scale</p>
+          </div>
+        </div>
+        <div class="eligibility-card">
+          <div class="eligibility-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+              <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+            </svg>
+          </div>
+          <div>
+            <h4>Education Major</h4>
+            <p>Plans to pursue a degree in education, teaching, or a related field</p>
+          </div>
+        </div>
+        <div class="eligibility-card">
+          <div class="eligibility-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M2 12h20"/>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+          </div>
+          <div>
+            <h4>U.S. Resident</h4>
+            <p>Must be a legal resident of the United States</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Application Form -->
+  <section class="scholarship-apply" id="apply">
+    <div class="scholarship-apply-container">
+      <h2>Apply <span class="serif">Now</span></h2>
+      <p class="apply-subtitle">Complete the form below to submit your application. All fields marked with * are required.</p>
+
+      <div class="scholarship-form-card">
+        <form class="scholarship-form" id="scholarship-form" action="https://formspree.io/f/mlgpaazw" method="POST">
+          <input type="hidden" name="_subject" value="New Spur Teacher Scholarship Application">
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName">First Name*</label>
+              <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name*</label>
+              <input type="text" id="lastName" name="lastName" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email Address*</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number*</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="highSchool">High School Name*</label>
+            <input type="text" id="highSchool" name="highSchool" required>
+          </div>
+
+          <div class="form-group">
+            <label for="cityState">City, State*</label>
+            <input type="text" id="cityState" name="cityState" placeholder="e.g. Seattle, WA" required>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="grade">Current Grade*</label>
+              <select id="grade" name="grade" required>
+                <option value="">Please Select</option>
+                <option value="junior">Junior (11th Grade)</option>
+                <option value="senior">Senior (12th Grade)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="gradYear">Expected Graduation Year*</label>
+              <select id="gradYear" name="gradYear" required>
+                <option value="">Please Select</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="gpa">Cumulative GPA (Unweighted)*</label>
+            <input type="text" id="gpa" name="gpa" placeholder="e.g. 3.2" required>
+          </div>
+
+          <div class="form-group">
+            <label for="college">Intended College or University</label>
+            <input type="text" id="college" name="college" placeholder="If undecided, you can leave this blank">
+          </div>
+
+          <div class="form-group">
+            <label for="major">Intended Major / Field of Study*</label>
+            <input type="text" id="major" name="major" placeholder="e.g. Elementary Education, Mathematics Education" required>
+          </div>
+
+          <div class="form-group">
+            <label for="leadership">Leadership Activities*</label>
+            <textarea id="leadership" name="leadership" placeholder="List any clubs, teams, organizations, or roles where you've held a leadership position (e.g. team captain, student council, club president, peer tutor)." required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="community">Community Involvement*</label>
+            <textarea id="community" name="community" placeholder="Describe any volunteer work, community service, or ways you've been involved in helping others outside of school." required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="essay">Why do you want to become a teacher?*</label>
+            <textarea id="essay" name="essay" placeholder="Tell us what inspires you to teach and the impact you hope to make in students' lives. Be specific. We're less interested in polished writing and more interested in real experiences. (250–500 words)" required></textarea>
+            <p class="form-hint">250–500 words recommended</p>
+          </div>
+
+          <div class="form-group">
+            <label for="referral">How did you hear about this scholarship?</label>
+            <select id="referral" name="referral">
+              <option value="">Please Select</option>
+              <option value="school-counselor">School Counselor</option>
+              <option value="teacher">Teacher</option>
+              <option value="parent">Parent / Guardian</option>
+              <option value="social-media">Social Media</option>
+              <option value="web-search">Web Search</option>
+              <option value="friend">Friend / Classmate</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn-submit">
+            Submit Application
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="scholarship-faq">
+    <div class="scholarship-faq-container">
+      <h2>Frequently Asked <span class="serif">Questions</span></h2>
+
+      <div class="faq-grid">
+        <div class="faq-item active">
+          <button class="faq-question">
+            When will the scholarship recipient be announced?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>The scholarship recipient will be announced by June 1, 2026. All applicants will be notified of the decision via email.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            How will the $5,000 scholarship be distributed?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>The scholarship will be paid directly to the recipient's college or university to be applied toward tuition and fees for the fall semester following the award.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Can I apply if I'm undecided on a specific college?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes! You don't need to have committed to a college yet. As long as you plan to pursue a degree in education or a teaching-related field, you're welcome to apply. The intended college field on the application is optional.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            What is Spur looking for in applicants?
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>We're looking for students who demonstrate a genuine passion for teaching and education. Your essay is the most important part of the application — we want to understand what drives you to become a teacher and the impact you hope to make.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Terms & Conditions
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <h4 style="color: var(--text-primary); margin-bottom: 0.75rem;">Overview</h4>
+            <p>The Spur Teacher Scholarship awards $5,000 to a high school junior or senior who plans to pursue a career in teaching. The goal is simple: make the path to becoming a teacher a little easier.</p>
+
+            <h4 style="color: var(--text-primary); margin-bottom: 0.75rem;">Eligibility</h4>
+            <p>Applicants must:</p>
+            <ul style="color: var(--text-secondary); line-height: 1.7; padding-left: 1.25rem; margin-bottom: 1.25rem;">
+              <li>Be a current high school junior or senior (Class of 2026 or 2027) and a legal resident of the United States</li>
+              <li>Have a cumulative unweighted GPA of 2.5 or higher on a 4.0 scale</li>
+              <li>Plan to enroll in an accredited college or university for the upcoming academic year</li>
+              <li>Intend to pursue a degree or pathway related to teaching or education</li>
+            </ul>
+
+            <h4 style="color: var(--text-primary); margin-bottom: 0.75rem;">Application Requirements</h4>
+            <p>Applicants must submit:</p>
+            <ul style="color: var(--text-secondary); line-height: 1.7; padding-left: 1.25rem; margin-bottom: 1.25rem;">
+              <li>Basic personal and school information</li>
+              <li>Short written responses to the application questions</li>
+            </ul>
+            <p>All submissions must be original work.</p>
+
+            <h4 style="color: var(--text-primary); margin-bottom: 0.75rem;">Selection Criteria</h4>
+            <p>Applications will be reviewed based on:</p>
+            <ul style="color: var(--text-secondary); line-height: 1.7; padding-left: 1.25rem; margin-bottom: 1.25rem;">
+              <li>Demonstrated commitment to becoming a teacher</li>
+              <li>Thoughtfulness and clarity in responses</li>
+              <li>Evidence of helping others learn or grow</li>
+              <li>Overall strength of the application</li>
+            </ul>
+            <p>Finalists may be contacted for additional information.</p>
+
+            <h4 style="color: var(--text-primary); margin-bottom: 0.75rem;">Timeline</h4>
+            <ul style="color: var(--text-secondary); line-height: 1.7; padding-left: 1.25rem; margin-bottom: 1.25rem;">
+              <li>Application deadline: May 1, 2026</li>
+              <li>Winner announced: June 1, 2026</li>
+            </ul>
+            <p>Late or incomplete applications will not be considered.</p>
+
+            <h4 style="color: var(--text-primary); margin-bottom: 0.75rem;">Award Distribution</h4>
+            <p>The $5,000 scholarship will be paid directly to the recipient's accredited college or university and applied toward tuition and required fees for the fall semester following the award.</p>
+            <p>If funds remain after tuition and required fees are covered, the remaining balance may be provided to the recipient for education-related expenses, such as books, supplies, or housing.</p>
+
+            <h4 style="color: var(--text-primary); margin-bottom: 0.75rem;">Use of Funds</h4>
+            <p>Funds are intended for education-related expenses. Spur is not responsible for how funds are ultimately used once disbursed in accordance with these terms.</p>
+
+            <h4 style="color: var(--text-primary); margin-bottom: 0.75rem;">Verification</h4>
+            <p>The selected recipient must provide proof of enrollment before funds are distributed. If the recipient does not enroll, Spur reserves the right to select an alternate recipient.</p>
+
+            <h4 style="color: var(--text-primary); margin-bottom: 0.75rem;">Publicity</h4>
+            <p>By applying, applicants agree that Spur may use their name, likeness, and application materials (in whole or in part) for promotional purposes, including announcing the winner.</p>
+
+            <h4 style="color: var(--text-primary); margin-bottom: 0.75rem;">General</h4>
+            <ul style="color: var(--text-secondary); line-height: 1.7; padding-left: 1.25rem; padding-bottom: 1rem;">
+              <li>Spur reserves the right to modify or cancel the scholarship at any time</li>
+              <li>Decisions are final and not subject to appeal</li>
+              <li>No purchase or payment is required to apply</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <img src="spur-logo-white.svg" alt="Spur" class="logo-img">
+          </a>
+          <p>Done-for-you operations that put dollars back in classrooms. Real people, real results.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/spurstaffing" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/company/spurwork/" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/spurstaffing/" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Services</h4>
+          <a href="staffing.html">Staffing</a>
+          <a href="recruiting.html">Recruiting</a>
+          <a href="attendance-recovery.html">Attendance Recovery</a>
+          <a href="extended-learning.html">Extended Learning</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Company</h4>
+          <a href="about.html">About Us</a>
+          <a href="https://jobs.spureducation.com/" target="_blank" rel="noopener noreferrer">Careers</a>
+          <a href="scholarship.html">Scholarship</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Support</h4>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Resources</h4>
+          <a href="https://spurjobs-public.s3.amazonaws.com/Spur+Employment+Handbook+Federal+-+English.pdf" target="_blank" rel="noopener noreferrer">Employee Handbook</a>
+          <a href="labor-law-posters.html">Labor Law Posters</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Spur. All rights reserved.</p>
+        <a href="https://www.linkedin.com/in/julianbwm/" target="_blank" rel="noopener noreferrer" class="boogiebyte-credit">
+          <img src="boogie-byte.png" alt="BoogieByte" class="boogiebyte-img">
+          <span>Branding, design, and build by BoogieBytes</span>
+        </a>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+
+  <script>
+    // Confetti burst
+    function launchConfetti() {
+      const container = document.createElement('div');
+      container.className = 'confetti-container';
+      document.body.appendChild(container);
+
+      const colors = ['#8b5cf6', '#a78bfa', '#c4b5fd', '#10b981', '#f59e0b', '#ec4899', '#6366f1', '#fbbf24'];
+
+      for (let i = 0; i < 100; i++) {
+        const piece = document.createElement('div');
+        piece.className = 'confetti-piece';
+        const color = colors[Math.floor(Math.random() * colors.length)];
+        const size = Math.random() * 8 + 6;
+        const left = Math.random() * 100;
+        const delay = Math.random() * 0.8;
+        const duration = Math.random() * 1.5 + 2;
+        const isCircle = Math.random() > 0.5;
+
+        piece.style.cssText = 'left:' + left + '%;width:' + size + 'px;height:' + size + 'px;background:' + color + ';border-radius:' + (isCircle ? '50%' : '2px') + ';animation-delay:' + delay + 's;animation-duration:' + duration + 's;';
+
+        container.appendChild(piece);
+      }
+
+      setTimeout(function() { container.remove(); }, 4500);
+    }
+
+    // Scholarship form submission via Formspree
+    document.getElementById('scholarship-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      var form = e.target;
+      var submitBtn = form.querySelector('.btn-submit');
+      var formCard = form.closest('.scholarship-form-card');
+
+      // Show loading state
+      submitBtn.innerHTML = '<span class="spinner"></span> Submitting...';
+      submitBtn.disabled = true;
+
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      }).then(function(response) {
+        if (response.ok) {
+          launchConfetti();
+
+          // Show success modal
+          var overlay = document.createElement('div');
+          overlay.className = 'success-overlay';
+          overlay.innerHTML = '<div class="success-modal"><div class="success-icon">&check;</div><h3>You\'re in!</h3><p class="success-subtitle">Your application has been submitted.</p><p>Thank you for applying to the Spur Teacher Scholarship. We\'ll review every application carefully and notify all applicants by email by June 1, 2026. Good luck!</p><button class="btn-close-modal">Done</button></div>';
+          document.body.appendChild(overlay);
+
+          // Close modal handlers
+          overlay.querySelector('.btn-close-modal').addEventListener('click', function() {
+            overlay.remove();
+          });
+          overlay.addEventListener('click', function(ev) {
+            if (ev.target === overlay) overlay.remove();
+          });
+
+          // Reset form
+          form.reset();
+          submitBtn.innerHTML = 'Submit Application <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>';
+          submitBtn.disabled = false;
+        } else {
+          submitBtn.innerHTML = 'Submit Application <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>';
+          submitBtn.disabled = false;
+          alert('There was an issue submitting your application. Please try again.');
+        }
+      }).catch(function() {
+        submitBtn.innerHTML = 'Submit Application <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>';
+        submitBtn.disabled = false;
+        alert('There was an issue submitting your application. Please try again.');
+      });
+    });
+  </script>
+</body>
+</html>
