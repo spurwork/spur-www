@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.spureducation.com/blog/sitemap.xml
+
+# Block staging/test paths
+Disallow: /node_modules/

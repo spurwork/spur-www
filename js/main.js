@@ -206,3 +206,30 @@ if (savingsAmount) {
 
   savingsObserver.observe(savingsAmount);
 }
+
+// Newsletter form submissions
+document.querySelectorAll('.blog-email-form').forEach(function(form) {
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var btn = form.querySelector('button[type="submit"]');
+    var originalText = btn.textContent;
+    btn.textContent = 'Subscribing...';
+    btn.disabled = true;
+
+    fetch(form.action, {
+      method: 'POST',
+      body: new FormData(form),
+      headers: { 'Accept': 'application/json' }
+    }).then(function(response) {
+      if (response.ok) {
+        form.innerHTML = '<p style="color: var(--accent-secondary, #a78bfa); font-weight: 500;">You\'re subscribed! Check your inbox.</p>';
+      } else {
+        throw new Error('Submission failed');
+      }
+    }).catch(function() {
+      btn.textContent = originalText;
+      btn.disabled = false;
+      alert('Something went wrong. Please try again.');
+    });
+  });
+});
