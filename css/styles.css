@@ -127,7 +127,8 @@
     html[data-theme="light"] .broadcast-card,
     html[data-theme="light"] .pipeline-visual,
     html[data-theme="light"] .story-image,
-    html[data-theme="light"] .approach-card {
+    html[data-theme="light"] .approach-card,
+    html[data-theme="light"] .nashville-card {
       --bg-card: #16161f;
       --bg-card-hover: #1c1c28;
       --bg-secondary: #111118;
@@ -157,7 +158,8 @@
     html[data-theme="light"] .translation-preview,
     html[data-theme="light"] .student-info-card,
     html[data-theme="light"] .broadcast-card,
-    html[data-theme="light"] .pipeline-visual {
+    html[data-theme="light"] .pipeline-visual,
+    html[data-theme="light"] .nashville-card {
       background: #16161f;
       border-color: rgba(255, 255, 255, 0.06);
       box-shadow: 0 25px 60px -10px rgba(0, 0, 0, 0.3);
@@ -187,6 +189,15 @@
     html[data-theme="light"] .story-image {
       background: #16161f;
       border-color: rgba(255, 255, 255, 0.06);
+    }
+
+    /* nashville-card stat boxes on dark bg */
+    html[data-theme="light"] .nashville-card .nashville-stat {
+      background: rgba(255, 255, 255, 0.06);
+    }
+
+    html[data-theme="light"] .nashville-card .nashville-badge {
+      background: rgba(139, 92, 246, 0.2);
     }
 
     /* funding stat block keeps its green gradient on dark bg */
@@ -507,6 +518,42 @@
     /* --- Service card hover accent line: solid purple --- */
     html[data-theme="light"] .service-card::before {
       background: var(--accent-primary);
+    }
+
+    /* --- Scholarship page --- */
+    html[data-theme="light"] .scholarship-amount {
+      background: none;
+      -webkit-background-clip: unset;
+      -webkit-text-fill-color: var(--text-primary);
+      background-clip: unset;
+      color: var(--text-primary);
+    }
+
+    html[data-theme="light"] .scholarship-form input,
+    html[data-theme="light"] .scholarship-form select,
+    html[data-theme="light"] .scholarship-form textarea {
+      color: #1a1a2e;
+    }
+
+    html[data-theme="light"] .success-modal h3 {
+      color: #1a1a2e;
+    }
+
+    html[data-theme="light"] .success-modal .success-subtitle {
+      color: #55556b;
+    }
+
+    html[data-theme="light"] .success-modal p {
+      color: #84849a;
+    }
+
+    html[data-theme="light"] .success-modal .btn-close-modal {
+      background: #1a1a2e;
+      color: #ffffff;
+    }
+
+    html[data-theme="light"] .success-modal .btn-close-modal:hover {
+      background: #0f0f1e;
     }
 
 
@@ -3242,6 +3289,24 @@
 
       .nav-links .nav-link:hover {
         color: var(--accent-primary);
+      }
+
+      /* Mobile theme toggle */
+      .nav-links .theme-toggle {
+        position: absolute;
+        top: 1rem;
+        left: 1.25rem;
+        width: 44px;
+        height: 44px;
+        border-radius: 8px;
+        background: var(--bg-card);
+        border: 1px solid var(--border-color);
+        z-index: 10000;
+      }
+
+      .nav-links .theme-toggle svg {
+        width: 22px;
+        height: 22px;
       }
 
       /* Mobile CTA button */
