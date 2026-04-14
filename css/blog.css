@@ -174,7 +174,7 @@ body.banner-hidden .blog-hero {
 .blog-card:hover {
   transform: translateY(-4px);
   border-color: var(--border-hover);
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 12px 40px var(--shadow-color);
 }
 
 .blog-card-body {
@@ -1431,7 +1431,7 @@ body.banner-hidden .category-page {
 
 .blog-cta-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 16px var(--shadow-light);
 }
 
 /* --------------------------------------------------------------------------
@@ -1525,3 +1525,73 @@ body.banner-hidden .category-page {
     padding: 2rem 1.25rem;
   }
 }
+
+/* ==========================================================================
+   Light Mode Overrides
+   ========================================================================== */
+
+/* Blog card tags: darken colors for white backgrounds */
+html[data-theme="light"] .blog-card-tag[data-category="teacher-retention"],
+html[data-theme="light"] .blog-card-tag.cat-teacher-retention {
+  background: rgba(124, 58, 237, 0.08);
+  color: #7c3aed;
+}
+
+html[data-theme="light"] .blog-card-tag[data-category="teacher-recruitment"],
+html[data-theme="light"] .blog-card-tag.cat-teacher-recruitment {
+  background: rgba(219, 39, 119, 0.08);
+  color: #db2777;
+}
+
+html[data-theme="light"] .blog-card-tag[data-category="substitute-teaching"],
+html[data-theme="light"] .blog-card-tag.cat-substitute-teaching {
+  background: rgba(5, 150, 105, 0.08);
+  color: #059669;
+}
+
+html[data-theme="light"] .blog-card-tag[data-category="extended-learning"],
+html[data-theme="light"] .blog-card-tag.cat-extended-learning {
+  background: rgba(217, 119, 6, 0.08);
+  color: #b45309;
+}
+
+html[data-theme="light"] .blog-card-tag[data-category="staffing-operations"],
+html[data-theme="light"] .blog-card-tag.cat-staffing-operations {
+  background: rgba(79, 70, 229, 0.08);
+  color: #4f46e5;
+}
+
+html[data-theme="light"] .blog-card-tag[data-category="leadership-and-culture"],
+html[data-theme="light"] .blog-card-tag.cat-leadership-and-culture {
+  background: rgba(8, 145, 178, 0.08);
+  color: #0891b2;
+}
+
+html[data-theme="light"] .blog-card-tag[data-category="attendance-recovery"],
+html[data-theme="light"] .blog-card-tag.cat-attendance-recovery {
+  background: rgba(5, 150, 105, 0.08);
+  color: #059669;
+}
+
+/* Blog cards: soft shadow on light */
+html[data-theme="light"] .blog-card {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 2px 8px rgba(0, 0, 0, 0.03);
+  border-color: rgba(0, 0, 0, 0.06);
+}
+
+html[data-theme="light"] .blog-card:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07), 0 4px 10px rgba(0, 0, 0, 0.04);
+}
+
+/* Blog callout: slightly more visible on light */
+html[data-theme="light"] .blog-callout {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+/* Blog TOC: subtle shadow */
+html[data-theme="light"] .blog-toc {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  border-color: rgba(0, 0, 0, 0.06);
+}
+
+/* Pipeline visual — stays dark-themed (handled in styles.css) */

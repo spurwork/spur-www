@@ -1,3 +1,45 @@
+// Theme Toggle
+(function() {
+  function getPreferredTheme() {
+    var stored = localStorage.getItem('spur-theme');
+    if (stored) return stored;
+    return window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+  }
+
+  function setTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('spur-theme', theme);
+    // Update toggle button icons
+    document.querySelectorAll('.theme-toggle').forEach(function(btn) {
+      var sunIcon = btn.querySelector('.icon-sun');
+      var moonIcon = btn.querySelector('.icon-moon');
+      if (sunIcon && moonIcon) {
+        sunIcon.style.display = theme === 'light' ? 'block' : 'none';
+        moonIcon.style.display = theme === 'light' ? 'none' : 'block';
+      }
+    });
+  }
+
+  // Apply theme on load (backup for inline script)
+  setTheme(getPreferredTheme());
+
+  // Listen for toggle clicks
+  document.addEventListener('click', function(e) {
+    var toggle = e.target.closest('.theme-toggle');
+    if (toggle) {
+      var current = document.documentElement.getAttribute('data-theme') || 'dark';
+      setTheme(current === 'dark' ? 'light' : 'dark');
+    }
+  });
+
+  // Listen for OS theme changes
+  window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', function(e) {
+    if (!localStorage.getItem('spur-theme')) {
+      setTheme(e.matches ? 'light' : 'dark');
+    }
+  });
+})();
+
 // Banner Dismiss (session only - reappears on page reload)
 document.addEventListener('DOMContentLoaded', () => {
   const bannerDismiss = document.querySelector('.banner-dismiss');
