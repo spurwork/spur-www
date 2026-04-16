@@ -445,7 +445,7 @@
 
     /* --- Stat simple values (service pages) --- */
     html[data-theme="light"] .stat-simple-value {
-      color: #b45309;
+      color: var(--text-primary);
     }
 
     html[data-theme="light"] .model-number {

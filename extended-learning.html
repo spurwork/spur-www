@@ -1082,6 +1082,23 @@
         line-height: 1.5;
       }
     }
+
+    /* Light mode fixes — white-rgba backgrounds invisible on white */
+    html[data-theme="light"] .growth-bar-track {
+      background: rgba(0, 0, 0, 0.06);
+    }
+    html[data-theme="light"] .growth-bar-comparison {
+      background: rgba(0, 0, 0, 0.1);
+    }
+    html[data-theme="light"] .funding-visual {
+      background: var(--bg-secondary);
+    }
+    html[data-theme="light"] .funding-tag {
+      background: rgba(0, 0, 0, 0.04);
+    }
+    html[data-theme="light"] .propulsion-card:nth-child(3) .propulsion-label {
+      background: rgba(0, 0, 0, 0.06) !important;
+    }
   </style>
   <script>(function(){var t=localStorage.getItem('spur-theme')||(window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t)})()</script>
 </head>
@@ -1582,7 +1599,7 @@
         <div class="propulsion-card">
           <div class="propulsion-icon stream">🔬</div>
           <h3>STREAM <span>Labs</span></h3>
-          <div class="propulsion-label" style="color: var(--text-muted); background: rgba(255,255,255,0.1);">Applied Innovation</div>
+          <div class="propulsion-label" style="color: #f59e0b;">Applied Innovation</div>
           <p>Project-based thematic units like "Ready Racers" and "Natural Disasters" that apply core skills to real-world engineering and scientific challenges.</p>
         </div>
       </div>
