@@ -216,12 +216,26 @@
 
     html[data-theme="light"] .mega-menu-card {
       background: var(--bg-card);
-      border-color: rgba(0, 0, 0, 0.05);
+      border: 1px solid rgba(0, 0, 0, 0.06);
     }
 
     html[data-theme="light"] .mega-menu-card:hover {
-      border-color: rgba(0, 0, 0, 0.12);
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+      border-color: rgba(0, 0, 0, 0.14);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    }
+
+    /* Boost card visual gradients in light mode — inline 0.2/0.05 is too faint on white */
+    html[data-theme="light"] .mega-menu-card:nth-child(1) .mega-card-visual {
+      background: linear-gradient(135deg, #7c3aed 0%, rgba(139, 92, 246, 0.45) 100%) !important;
+    }
+    html[data-theme="light"] .mega-menu-card:nth-child(2) .mega-card-visual {
+      background: linear-gradient(135deg, #059669 0%, rgba(16, 185, 129, 0.40) 100%) !important;
+    }
+    html[data-theme="light"] .mega-menu-card:nth-child(3) .mega-card-visual {
+      background: linear-gradient(135deg, #d97706 0%, rgba(245, 158, 11, 0.35) 100%) !important;
+    }
+    html[data-theme="light"] .mega-menu-card:nth-child(4) .mega-card-visual {
+      background: linear-gradient(135deg, #db2777 0%, rgba(236, 72, 153, 0.40) 100%) !important;
     }
 
     html[data-theme="light"] .nav-cta-arrow {
@@ -363,6 +377,20 @@
     /* --- Mega card icon: subtle shadow --- */
     html[data-theme="light"] .mega-card-icon {
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    }
+
+    /* Boost mobile nav service icon gradients in light mode */
+    html[data-theme="light"] .mobile-service-link:nth-child(1) .mobile-service-icon {
+      background: linear-gradient(135deg, #7c3aed 0%, rgba(139, 92, 246, 0.45) 100%) !important;
+    }
+    html[data-theme="light"] .mobile-service-link:nth-child(2) .mobile-service-icon {
+      background: linear-gradient(135deg, #059669 0%, rgba(16, 185, 129, 0.40) 100%) !important;
+    }
+    html[data-theme="light"] .mobile-service-link:nth-child(3) .mobile-service-icon {
+      background: linear-gradient(135deg, #d97706 0%, rgba(245, 158, 11, 0.35) 100%) !important;
+    }
+    html[data-theme="light"] .mobile-service-link:nth-child(4) .mobile-service-icon {
+      background: linear-gradient(135deg, #db2777 0%, rgba(236, 72, 153, 0.40) 100%) !important;
     }
 
     /* --- Contact form card: clean white in light mode --- */
