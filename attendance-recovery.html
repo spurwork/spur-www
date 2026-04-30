@@ -516,6 +516,30 @@
         grid-template-columns: 1fr;
       }
     }
+
+    /* Light mode overrides for comparison section */
+    html[data-theme="light"] .chaos-bubble.dark {
+      background: rgba(0, 0, 0, 0.05);
+      color: var(--text-primary);
+      border-color: rgba(0, 0, 0, 0.1);
+    }
+    html[data-theme="light"] .chaos-bubble.light {
+      background: rgba(220, 38, 38, 0.08);
+      color: #dc2626;
+      border-color: rgba(220, 38, 38, 0.15);
+    }
+    html[data-theme="light"] .panel-label {
+      color: var(--text-muted);
+    }
+    html[data-theme="light"] .arrow-connector {
+      color: var(--text-muted);
+    }
+    html[data-theme="light"] .before-label {
+      color: var(--text-muted);
+    }
+    html[data-theme="light"] .before-labels {
+      border-top-color: rgba(0, 0, 0, 0.08);
+    }
   </style>
   <script>(function(){var t=localStorage.getItem('spur-theme')||(window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t)})()</script>
 </head>
