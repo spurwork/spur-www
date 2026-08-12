@@ -229,7 +229,7 @@
       background: linear-gradient(135deg, #7c3aed 0%, rgba(139, 92, 246, 0.45) 100%) !important;
     }
     html[data-theme="light"] .mega-menu-card:nth-child(2) .mega-card-visual {
-      background: linear-gradient(135deg, #059669 0%, rgba(16, 185, 129, 0.40) 100%) !important;
+      background: linear-gradient(135deg, #0d9488 0%, rgba(20, 184, 166, 0.40) 100%) !important;
     }
     html[data-theme="light"] .mega-menu-card:nth-child(3) .mega-card-visual {
       background: linear-gradient(135deg, #d97706 0%, rgba(245, 158, 11, 0.35) 100%) !important;

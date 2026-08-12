@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' https://images.unsplash.com https://spurjobs-public.s3.amazonaws.com data:; connect-src 'self' https://formspree.io; form-action 'self' https://formspree.io; frame-ancestors 'none';">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spur AMS. Absence management, time tracking, and substitutes — free with staffing, or $1 per student.</title>
+  <meta name="description" content="The absence management and time-tracking system that fills the jobs your subs don't take. Flat pricing by district size. Setup included.">
+  <meta name="keywords" content="absence management software, substitute management, Frontline alternative, Red Rover alternative, K12 sub coverage, fill rate, flat rate absence management, overflow substitute coverage">
+  <link rel="canonical" href="https://spureducation.com/absence-management.html">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://spureducation.com/absence-management.html">
+  <meta property="og:title" content="Spur AMS. Absence management, time tracking, and substitutes — free with staffing, or $1 per student.">
+  <meta property="og:description" content="The absence management and time-tracking system that fills the jobs your subs don't take. Flat pricing by district size. Setup included.">
+  <meta property="og:image" content="https://spureducation.com/spur-og-image.png">
+  <meta property="og:site_name" content="Spur">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://spureducation.com/absence-management.html">
+  <meta name="twitter:title" content="Spur AMS. Absence management, time tracking, and substitutes — free with staffing, or $1 per student.">
+  <meta name="twitter:description" content="The absence management and time-tracking system that fills the jobs your subs don't take. Flat pricing by district size. Setup included.">
+  <meta name="twitter:image" content="https://spureducation.com/spur-og-image.png">
+
+  <link rel="icon" type="image/png" href="spur-favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=DM+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=2">
+  <style>
+    /* =========================================================
+       Absence Management landing page
+       Spur visual language + ledger accents (mono numbers,
+       fill-rate gap visual, enrollment calculator).
+       All classes prefixed .ams- to avoid collisions.
+       ========================================================= */
+    :root {
+      --ams-signal: #10b981;   /* included / true / Spur */
+      --ams-flag: #ef4444;     /* competitor charges / fails */
+      --ams-mono: 'DM Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+    }
+
+    .ams-mono { font-family: var(--ams-mono); font-feature-settings: "tnum" 1; letter-spacing: -0.02em; }
+    .ams-serif { font-family: 'Instrument Serif', serif; font-weight: 700; font-style: italic; color: var(--accent-secondary); }
+
+    .ams-section { padding: 6rem 0; }
+    .ams-container { max-width: 1080px; margin: 0 auto; padding: 0 2rem; }
+    .ams-narrow { max-width: 760px; margin: 0 auto; padding: 0 2rem; }
+    .ams-alt { background: var(--bg-secondary); }
+    .ams-eyebrow {
+      font-family: var(--ams-mono);
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+    }
+    .ams-section h2 { font-size: clamp(2.15rem, 4.2vw, 2.9rem); line-height: 1.12; margin-bottom: 1rem; font-weight: 700; letter-spacing: -0.02em; }
+    .ams-section-head { text-align: center; max-width: 720px; margin: 0 auto 3rem; }
+    .ams-lead { font-size: 1.1rem; color: var(--text-secondary); line-height: 1.7; }
+
+    /* Buttons */
+    .ams-btn-primary {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      padding: 1rem 2rem; border-radius: 12px; text-decoration: none;
+      font-weight: 600; color: #fff;
+      background: var(--gradient-purple);
+      box-shadow: 0 4px 20px var(--accent-glow);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .ams-btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 30px var(--accent-glow); }
+    .ams-btn-secondary {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      padding: 1rem 2rem; border-radius: 12px; text-decoration: none;
+      font-weight: 600; color: var(--text-primary);
+      background: transparent; border: 1px solid var(--border-color);
+      transition: border-color 0.25s ease, background 0.25s ease;
+    }
+    .ams-btn-secondary:hover { border-color: var(--text-muted); background: var(--bg-card); }
+
+    /* ---- Section 1: Hero ---- */
+    .ams-hero {
+      text-align: center;
+      padding: 7rem 0 4.5rem;
+      background: linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+    }
+    .ams-hero-inner { max-width: 820px; margin: 0 auto; padding: 0 2rem; }
+    .ams-hero h1 { font-size: clamp(2.6rem, 5.6vw, 3.9rem); line-height: 1.08; font-weight: 700; margin-bottom: 1.25rem; letter-spacing: -0.02em; }
+    .ams-hero-sub { font-size: 1.2rem; line-height: 1.6; color: var(--text-secondary); max-width: 600px; margin: 0 auto; }
+    .ams-price {
+      font-family: var(--ams-mono);
+      font-size: clamp(2.75rem, 9vw, 4.75rem);
+      line-height: 1; font-weight: 500; letter-spacing: -0.03em;
+      color: var(--accent-secondary); margin-bottom: 0.5rem;
+    }
+    .ams-price small { display: block; font-family: 'DM Sans', sans-serif; font-size: 1rem; font-weight: 400; letter-spacing: 0; color: var(--text-muted); margin-top: 0.6rem; }
+    .ams-hero-ctas { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin: 2.25rem 0 0; }
+    .ams-hero-fine { font-size: 0.9rem; color: var(--text-muted); margin-top: 1.25rem; }
+
+    /* ---- Section 1: Two things -> one (invoice split) ---- */
+    .ams-split { display: grid; grid-template-columns: 1fr auto 1fr; gap: 1.75rem; align-items: center; max-width: 960px; margin: 0 auto; }
+    .ams-split-col { display: flex; flex-direction: column; }
+    .ams-split-label { font-family: var(--ams-mono); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.12em; color: var(--text-muted); margin-bottom: 0.9rem; }
+    .ams-today { display: flex; flex-direction: column; gap: 1rem; }
+    .ams-vendor { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 14px; padding: 1.15rem 1.25rem; display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
+    .ams-vendor .v-name { font-weight: 600; font-size: 1rem; line-height: 1.3; }
+    .ams-vendor .v-sub { font-size: 0.85rem; color: var(--text-muted); margin-top: 0.2rem; }
+    .ams-vendor .v-tag { font-family: var(--ams-mono); font-size: 0.68rem; color: var(--ams-flag); border: 1px solid rgba(239, 68, 68, 0.35); padding: 0.22rem 0.55rem; border-radius: 999px; white-space: nowrap; flex-shrink: 0; }
+    .ams-split-arrow { display: flex; align-items: center; justify-content: center; font-family: var(--ams-mono); font-size: 1.5rem; color: var(--text-muted); align-self: center; }
+    .ams-spur-card { position: relative; background: var(--bg-card); border: 1px solid rgba(139, 92, 246, 0.4); box-shadow: 0 0 50px -14px rgba(139, 92, 246, 0.45), 0 18px 45px -20px var(--shadow-heavy); border-radius: 16px; padding: 1.75rem; }
+    .ams-spur-card .s-wordmark { height: 24px; width: auto; margin-bottom: 1.15rem; filter: var(--logo-filter); }
+    .ams-spur-card .s-desc { color: var(--text-secondary); font-size: 0.95rem; line-height: 1.55; margin: 0 0 1.2rem; }
+    .ams-spur-tags { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+    .ams-spur-tag { font-family: var(--ams-mono); font-size: 0.7rem; color: var(--ams-signal); background: rgba(16, 185, 129, 0.12); border-radius: 999px; padding: 0.28rem 0.65rem; }
+    .ams-split-note { max-width: 720px; margin: 2.75rem auto 0; color: var(--text-muted); font-size: 0.95rem; line-height: 1.7; text-align: center; }
+
+    /* ---- Section 2: How it works ---- */
+    .ams-steps.three { grid-template-columns: repeat(3, 1fr); }
+    .ams-how-note { text-align: center; max-width: 700px; margin: 2.5rem auto 0; color: var(--text-secondary); line-height: 1.7; }
+
+    /* ---- Section 3: Fill-rate gap visual ---- */
+    .ams-gap-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3.5rem; align-items: center; }
+    .ams-bars-card {
+      background: var(--bg-card); border: 1px solid var(--border-color);
+      border-radius: 20px; padding: 2rem;
+      box-shadow: 0 25px 60px var(--shadow-heavy);
+    }
+    .ams-bar-block { margin-bottom: 2rem; }
+    .ams-bar-block:last-child { margin-bottom: 0; }
+    .ams-bar-label { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 0.6rem; }
+    .ams-bar-label .name { font-size: 0.85rem; font-weight: 600; color: var(--text-secondary); }
+    .ams-bar-label .num { font-family: var(--ams-mono); font-size: 0.8rem; color: var(--text-muted); }
+    .ams-bar { display: flex; height: 44px; border-radius: 8px; overflow: hidden; background: var(--bg-secondary); }
+    .ams-seg { height: 100%; display: flex; align-items: center; padding-left: 0.75rem; font-size: 0.72rem; font-weight: 600; color: #fff; white-space: nowrap; overflow: hidden; width: var(--w); transition: width 1.1s cubic-bezier(0.22, 1, 0.36, 1); }
+    .ams-bars.pre .ams-seg { width: 0; }
+    .ams-seg-filled { background: #3a3a4a; color: #cfcfdd; }
+    .ams-seg-gap { background: var(--ams-flag); }
+    .ams-seg-spur { background: var(--ams-signal); }
+    .ams-bar-caption { font-size: 0.8rem; color: var(--text-muted); margin-top: 1.25rem; line-height: 1.5; }
+    .ams-gap-copy h2 { margin-bottom: 1.25rem; }
+    .ams-gap-copy p { color: var(--text-secondary); line-height: 1.75; margin-bottom: 1.25rem; }
+    .ams-fineprint { font-size: 0.9rem; color: var(--text-muted); border-left: 2px solid var(--border-hover); padding-left: 1rem; line-height: 1.6; }
+
+    /* ---- Section 4: Pricing ---- */
+    .ams-calc {
+      background: var(--bg-card); border: 1px solid var(--border-color);
+      border-radius: 20px; padding: 2.5rem; margin: 0 auto 3rem; max-width: 820px;
+      box-shadow: 0 1px 2px var(--shadow-light);
+    }
+    .ams-calc-top { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem; }
+    .ams-calc-top .lbl { font-size: 0.85rem; color: var(--text-secondary); font-weight: 600; }
+    .ams-calc-top .val { font-family: var(--ams-mono); font-size: 1.4rem; color: var(--text-primary); }
+    .ams-slider { -webkit-appearance: none; appearance: none; width: 100%; height: 6px; border-radius: 999px; background: var(--bg-secondary); outline: none; margin: 0.5rem 0 2rem; }
+    .ams-slider::-webkit-slider-thumb { -webkit-appearance: none; appearance: none; width: 26px; height: 26px; border-radius: 50%; background: var(--accent-primary); cursor: pointer; border: 3px solid var(--bg-card); box-shadow: 0 2px 8px var(--accent-glow); }
+    .ams-slider::-moz-range-thumb { width: 26px; height: 26px; border-radius: 50%; background: var(--accent-primary); cursor: pointer; border: 3px solid var(--bg-card); }
+    .ams-slider:focus-visible { box-shadow: 0 0 0 3px var(--accent-glow); }
+    .ams-calc-nums { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .ams-calc-cell { padding: 1.25rem; border-radius: 14px; background: var(--bg-secondary); text-align: center; }
+    .ams-calc-cell .cap { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); margin-bottom: 0.5rem; }
+    .ams-calc-cell .big { font-family: var(--ams-mono); font-size: 2rem; font-weight: 500; }
+    .ams-calc-cell.now .big { color: var(--ams-flag); }
+    .ams-calc-cell.spur .big { color: var(--ams-signal); }
+    .ams-calc-keep { margin-top: 1rem; text-align: center; font-size: 1.05rem; color: var(--text-secondary); }
+    .ams-calc-keep strong { font-family: var(--ams-mono); color: var(--ams-signal); font-weight: 500; }
+
+    .ams-table-wrap { max-width: 820px; margin: 0 auto 1rem; overflow-x: auto; }
+    .ams-table { width: 100%; border-collapse: collapse; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 16px; overflow: hidden; }
+    .ams-table th, .ams-table td { padding: 0.85rem 1.1rem; text-align: left; border-bottom: 1px solid var(--border-color); font-size: 0.9rem; }
+    .ams-table thead th { background: var(--bg-secondary); font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-muted); font-weight: 600; }
+    .ams-table tbody tr:last-child td { border-bottom: none; }
+    .ams-table td.n { font-family: var(--ams-mono); text-align: right; color: var(--text-primary); }
+    .ams-table td.vendor { color: var(--text-secondary); }
+    .ams-table td.n a.src-link { color: inherit; text-decoration: none; border-bottom: 1px dotted var(--text-muted); }
+    .ams-table td.n a.src-link:hover { color: var(--accent-secondary); border-bottom-color: var(--accent-secondary); }
+    .ams-table td.n a.src-link sup { font-size: 0.62em; margin-left: 1px; color: var(--accent-secondary); }
+    .ams-caption { max-width: 820px; margin: 0 auto 3.5rem; font-size: 0.85rem; color: var(--text-muted); text-align: center; }
+
+    .ams-plans { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; max-width: 1040px; margin: 0 auto 1.75rem; align-items: start; }
+    .ams-plan { position: relative; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 20px; padding: 1.9rem 1.75rem; display: flex; flex-direction: column; }
+    .ams-plan.featured { border-color: var(--accent-primary); box-shadow: 0 0 0 1px var(--accent-primary), 0 26px 60px var(--shadow-heavy); }
+    .ams-plan-top { display: flex; justify-content: space-between; align-items: center; min-height: 28px; margin-bottom: 1rem; }
+    .ams-plan-icon { color: var(--text-secondary); display: inline-flex; }
+    .ams-plan-icon svg { width: 26px; height: 26px; }
+    .ams-plan.featured .ams-plan-icon { color: var(--accent-secondary); }
+    .ams-plan-badge { background: var(--accent-primary); color: #fff; font-size: 0.72rem; font-weight: 600; padding: 0.3rem 0.8rem; border-radius: 999px; white-space: nowrap; }
+    .ams-plan-name { font-size: 1.35rem; font-weight: 700; line-height: 1.1; color: var(--text-primary); }
+    .ams-plan-subtitle { font-size: 0.92rem; color: var(--text-muted); margin-top: 0.2rem; }
+    .ams-plan-price { display: flex; align-items: baseline; gap: 0.4rem; margin-top: 1.35rem; }
+    .ams-plan-price .amt { font-family: var(--ams-mono); font-size: 2.7rem; font-weight: 500; letter-spacing: -0.02em; color: var(--text-primary); line-height: 1; }
+    .ams-plan-price.words .amt { font-family: 'DM Sans', sans-serif; font-size: 2.2rem; font-weight: 700; }
+    .ams-plan-price .per { font-size: 0.95rem; color: var(--text-muted); }
+    .ams-plan-sub { font-size: 0.9rem; color: var(--text-muted); line-height: 1.5; margin-top: 0.55rem; }
+    .ams-plan-example { background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 12px; padding: 0.95rem 1.1rem; margin-top: 1.25rem; display: flex; flex-direction: column; gap: 0.55rem; }
+    .ams-plan-ex-row { display: flex; justify-content: space-between; align-items: baseline; font-size: 0.92rem; }
+    .ams-plan-ex-row .lbl { color: var(--text-secondary); }
+    .ams-plan-ex-row .val { font-family: var(--ams-mono); font-weight: 600; color: var(--text-primary); }
+    .ams-plan-divider { height: 1px; background: var(--border-color); margin: 1.5rem 0 1.25rem; }
+    .ams-plan-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.72rem; }
+    .ams-plan-list li { position: relative; padding-left: 1.4rem; font-size: 0.92rem; color: var(--text-secondary); line-height: 1.45; }
+    .ams-plan-list li::before { content: ''; position: absolute; left: 0; top: 0.42em; width: 7px; height: 7px; border-radius: 50%; background: var(--ams-signal); }
+    .ams-plan-note { margin-top: 1rem; padding-left: 1.4rem; font-size: 0.88rem; color: var(--text-muted); line-height: 1.45; }
+    .ams-tiers-note { max-width: 760px; margin: 0 auto; text-align: center; color: var(--text-secondary); line-height: 1.7; font-size: 0.98rem; }
+
+    /* ---- Section 5: Why it costs less ---- */
+    .ams-why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+    .ams-why-card { background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 20px; padding: 2rem 1.75rem; transition: border-color .2s, transform .2s; }
+    .ams-why-card:hover { border-color: var(--border-hover); transform: translateY(-3px); }
+    .ams-why-num { font-family: var(--ams-mono); font-size: 0.85rem; color: var(--accent-secondary); margin-bottom: 1.25rem; letter-spacing: 0.05em; }
+    .ams-why-card h3 { font-size: 1.12rem; margin-bottom: 0.75rem; line-height: 1.3; }
+    .ams-why-card p { color: var(--text-secondary); line-height: 1.7; font-size: 0.96rem; }
+
+    /* ---- Section 6: Everything included ---- */
+    .ams-check-list { display: grid; grid-template-columns: 1fr 1fr; gap: 0.85rem 2.5rem; margin-bottom: 2rem; }
+    .ams-check-item { display: flex; align-items: flex-start; gap: 0.75rem; font-size: 0.98rem; color: var(--text-secondary); line-height: 1.5; }
+    .ams-check-item svg { flex-shrink: 0; width: 20px; height: 20px; color: var(--ams-signal); margin-top: 2px; }
+    .ams-included-note { font-size: 0.98rem; color: var(--text-secondary); border-left: 2px solid var(--accent-primary); padding-left: 1rem; line-height: 1.6; }
+
+    /* ---- Section 7: Switching ---- */
+    .ams-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.75rem; margin-bottom: 2.5rem; }
+    .ams-step .num { font-family: var(--ams-mono); font-size: 1.1rem; width: 42px; height: 42px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: var(--bg-card); border: 1px solid var(--border-color); color: var(--accent-secondary); margin-bottom: 1rem; }
+    .ams-step h3 { font-size: 1.02rem; margin-bottom: 0.5rem; }
+    .ams-step p { font-size: 0.9rem; color: var(--text-secondary); line-height: 1.6; }
+    .ams-switch-note { color: var(--text-secondary); line-height: 1.7; }
+    .ams-switch-note .fine { display: block; margin-top: 0.75rem; font-size: 0.9rem; color: var(--text-muted); }
+
+    /* ---- Section 8: Proof ---- */
+    .ams-scale { text-align: center; }
+    .ams-scale .n { font-family: var(--ams-mono); font-size: clamp(2rem, 6vw, 3.25rem); font-weight: 500; color: var(--text-primary); }
+    .ams-scale .l { color: var(--text-muted); margin-top: 0.5rem; }
+
+    /* ---- Section 9: Close + form ---- */
+    .ams-close { background: linear-gradient(135deg, rgba(139, 92, 246, 0.10) 0%, rgba(99, 102, 241, 0.10) 100%); text-align: center; }
+    .ams-close h2 { font-size: clamp(2rem, 5vw, 2.75rem); margin-bottom: 1rem; }
+    .ams-close p { color: var(--text-secondary); font-size: 1.1rem; max-width: 560px; margin: 0 auto 2.25rem; line-height: 1.7; }
+
+    /* ---- Product showcase (carousels) ---- */
+    .ams-show-grid { display: grid; grid-template-columns: 0.82fr 1.18fr; gap: 3.5rem; align-items: center; }
+    .ams-show-sub { color: var(--text-secondary); font-size: 1.05rem; line-height: 1.7; margin-bottom: 1.75rem; }
+    .ams-tabs { display: flex; flex-direction: column; gap: 0.35rem; }
+    .ams-tab { text-align: left; background: transparent; border: none; border-left: 2px solid var(--border-color); padding: 0.85rem 0 0.85rem 1.15rem; cursor: pointer; font-family: inherit; }
+    .ams-tab .t-title { font-weight: 600; font-size: 1.05rem; color: var(--text-muted); transition: color 0.2s; }
+    .ams-tab .t-desc { font-size: 0.9rem; color: var(--text-muted); line-height: 1.55; max-height: 0; overflow: hidden; opacity: 0; transition: max-height 0.35s ease, opacity 0.35s ease, margin 0.35s ease; }
+    .ams-tab.active { border-left-color: var(--accent-primary); }
+    .ams-tab.active .t-title { color: var(--text-primary); }
+    .ams-tab.active .t-desc { max-height: 6rem; opacity: 1; margin-top: 0.45rem; }
+
+    .ams-stage { position: relative; border-radius: 22px; padding: 2rem; overflow: hidden; background: linear-gradient(160deg, #15151f 0%, #0b0b12 100%); border: 1px solid rgba(255, 255, 255, 0.08); box-shadow: 0 40px 90px -35px rgba(0, 0, 0, 0.7); }
+    .ams-stage::before { content: ''; position: absolute; top: -35%; left: 50%; transform: translateX(-50%); width: 85%; height: 80%; background: radial-gradient(ellipse at center, rgba(139, 92, 246, 0.28) 0%, transparent 70%); pointer-events: none; }
+    .ams-stage-inner { position: relative; }
+
+    .ams-browser { border-radius: 12px; overflow: hidden; background: #fff; box-shadow: 0 24px 55px -18px rgba(0, 0, 0, 0.6); }
+    .ams-browser-bar { display: flex; align-items: center; gap: 0.35rem; padding: 0.4rem 0.7rem; background: #f1f0ed; border-bottom: 1px solid rgba(0, 0, 0, 0.07); }
+    .ams-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; }
+    .ams-dot.r { background: #ff5f57; } .ams-dot.y { background: #febc2e; } .ams-dot.g { background: #28c840; }
+    .ams-url { margin-left: 0.55rem; font-family: var(--ams-mono); font-size: 0.6rem; color: #9a9a9a; background: #fff; border: 1px solid rgba(0, 0, 0, 0.08); border-radius: 5px; padding: 0.1rem 0.6rem; }
+    .ams-shot-stack { position: relative; aspect-ratio: 1600 / 913; background: #fff; }
+    .ams-shot-stack img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 0.45s ease; pointer-events: none; }
+    .ams-shot-stack img.active { opacity: 1; pointer-events: auto; cursor: zoom-in; }
+    /* Platform showcase: give the app screenshot more room */
+    #platform .ams-container { max-width: 1220px; }
+    #platform .ams-show-grid { grid-template-columns: 0.56fr 1.44fr; gap: 2.75rem; }
+    #platform .ams-stage { padding: 1.5rem; }
+
+    .ams-phone-stack { position: relative; width: 300px; max-width: 74%; margin: 0.5rem auto; aspect-ratio: 640 / 1347; }
+    .ams-phone-stack img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; opacity: 0; transition: opacity 0.45s ease; filter: drop-shadow(0 22px 36px rgba(0, 0, 0, 0.55)) drop-shadow(0 4px 10px rgba(0, 0, 0, 0.35)); pointer-events: none; }
+    .ams-phone-stack img.active { opacity: 1; pointer-events: auto; cursor: zoom-in; }
+
+    /* Lightbox (full-size screenshot viewer) */
+    .ams-lightbox { position: fixed; inset: 0; z-index: 2000; display: none; align-items: center; justify-content: center; padding: 4vh 4vw; background: rgba(8, 8, 12, 0.9); -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px); }
+    .ams-lightbox.open { display: flex; }
+    .ams-lightbox img { max-width: 100%; max-height: 100%; object-fit: contain; border-radius: 10px; box-shadow: 0 30px 90px rgba(0, 0, 0, 0.65); }
+    .ams-lb-close { position: absolute; top: 20px; right: 24px; width: 44px; height: 44px; border-radius: 50%; border: none; background: rgba(255, 255, 255, 0.12); color: #fff; font-size: 1.7rem; line-height: 1; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background 0.2s; }
+    .ams-lb-close:hover { background: rgba(255, 255, 255, 0.24); }
+    @media (prefers-reduced-motion: reduce) { .ams-lightbox { backdrop-filter: none; -webkit-backdrop-filter: none; } }
+
+    /* ---- Responsive ---- */
+    @media (max-width: 900px) {
+      .ams-show-grid,
+      #platform .ams-show-grid { grid-template-columns: 1fr; gap: 2.25rem; }
+      #platform .ams-container { max-width: 1080px; }
+      .ams-stage,
+      #platform .ams-stage { padding: 1.25rem; }
+      .ams-phone-stack { width: 240px; }
+      .ams-gap-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .ams-why-grid { grid-template-columns: 1fr; gap: 1.75rem; }
+      .ams-steps.three { grid-template-columns: 1fr; }
+      .ams-split { grid-template-columns: 1fr; gap: 1rem; }
+      .ams-split-arrow { transform: rotate(90deg); padding: 0.25rem 0; }
+      .ams-plans { grid-template-columns: 1fr; gap: 2rem; }
+      .ams-steps { grid-template-columns: 1fr 1fr; gap: 1.75rem; }
+      .ams-check-list { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 640px) {
+      .ams-section { padding: 4rem 0; }
+      .ams-container, .ams-narrow, .ams-hero-inner { padding-left: 1.25rem; padding-right: 1.25rem; }
+      .ams-calc-nums { grid-template-columns: 1fr; }
+      .ams-steps { grid-template-columns: 1fr; }
+      .ams-calc { padding: 1.5rem 1.25rem; }
+      .ams-plan { padding: 1.65rem 1.4rem; }
+      .ams-table th, .ams-table td { padding: 0.7rem 0.75rem; font-size: 0.85rem; }
+      .ams-hero { padding: 5.5rem 0 3.5rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .ams-seg { transition: none !important; }
+      .ams-btn-primary, .ams-btn-secondary { transition: none !important; }
+    }
+  </style>
+  <script>(function(){var t=localStorage.getItem('spur-theme')||(window.matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t)})()</script>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <img src="spur-logo.svg" alt="Spur" class="logo-img">
+      </a>
+      <button class="mobile-menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="nav-links">
+        <!-- Mobile Close Button -->
+        <button class="mobile-close-btn" aria-label="Close menu">
+          <svg viewBox="0 0 24 24" fill="none">
+            <path d="M18 6L6 18M6 6l12 12" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+
+        <!-- Desktop Dropdown (hidden on mobile) -->
+        <div class="nav-dropdown">
+          <span class="nav-link nav-dropdown-toggle">
+            Services
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </span>
+          <div class="nav-mega-menu">
+            <div class="mega-menu-grid">
+              <a href="staffing.html" class="mega-menu-card" data-tab="staffing">
+                <div class="mega-card-visual" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.2) 0%, rgba(139, 92, 246, 0.05) 100%);">
+                  <div class="mega-card-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="1.5">
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                      <line x1="16" y1="2" x2="16" y2="6"/>
+                      <line x1="8" y1="2" x2="8" y2="6"/>
+                      <line x1="3" y1="10" x2="21" y2="10"/>
+                    </svg>
+                  </div>
+                </div>
+                <h4>Staffing</h4>
+                <p>Improve instruction, reduce costs. 92%+ fill rates.</p>
+              </a>
+              <a href="absence-management.html" class="mega-menu-card">
+                <div class="mega-card-visual" style="background: linear-gradient(135deg, rgba(20, 184, 166, 0.2) 0%, rgba(20, 184, 166, 0.05) 100%);">
+                  <div class="mega-card-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#14b8a6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                      <line x1="16" y1="2" x2="16" y2="6"/>
+                      <line x1="8" y1="2" x2="8" y2="6"/>
+                      <line x1="3" y1="10" x2="21" y2="10"/>
+                      <path d="M9 16l2 2 3.5-3.5"/>
+                    </svg>
+                  </div>
+                </div>
+                <h4>Absence Management</h4>
+                <p>Flat-rate sub software with overflow coverage.</p>
+              </a>
+              <a href="extended-learning.html" class="mega-menu-card" data-tab="extended">
+                <div class="mega-card-visual" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.2) 0%, rgba(245, 158, 11, 0.05) 100%);">
+                  <div class="mega-card-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="1.5">
+                      <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                      <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                    </svg>
+                  </div>
+                </div>
+                <h4>Extended Learning</h4>
+                <p>Summer & after-school, fully staffed.</p>
+              </a>
+              <a href="recruiting.html" class="mega-menu-card" data-tab="recruiting">
+                <div class="mega-card-visual" style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.2) 0%, rgba(236, 72, 153, 0.05) 100%);">
+                  <div class="mega-card-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ec4899" stroke-width="1.5">
+                      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                      <circle cx="9" cy="7" r="4"/>
+                      <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                      <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                    </svg>
+                  </div>
+                </div>
+                <h4>Recruiting</h4>
+                <p>Great school staff, delivered to your inbox.</p>
+              </a>
+              <a href="bus-driver-recruiting.html" class="mega-menu-card" data-tab="bus-driver">
+                <div class="mega-card-visual" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.2) 0%, rgba(59, 130, 246, 0.05) 100%);">
+                  <div class="mega-card-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M8 6v6"/><path d="M15 6v6"/><path d="M2 12h19.6"/><path d="M18 18h3s.5-1.7.8-2.8c.1-.4.2-.8.2-1.2 0-.4-.1-.8-.2-1.2l-1.4-5C20.1 6.8 19.1 6 18 6H4a2 2 0 0 0-2 2v10h3"/><circle cx="7" cy="18" r="2"/><path d="M9 18h5"/><circle cx="16" cy="18" r="2"/>
+                    </svg>
+                  </div>
+                </div>
+                <h4>Bus Driver Recruiting</h4>
+                <p>CDL drivers, screened and ready to hire.</p>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Services Section (hidden on desktop) -->
+        <div class="mobile-nav-section">
+          <div class="mobile-nav-section-header">
+            <h3>Services</h3>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M6 9l6 6 6-6"/>
+            </svg>
+          </div>
+          <div class="mobile-nav-section-content">
+            <a href="staffing.html" class="mobile-service-link">
+              <div class="mobile-service-icon" style="background: linear-gradient(135deg, rgba(139, 92, 246, 0.2) 0%, rgba(139, 92, 246, 0.05) 100%);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="1.5">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                  <line x1="16" y1="2" x2="16" y2="6"/>
+                  <line x1="8" y1="2" x2="8" y2="6"/>
+                  <line x1="3" y1="10" x2="21" y2="10"/>
+                </svg>
+              </div>
+              <div class="mobile-service-text">
+                <h4>Staffing</h4>
+                <p>Improve instruction, reduce costs. 92%+ fill rates.</p>
+              </div>
+            </a>
+            <a href="absence-management.html" class="mobile-service-link">
+              <div class="mobile-service-icon" style="background: linear-gradient(135deg, rgba(20, 184, 166, 0.2) 0%, rgba(20, 184, 166, 0.05) 100%);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#14b8a6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                  <line x1="16" y1="2" x2="16" y2="6"/>
+                  <line x1="8" y1="2" x2="8" y2="6"/>
+                  <line x1="3" y1="10" x2="21" y2="10"/>
+                  <path d="M9 16l2 2 3.5-3.5"/>
+                </svg>
+              </div>
+              <div class="mobile-service-text">
+                <h4>Absence Management</h4>
+                <p>Flat-rate sub software with overflow coverage.</p>
+              </div>
+            </a>
+            <a href="extended-learning.html" class="mobile-service-link">
+              <div class="mobile-service-icon" style="background: linear-gradient(135deg, rgba(245, 158, 11, 0.2) 0%, rgba(245, 158, 11, 0.05) 100%);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#f59e0b" stroke-width="1.5">
+                  <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
+                  <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
+                </svg>
+              </div>
+              <div class="mobile-service-text">
+                <h4>Extended Learning</h4>
+                <p>Summer & after-school, fully staffed.</p>
+              </div>
+            </a>
+            <a href="recruiting.html" class="mobile-service-link">
+              <div class="mobile-service-icon" style="background: linear-gradient(135deg, rgba(236, 72, 153, 0.2) 0%, rgba(236, 72, 153, 0.05) 100%);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#ec4899" stroke-width="1.5">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+              </div>
+              <div class="mobile-service-text">
+                <h4>Recruiting</h4>
+                <p>Great school staff, delivered to your inbox.</p>
+              </div>
+            </a>
+            <a href="bus-driver-recruiting.html" class="mobile-service-link">
+              <div class="mobile-service-icon" style="background: linear-gradient(135deg, rgba(59, 130, 246, 0.2) 0%, rgba(59, 130, 246, 0.05) 100%);">
+                <svg viewBox="0 0 24 24" fill="none" stroke="#3b82f6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M8 6v6"/><path d="M15 6v6"/><path d="M2 12h19.6"/><path d="M18 18h3s.5-1.7.8-2.8c.1-.4.2-.8.2-1.2 0-.4-.1-.8-.2-1.2l-1.4-5C20.1 6.8 19.1 6 18 6H4a2 2 0 0 0-2 2v10h3"/><circle cx="7" cy="18" r="2"/><path d="M9 18h5"/><circle cx="16" cy="18" r="2"/>
+                </svg>
+              </div>
+              <div class="mobile-service-text">
+                <h4>Bus Driver Recruiting</h4>
+                <p>CDL drivers, screened and ready to hire.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <a href="index.html#results" class="nav-link" style="display: none;">Real World Results</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="why-spur.html" class="nav-link">Why Spur</a>
+        <a href="/blog/" class="nav-link">Blog</a>
+        <a href="https://jobs.spureducation.com/" class="nav-link" target="_blank" rel="noopener noreferrer">Jobs</a>
+        <a href="contact.html" class="nav-link">Contact Us</a>
+        <button class="theme-toggle" aria-label="Toggle light/dark mode">
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+        </button>
+        <a href="contact-sales.html" class="nav-cta">Get Started</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============ Section 1: Hero ============ -->
+  <section class="ams-hero">
+    <div class="ams-hero-inner">
+      <p class="ams-eyebrow">Spur AMS</p>
+      <h1>Absence management, time tracking, and substitutes. <span class="ams-serif">One system.</span></h1>
+      <p class="ams-hero-sub">Every other absence system texts your subs and hopes. We employ the substitutes, so when your pool comes up empty, we actually send someone.</p>
+      <div class="ams-hero-ctas">
+        <a href="contact-sales.html" class="ams-btn-primary">
+          See it in 20 minutes
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#pricing" class="ams-btn-secondary">See the pricing</a>
+      </div>
+      <p class="ams-hero-fine">Setup, migration, and training included.</p>
+    </div>
+  </section>
+
+  <!-- ============ Section 1: The two things you buy separately ============ -->
+  <section class="ams-section">
+    <div class="ams-container">
+      <div style="text-align:center; max-width:760px; margin:0 auto 3rem;">
+        <p class="ams-eyebrow">The two things you buy separately</p>
+        <h2>Today you're buying this from <span class="ams-serif">two places.</span></h2>
+      </div>
+      <div class="ams-split">
+        <div class="ams-split-col">
+          <div class="ams-split-label">Today · two vendors</div>
+          <div class="ams-today">
+            <div class="ams-vendor">
+              <div>
+                <div class="v-name">Other absence management systems</div>
+                <div class="v-sub">For the software</div>
+              </div>
+              <span class="v-tag">Invoice 1</span>
+            </div>
+            <div class="ams-vendor">
+              <div>
+                <div class="v-name">A staffing agency, or nobody</div>
+                <div class="v-sub">For the jobs your subs don't take</div>
+              </div>
+              <span class="v-tag">Invoice 2</span>
+            </div>
+          </div>
+        </div>
+        <div class="ams-split-arrow" aria-hidden="true">&rarr;</div>
+        <div class="ams-split-col">
+          <div class="ams-split-label">With Spur · one</div>
+          <div class="ams-spur-card">
+            <img src="spur-logo.svg" alt="Spur" class="s-wordmark">
+            <div class="s-desc">Absence management, time tracking, and the substitutes to fill in, from one company.</div>
+            <div class="ams-spur-tags">
+              <span class="ams-spur-tag">One login</span>
+              <span class="ams-spur-tag">One invoice</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="ams-split-note">Other absence management systems don't provide substitutes, and most of them say so themselves. That's not a knock on any of them. It's just where the product ends and your problem starts.</p>
+    </div>
+  </section>
+
+  <!-- ============ Section 2: How it works ============ -->
+  <section class="ams-section ams-alt">
+    <div class="ams-container">
+      <div style="text-align:center; max-width:720px; margin:0 auto 3rem;">
+        <p class="ams-eyebrow">How it works</p>
+        <h2>Three <span class="ams-serif">simple</span> steps.</h2>
+      </div>
+      <div class="ams-steps three">
+        <div class="ams-step">
+          <div class="num">1</div>
+          <h3>A teacher enters an absence.</h3>
+          <p>Web, phone, or app. Same as today.</p>
+        </div>
+        <div class="ams-step">
+          <div class="num">2</div>
+          <h3>Your subs get it first.</h3>
+          <p>Your pool. Your rates. We take nothing from your substitutes' pay, ever.</p>
+        </div>
+        <div class="ams-step">
+          <div class="num">3</div>
+          <h3>Nobody takes it? We fill it.</h3>
+          <p>You set the cutoff. When the clock runs out, the job comes to us and we send someone.</p>
+        </div>
+      </div>
+      <p class="ams-how-note">You only pay a placement rate on the absences your own pool couldn't cover. If your subs fill everything, you pay us nothing beyond your plan.</p>
+    </div>
+  </section>
+
+  <!-- ============ The AMS platform (carousel) ============ -->
+  <section class="ams-section ams-showcase" id="platform">
+    <div class="ams-container">
+      <div class="ams-section-head">
+        <p class="ams-eyebrow">The platform</p>
+        <h2>Manage absences from <span class="ams-serif">one place.</span></h2>
+      </div>
+      <div class="ams-show-grid">
+        <div class="ams-show-copy">
+          <p class="ams-show-sub">The front-office view your secretary lives in. Real-time coverage, automatic dispatch, timesheets, and the numbers your board asks for.</p>
+          <div class="ams-tabs" data-showcase="platform">
+            <button class="ams-tab active">
+              <div class="t-title">Live dashboard</div>
+              <div class="t-desc">Every absence, fill, and escalation as it happens, with daily fill rates and a real-time activity feed.</div>
+            </button>
+            <button class="ams-tab">
+              <div class="t-title">Automatic dispatch</div>
+              <div class="t-desc">The system texts and notifies your subs in ranked tiers, then escalates to the district pool when nobody bites. No phone tree.</div>
+            </button>
+            <button class="ams-tab">
+              <div class="t-title">Your sub pool, ranked</div>
+              <div class="t-desc">Ratings, fill counts, and accept rates for every sub across every school site. Know who to send before you send them.</div>
+            </button>
+            <button class="ams-tab">
+              <div class="t-title">Reports that answer the board</div>
+              <div class="t-desc">Fill-rate trends, absence reasons, and your top substitutes. Export a clean PDF in one click.</div>
+            </button>
+          </div>
+        </div>
+        <div class="ams-stage">
+          <div class="ams-stage-inner">
+            <div class="ams-browser">
+              <div class="ams-browser-bar">
+                <span class="ams-dot r"></span><span class="ams-dot y"></span><span class="ams-dot g"></span>
+                <span class="ams-url">app.spureducation.com</span>
+              </div>
+              <div class="ams-shot-stack" data-showcase="platform">
+                <img class="active" src="product/ams-dashboard.png" alt="Spur AMS live dashboard showing daily fill rates and activity feed" loading="lazy" width="1600" height="913">
+                <img src="product/ams-dispatch.png" alt="Automatic dispatch with tiered escalation timeline" loading="lazy" width="1600" height="912">
+                <img src="product/ams-people.png" alt="Ranked substitute pool across school sites" loading="lazy" width="1600" height="917">
+                <img src="product/ams-reports.png" alt="Fill-rate reports and absence analytics" loading="lazy" width="1600" height="912">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ The Spur Sub app (carousel) ============ -->
+  <section class="ams-section ams-alt ams-showcase" id="sub-app">
+    <div class="ams-container">
+      <div class="ams-section-head">
+        <p class="ams-eyebrow">The Spur Sub app</p>
+        <h2>Why substitutes actually <span class="ams-serif">pick up the job.</span></h2>
+      </div>
+      <div class="ams-show-grid">
+        <div class="ams-show-copy">
+          <p class="ams-show-sub">Fill rate starts with the sub's experience. Ours is the app they already have, and the reason they say yes.</p>
+          <div class="ams-tabs" data-showcase="app">
+            <button class="ams-tab active">
+              <div class="t-title">Instant job alerts</div>
+              <div class="t-desc">The second a job posts, subs get a text and a push with the school, grade, and date. First to tap gets it.</div>
+            </button>
+            <button class="ams-tab">
+              <div class="t-title">One-tap accept</div>
+              <div class="t-desc">School, room, hours, pay, and who they're covering, all on one screen. They accept in a single tap.</div>
+            </button>
+            <button class="ams-tab">
+              <div class="t-title">Trained before they arrive</div>
+              <div class="t-desc">Spur Classroom preps every sub with short lessons on management and pacing. Configure the required modules for your district, so subs walk in ready to teach.</div>
+            </button>
+          </div>
+        </div>
+        <div class="ams-stage">
+          <div class="ams-stage-inner">
+            <div class="ams-phone-stack" data-showcase="app">
+              <img class="active" src="product/sub-alerts.png" alt="Spur Sub app job alert on the phone lock screen" loading="lazy" width="640" height="1335">
+              <img src="product/sub-accept.png" alt="One-tap shift accept in the Spur Sub app" loading="lazy" width="640" height="1347">
+              <img src="product/sub-classroom.png" alt="Spur Classroom training modules in the Spur Sub app" loading="lazy" width="640" height="1318">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Section 4: Pricing ============ -->
+  <section class="ams-section" id="pricing">
+    <div class="ams-container">
+      <div style="text-align:center; max-width:760px; margin:0 auto 3rem;">
+        <p class="ams-eyebrow">The pricing</p>
+        <h2>Free if you staff with us. <span class="ams-serif">A dollar if you don't.</span></h2>
+        <p class="ams-lead" style="margin-top:1rem;">Run an active Spur staffing contract and the whole platform is included at no cost. Just want the software? It's $1 per student per year plus a $500 base, capped at $19,000, and your price never goes up.</p>
+      </div>
+
+      <!-- Pricing plans -->
+      <div class="ams-plans">
+        <div class="ams-plan">
+          <div class="ams-plan-top">
+            <span class="ams-plan-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+          </div>
+          <div class="ams-plan-name">Included</div>
+          <div class="ams-plan-subtitle">Staffing partners</div>
+          <div class="ams-plan-price"><span class="amt ams-mono">$0</span></div>
+          <div class="ams-plan-sub">Any enrollment</div>
+          <div class="ams-plan-divider"></div>
+          <ul class="ams-plan-list">
+            <li>Full platform, no limits</li>
+            <li>Onboarding waived</li>
+            <li>Free for the life of the staffing agreement</li>
+          </ul>
+          <div class="ams-plan-note">Requires an active Spur staffing contract.</div>
+        </div>
+        <div class="ams-plan featured">
+          <div class="ams-plan-top">
+            <span class="ams-plan-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/></svg></span>
+            <span class="ams-plan-badge">Most districts</span>
+          </div>
+          <div class="ams-plan-name">Standalone</div>
+          <div class="ams-plan-subtitle">Software only</div>
+          <div class="ams-plan-price"><span class="amt ams-mono">$1</span></div>
+          <div class="ams-plan-sub">Per student, per year.<br>Plus a $500 base. Never more than $19,000.</div>
+          <div class="ams-plan-example">
+            <div class="ams-plan-ex-row"><span class="lbl">500 students</span><span class="val">$1,000</span></div>
+            <div class="ams-plan-ex-row"><span class="lbl">2,500 students</span><span class="val">$3,000</span></div>
+            <div class="ams-plan-ex-row"><span class="lbl">10,000 students</span><span class="val">$10,500</span></div>
+          </div>
+          <div class="ams-plan-divider"></div>
+          <ul class="ams-plan-list">
+            <li>Free until your current contract ends</li>
+            <li>Your price never goes up</li>
+            <li>Fill rate improves or it's free</li>
+            <li>Onboarding waived</li>
+          </ul>
+        </div>
+        <div class="ams-plan">
+          <div class="ams-plan-top">
+            <span class="ams-plan-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="1.5"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01M12 6h.01M16 6h.01M8 10h.01M12 10h.01M16 10h.01M8 14h.01M12 14h.01M16 14h.01"/></svg></span>
+          </div>
+          <div class="ams-plan-name">Large district</div>
+          <div class="ams-plan-subtitle">30,000 students and up</div>
+          <div class="ams-plan-price words"><span class="amt">Talk to us</span></div>
+          <div class="ams-plan-sub">Answer in one call, not six.</div>
+          <div class="ams-plan-divider"></div>
+          <ul class="ams-plan-list">
+            <li>Everything in Standalone</li>
+            <li>SSO and SIS integration</li>
+            <li>Named support and uptime commitment</li>
+            <li>Still free with a staffing contract</li>
+          </ul>
+        </div>
+      </div>
+      <p class="ams-tiers-note">Onboarding, data migration, and training are included on every plan. No implementation fee, ever.</p>
+
+      <div style="text-align:center; max-width:760px; margin:4.5rem auto 2.5rem;">
+        <h2 style="font-size:2rem;">Here's what districts are <span class="ams-serif">paying now.</span></h2>
+      </div>
+      <!-- Vendor names anonymized in the UI: Vendor 1 = Frontline, Vendor 2 = Red Rover.
+           Sources (links verified to return HTTP 200, Aug 2026):
+           - SMC: BoardDocs PDF, Frontline SOW $6,848.38 (figure read from PDF).
+           - D211: BoardDocs PDF, Red Rover $36,540.00 / Frontline $43,501.63 (figures read from PDF).
+           - Webster Groves ($12,800 Frontline / $13,100 Red Rover): Citizen Portal news article
+             covering the board vote; both figures appear in the article. (The BoardDocs item
+             was not directly linkable, so a stable news source is used.) -->
+      <div class="ams-table-wrap">
+        <table class="ams-table">
+          <thead>
+            <tr><th>District</th><th>Enrollment</th><th>Vendor</th><th style="text-align:right;">Annual</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>South Monterey County JUHSD, CA</td><td class="n">2,584</td><td class="vendor">Nationwide AMS Vendor 1</td><td class="n"><a class="src-link" href="https://go.boarddocs.com/ca/smc/Board.nsf/files/DEYLHK569501/$file/9.%20Frontline%20-%20Absence%20Management.pdf" target="_blank" rel="noopener noreferrer" title="South Monterey County JUHSD board packet — absence & substitute management agreement">$6,848<sup>&#8599;</sup></a></td></tr>
+            <tr><td>Webster Groves, MO</td><td class="n">4,350</td><td class="vendor">Nationwide AMS Vendor 1</td><td class="n"><a class="src-link" href="https://citizenportal.ai/articles/7735294/webster-groves-approves-red-rover-absencemanagement-system-to-replace-frontline" target="_blank" rel="noopener noreferrer" title="Webster Groves School District — news coverage of the board's absence management system approval and costs">$12,800<sup>&#8599;</sup></a></td></tr>
+            <tr><td>Webster Groves, MO</td><td class="n">4,350</td><td class="vendor">Nationwide AMS Vendor 2</td><td class="n"><a class="src-link" href="https://citizenportal.ai/articles/7735294/webster-groves-approves-red-rover-absencemanagement-system-to-replace-frontline" target="_blank" rel="noopener noreferrer" title="Webster Groves School District — news coverage of the board's absence management system approval and costs">$13,100<sup>&#8599;</sup></a></td></tr>
+            <tr><td>Township HSD 211, IL</td><td class="n">11,857</td><td class="vendor">Nationwide AMS Vendor 2</td><td class="n"><a class="src-link" href="https://go.boarddocs.com/il/thsd211/Board.nsf/files/CTNPKE64FB26/$file/Purchase%20of%20Human%20Resources%20Software%20Packages%20(07-20-23).pdf" target="_blank" rel="noopener noreferrer" title="Township HSD 211 board memo — Purchase of HR Software Packages">$36,540<sup>&#8599;</sup></a></td></tr>
+            <tr><td>Township HSD 211, IL</td><td class="n">11,857</td><td class="vendor">Nationwide AMS Vendor 1</td><td class="n"><a class="src-link" href="https://go.boarddocs.com/il/thsd211/Board.nsf/files/CTNPKE64FB26/$file/Purchase%20of%20Human%20Resources%20Software%20Packages%20(07-20-23).pdf" target="_blank" rel="noopener noreferrer" title="Township HSD 211 board memo — Purchase of HR Software Packages">$43,502<sup>&#8599;</sup></a></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="ams-caption">Every figure comes from a public board agenda. We didn't estimate any of them. That's about $3 per student per year, for software that stops at the text message.</p>
+
+      <!-- Enrollment calculator -->
+      <div class="ams-calc">
+        <div class="ams-calc-top">
+          <span class="lbl">Enrollment</span>
+          <span class="val ams-mono" id="ams-enroll-val">3,000</span>
+        </div>
+        <input type="range" min="250" max="20000" step="50" value="3000" class="ams-slider" id="ams-enroll"
+               aria-label="District enrollment" aria-describedby="ams-calc-help">
+        <p id="ams-calc-help" class="ams-eyebrow" style="margin:-1rem 0 1.5rem;">Drag to your enrollment</p>
+        <div class="ams-calc-nums">
+          <div class="ams-calc-cell now">
+            <div class="cap">What you likely pay now</div>
+            <div class="big ams-mono" id="ams-now">$9,000</div>
+          </div>
+          <div class="ams-calc-cell spur">
+            <div class="cap">Spur Standalone</div>
+            <div class="big ams-mono" id="ams-spur">$3,500</div>
+          </div>
+        </div>
+        <p class="ams-calc-keep">You save <strong id="ams-keep">$5,500</strong> a year on software alone, or 100% with a staffing contract.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Section 5: Why it costs less ============ -->
+  <section class="ams-section ams-alt">
+    <div class="ams-container">
+      <div style="text-align:center; max-width:640px; margin:0 auto 3rem;">
+        <p class="ams-eyebrow">Why it costs less</p>
+        <h2>There's no catch. <span class="ams-serif">Here's the actual reason.</span></h2>
+      </div>
+      <div class="ams-why-grid">
+        <div class="ams-why-card">
+          <div class="ams-why-num">01</div>
+          <h3>We don't need the software to be profitable.</h3>
+          <p>Staffing is our business. The absence system is how districts meet us. Software that pays for itself doesn't have to carry the whole company.</p>
+        </div>
+        <div class="ams-why-card">
+          <div class="ams-why-num">02</div>
+          <h3>It's already built.</h3>
+          <p>We've run our own staffing operation on this platform for ten years, with millions of workers on it. Nobody raised money to build it for you.</p>
+        </div>
+        <div class="ams-why-card">
+          <div class="ams-why-num">03</div>
+          <h3>Software got cheaper to build. Prices didn't follow.</h3>
+          <p>Legacy pricing was set when this took a big team and a long time. It doesn't anymore. We think that money belongs in teacher pay, not in a software line.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Section 6: Everything included ============ -->
+  <section class="ams-section">
+    <div class="ams-narrow">
+      <p class="ams-eyebrow">Everything you have today</p>
+      <h2>Nothing you use now <span class="ams-serif">goes away.</span></h2>
+      <div class="ams-check-list" style="margin-top:2rem;">
+        <div class="ams-check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Absence entry by web, phone, or app</span></div>
+        <div class="ams-check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Automated sub matching by skill and preference</span></div>
+        <div class="ams-check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Text and push job offers</span></div>
+        <div class="ams-check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Partial-day and period-based fills</span></div>
+        <div class="ams-check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Approval workflows and leave balances</span></div>
+        <div class="ams-check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Mass communication to staff and subs</span></div>
+        <div class="ams-check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Time tracking, timesheets, and attendance</span></div>
+        <div class="ams-check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Payroll and HRIS export</span></div>
+        <div class="ams-check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>SIS and SSO integration</span></div>
+        <div class="ams-check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Fill rate and absence trend reporting</span></div>
+        <div class="ams-check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>Mobile app for staff and subs</span></div>
+        <div class="ams-check-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><span>AI shortcuts for the daily fill work</span></div>
+      </div>
+      <p class="ams-included-note">If something you rely on isn't on this list, ask on the call. We'll tell you yes or no on the spot.</p>
+    </div>
+  </section>
+
+  <!-- ============ Section 7: Switching ============ -->
+  <section class="ams-section ams-alt">
+    <div class="ams-container">
+      <div style="text-align:center; max-width:760px; margin:0 auto 3rem;">
+        <p class="ams-eyebrow">Switching</p>
+        <h2>Six weeks. <span class="ams-serif">We do the work.</span></h2>
+      </div>
+      <div class="ams-steps">
+        <div class="ams-step">
+          <div class="num">1</div>
+          <h3>We pull your data.</h3>
+          <p>Employees, subs, schools, absence reasons, leave balances, calendars. We've pulled it out of other absence management systems before.</p>
+        </div>
+        <div class="ams-step">
+          <div class="num">2</div>
+          <h3>We configure it.</h3>
+          <p>Your approval paths, your pay codes, your schedules. You review, we fix.</p>
+        </div>
+        <div class="ams-step">
+          <div class="num">3</div>
+          <h3>We train your people.</h3>
+          <p>Short sessions by role. Staff, subs, campus admins, payroll.</p>
+        </div>
+        <div class="ams-step">
+          <div class="num">4</div>
+          <h3>You go live.</h3>
+          <p>Both systems run in parallel for two weeks so nobody gets stuck.</p>
+        </div>
+      </div>
+      <p class="ams-switch-note">Start in June, live for the first day of school.
+        <span class="fine">No implementation fee, no training fee, and no charge if you ever want to leave with your data.</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ Section 7: Close ============ -->
+  <section class="ams-section ams-close" id="book">
+    <div class="ams-narrow">
+      <h2>Bring us your <span class="ams-serif">worst day.</span></h2>
+      <p>Tell us your date with the lowest fill rate last year. We'll show you what our system would have done with it.</p>
+      <div class="ams-hero-ctas" style="justify-content:center;">
+        <a href="contact-sales.html" class="ams-btn-primary">
+          Book 20 minutes
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="ams-section ams-alt">
+    <div class="ams-narrow">
+      <div style="text-align:center; margin-bottom:2.5rem;">
+        <h2>Questions <span class="ams-serif">worth asking.</span></h2>
+      </div>
+      <div class="faq-grid">
+        <div class="faq-item">
+          <h3 class="faq-question">How can the software be free?</h3>
+          <p class="faq-answer">If you run an active Spur staffing contract, the whole platform is included for the life of that agreement. Staffing is our business, and the software is how districts meet us. If you'd rather just buy the software, that's the Standalone plan.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">How does Standalone pricing work?</h3>
+          <p class="faq-answer">One dollar per student per year, plus a $500 base, billed annually. It's capped at $19,000, so the biggest districts never pay more, and your price never goes up for the life of your contract.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">We're mid-contract with another vendor. Now what?</h3>
+          <p class="faq-answer">Standalone is free until your current contract ends, so you can switch on your own timeline without ever paying two vendors at once.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">Does it handle time tracking too?</h3>
+          <p class="faq-answer">Yes. Spur is absence management and time tracking in one system: timesheets, approvals, and payroll export for hourly staff, alongside the absence and substitute tools.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">Do we have to use your substitutes?</h3>
+          <p class="faq-answer">No. Your pool gets every job first at your rates. Overflow is opt-in and you set the cutoff. We take nothing from your own subs' pay.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">What if you can't cover our area?</h3>
+          <p class="faq-answer">We'll tell you before you sign. You still get the software at the same price.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">How long is the contract?</h3>
+          <p class="faq-answer">One year. No auto-escalator, and your price is locked for the term.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">Can you handle period-based high school schedules?</h3>
+          <p class="faq-answer">Yes, including partial fills and swaps.</p>
+        </div>
+        <div class="faq-item">
+          <h3 class="faq-question">Who's behind this?</h3>
+          <p class="faq-answer">Spur. We staff schools. Five thousand of them use us today.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <img src="spur-logo.svg" alt="Spur" class="logo-img">
+          </a>
+          <p>Done-for-you operations that put dollars back in classrooms. Real people, real results.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/spurstaffing" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/company/spurwork/" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/spurstaffing/" target="_blank" rel="noopener">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-column">
+          <h4>Services</h4>
+          <a href="staffing.html">Staffing</a>
+          <a href="absence-management.html">Absence Management</a>
+          <a href="recruiting.html">Recruiting</a>
+          <a href="attendance-recovery.html">Attendance Recovery</a>
+          <a href="extended-learning.html">Extended Learning</a>
+          <a href="bus-driver-recruiting.html">Bus Driver Recruiting</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Company</h4>
+          <a href="about.html">About Us</a>
+          <a href="why-spur.html">Why Spur</a>
+          <a href="https://jobs.spureducation.com/" target="_blank" rel="noopener noreferrer">Careers</a>
+          <a href="scholarship.html">Scholarship</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Support</h4>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Resources</h4>
+          <a href="/spur-employee-handbook.pdf" target="_blank" rel="noopener noreferrer">Employee Handbook</a>
+          <a href="/background-check-disclosure.pdf" target="_blank" rel="noopener noreferrer">Background Check Disclosure</a>
+          <a href="labor-law-posters.html">Labor Law Posters</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Spur. All rights reserved.</p>
+        <a href="https://www.linkedin.com/in/julianbwm/" target="_blank" rel="noopener noreferrer" class="boogiebyte-credit">
+          <img src="boogie-byte.png" alt="BoogieByte" class="boogiebyte-img">
+          <span>Branding, design, and build by BoogieBytes</span>
+        </a>
+        <div class="footer-legal">
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="terms-of-service.html">Terms of Service</a>
+          <a href="accessibility.html">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Full-size screenshot lightbox -->
+  <div class="ams-lightbox" id="ams-lightbox" role="dialog" aria-modal="true" aria-label="Product screenshot, full size">
+    <button class="ams-lb-close" id="ams-lb-close" type="button" aria-label="Close full-size image">&times;</button>
+    <img id="ams-lb-img" src="" alt="">
+  </div>
+
+  <script src="js/main.js"></script>
+  <script>
+    // ---- Enrollment calculator ----
+    (function () {
+      var slider = document.getElementById('ams-enroll');
+      if (!slider) return;
+      var elVal = document.getElementById('ams-enroll-val');
+      var elNow = document.getElementById('ams-now');
+      var elSpur = document.getElementById('ams-spur');
+      var elKeep = document.getElementById('ams-keep');
+      function band(n) { return Math.min(19000, n + 500); }  // Standalone: $1/student + $500 base, capped at $19k
+      function money(n) { return '$' + Math.round(n).toLocaleString('en-US'); }
+      function update() {
+        var n = parseInt(slider.value, 10);
+        var now = n * 3;                 // ~$3 per student per year
+        var spur = band(n);
+        var keep = Math.max(0, now - spur);
+        elVal.textContent = n.toLocaleString('en-US');
+        elNow.textContent = money(now);
+        elSpur.textContent = money(spur);
+        elKeep.textContent = money(keep);
+        slider.setAttribute('aria-valuetext', n.toLocaleString('en-US') + ' students');
+      }
+      slider.addEventListener('input', update);
+      update();
+    })();
+
+    // ---- Fill-rate bars: grow on scroll (respects reduced motion) ----
+    (function () {
+      var bars = document.querySelectorAll('.ams-bars');
+      if (!bars.length) return;
+      var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (reduce) {
+        bars.forEach(function (b) { b.classList.remove('pre'); });
+        return;
+      }
+      if (!('IntersectionObserver' in window)) {
+        bars.forEach(function (b) { b.classList.remove('pre'); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) {
+            e.target.classList.remove('pre');
+            io.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.4 });
+      bars.forEach(function (b) { io.observe(b); });
+    })();
+
+    // ---- Product showcase carousels ----
+    (function () {
+      var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      document.querySelectorAll('.ams-tabs').forEach(function (group) {
+        var key = group.getAttribute('data-showcase');
+        var stack = document.querySelector('.ams-shot-stack[data-showcase="' + key + '"], .ams-phone-stack[data-showcase="' + key + '"]');
+        var tabs = Array.prototype.slice.call(group.querySelectorAll('.ams-tab'));
+        var imgs = stack ? Array.prototype.slice.call(stack.querySelectorAll('img')) : [];
+        var timer = null;
+        function activate(i) {
+          tabs.forEach(function (t, j) { t.classList.toggle('active', j === i); });
+          imgs.forEach(function (im, j) { im.classList.toggle('active', j === i); });
+        }
+        tabs.forEach(function (tab, i) {
+          tab.addEventListener('click', function () {
+            if (timer) { clearInterval(timer); timer = null; }
+            activate(i);
+          });
+        });
+        if (!reduce && tabs.length > 1) {
+          var idx = 0;
+          timer = setInterval(function () { idx = (idx + 1) % tabs.length; activate(idx); }, 5000);
+        }
+      });
+    })();
+
+    // ---- Screenshot lightbox (click any product image to view full size) ----
+    (function () {
+      var lb = document.getElementById('ams-lightbox');
+      if (!lb) return;
+      var lbImg = document.getElementById('ams-lb-img');
+      var closeBtn = document.getElementById('ams-lb-close');
+      function open(src, alt) {
+        lbImg.setAttribute('src', src);
+        lbImg.setAttribute('alt', alt || 'Product screenshot');
+        lb.classList.add('open');
+        document.body.style.overflow = 'hidden';
+        closeBtn.focus();
+      }
+      function close() {
+        lb.classList.remove('open');
+        lbImg.setAttribute('src', '');
+        document.body.style.overflow = '';
+      }
+      document.querySelectorAll('.ams-shot-stack img, .ams-phone-stack img').forEach(function (img) {
+        img.addEventListener('click', function () { open(img.currentSrc || img.src, img.alt); });
+      });
+      closeBtn.addEventListener('click', close);
+      lb.addEventListener('click', function (e) { if (e.target === lb) close(); });
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && lb.classList.contains('open')) close();
+      });
+    })();
+  </script>
+</body>
+</html>
