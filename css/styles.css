@@ -395,6 +395,13 @@
     html[data-theme="light"] .mobile-service-link:nth-child(4) .mobile-service-icon {
       background: linear-gradient(135deg, #db2777 0%, rgba(236, 72, 153, 0.40) 100%) !important;
     }
+    html[data-theme="light"] .mobile-service-link:nth-child(5) .mobile-service-icon {
+      background: linear-gradient(135deg, #2563eb 0%, rgba(59, 130, 246, 0.40) 100%) !important;
+    }
+    /* White glyphs read clearly on the saturated tiles (colored-on-colored washed out) */
+    html[data-theme="light"] .mobile-service-icon svg {
+      stroke: #ffffff !important;
+    }
 
     /* --- Contact form card: clean white in light mode --- */
     html[data-theme="light"] .contact-form-card {
