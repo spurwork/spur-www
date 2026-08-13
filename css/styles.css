@@ -642,6 +642,9 @@
       font-family: 'Instrument Serif', Georgia, serif;
       font-style: italic;
     }
+    html[data-theme="light"] .serif {
+      color: rgb(109, 40, 217) !important;
+    }
 
     /* ESSER Banner */
     .esser-banner {
