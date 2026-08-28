@@ -6,4 +6,4 @@ priority: core
 ---
 
 
-Find a team that interests you by browsing teams near you on the Explore page. Once you’ve identified a team, check the team’s qualifications to ensure you meet the requirements. If you qualify, tap the Join the Team button at the bottom of your screen to send your application. If you don’t yet meet the qualifications, follow the prompts on the team page to add the necessary credentials.
+To join a team, you will need to apply to the team you are interested in working by searching the open jobs in the area you are interested in and selecting apply. If selected to join the team, you will receive notification in app of this and any additional qualifications for this team.

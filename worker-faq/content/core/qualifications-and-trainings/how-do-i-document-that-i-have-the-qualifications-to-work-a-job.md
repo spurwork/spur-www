@@ -6,4 +6,6 @@ priority: core
 ---
 
 
-Before applying to join a team, you must document that you have the necessary qualifications (e.g., licenses, certificates, diplomas, transcripts). Upload the required documentation in Spur, and our team will verify it. Once verified, you become eligible to work jobs that require those qualifications.
+To join a team, you will need to apply to the team you are interested in working by searching the open jobs in the area you are interested in and selecting apply. If selected to join the team, you will receive notification in app of this and any additional qualifications for this team.
+
+Upload any requested licenses, certificates, diplomas, transcripts, or other documentation in Spur. Our team will verify the documents, and once verified, you become eligible to work jobs that require those qualifications.

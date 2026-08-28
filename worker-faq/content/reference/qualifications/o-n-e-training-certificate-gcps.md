@@ -6,7 +6,9 @@ category: Qualifications
 
 ---
 
-1.  Once your [GCPS background check](https://spurjobs.com/help-desk-article/gwinnett-gcps-background-check/) and [Concentra Medical Exam](https://spurjobs.com/help-desk-article/concentra-medical-exam/) qualifications have been verified by Spur please request to join the Trainee 1: School Nutrition Food Assistant team in the Spur app. Gwinnett County Public Schools will approve you for the team which indicates that your background check has cleared with the district.
+To join a team, you will need to apply to the team you are interested in working by searching the open jobs in the area you are interested in and selecting apply. If selected to join the team, you will receive notification in app of this and any additional qualifications for this team.
+
+1.  Once your [GCPS background check](https://spurjobs.com/help-desk-article/gwinnett-gcps-background-check/) and [Concentra Medical Exam](https://spurjobs.com/help-desk-article/concentra-medical-exam/) qualifications have been verified by Spur, Gwinnett County Public Schools will approve you for the Trainee 1: School Nutrition Food Assistant team. This approval indicates that your background check has cleared with the district.
 
 2.  Select the next available O.N.E. training assignment.
 

@@ -210,7 +210,7 @@ function build() {
           <span>For a life-threatening emergency, call 911. Otherwise, notify Spur immediately.</span>
         </div>
       </div>
-      <a href="tel:18669579142">Call Spur: 1-866-957-9142</a>
+      <a href="tel:12563678402">Call Spur: (256) 367-8402</a>
     </section>
 
     <div class="worker-faq-layout">

@@ -8,7 +8,7 @@ category: Qualifications
 
 Please follow the following steps if you are interested in working for Orange County as a bus driver.
 
-1.  Join the Orange Co. Bus Driver Step One Team.
+1.  To join a team, you will need to apply to the team you are interested in working by searching the open jobs in the area you are interested in and selecting apply. If selected to join the team, you will receive notification in app of this and any additional qualifications for this team.
 
 2.  Orange County will conduct a Motor Vehicle Record (MVR) check
 

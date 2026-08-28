@@ -6,4 +6,4 @@ priority: core
 ---
 
 
-We run a basic background check on all Spur workers once they receive a contingent offer of employment to ensure a high-quality worker community. Additional background checks may be required for joining certain teams or working in specialized industries.
+We run a basic background check on all Spur workers once they receive a contingent offer of employment to ensure a high-quality worker community. Additional background checks may be required for certain teams or specialized industries. If selected for a team, you will receive notification in app of any additional qualifications for that team.

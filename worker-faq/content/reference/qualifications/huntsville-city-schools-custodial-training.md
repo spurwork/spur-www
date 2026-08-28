@@ -6,7 +6,9 @@ category: Qualifications
 
 ---
 
-In order to join the Huntsville City Custodian team, you must attend custodial training.
+To join a team, you will need to apply to the team you are interested in working by searching the open jobs in the area you are interested in and selecting apply. If selected to join the team, you will receive notification in app of this and any additional qualifications for this team.
+
+If selected for the Huntsville City Custodian team, you must attend custodial training.
 
 The training will cover the following areas:
 

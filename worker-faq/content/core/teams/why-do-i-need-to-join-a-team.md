@@ -6,4 +6,4 @@ priority: core
 ---
 
 
-Joining a team demonstrates to workplaces that you meet their qualifications. Workplaces post jobs to teams, so you must be a team member to accept a job. You can join as many teams as you’d like to expand your access to available jobs.
+To join a team, you will need to apply to the team you are interested in working by searching the open jobs in the area you are interested in and selecting apply. If selected to join the team, you will receive notification in app of this and any additional qualifications for this team.

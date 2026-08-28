@@ -14,7 +14,7 @@ If you are injured on the job and need to report an injury, please follow the in
 
 2. Notify Spur
 
-- After an accident occurs on the job, you must notify Spur immediately if your injuries allow you to do so. A coworker or other party within the vicinity of the accident may notify Spur if you cannot. You can notify Spur of your injury by calling: [1-866-957-9142](tel:18669579142).
+- After an accident occurs on the job, you must notify Spur immediately if your injuries allow you to do so. A coworker or other party within the vicinity of the accident may notify Spur if you cannot. You can notify Spur of your injury by calling: [(256) 367-8402](tel:12563678402).
 
 3. Obtain Spur Medical Release & First Report of Injury
 

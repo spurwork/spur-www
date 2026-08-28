@@ -10,7 +10,7 @@ Omnibus Transportation Employee Testing Act Drug Test with Orange County Public 
 
 The mandatory drug test must be taken no more than 30 days prior to the start of orientation.
 
-Drug/OTETA testing is conducted on **Mondays** and **Wednesdays** at** 8:00 a.m**. Please remember that OCPS has to reserve placement for the appointment no later than noon the previous business day. **Please contact Spur Support at 866-957-9142 to notify OCPS when you would like to schedule your screening.** If either testing day falls on a holiday, we revert to an adjusted schedule.
+Drug/OTETA testing is conducted on **Mondays** and **Wednesdays** at** 8:00 a.m**. Please remember that OCPS has to reserve placement for the appointment no later than noon the previous business day. **Please contact Spur Support at (256) 367-8402 to notify OCPS when you would like to schedule your screening.** If either testing day falls on a holiday, we revert to an adjusted schedule.
 
 Report to **445 W Amelia St, Orlando Florida 32801**
 

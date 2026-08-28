@@ -12,7 +12,7 @@ Obtaining this Qualification
 
 **Schedule an Interview**
 
-Please contact Spur 866-957-9142 to schedule an in-person interview with Orange County Public Schools. Once your interview is scheduled please report at your scheduled time to:
+Please contact Spur at (256) 367-8402 to schedule an in-person interview with Orange County Public Schools. Once your interview is scheduled please report at your scheduled time to:
 
 Transportation Services – OCPS
 

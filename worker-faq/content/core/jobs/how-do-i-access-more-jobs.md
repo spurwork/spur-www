@@ -6,4 +6,6 @@ priority: core
 ---
 
 
-To have access to more jobs, join more teams! When you join a team, all jobs that are available to you will be displayed on your Explore page and on the team’s page.
+To join a team, you will need to apply to the team you are interested in working by searching the open jobs in the area you are interested in and selecting apply. If selected to join the team, you will receive notification in app of this and any additional qualifications for this team.
+
+Applying to additional teams can expand the jobs available to you.

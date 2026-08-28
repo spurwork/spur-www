@@ -6,4 +6,6 @@ priority: core
 ---
 
 
-Taking jobs in Spur starts with joining a team. Once you’re on a team, you can view jobs on both the Explore and Team pages. When you find a job you wish to take, simply tap on the job, thoroughly review the job details and schedule, and then follow the prompts to take the job!
+To join a team, you will need to apply to the team you are interested in working by searching the open jobs in the area you are interested in and selecting apply. If selected to join the team, you will receive notification in app of this and any additional qualifications for this team.
+
+Once selected, you can view available jobs on the Explore and Team pages. When you find a job you wish to take, tap the job, thoroughly review the details and schedule, and follow the prompts to take the job.

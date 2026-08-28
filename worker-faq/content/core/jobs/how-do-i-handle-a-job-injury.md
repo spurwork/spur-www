@@ -16,7 +16,7 @@ If the injury is less severe, provide first aid if possible.
 
 Notify Spur immediately about the injury if you’re able to. If you cannot notify, a coworker or nearby party should do so.
 
-You can notify Spur by calling 1–866–957–9142.
+You can notify Spur by calling (256) 367-8402.
 
 ### Obtain Required Forms
 
