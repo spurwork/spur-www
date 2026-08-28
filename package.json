@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:blog": "node build-blog.js",
+    "build:faq": "node build-worker-faq.js",
+    "build": "npm run build:blog && npm run build:faq",
+    "test": "node --check build-worker-faq.js && node --check js/worker-faq.js && npm run build:faq"
   },
   "repository": {
     "type": "git",
