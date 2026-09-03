@@ -145,7 +145,7 @@ function page({ title, description, current, body, canonical }) {
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/back-office.css?v=2">
+  <link rel="stylesheet" href="css/back-office.css?v=3">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -165,7 +165,7 @@ const home = page({
   title: 'Spur | Managed Back-Office Services for Schools',
   description: 'Spur runs finance and accounting, substitute operations, and federal program reporting so school teams can focus on students.',
   body: `<section class="hero"><div class="shell hero-grid"><div class="hero-copy"><span class="eyebrow">Done-for-you school operations</span><h1><span class="hero-line">We run the <span class="serif">back office.</span></span><span class="hero-line">So schools can run the classroom.</span></h1><p class="hero-lede">For more than a decade, Spur has helped schools manage people and staffing. Now we’re bringing that same service expertise to finance, substitute operations, and federal program reporting.</p><div class="hero-actions"><a class="button" href="contact-sales.html">Talk through your needs →</a></div></div><nav class="hero-service-bar" aria-label="Back-office services"><span>Our services</span><a href="finance-accounting.html">Finance & Accounting <span>→</span></a><a href="substitute-desk.html">Substitute Desk <span>→</span></a><a href="federal-programs.html">Federal Programs <span>→</span></a></nav></div></section>
-  <section class="section paper" id="services"><div class="shell"><div class="section-head"><span class="eyebrow">The next chapter</span><h2>Back-office services, <span class="serif">done for you.</span></h2><p>Clear ownership, dependable delivery, and a partner who follows through.</p></div><div class="service-grid">${serviceCards()}</div></div></section>
+  <section class="section paper" id="services"><div class="shell"><div class="section-head wide"><span class="eyebrow">The next chapter</span><h2>Back-office services, <span class="serif">done for you.</span></h2><p>Clear ownership, dependable delivery, and a partner who follows through.</p></div><div class="service-grid">${serviceCards()}</div></div></section>
   <section class="section navy" id="how-it-works"><div class="shell"><div class="section-head"><span class="eyebrow">What carries forward</span><h2>The same service promise. <span class="serif">A broader mission.</span></h2></div><div class="promise-grid"><div class="promise-item"><h3>We understand schools</h3><p>We know the pace, pressure, and responsibility that come with serving educators.</p></div><div class="promise-item"><h3>We own the outcome</h3><p>We take responsibility for the work instead of adding more to your team.</p></div><div class="promise-item"><h3>We show up</h3><p>Responsive communication and reliable follow-through are part of the service.</p></div></div></div></section>
   <section class="cta-band"><div class="shell cta-grid"><div><h2>Let’s take something off your team’s plate.</h2><p>Tell us where the work is piling up. We’ll talk plainly about whether Spur is the right fit.</p></div><a class="button light" href="contact-sales.html">Start a conversation →</a></div></section>`
 });

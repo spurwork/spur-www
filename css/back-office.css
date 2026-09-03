@@ -252,6 +252,7 @@ h3 { font-size: 1.25rem; letter-spacing: -.02em; }
 .section.navy h2, .section.navy h3 { color: #fff; }
 .section.navy .eyebrow { color: #74d4ca; }
 .section-head { max-width: 780px; margin-bottom: 3rem; }
+.section-head.wide { max-width: 1080px; }
 .section-head p { margin: 1rem 0 0; color: var(--muted); font-size: 1.15rem; }
 .section.navy .section-head p { color: #bfd0dc; }
 
