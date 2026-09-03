@@ -221,7 +221,9 @@ h3 { font-size: 1.25rem; letter-spacing: -.02em; }
 .hero-service-bar > span { padding: 1.35rem 1.4rem 1rem; color: #74d4ca; font-size: .78rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
 .hero-service-bar a { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1rem 1.4rem; border-top: 1px solid rgba(255,255,255,.12); color: #fff; text-decoration: none; font-weight: 700; }
 .hero-service-bar a:hover { background: #1d405c; color: #fff; }
-.hero-service-bar a span { color: var(--teal); }
+.hero-service-bar .service-link-label { display: grid; gap: .12rem; }
+.hero-service-bar .service-link-label small { color: #aebfcb; font-size: .7rem; font-weight: 600; letter-spacing: .03em; }
+.hero-service-bar .service-arrow { color: var(--teal); }
 
 .hero-note {
   position: relative;
@@ -274,11 +276,29 @@ h3 { font-size: 1.25rem; letter-spacing: -.02em; }
   transition: transform .25s ease, box-shadow .25s ease;
 }
 .service-card:hover { transform: translateY(-7px); box-shadow: var(--shadow); }
+.service-card-top { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
 .service-number { color: var(--purple-deep); font-size: .82rem; font-weight: 800; letter-spacing: .12em; }
 .service-card h3 { margin-top: 1.8rem; font-size: 1.7rem; }
 .service-card p { color: var(--muted); }
 .service-card ul { padding-left: 1.15rem; color: var(--text); }
 .service-card .card-link { margin-top: auto; color: var(--purple-deep); font-weight: 800; }
+
+.availability-badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 25px;
+  padding: .22rem .58rem;
+  border-radius: 999px;
+  background: rgba(217, 154, 37, .14);
+  color: #8b5d12;
+  font-size: .68rem;
+  font-weight: 800;
+  letter-spacing: .08em;
+  line-height: 1;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.availability-badge.available { background: var(--teal-soft); color: #19766e; }
 
 .split { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(3rem, 8vw, 8rem); align-items: start; }
 .split-copy > p { color: var(--muted); font-size: 1.12rem; }
@@ -311,6 +331,8 @@ h3 { font-size: 1.25rem; letter-spacing: -.02em; }
 .page-hero-grid { display: grid; grid-template-columns: 1.1fr .7fr; gap: 4rem; align-items: end; }
 .page-hero h1 { font-size: clamp(3.35rem, 6vw, 5.2rem); }
 .page-hero p { margin: 1.4rem 0 0; max-width: 720px; color: var(--muted); font-size: 1.2rem; }
+.service-status-row { display: flex; align-items: center; flex-wrap: wrap; gap: .75rem; margin-bottom: 1.1rem; }
+.service-status-row .eyebrow { margin-bottom: 0; }
 .scope-card { padding: 1.5rem; background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow); }
 .scope-card span { color: var(--purple-deep); font-size: .78rem; font-weight: 800; text-transform: uppercase; letter-spacing: .1em; }
 .scope-card strong { display: block; margin: .5rem 0; color: var(--ink); font-size: 1.3rem; }
