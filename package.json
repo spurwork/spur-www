@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build:site": "node build-back-office.js",
     "build:blog": "node build-blog.js",
     "build:faq": "node build-worker-faq.js",
-    "build": "npm run build:blog && npm run build:faq",
+    "build": "npm run build:site && npm run build:blog && npm run build:faq",
     "test": "node --check build-worker-faq.js && node --check js/worker-faq.js && npm run build:faq"
   },
   "repository": {
