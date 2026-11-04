@@ -23,11 +23,12 @@ answers with the relevant subject-matter owner before publishing.
 
 ## Publishing and ownership
 
-`CNAME` records the intended custom hostname, but this checkout does not contain
-a publishing workflow or hosting configuration that proves how the live site is
-deployed. Confirm the hosting provider, deploy trigger, rollback method, domain/DNS
-owner, and content approver before changing production. Document the verified
-procedure here when known.
+`CNAME` records the custom hostname. Repository Pages metadata reviewed on
+2026-11-04 identifies GitHub Pages legacy publishing from `main` at the repository
+root for `spureducation.com`. A push or merge to `main` can therefore publish
+content without a workflow file. Confirm the exact live artifact, rollback method,
+domain/DNS owner and content approver before changing production; see the
+[maintenance handoff](docs/maintenance-handoff.md).
 
 The separate [Spur Staffing site](https://github.com/spurwork/spur-staffing) is a
 different repository with its own marketing content and contact-form API. Coordinate
