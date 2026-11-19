@@ -264,6 +264,18 @@ for (const s of services) {
   });
 }
 
+// Legal pages. The text lives in content/legal/*.html and is placed in the shared page shell unchanged.
+const legalPages = [
+  ['privacy-policy', "Privacy Policy | Spur", "Spur's privacy policy explains how we collect, use, and protect your personal information when you use our website and services."],
+  ['terms-of-service', "Terms of Service | Spur", "Terms of Service for using the Spur Education website and services. Read our terms governing use of spureducation.com."],
+  ['accessibility', "Accessibility | Spur", "Spur is committed to making our website accessible to all users, including those with disabilities. Learn about our accessibility practices."]
+];
+
+for (const [slug, title, description] of legalPages) {
+  const text = fs.readFileSync(path.join(ROOT, 'content', 'legal', `${slug}.html`), 'utf8');
+  outputs[`${slug}.html`] = page({ title, description, canonical: `${slug}.html`, body: `<section class="page-hero legal"><div class="shell prose">${text}</div></section>` });
+}
+
 for (const [filename, contents] of Object.entries(outputs)) {
   fs.writeFileSync(path.join(OUT_DIR, filename), `${contents}\n`);
 }
