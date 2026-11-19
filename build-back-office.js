@@ -3,6 +3,21 @@ const path = require('path');
 
 const ROOT = __dirname;
 
+// Build options.
+//   STAGING=1   adds the review ribbon, reviewer notes and content that still needs sign-off.
+//   OUT_DIR     where pages are written. Default: the repository root, which GitHub Pages publishes.
+//   LEAD_ENDPOINT, SANDBOX_URL   optional overrides for the Spur HR tour and demo forms.
+const STAGING = process.env.STAGING === '1';
+const OUT_DIR = process.env.OUT_DIR ? path.resolve(process.env.OUT_DIR) : ROOT;
+const STAFFING_URL = 'https://spurstaffing.com/';
+// Where the tour and demo forms post. Empty means the form opens a pre-addressed email instead.
+const LEAD_ENDPOINT = process.env.LEAD_ENDPOINT || '';
+const LEAD_EMAIL = 'support@spured.com';
+const SANDBOX_URL = process.env.SANDBOX_URL || '';
+
+// A reviewer note. Emitted only in a STAGING build, never on the public site.
+const note = text => STAGING ? `<p class="preview-note"><b>Preview note.</b> ${text}</p>` : '';
+
 const services = [
   {
     slug: 'finance-accounting',
@@ -97,21 +112,25 @@ function serviceMenu() {
   return services.map(s => `<a href="${s.slug}.html"><span class="menu-icon">${s.short}</span><span><strong>${s.name}</strong><small>${s.comingSoon ? 'Coming soon' : s.eyebrow}</small></span></a>`).join('');
 }
 
-function header(current = '') {
+function header(current = '', product = '') {
   const currentAttr = key => current === key ? ' aria-current="page"' : '';
+  const brand = product === 'hr'
+    ? '<a class="brand product" href="hr.html" aria-label="Spur HR"><img src="brand/spur-hr-logo.svg" alt="Spur HR" width="150" height="32"></a>'
+    : '<a class="brand" href="index.html" aria-label="Spur home"><img src="brand/spur-logo.svg" alt="Spur" width="101" height="30"></a>';
   return `<header class="site-header">
     <div class="shell nav-wrap">
-      <a class="brand" href="index.html" aria-label="Spur home"><img src="spur-logo.svg" alt="Spur"></a>
+      ${brand}
       <button class="mobile-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
       <nav class="primary-nav" aria-label="Primary navigation">
+        <a href="hr.html"${currentAttr('hr')}>SpurHR</a>
+        <a class="ext" href="${STAFFING_URL}" target="_blank" rel="noopener">Staffing</a>
         <div class="nav-services">
           <button type="button" aria-expanded="false">Services <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 6 5 5 5-5"/></svg></button>
           <div class="service-menu">${serviceMenu()}</div>
         </div>
-        <a href="index.html#how-it-works">How it works</a>
         <a href="why-spur.html"${currentAttr('why')}>Why Spur</a>
         <a href="about.html"${currentAttr('about')}>About</a>
-        <a class="nav-cta" href="contact-sales.html"${currentAttr('contact')}>Talk to Spur</a>
+        <a class="nav-cta" href="${product === 'hr' ? 'hr-tour.html' : 'contact-sales.html'}"${currentAttr(product === 'hr' ? 'tour' : 'contact')}>${product === 'hr' ? 'Take the tour' : 'Talk to Spur'}</a>
       </nav>
     </div>
   </header>`;
@@ -121,17 +140,17 @@ function footer() {
   return `<footer class="site-footer">
     <div class="shell">
       <div class="footer-grid">
-        <div class="footer-brand"><img src="spur-logo.svg" alt="Spur"><p>We run the back office so schools can run the classroom.</p></div>
-        <div class="footer-col"><strong>Services</strong>${services.map(s => `<a href="${s.slug}.html">${s.name}</a>`).join('')}</div>
+        <div class="footer-brand"><img src="brand/spur-logo-reversed.svg" alt="Spur" width="101" height="30"><p>We run the back office so schools can run the classroom.</p></div>
+        <div class="footer-col"><strong>Products and services</strong><a href="hr.html">SpurHR</a><a href="${STAFFING_URL}" target="_blank" rel="noopener">Spur Staffing</a>${services.map(s => `<a href="${s.slug}.html">${s.name}</a>`).join('')}</div>
         <div class="footer-col"><strong>Company</strong><a href="why-spur.html">Why Spur</a><a href="about.html">About</a><a href="https://jobs.spureducation.com/" target="_blank" rel="noopener">Jobs</a></div>
-        <div class="footer-col"><strong>Help</strong><a href="contact-sales.html">Talk to sales</a><a href="contact-support.html">Customer support</a><a href="worker-support.html">Worker support</a></div>
+        <div class="footer-col"><strong>Help</strong><a href="hr-tour.html">Tour SpurHR</a><a href="contact-sales.html">Talk to sales</a><a href="contact-support.html">Customer support</a><a href="worker-support.html">Worker support</a></div>
       </div>
       <div class="footer-bottom"><span>© 2026 Spur. All rights reserved.</span><span class="footer-legal"><a href="privacy-policy.html">Privacy</a><a href="terms-of-service.html">Terms</a><a href="accessibility.html">Accessibility</a></span></div>
     </div>
   </footer>`;
 }
 
-function page({ title, description, current, body, canonical }) {
+function page({ title, description, current, body, canonical, product }) {
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -144,18 +163,20 @@ function page({ title, description, current, body, canonical }) {
   <meta property="og:title" content="${title}">
   <meta property="og:description" content="${description}">
   <meta property="og:url" content="https://spureducation.com/${canonical || ''}">
-  <link rel="icon" type="image/png" href="spur-favicon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/back-office.css?v=4">
+  ${STAGING ? '<meta name="robots" content="noindex, nofollow">' : ''}
+  <link rel="icon" type="image/svg+xml" href="brand/favicon.svg">
+  <link rel="alternate icon" type="image/png" href="spur-favicon.png">
+  <link rel="preload" href="fonts/atkinson-hyperlegible-next-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/literata-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/back-office.css?v=5">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
-  ${header(current)}
+  ${STAGING ? '<div class="preview-ribbon" role="note">Preview for review. Not public. Boxes marked “Preview note” are questions for the Spur team, not site content.</div>' : ''}
+  ${header(current, product)}
   <main id="main">${body}</main>
   ${footer()}
-  <script src="js/back-office.js"></script>
+  <script src="js/back-office.js?v=5"></script>
 </body>
 </html>`;
 }
@@ -165,12 +186,13 @@ function serviceCards() {
 }
 
 const home = page({
-  title: 'Spur | School Operations Services',
-  description: 'Spur offers Substitute Desk support for schools. Finance and Accounting and Federal Programs services are coming soon.',
-  body: `<section class="hero"><div class="shell hero-grid"><div class="hero-copy"><span class="eyebrow">Done-for-you school operations</span><h1><span class="hero-line">We run the <span class="serif">back office.</span></span><span class="hero-line">So schools can run the classroom.</span></h1><p class="hero-lede">For more than a decade, Spur has helped schools manage people and staffing. Now we’re expanding that service expertise: Substitute Desk is available now, with Finance & Accounting and Federal Programs coming soon.</p><div class="hero-actions"><a class="button" href="contact-sales.html">Talk through your needs →</a></div></div><nav class="hero-service-bar" aria-label="Back-office services"><span>Our services</span>${services.map(s => `<a href="${s.slug}.html"><span class="service-link-label">${s.name}<small>${s.comingSoon ? 'Coming soon' : 'Available now'}</small></span><span class="service-arrow">→</span></a>`).join('')}</nav></div></section>
-  <section class="section paper" id="services"><div class="shell"><div class="section-head wide"><span class="eyebrow">The next chapter</span><h2>Back-office services, <span class="serif">done for you.</span></h2><p>Clear ownership, dependable delivery, and a partner who follows through.</p></div><div class="service-grid">${serviceCards()}</div></div></section>
+  title: 'Spur | HR software, staffing and back-office services for schools',
+  description: 'Spur helps schools with the work behind the classroom: SpurHR software, school staffing, and back-office services done for you.',
+  body: `<section class="hero"><div class="shell hero-grid"><div class="hero-copy"><span class="eyebrow">Spur for schools</span><h1><span class="hero-line">We run the <span class="serif">back office.</span></span><span class="hero-line">So schools can run the classroom.</span></h1><p class="hero-lede">Spur has staffed schools for more than a decade. Today we help with the work behind the classroom in three ways: software that runs HR, staff when you need them, and back-office services done for you.</p><div class="hero-actions"><a class="button" href="hr.html">See SpurHR →</a><a class="button secondary" href="contact-sales.html">Talk to Spur</a></div></div><nav class="hero-service-bar" aria-label="What Spur offers"><span>What Spur offers</span><a href="hr.html"><span class="service-link-label">SpurHR<small>HR software for charter and independent schools</small></span><span class="service-arrow">→</span></a><a href="${STAFFING_URL}" target="_blank" rel="noopener"><span class="service-link-label">Spur Staffing<small>Substitutes and school support staff</small></span><span class="service-arrow">↗</span></a>${services.map(s => `<a href="${s.slug}.html"><span class="service-link-label">${s.name}<small>${s.comingSoon ? 'Coming soon' : 'Available now'}</small></span><span class="service-arrow">→</span></a>`).join('')}</nav></div></section>
+  <section class="section paper" id="spur"><div class="shell"><div class="section-head wide"><span class="eyebrow">One Spur</span><h2>Three ways to take work <span class="serif">off your team.</span></h2><p>Each one stands alone. Start with whichever problem is costing your team the most time.</p></div><div class="offer-grid"><a class="offer-card lead" href="hr.html"><img class="lockup" src="brand/spur-hr-logo-reversed.svg" alt="Spur HR" width="141" height="30"><span><span class="tag">New</span></span><h3>One HR system, built for charter schools</h3><p>Hiring, onboarding, staff records, time, pay and performance in one place. AI does the clerical work. Your people make the decisions.</p><span class="card-link">See SpurHR →</span></a><a class="offer-card" href="${STAFFING_URL}" target="_blank" rel="noopener"><span><span class="tag">Staffing</span></span><h3>Spur Staffing</h3><p>Substitute teachers and school support staff, recruited, screened, trained and paid by Spur.</p><span class="card-link">Visit spurstaffing.com ↗</span></a><a class="offer-card" href="#services"><span><span class="tag">Services</span></span><h3>Back-office services</h3><p>Recurring operations work, owned end to end by people who know schools. Substitute Desk is available now.</p><span class="card-link">See the services ↓</span></a></div>${note('This section answers Abigail’s brand question on the page itself: one Spur, with SpurHR and Staffing as products under it and services beside them. Spur Staffing keeps its own site and look. “More than a decade” is existing site copy, and Abigail’s note says 7+ years. Confirm one figure.')}</div></section>
+  <section class="section" id="services"><div class="shell"><div class="section-head wide"><span class="eyebrow">Back-office services</span><h2>Recurring work, <span class="serif">done for you.</span></h2><p>Clear ownership, dependable delivery, and a partner who follows through.</p></div><div class="service-grid">${serviceCards()}</div></div></section>
   <section class="section navy" id="how-it-works"><div class="shell"><div class="section-head"><span class="eyebrow">What carries forward</span><h2>The same service promise. <span class="serif">A broader mission.</span></h2></div><div class="promise-grid"><div class="promise-item"><h3>We understand schools</h3><p>We know the pace, pressure, and responsibility that come with serving educators.</p></div><div class="promise-item"><h3>We own the outcome</h3><p>We take responsibility for the work instead of adding more to your team.</p></div><div class="promise-item"><h3>We show up</h3><p>Responsive communication and reliable follow-through are part of the service.</p></div></div></div></section>
-  <section class="cta-band"><div class="shell cta-grid"><div><h2>Let’s take something off your team’s plate.</h2><p>Talk to us about Substitute Desk—or tell us you’re interested in what’s coming next.</p></div><a class="button light" href="contact-sales.html">Start a conversation →</a></div></section>`
+  <section class="cta-band"><div class="shell cta-grid"><div><h2>Let’s take something off your team’s plate.</h2><p>Tour SpurHR on your own, or tell us where the work is piling up.</p></div><div class="cta-actions"><a class="button light" href="hr-tour.html">Tour SpurHR →</a><a class="button secondary" href="contact-sales.html">Start a conversation</a></div></div></section>`
 });
 
 function serviceBody(s) {
@@ -210,19 +232,23 @@ const contact = page({
   title: 'Talk to Spur | School Back-Office Services',
   description: 'Talk with Spur about finance and accounting, substitute operations, or federal program reporting for your school.',
   current: 'contact', canonical: 'contact-sales.html',
-  body: `<section class="page-hero"><div class="shell statement"><span class="eyebrow">Start a conversation</span><h1>Tell us where the work is piling up.</h1><p>Talk to us about Substitute Desk today, or register your interest in Finance & Accounting or Federal Programs as those services take shape.</p></div></section>
-  <section class="section"><div class="shell contact-grid"><div><h2>What to expect</h2><div class="contact-points"><div class="contact-point"><strong>A 20-minute working conversation</strong><br><span>Enough context to understand the work and the pressure.</span></div><div class="contact-point"><strong>Direct answers about fit</strong><br><span>Including what Spur can own and what should stay with your team.</span></div><div class="contact-point"><strong>A clear next step</strong><br><span>If there is a fit, we will agree on the service and responsibilities together.</span></div></div></div><div class="contact-card"><h3>Talk to Spur</h3><p>Complete the details below. Submitting will open a pre-addressed email with your information so you can review and send it.</p><form id="sales-form" data-recipient="support@spured.com"><div class="form-grid"><div class="field"><label for="firstName">First name</label><input id="firstName" name="firstName" autocomplete="given-name" required></div><div class="field"><label for="lastName">Last name</label><input id="lastName" name="lastName" autocomplete="family-name" required></div><div class="field full"><label for="email">School email</label><input id="email" name="email" type="email" autocomplete="email" required></div><div class="field full"><label for="school">School or district</label><input id="school" name="school" autocomplete="organization" required></div><div class="field full"><label for="interest">Where do you need help?</label><select id="interest" name="interest"><option value="">Choose a service</option><option value="Finance & Accounting">Finance & Accounting — Coming soon</option><option value="Substitute Desk">Substitute Desk — Available now</option><option value="Federal Programs">Federal Programs — Coming soon</option><option>More than one service</option><option>Not sure yet</option></select></div><div class="field full"><label for="message">What is creating the most pressure?</label><textarea id="message" name="message"></textarea></div><div class="field full"><button class="button" type="submit">Prepare email →</button><p class="form-note">Prefer to write directly? Email <a href="mailto:support@spured.com?subject=Back-office%20services">support@spured.com</a>.</p><p class="form-status" role="status"></p></div></div></form></div></div></section>`
+  body: `<section class="page-hero"><div class="shell statement"><span class="eyebrow">Start a conversation</span><h1>Tell us where the work is piling up.</h1><p>Ask about SpurHR or Substitute Desk today, or register your interest in Finance & Accounting or Federal Programs as those services take shape.</p></div></section>
+  <section class="section"><div class="shell contact-grid"><div><h2>What to expect</h2><div class="contact-points"><div class="contact-point"><strong>A 20-minute working conversation</strong><br><span>Enough context to understand the work and the pressure.</span></div><div class="contact-point"><strong>Direct answers about fit</strong><br><span>Including what Spur can own and what should stay with your team.</span></div><div class="contact-point"><strong>A clear next step</strong><br><span>If there is a fit, we will agree on the service and responsibilities together.</span></div></div></div><div class="contact-card"><h3>Talk to Spur</h3><p>Complete the details below. Submitting will open a pre-addressed email with your information so you can review and send it.</p><form id="sales-form" data-recipient="support@spured.com"><div class="form-grid"><div class="field"><label for="firstName">First name</label><input id="firstName" name="firstName" autocomplete="given-name" required></div><div class="field"><label for="lastName">Last name</label><input id="lastName" name="lastName" autocomplete="family-name" required></div><div class="field full"><label for="email">School email</label><input id="email" name="email" type="email" autocomplete="email" required></div><div class="field full"><label for="school">School or district</label><input id="school" name="school" autocomplete="organization" required></div><div class="field full"><label for="interest">Where do you need help?</label><select id="interest" name="interest"><option value="">Choose one</option><option value="SpurHR">SpurHR — HR software</option><option value="Finance & Accounting">Finance & Accounting — Coming soon</option><option value="Substitute Desk">Substitute Desk — Available now</option><option value="Federal Programs">Federal Programs — Coming soon</option><option>More than one service</option><option>Not sure yet</option></select></div><div class="field full"><label for="message">What is creating the most pressure?</label><textarea id="message" name="message"></textarea></div><div class="field full"><button class="button" type="submit">Prepare email →</button><p class="form-note">Prefer to write directly? Email <a href="mailto:support@spured.com?subject=Back-office%20services">support@spured.com</a>.</p><p class="form-status" role="status"></p></div></div></form></div></div></section>`
 });
 
 const contactHub = page({
   title: 'Contact Spur | Sales and Support',
   description: 'Contact Spur about school back-office services, customer support, worker support, or careers.',
   canonical: 'contact.html',
-  body: `<section class="page-hero"><div class="shell statement"><span class="eyebrow">Contact Spur</span><h1>How can we help?</h1><p>Choose the team that can get you to the right answer fastest.</p></div></section><section class="section paper"><div class="shell service-grid"><a class="service-card" href="contact-sales.html"><span class="service-number">01</span><h3>Talk to sales</h3><p>Explore Finance & Accounting, Substitute Desk, or Federal Programs.</p><span class="card-link">Start a conversation →</span></a><a class="service-card" href="contact-support.html"><span class="service-number">02</span><h3>Customer support</h3><p>Get help with an existing Spur service or account.</p><span class="card-link">Contact support →</span></a><a class="service-card" href="worker-support.html"><span class="service-number">03</span><h3>Worker support</h3><p>Find answers about jobs, onboarding, pay, scheduling, and policies.</p><span class="card-link">Visit worker support →</span></a></div></section>`
+  body: `<section class="page-hero"><div class="shell statement"><span class="eyebrow">Contact Spur</span><h1>How can we help?</h1><p>Choose the team that can get you to the right answer fastest.</p></div></section><section class="section paper"><div class="shell service-grid"><a class="service-card" href="contact-sales.html"><span class="service-number">01</span><h3>Talk to sales</h3><p>Explore SpurHR, Substitute Desk, Finance & Accounting, or Federal Programs.</p><span class="card-link">Start a conversation →</span></a><a class="service-card" href="contact-support.html"><span class="service-number">02</span><h3>Customer support</h3><p>Get help with an existing Spur service or account.</p><span class="card-link">Contact support →</span></a><a class="service-card" href="worker-support.html"><span class="service-number">03</span><h3>Worker support</h3><p>Find answers about jobs, onboarding, pay, scheduling, and policies.</p><span class="card-link">Visit worker support →</span></a></div></section>`
 });
+
+const { hr, hrTour } = require('./build-spur-hr.js')({ page, note, STAGING, STAFFING_URL, LEAD_ENDPOINT, LEAD_EMAIL, SANDBOX_URL });
 
 const outputs = {
   'index.html': home,
+  'hr.html': hr,
+  'hr-tour.html': hrTour,
   'about.html': about,
   'why-spur.html': why,
   'contact-sales.html': contact,
@@ -239,7 +265,7 @@ for (const s of services) {
 }
 
 for (const [filename, contents] of Object.entries(outputs)) {
-  fs.writeFileSync(path.join(ROOT, filename), `${contents}\n`);
+  fs.writeFileSync(path.join(OUT_DIR, filename), `${contents}\n`);
 }
 
-console.log(`Built ${Object.keys(outputs).length} back-office pages.`);
+console.log(`Built ${Object.keys(outputs).length} pages into ${path.relative(ROOT, OUT_DIR) || '.'}${STAGING ? ' (staging build with reviewer notes)' : ''}.`);

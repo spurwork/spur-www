@@ -1,0 +1,25 @@
+# Replace spur-education-staging and SITE_NAME. ACCESS_CODE is a Fly secret, never in this file:
+#   fly secrets set ACCESS_CODE=... -a spur-education-staging
+app = "spur-education-staging"
+primary_region = "ord"
+
+[env]
+  SITE_NAME = "Spur preview"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = "stop"
+  auto_start_machines = true
+  min_machines_running = 0
+
+  [[http_service.checks]]
+    interval = "30s"
+    timeout = "5s"
+    grace_period = "10s"
+    method = "GET"
+    path = "/__health"
+
+[[vm]]
+  size = "shared-cpu-1x"
+  memory = "256mb"
