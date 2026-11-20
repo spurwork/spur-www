@@ -692,14 +692,6 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
 .pillar-row li:first-child { border-left: 0; padding-left: 0; }
 .pillar-row li span { display: block; margin-bottom: .8rem; font-family: var(--font-sans); font-size: .875rem; font-weight: 600; letter-spacing: 0; color: var(--brand-marigold); font-variant-numeric: tabular-nums; }
 
-/* Modules */
-.module-grid { display: grid; grid-template-columns: repeat(4, 1fr); border-top: 2px solid var(--primary); }
-.module { padding: 1.5rem 1.5rem 0 0; }
-.module + .module { padding-left: 1.5rem; border-left: 1px solid var(--line); }
-.module-head { display: flex; flex-direction: column; align-items: flex-start; gap: .6rem; min-height: 5.5rem; }
-.module-head h3 { font-family: var(--font-display); font-size: 1.3rem; letter-spacing: -.01em; }
-.module ul { list-style: none; margin: 1rem 0 0; padding: 0; color: var(--ink-muted); font-size: .9375rem; }
-.module li { padding: .55rem 0; border-top: 1px solid var(--line); }
 
 /* Worked example: steps in one row on wide screens */
 #example .flow-steps { grid-template-columns: repeat(7, 1fr); }
@@ -724,11 +716,6 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
 .solution .card-link { color: var(--primary-ink); font-weight: 600; white-space: nowrap; }
 
 @media (max-width: 1100px) {
-  .module-grid { grid-template-columns: 1fr 1fr; }
-  .module { padding: 1.5rem 1.25rem 1.25rem 0; }
-  .module + .module { padding-left: 1.25rem; }
-  .module:nth-child(3) { padding-left: 0; border-left: 0; }
-  .module:nth-child(n+3) { border-top: 1px solid var(--line); }
   #example .flow-steps { grid-template-columns: repeat(4, 1fr); }
 }
 @media (max-width: 900px) {
@@ -742,10 +729,6 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
 }
 @media (max-width: 640px) {
   .stack { grid-template-columns: 1fr; padding: 1.25rem; }
-  .module-grid { grid-template-columns: 1fr; }
-  .module, .module + .module { padding: 1.25rem 0; border-left: 0; }
-  .module + .module { border-top: 1px solid var(--line); }
-  .module-head { min-height: 0; }
   #example .flow-steps { grid-template-columns: 1fr; }
   .hr-top h1 { font-size: clamp(2.2rem, 10vw, 2.8rem); }
 }
@@ -801,4 +784,23 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
 @media (max-width: 640px) {
   .person-grid { grid-template-columns: 1fr; }
   .dash-bar > .tag { margin-left: 0; }
+}
+
+/* Scope: what is included, and when */
+.release-key { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem 1.5rem; }
+.section-head p.release-key { margin-top: 1.25rem; font-size: .9375rem; }
+.release-key > span { display: inline-flex; align-items: center; gap: .5rem; white-space: nowrap; color: var(--ink-muted); }
+.scope-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(1.5rem, 3vw, 2.5rem) clamp(1.5rem, 4vw, 3.5rem); }
+.scope-module h3 { padding-bottom: .75rem; border-bottom: 2px solid var(--primary); font-family: var(--font-display); font-size: 1.35rem; letter-spacing: -.01em; }
+.scope-table { width: 100%; border-collapse: collapse; font-size: .9375rem; }
+.scope-table thead th { padding: .6rem 0 .4rem; color: var(--ink-muted); font-size: .8125rem; font-weight: 600; text-align: left; }
+.scope-table thead th:last-child, .scope-table td { text-align: right; }
+.scope-table tbody th { padding: .6rem 1rem .6rem 0; color: var(--ink); font-weight: 400; text-align: left; }
+.scope-table td { padding: .6rem 0; white-space: nowrap; vertical-align: top; }
+.scope-table tbody tr { border-top: 1px solid var(--line); }
+@media (max-width: 900px) {
+  .scope-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 420px) {
+  .scope-table .tag { font-size: .75rem; padding-inline: .4rem; }
 }
