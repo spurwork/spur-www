@@ -7,7 +7,7 @@
 //     captioned as sample data. Illustrations say they are illustrations.
 //   - An FAQ entry with `review` set is published only in a STAGING build, until the named
 //     reviewer clears it. Remove the `review` field to publish it.
-//   - Pricing figures come from `pricing` below. While it is null the public page shows no numbers.
+//   - The price comes from `pricing` below. The pricing section says nothing about payroll cost.
 
 module.exports = function buildSpurHr({ page, note, plain, STAGING, STAFFING_URL, LEAD_ENDPOINT, LEAD_EMAIL, SANDBOX_URL }) {
   const JAN = 'January 2027';
@@ -16,9 +16,12 @@ module.exports = function buildSpurHr({ page, note, plain, STAGING, STAFFING_URL
   const tagApr = `<span class="tag apr">${APR}</span>`;
   const tagSample = '<span class="tag sample">Sample data</span>';
 
-  // Approved price points go here, for example:
-  //   { unit: 'per employee, per month', plans: [{ name: '…', price: '$…', includes: ['…'] }] }
-  const pricing = null;
+  // The published price, approved by Glenn on 2026-11-20. Say nothing about payroll cost here.
+  const pricing = {
+    price: '$35',
+    unit: 'per employee, per month',
+    points: ['On a one-year agreement', 'One price for the whole product', 'No modules sold separately']
+  };
 
   // A product screenshot in a plain window frame.
   const shot = (file, alt, caption, eager) => `<figure class="shot"><div class="shot-bar" aria-hidden="true"><i></i><i></i><i></i></div><img src="images/spurhr/${file}.webp" alt="${plain(alt)}" width="1600" height="1000"${eager ? ' fetchpriority="high"' : ' loading="lazy"'}><figcaption>${caption}</figcaption></figure>`;
@@ -89,9 +92,7 @@ module.exports = function buildSpurHr({ page, note, plain, STAGING, STAFFING_URL
     .map((f, i) => `<div class="faq-item"><button type="button" aria-expanded="false" aria-controls="faq-hr-${i}"><span>${f[0]}${f[2] ? '<span class="needs-review">Needs review</span>' : ''}</span><span aria-hidden="true">+</span></button><div class="faq-answer" id="faq-hr-${i}"><p>${f[1]}</p>${f[2] ? note(f[2]) : ''}</div></div>`)
     .join('');
 
-  const pricingHtml = pricing
-    ? `<div class="pricing-card"><h3>${pricing.unit}</h3>${pricing.plans.map(p => `<p><strong>${p.name}</strong> · ${p.price}</p><ul>${p.includes.map(x => `<li>${x}</li>`).join('')}</ul>`).join('')}</div>`
-    : `<div class="pricing-card"><h3>Prices will be published here</h3><p class="caption" style="margin:.5rem 0 0">Before the first release in ${JAN}.</p><ul><li>One published price list for every school</li><li>What is included, written out</li><li>Any pass-through cost, such as payroll, shown separately</li></ul><p style="margin:1.25rem 0 0"><a class="text-link" href="hr-tour.html#demo">Ask us for current pricing →</a></p></div>`;
+  const pricingHtml = `<div class="pricing-card"><p class="price">${pricing.price}<span>${pricing.unit}</span></p><ul class="checks">${pricing.points.map(x => `<li>${x}</li>`).join('')}</ul><p class="price-note">New charter school, or fewer than 30&nbsp;staff? <a class="text-link nowrap" href="contact-sales.html?service=spur-hr">Talk to us about pricing →</a></p></div>`;
 
   const bars = (rows, { unit = '', stacked = false } = {}) => `<ul class="bars${stacked ? ' stacked' : ''}">${rows.map(([label, value, max]) => `<li><span>${label}</span><span class="track"><span class="fill" style="width:${Math.round(value / max * 100)}%"></span></span><b>${value}${unit}</b></li>`).join('')}</ul>`;
 
@@ -133,7 +134,7 @@ module.exports = function buildSpurHr({ page, note, plain, STAGING, STAFFING_URL
 
   <section class="section paper" id="analytics"><div class="shell"><div class="section-head wide"><span class="eyebrow">Analytics</span><h2>See the whole school, <span class="serif">and every person in it.</span></h2><p>Reports come from the records your team already keeps. Nothing to export, and nothing to add up by hand.</p></div><div class="analytics-part"><div class="part-head"><h3>A dashboard for each school</h3><p>Totals for one campus or the whole network.</p></div>${dashboard}</div><div class="analytics-part"><div class="part-head"><h3>A page for each staff member</h3><p>Credentials, goals, check-ins, reviews and time off, in one record.</p></div>${staffPage}</div>${note('Per-person risk levels, academic data and attrition prediction are left out on purpose, pending a scope decision. Attrition rate and cost per hire are also left out until they have a release date. Headcount is tagged April 2027 to be safe. If it ships with HR records in January, change the tag.')}</div></section>
 
-  <section class="section" id="pricing"><div class="shell pricing"><div><span class="eyebrow">Pricing</span><h2>Spend less on the back office. Invest more in <span class="serif">the classroom.</span></h2><p class="lede">HR software is hard to compare because most vendors keep their prices private. We will publish ours on this page.</p>${note('No approved figures exist yet, so the public page shows no numbers. Abigail to supply: the unit, what each plan includes, how payroll is charged, and any setup fee. If Spur wants to state a target such as “about half the cost of a generic HR platform”, it needs a price and a comparison to stand on.')}</div>${pricingHtml}</div></section>
+  <section class="section" id="pricing"><div class="shell pricing"><div><span class="eyebrow">Pricing</span><h2>Spend less on the back office. Invest more in <span class="serif">the classroom.</span></h2><p class="lede">Most HR vendors keep their prices private, which makes them hard to compare. Spur&nbsp;HR has one price for the whole product, and it is on this page.</p></div>${pricingHtml}</div></section>
 
   <section class="section paper" id="trust"><div class="shell"><div class="section-head wide"><span class="eyebrow">Privacy, AI and security</span><h2>Questions schools <span class="serif">ask first.</span></h2><p>Spur&nbsp;HR is in development. These are the protections it is being built with. We will publish our security documentation before the first school goes live.</p></div><div class="faq-list">${faqHtml}</div>${note('The four answers without a “Needs review” tag restate decisions in the Spur&nbsp;HR architecture and access-control records. They describe the design, not an audited or certified state. Entries tagged “Needs review” appear only in this preview.')}</div></section>
 
