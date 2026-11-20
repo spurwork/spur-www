@@ -12,7 +12,7 @@ Use `npm ci` and `npm run build` to run all three generators. The scripts in
 
 | Command | Input and output |
 | --- | --- |
-| `npm run build:site` | Builds the back-office service pages from `build-back-office.js`. |
+| `npm run build:site` | Builds the home, company, service and Spur HR pages from `build-back-office.js` and `build-spur-hr.js`. |
 | `npm run build:blog` | Builds blog pages and feeds from `blog/content/`; see the [writing guide](blog/WRITING_GUIDE.md). |
 | `npm run build:faq` | Builds `worker-support.html` from `worker-faq/content/`; see the [FAQ guide](worker-faq/README.md). |
 | `npm test` | Checks the FAQ generator and browser script, then regenerates the FAQ page. |
@@ -20,6 +20,16 @@ Use `npm ci` and `npm run build` to run all three generators. The scripts in
 Commit generated pages with their source changes, as described in the FAQ guide.
 Review worker policy, benefit, background-check, medical, and district-specific
 answers with the relevant subject-matter owner before publishing.
+
+## Design system and Spur HR pages
+
+The generated pages use Spur's Homeroom design system: tokens and type in `css/back-office.css`, logos in `brand/` (the Literata wordmark from November 2026; the older `spur-logo.svg` in the repository root is still used by the blog and support pages), and self-hosted Literata and Atkinson Hyperlegible Next in `fonts/` (SIL Open Font License). The legal, support and worker-support pages still use the older `css/styles.css` look.
+
+Product screenshots in `images/spurhr/` are captured from the Spur HR prototype with `tools/capture-spurhr-screens.mjs` (serve a sandbox build locally, then run it; `VIEW=1120x700` gives larger UI for the screens shown beside text). Re-run it when the prototype changes.
+
+`build-spur-hr.js` holds the Spur HR product page (`hr.html`) and the tour and demo page (`hr-tour.html`). Its content rules are at the top of the file: every release claim carries a date, illustrations and analytics samples say they use sample data, the price comes from the `pricing` object, and an FAQ entry with a `review` field is left off the public site until that field is removed.
+
+Build options: `LEAD_ENDPOINT` (where the tour and demo forms post; without it they open a pre-addressed email), `SANDBOX_URL` (the Spur HR sandbox link), and `STAGING=1` with `OUT_DIR` for the private review copy. See [staging/README.md](staging/README.md).
 
 ## Publishing and ownership
 
