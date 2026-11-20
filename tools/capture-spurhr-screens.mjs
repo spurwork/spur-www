@@ -1,4 +1,4 @@
-// Captures product screens from a locally served SpurHR sandbox build.
+// Captures product screens from a locally served Spur HR sandbox build.
 // usage: node capture.mjs <baseUrl> <outDir>
 import { chromium } from 'playwright';
 import { mkdirSync } from 'node:fs';

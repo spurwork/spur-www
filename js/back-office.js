@@ -62,7 +62,7 @@
     'finance-accounting': 'Finance & Accounting',
     'substitute-desk': 'Substitute Desk',
     'federal-programs': 'Federal Programs',
-    'spur-hr': 'SpurHR'
+    'spur-hr': 'Spur HR'
   };
   if (interest && serviceNames[requestedService]) interest.value = serviceNames[requestedService];
 
@@ -88,7 +88,7 @@
     });
   }
 
-  // SpurHR tour and demo requests. With an endpoint the form posts to it.
+  // Spur HR tour and demo requests. With an endpoint the form posts to it.
   // Without one it opens a pre-addressed email, like the sales form above.
   document.querySelectorAll('.lead-form').forEach(function (form) {
     const status = form.querySelector('.form-status');
