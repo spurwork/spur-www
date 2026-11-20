@@ -702,7 +702,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
 .module li { padding: .55rem 0; border-top: 1px solid var(--line); }
 
 /* Worked example: steps in one row on wide screens */
-#example .flow-steps { grid-template-columns: repeat(6, 1fr); }
+#example .flow-steps { grid-template-columns: repeat(7, 1fr); }
 .report-shot { margin-top: 1rem; }
 
 /* Home */
@@ -729,7 +729,7 @@ a:focus-visible, button:focus-visible, summary:focus-visible, [tabindex]:focus-v
   .module + .module { padding-left: 1.25rem; }
   .module:nth-child(3) { padding-left: 0; border-left: 0; }
   .module:nth-child(n+3) { border-top: 1px solid var(--line); }
-  #example .flow-steps { grid-template-columns: repeat(3, 1fr); }
+  #example .flow-steps { grid-template-columns: repeat(4, 1fr); }
 }
 @media (max-width: 900px) {
   .problem-grid, .feature-grid, .feature.flip .feature-grid, .home-hero-grid { grid-template-columns: 1fr; }
