@@ -3,7 +3,8 @@
 // preview out of search engines and away from casual visitors.
 //
 // Environment:
-//   ACCESS_CODE   required. The shared code visitors type.
+//   ACCESS_CODE   the shared code visitors type. Required unless OPEN=1.
+//   OPEN          set to 1 to serve without the access page (still noindex).
 //   SITE_NAME     shown on the access page. Default "Spur preview".
 //   ROOT          folder to serve. Default "./site".
 //   PORT          default 8080.
@@ -21,12 +22,14 @@ const ENTRY = process.env.ENTRY || "";
 const COOKIE = "spur_gate";
 const MAX_AGE = 60 * 60 * 24 * 30;
 
-if (!CODE) {
-  console.error("ACCESS_CODE is not set. Refusing to start an open preview.");
+// OPEN=1 serves the site without the access page. It still sends noindex headers.
+const OPEN = process.env.OPEN === "1";
+if (!CODE && !OPEN) {
+  console.error("ACCESS_CODE is not set. Set it, or set OPEN=1 to serve without an access code.");
   process.exit(1);
 }
 
-const token = createHmac("sha256", CODE).update("spur-gate-v1").digest("hex");
+const token = createHmac("sha256", CODE || "open").update("spur-gate-v1").digest("hex");
 
 const TYPES = {
   ".html": "text/html; charset=utf-8", ".css": "text/css; charset=utf-8",
@@ -133,7 +136,7 @@ createServer(async (req, res) => {
     return;
   }
 
-  if (url.pathname === "/__gate" && req.method === "POST") {
+  if (!OPEN && url.pathname === "/__gate" && req.method === "POST") {
     let form;
     try { form = new URLSearchParams(await readBody(req)); }
     catch { res.writeHead(413, base).end(); return; }
@@ -152,7 +155,7 @@ createServer(async (req, res) => {
     return;
   }
 
-  if (!hasPass(req)) {
+  if (!OPEN && !hasPass(req)) {
     res.writeHead(401, { ...base, "Content-Type": "text/html; charset=utf-8", "Cache-Control": "no-store" })
       .end(accessPage(safeNext(url.pathname + url.search), false));
     return;
