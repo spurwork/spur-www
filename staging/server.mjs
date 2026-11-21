@@ -32,6 +32,7 @@ if (!CODE && !OPEN) {
 const token = createHmac("sha256", CODE || "open").update("spur-gate-v1").digest("hex");
 
 const TYPES = {
+  ".mp4": "video/mp4",
   ".html": "text/html; charset=utf-8", ".css": "text/css; charset=utf-8",
   ".js": "text/javascript; charset=utf-8", ".mjs": "text/javascript; charset=utf-8",
   ".json": "application/json; charset=utf-8", ".svg": "image/svg+xml",

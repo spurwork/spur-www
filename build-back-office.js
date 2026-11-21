@@ -13,7 +13,7 @@ const STAFFING_URL = 'https://spurstaffing.com/';
 // Where the tour and demo forms post. An explicit empty override opens a pre-addressed email instead.
 const LEAD_ENDPOINT = process.env.LEAD_ENDPOINT ?? 'https://contact-api-production-f9b8.up.railway.app/education-lead';
 const LEAD_EMAIL = 'abigail@spureducation.com';
-const SANDBOX_URL = process.env.SANDBOX_URL || '';
+const SANDBOX_URL = process.env.SANDBOX_URL ?? 'https://spur-hr-sandbox.fly.dev/';
 
 // Titles, meta descriptions and alt text use a plain space where page copy uses &nbsp;.
 const plain = text => text.replace(/&nbsp;/g, ' ');
