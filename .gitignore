@@ -8,3 +8,6 @@ node_modules/
 *.log
 .vscode/
 .idea/
+
+# Review copy build output
+staging/site/

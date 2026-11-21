@@ -50,7 +50,7 @@
       const opening = !item.classList.contains('open');
       item.classList.toggle('open', opening);
       button.setAttribute('aria-expanded', String(opening));
-      const symbol = button.querySelector('span:last-child');
+      const symbol = button.querySelector(':scope > span:last-child');
       if (symbol) symbol.textContent = opening ? '−' : '+';
     });
   });
@@ -59,9 +59,10 @@
   const requestedService = params.get('service');
   const interest = document.getElementById('interest');
   const serviceNames = {
-    'finance-accounting': 'Finance & Accounting',
+    'finance-accounting': 'Finance and accounting',
     'substitute-desk': 'Substitute Desk',
-    'federal-programs': 'Federal Programs'
+    'federal-programs': 'Federal Programs',
+    'spur-hr': 'Spur HR'
   };
   if (interest && serviceNames[requestedService]) interest.value = serviceNames[requestedService];
 
@@ -86,4 +87,56 @@
       window.location.href = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     });
   }
+
+  // Spur HR tour and demo requests. With an endpoint the form posts to it.
+  // Without one it opens a pre-addressed email, like the sales form above.
+  document.querySelectorAll('.lead-form').forEach(function (form) {
+    const status = form.querySelector('.form-status');
+    const button = form.querySelector('button[type="submit"]');
+    function say(text, isError) {
+      if (!status) return;
+      status.textContent = text;
+      status.classList.toggle('error', Boolean(isError));
+    }
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+      const data = new FormData(form);
+      if (data.get('website')) return; // filled only by bots
+      const kind = form.dataset.kind;
+      const done = kind === 'tour'
+        ? 'Thank you. We will email your access code.'
+        : 'Thank you. We will be in touch to set up a time.';
+      const endpoint = form.dataset.endpoint;
+      if (!endpoint) {
+        const lines = [];
+        data.forEach(function (value, key) { if (value) lines.push(key + ': ' + value); });
+        say('Your email app should open with the details ready to send.');
+        window.location.href = 'mailto:' + form.dataset.recipient +
+          '?subject=' + encodeURIComponent(form.dataset.subject + ' — ' + data.get('school')) +
+          '&body=' + encodeURIComponent(lines.join('\n'));
+        return;
+      }
+      data.append('kind', kind);
+      data.append('page', window.location.pathname);
+      if (button) button.disabled = true;
+      say('Sending…');
+      const previewSink = endpoint === '/__lead';
+      fetch(endpoint, previewSink
+        ? { method: 'POST', body: new URLSearchParams(data) }
+        : { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(Object.fromEntries(data)) })
+        .then(function (response) {
+          if (!response.ok) throw new Error('Request failed');
+          form.reset();
+          say(previewSink ? 'Preview request recorded. No email was sent.' : done);
+        })
+        .catch(function () {
+          say('We could not send your request. Please email ' + form.dataset.recipient + '.', true);
+        })
+        .then(function () { if (button) button.disabled = false; });
+    });
+  });
 })();
