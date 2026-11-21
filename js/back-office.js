@@ -59,7 +59,7 @@
   const requestedService = params.get('service');
   const interest = document.getElementById('interest');
   const serviceNames = {
-    'finance-accounting': 'Finance & Accounting',
+    'finance-accounting': 'Finance and accounting',
     'substitute-desk': 'Substitute Desk',
     'federal-programs': 'Federal Programs',
     'spur-hr': 'Spur HR'
@@ -106,7 +106,6 @@
       }
       const data = new FormData(form);
       if (data.get('website')) return; // filled only by bots
-      data.delete('website');
       const kind = form.dataset.kind;
       const done = kind === 'tour'
         ? 'Thank you. We will email your access code.'
@@ -125,11 +124,14 @@
       data.append('page', window.location.pathname);
       if (button) button.disabled = true;
       say('Sending…');
-      fetch(endpoint, { method: 'POST', body: new URLSearchParams(data) })
+      const previewSink = endpoint === '/__lead';
+      fetch(endpoint, previewSink
+        ? { method: 'POST', body: new URLSearchParams(data) }
+        : { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(Object.fromEntries(data)) })
         .then(function (response) {
           if (!response.ok) throw new Error('Request failed');
           form.reset();
-          say(done + (form.dataset.preview ? ' (Preview: this request was logged, not emailed.)' : ''));
+          say(previewSink ? 'Preview request recorded. No email was sent.' : done);
         })
         .catch(function () {
           say('We could not send your request. Please email ' + form.dataset.recipient + '.', true);
