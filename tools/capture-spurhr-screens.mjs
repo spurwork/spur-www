@@ -1,5 +1,9 @@
 // Captures product screens from a locally served Spur HR sandbox build.
 // usage: node capture.mjs <baseUrl> <outDir>
+// Serve the sandbox's dist/site without the access gate (for example
+// OPEN=1 ROOT=<spur-hr>/prototypes/sandbox/dist/site PORT=8120 node server.mjs).
+// The site uses home at VIEW=1360x850 and the other screens at VIEW=1120x700,
+// each scaled to 1600x1000 WebP.
 import { chromium } from 'playwright';
 import { mkdirSync } from 'node:fs';
 const [base = 'http://localhost:8120', out = 'tools/spurhr-raw'] = process.argv.slice(2);
@@ -29,8 +33,16 @@ if (await tools.count()) await tools.click(); else { await page.mouse.click(700,
 await page.waitForTimeout(500);
 const hideTools = () => page.evaluate(() => { for (const b of document.querySelectorAll('button')) if (/Show prototype tools/i.test(b.textContent)) b.style.visibility = 'hidden'; });
 const side = page.locator('aside, nav').first();
+// Keep only the screen's own sidebar group open, so the active item and the top of the sidebar both show.
+const onlyGroup = (group) => page.evaluate((g) => {
+  for (const b of document.querySelectorAll('nav button[aria-expanded="true"]')) {
+    if (b.textContent.trim().replace(/\d+$/, '') !== g) b.click();
+  }
+}, group || '');
 for (const [name, group, label] of screens) {
   try {
+    await onlyGroup(group);
+    await page.waitForTimeout(250);
     if (group) {
       const item = page.locator('aside a, aside button, nav a, nav button').filter({ hasText: new RegExp('^' + label + '(\\s*\\d+)?$') }).first();
       if (!(await item.isVisible().catch(() => false))) {
@@ -42,7 +54,8 @@ for (const [name, group, label] of screens) {
       await page.locator('aside a, aside button, nav a, nav button').filter({ hasText: new RegExp('^' + label + '(\\s*\\d+)?$') }).first().click();
     }
     await page.waitForTimeout(700);
-    await page.mouse.move(vw - 200, vh - 4);
+    // Park the pointer on the top bar so no row shows a hover state.
+    await page.mouse.move(Math.round(vw * 0.55), 20);
     await hideTools();
     await page.screenshot({ path: `${out}/${name}.png` });
     console.log('ok', name, await page.title());

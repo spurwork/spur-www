@@ -36,7 +36,7 @@ module.exports = function buildSpurHr({ page, note, plain, STAGING, STAFFING_URL
       copy: 'Spur&nbsp;HR drafts, screens, schedules and follows up. The work arrives finished and ready for your review, the way it would from a strong hire.',
       points: ['Writes the job posting from your notes and your template', 'Screens every application against your criteria and shows its reasons', 'Runs an optional phone screen and hands you the summary and transcript'],
       tag: tagJan,
-      shot: shot('candidates', 'Spur&nbsp;HR candidates screen. A banner says a candidate’s AI phone screen is ready to review, above a list of applicants and their status.', 'Candidates, from the Spur&nbsp;HR prototype. Sample data.')
+      shot: shot('candidates', 'Spur&nbsp;HR candidates screen. A banner says a candidate’s AI phone screen is ready to review, above a filter for each opening and a list of candidates with their job, stage, next step and status.', 'Candidates, from the Spur&nbsp;HR prototype. Sample data.')
     },
     {
       eyebrow: 'You supervise',
@@ -45,7 +45,7 @@ module.exports = function buildSpurHr({ page, note, plain, STAGING, STAFFING_URL
       points: ['One list of what is waiting on you, across every school', 'Every decision carries the name of the person who made it', 'Every step also works by hand'],
       quote: 'Let the computers do the clerical work, so you can do the thinking work.',
       tag: tagJan,
-      shot: shot('onboarding', 'Spur&nbsp;HR onboarding screen. Two clearance decisions wait for the HR director, above clearance status and credentials that expire soon.', 'Onboarding, from the Spur&nbsp;HR prototype. Sample data.')
+      shot: shot('onboarding', 'Spur&nbsp;HR onboarding screen. Two clearance decisions wait for the HR director, above a table of each candidate’s clearance, assignment and onboarding status.', 'Onboarding, from the Spur&nbsp;HR prototype. Sample data.')
     },
     {
       eyebrow: 'Built for schools',
@@ -53,7 +53,7 @@ module.exports = function buildSpurHr({ page, note, plain, STAGING, STAFFING_URL
       copy: 'Generic HR platforms are built for offices. Schools run on campuses, credentials, school-year calendars and bell schedules. In Spur&nbsp;HR those are part of the design.',
       points: ['Networks with several campuses and legal employers', 'Licenses, endorsements, clearances and their expiry dates', 'Absences, substitutes and coverage, period by period'],
       tag: tagApr,
-      shot: shot('coverage', 'Spur&nbsp;HR coverage screen. A teacher is out today and each class period shows who has been offered the coverage.', 'Coverage, from the Spur&nbsp;HR prototype. Sample data.')
+      shot: shot('coverage', 'Spur&nbsp;HR coverage screen. A teacher is out today. Her day is laid out period by period, and each block shows that it has been offered to the substitute pool and no one has taken it yet.', 'Coverage, from the Spur&nbsp;HR prototype. Sample data.')
     }
   ];
 
@@ -118,7 +118,7 @@ module.exports = function buildSpurHr({ page, note, plain, STAGING, STAFFING_URL
     title: 'Spur&nbsp;HR | The HR system that does the work',
     description: 'Schools buy HR software, then hire people to run it. Spur&nbsp;HR does the work: recruiting, HR records, payroll and performance management in one system. Your people make the call.',
     current: 'hr', canonical: 'hr.html', product: 'hr',
-    body: `<section class="hr-top"><div class="shell"><div class="hr-top-copy"><span class="eyebrow">Spur&nbsp;HR</span><h1>Schools buy HR software. <span class="hl">Then hire people to run it.</span></h1><p class="lede">Spur&nbsp;HR is the HR system that does the work. It handles recruiting, HR records, payroll and performance management like a capable member of your team. Your people make the call.</p><div class="hero-actions"><a class="button signal" href="hr-tour.html">Take the self-guided tour →</a><a class="button ghost" href="hr-tour.html#demo">Request a demo</a></div><p class="release-line">First release ${tagJan} More in ${tagApr}</p>${note('The product screenshots on this page still show the old Spur logo. They will be recaptured from the final prototype.')}</div>${shot('home', 'Spur&nbsp;HR home screen for a network HR director. A list titled Waiting on you shows eight items, each with a status and an Open button.', 'Home, from the Spur&nbsp;HR prototype. Sample data.', true)}</div></section>
+    body: `<section class="hr-top"><div class="shell"><div class="hr-top-copy"><span class="eyebrow">Spur&nbsp;HR</span><h1>Schools buy HR software. <span class="hl">Then hire people to run it.</span></h1><p class="lede">Spur&nbsp;HR is the HR system that does the work. It handles recruiting, HR records, payroll and performance management like a capable member of your team. Your people make the call.</p><div class="hero-actions"><a class="button signal" href="hr-tour.html">Take the self-guided tour →</a><a class="button ghost" href="hr-tour.html#demo">Request a demo</a></div><p class="release-line">First release ${tagJan} More in ${tagApr}</p>${note('The product screenshots on this page were recaptured on November 23 from the current prototype. They still show the old Spur logo, because the prototype still uses it: its copy of the design system predates the new wordmark. Recapture them once the prototype takes in the new logo.')}</div>${shot('home', 'Spur&nbsp;HR home screen for a network HR director. Under Waiting on you, the first five of nine items each show a status and an Open button, below sort and filter controls.', 'Home, from the Spur&nbsp;HR prototype. Sample data.', true)}</div></section>
 
   <section class="section problem"><div class="shell problem-grid"><div><span class="eyebrow">The real cost of HR software</span><h2>The software was never <span class="serif">the hard part.</span></h2><p class="lede">A school buys four systems. Then someone on staff spends their week moving information among them and chasing people for the rest.</p></div><div class="stack" aria-label="What schools buy, and the staff work that comes with it"><div class="stack-col"><p class="stack-label">What schools buy</p>${bought.map(b => `<span class="chip solid">${b}</span>`).join('')}</div><div class="stack-col"><p class="stack-label">What it still takes</p>${chores.map(c => `<span class="chip chore">${c}</span>`).join('')}<span class="chip staff">Staff time to run it all</span></div></div></div><div class="shell"><p class="turn">Spur&nbsp;HR does that work. <span class="serif">You make the call.</span></p></div></section>
 

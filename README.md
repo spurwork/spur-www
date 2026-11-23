@@ -25,7 +25,7 @@ answers with the relevant subject-matter owner before publishing.
 
 The generated pages use Spur's Homeroom design system: tokens and type in `css/back-office.css`, logos in `brand/` (Abigail’s resized Literata wordmark from November 20, 2026; the older `spur-logo.svg` in the repository root is still used by the blog and support pages), and self-hosted Literata and Atkinson Hyperlegible Next in `fonts/` (SIL Open Font License). The legal, support and worker-support pages still use the older `css/styles.css` look.
 
-Product screenshots in `images/spurhr/` are captured from the Spur HR prototype with `tools/capture-spurhr-screens.mjs` (serve a sandbox build locally, then run it; `VIEW=1120x700` gives larger UI for the screens shown beside text). Re-run it when the prototype changes.
+Product screenshots in `images/spurhr/` are captured from the Spur HR prototype with `tools/capture-spurhr-screens.mjs` (serve a sandbox build locally, then run it; `VIEW=1120x700` gives larger UI for the screens shown beside text). The site uses `home` at `VIEW=1360x850` and the other screens at `VIEW=1120x700`, each scaled to 1600×1000 and saved as WebP at quality 90. Re-run it when the prototype changes. The November 23 capture came from prototype version `1795469483-2c91`, which still draws the old Spur logo.
 
 `build-spur-hr.js` holds the Spur HR product page (`hr.html`) and the tour and demo page (`hr-tour.html`). Its content rules are at the top of the file: every release claim carries a date, illustrations and analytics samples say they use sample data, the price comes from the `pricing` object, and an FAQ entry with a `review` field is left off the public site until that field is removed.
 
